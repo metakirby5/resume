@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title class="fullname"></title>
+        <title data-bind="fullname"></title>
         <meta name="description" content="Ethan Chan's Resume">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="container">
-        <h1 class="fullname"></h1>
-        <h2 class="phone"></h2>
-        <h2 class="addr"></h2>
-        <a class="email"></a>
-        <a class="website" data-bind="link"></a>
-        <a class="github" data-bind="link"></a>
-        <a class="linkedin" data-bind="link"></a>
+        <h1 data-bind="fullname"></h1>
+        <h2 data-bind="phone"></h2>
+        <h2 data-bind="addr"></h2>
+        <a data-bind="email"></a>
+        <a data-bind="website" class="link"></a>
+        <a data-bind="github" class="link"></a>
+        <a data-bind="linkedin" class="link"></a>
 
         <!-- jQuery CDN -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
