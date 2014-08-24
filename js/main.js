@@ -88,6 +88,7 @@
     });
   }).fail(function(jqXHR, msg, err) {
     console.log(msg, err);
-    //window.location.replace('error.html?msg='+msg+'&err='+err);
+    if (document.location.hostname !== "localhost")
+      window.location.replace('error.html?msg='+msg+'&err='+err);
   });
 });})(window.jQuery, window.Transparency);
