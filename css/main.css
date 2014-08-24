@@ -1,0 +1,29 @@
+body {
+  padding-top: 20px;
+}
+ul.inline {
+  margin-right: 10px;
+}
+@media only screen and (min-width: 768px) {
+  ul.inline {
+    display: inline-block;
+  }
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
+}
+@media only screen and (max-width: 768px) {
+  ul.fa-ul.list-inline>li {
+    display: block;
+  }
+}
+/* Specific styles */
+.main-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.forkme {
+  padding-left: 20px;
+  font-size: 2rem;
+}

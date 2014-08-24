@@ -1,0 +1,24 @@
+xs-break = 768px
+
+body
+  padding-top: 20px
+
+ul.inline
+  @media only screen and (min-width: xs-break)
+    display: inline-block
+  margin-right: 10px
+
+ul.fa-ul.list-inline>li
+  @media only screen and (max-width: xs-break)
+    display: block
+  padding-right: 40px
+
+/* Specific styles */
+.main-title
+  display: inline-block
+  margin-top: 0
+  margin-right: 20px
+
+.forkme
+  padding-left: 20px
+  font-size: 2rem

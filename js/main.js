@@ -1,31 +1,51 @@
 (function($) {
+
+  function webLink(p) {
+    // Get dest obj from data binding
+    var dest = p.element.dataset.bind;
+    if (!dest || !this[dest])
+      return;
+    var url = this[dest];
+
+    // Add protocol if not already at start
+    if (url.indexOf('http://'))
+      url = 'http://' + url;
+    return url;
+  }
+
+  function namedLink(p) {
+    // Requires url to be in values scope
+    var url = this.url;
+    if (!url)
+      return;
+
+    // Add protocol if not already at start
+    if (url.indexOf('http://'))
+      url = 'http://' + url;
+    return url;
+  }
+
   $.getJSON('data.json', function(data) {
     $('html').render(data, {
-      // Directives
       fullname: {
-        text: function(p) {
-          return this.first + ' ' + this.last;
-        }
+        text: function() {return this.first + ' ' + this.last;}
       },
       email: {
-        href: function(p) {
-          return 'mailto:' + this.email;
-        }
+        href: function() {return 'mailto:' + this.email;}
       },
       link: {
-        href: function(p) {
-          // Get dest obj from data binding
-          var dest = p.element.dataset.bind;
-          if (!dest || !this[dest])
-            return;
-
-          var url = this[dest];
-          // Add protocol if not already at start
-          if ([0, -1].indexOf(url.indexOf('http://')) !== -1)
-            url = 'http://' + url;
-          return url;
-        }
+        href: webLink
       },
+      forkme: {
+        text: function() {return this.forkme.text;},
+        href: function() {return this.forkme.url;}
+      },
+      credits: {
+        entry: {
+          text: function() {return this.text;},
+          href: namedLink
+        }
+      }
     });
   });
 })(window.jQuery);
