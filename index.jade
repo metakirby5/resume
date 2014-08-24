@@ -20,7 +20,7 @@ html
       .github-fork-ribbon-wrapper.right
         // Google blue hehe
         .github-fork-ribbon
-          a(data-bind="forkme")
+          a(href="https://github.com/metakirby5/resume") Fork me on GitHub!
 
     // Header
     #header
@@ -44,7 +44,7 @@ html
                   span(data-bind="addr2")
                   br
             .col-xs-12
-              ul.fa-ul.inline.list-inline.links
+              ul.fa-ul.inline.list-inline.block-sm
                 li
                   i.fa-li.fa.fa-lg.fa-link
                   a(data-bind="website" data-extra="link")
@@ -57,23 +57,22 @@ html
         .col-xs-12.col-md-3.col-print-3
           a.btn.btn-default.btn-lg.btn-block.hidden-print(href="data.json")
             | Want the JSON?
+
     hr
     
     #about
       span.h-inline.h4 Who am I?
       span(data-bind="tagline")
 
-    hr
-
     #education
       h4 Education
       div(data-bind="education")
         .row
-          .col-xs-12.col-sm-6.col-md-4.col-print-4.col-left
+          .col-xs-12.col-sm-4.col-print-4.col-left
             label(data-bind="school")
-          .col-xs-12.col-sm-3.col-md-4.col-print-4.col-center
+          .col-xs-12.col-sm-4.col-print-4.col-center
             label(data-bind="grades")
-          .col-xs-12.col-sm-3.col-md-4.col-print-4.col-right
+          .col-xs-12.col-sm-4.col-print-4.col-right
             label(data-bind="dates")
         .table-responsive
           table.table.table-striped.table-condensed
@@ -83,22 +82,43 @@ html
                 td(data-bind="content")
                 td(data-bind="date")
 
-    hr
-
     #experience
       h4 Experience
       .table-responsive
-        table.table.table-striped.table-condensed(data-bind="experience")
-          tbody
+        table.table.table-striped.table-condensed
+          tbody(data-bind="experience")
             tr
               td(data-bind="name")
               td(data-bind="role")
-              td(data-bind="content")
-                ul.list-unstyled
+              td
+                ul.list-unstyled(data-bind="content")
                   li(data-bind="value")
               td.date(data-bind="date")
 
-    hr
+    #skills
+      span.h-inline.h4 Skills:
+      ul.fa-ul.inline.list-inline(data-bind="skills")
+        li
+          i.fa-li.fa.fa-lg(data-bind="icon")
+          span(data-bind="name")
+
+    #projects
+      h4 Projects
+      .table-responsive
+        table.table.table-striped.table-condensed
+          tbody(data-bind="projects")
+            tr
+              td(data-bind="name")
+              td(data-bind="role")
+              td
+                ul.list-unstyled(data-bind="content")
+                  li(data-bind="value")
+              td.date(data-bind="date")
+
+    #organizations
+      span.h-inline.h4 Organizations:
+      ul.inline.list-inline(data-bind="organizations")
+        li(data-bind="namedate")
 
     #credits.hidden-print
       span.h-inline.h4 Thanks to:

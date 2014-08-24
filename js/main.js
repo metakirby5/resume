@@ -31,6 +31,10 @@
     return url;
   }
 
+  function commaize(str, index, arr) {
+    return str + (index !== arr.length - 1 ? ',' : '');
+  }
+
   $.getJSON('data.json', function(data) {
     $('html').render(data, {
       fullname: {
@@ -52,16 +56,38 @@
           }
         }
       },
-      forkme: {
-        text: function() {return this.forkme.text;},
-        href: function() {return this.forkme.url;}
+      skills: {
+        icon: {
+          text: function() {return '';},
+          class: function(p) {return p.element.className + ' ' + (this.icon || 'fa-code');}
+        },
+        name: {
+          text: function(p) {return commaize(this.name, p.index, data.skills);}
+        }
+      },
+      projects: {
+        content: {
+          value: {
+            text: function() {return this.value;}
+          }
+        }
+      },
+      organizations: {
+        namedate: {
+          text: function(p) {
+            return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
+          }
+        }
       },
       credits: {
         entry: {
-          text: function() {return this.text;},
+          text: function(p) {return commaize(this.name, p.index, data.credits);},
           href: namedWebLink
         }
       }
     });
+  }).fail(function(jqXHR, msg, err) {
+    console.log(msg, err);
+    //window.location.replace('error.html?msg='+msg+'&err='+err);
   });
 });})(window.jQuery, window.Transparency);

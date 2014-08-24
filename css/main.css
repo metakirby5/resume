@@ -57,13 +57,13 @@ ul.inline {
     display: inline-block;
   }
 }
-ul.fa-ul.list-inline>li {
-  padding-right: 40px;
-}
 @media screen and (max-width: 768px) {
-  ul.fa-ul.list-inline>li {
+  ul.block-sm>li {
     display: block;
   }
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
 }
 @media screen and (min-width: 768px), print {
   .row .col-left {
@@ -94,5 +94,8 @@ kbd a:hover {
   margin-right: 20px;
 }
 .college {
+  margin-bottom: 5px;
+}
+#skills li {
   margin-bottom: 5px;
 }
