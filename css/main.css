@@ -25,5 +25,6 @@ ul.fa-ul.list-inline>li {
 }
 .forkme {
   padding-left: 20px;
-  font-size: 2rem;
+  font-size: 2em;
+  line-height: 5em;
 }
