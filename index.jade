@@ -2,7 +2,6 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     meta(name="description", content="Ethan Chan's Resume")
 
@@ -26,7 +25,7 @@ html
     // Header
     #header
       .row
-        .col-xs-12.col-md-8
+        .col-xs-12.col-md-8.col-print-12
           .row
             .col-xs-12
               h1.main-title(data-bind="fullname")
@@ -55,7 +54,7 @@ html
                 li
                   i.fa-li.fa.fa-lg.fa-linkedin
                   a(data-bind="linkedin" data-extra="link")
-        .col-xs-12.col-md-3
+        .col-xs-12.col-md-3.col-print-3
           a.btn.btn-default.btn-lg.btn-block.hidden-print(data-bind="json" data-extra="localLink")
     hr
     
@@ -69,36 +68,38 @@ html
       h4 Education
       div(data-bind="education")
         .row
-          .col-xs-12.col-sm-6.col-md-4.col-left
+          .col-xs-12.col-sm-6.col-md-4.col-print-4.col-left
             label(data-bind="school")
-          .col-xs-12.col-sm-3.col-md-4.col-center
+          .col-xs-12.col-sm-3.col-md-4.col-print-4.col-center
             label(data-bind="grades")
-          .col-xs-12.col-sm-3.col-md-4.col-right
+          .col-xs-12.col-sm-3.col-md-4.col-print-4.col-right
             label(data-bind="dates")
-        table.table.table-striped.table-condensed
-          tbody(data-bind="classes")
-            tr
-              td(data-bind="name")
-              td(data-bind="content")
-              td(data-bind="date")
+        .table-responsive
+          table.table.table-striped.table-condensed
+            tbody(data-bind="classes")
+              tr
+                td(data-bind="name")
+                td(data-bind="content")
+                td(data-bind="date")
 
     hr
 
     #experience
       h4 Experience
-      table.table.table-striped.table-condensed(data-bind="experience")
-        tbody
-          tr
-            td(data-bind="name")
-            td(data-bind="role")
-            td(data-bind="content")
-              ul.list-unstyled
-                li(data-bind="value")
-            td.date(data-bind="date")
+      .table-responsive
+        table.table.table-striped.table-condensed(data-bind="experience")
+          tbody
+            tr
+              td(data-bind="name")
+              td(data-bind="role")
+              td(data-bind="content")
+                ul.list-unstyled
+                  li(data-bind="value")
+              td.date(data-bind="date")
 
     hr
 
-    #credits
+    #credits.hidden-print
       span.h-inline.h4 Thanks to:
       ul.inline.list-inline(data-bind="credits")
         li

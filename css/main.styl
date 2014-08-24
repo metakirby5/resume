@@ -5,6 +5,9 @@ xs-break = 768px
 @media print
   a:link:after, a:visited:after
     content ""
+  for size in (1..12)
+    .col-print-{size}
+      width (size/12)*100% !important
 
 // Basics
 body
@@ -17,17 +20,17 @@ hr
   padding-right 10px
 
 ul.inline
-  @media (min-width xs-break)
+  @media screen and (min-width xs-break), print
     display inline-block
   margin-right 10px
 
 ul.fa-ul.list-inline>li
-  @media (max-width xs-break)
+  @media screen and (max-width xs-break)
     display block
   padding-right 40px
 
 .row
-  @media (min-width xs-break)
+  @media screen and (min-width xs-break), print
     .col-left
       text-align left
     .col-center
