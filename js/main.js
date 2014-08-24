@@ -41,7 +41,7 @@
         text: function() {return this.first + ' ' + this.last;}
       },
       phone: {
-        href: function() {return 'tel:' + this.phone;}
+        href: function() {return 'tel:' + this.phone.replace(/\s+/g, '');}
       },
       email: {
         href: function() {return 'mailto:' + this.email;}
