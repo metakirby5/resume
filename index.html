@@ -22,6 +22,21 @@
         <a data-bind="github" class="link"></a>
         <a data-bind="linkedin" class="link"></a>
 
+        <div class="table-responsive">
+            <table class="table table-striped table-condensed">
+                <thead>
+                    <td>Name</td>
+                    <td>URL</td>
+                </thead>
+                <tbody data-bind="credits">
+                    <tr>
+                        <td data-bind="name"></td>
+                        <td><a data-bind="url" class="link"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <!-- jQuery CDN -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!-- jQuery local fallback -->
