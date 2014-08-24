@@ -1,4 +1,26 @@
-(function($) {
+(function($, Transparency) { $(function() {
+
+  // Config
+  Transparency.matcher = function(element, key) {
+    return (element.el.getAttribute('data-bind') === key ||
+            element.el.getAttribute('data-extra') === key);
+  };
+
+  function localText(p) {
+    // Get obj from data binding
+    var item = p.element.dataset.bind;
+    if (!item || !this[item] || !this[item].text)
+      return;
+    return this[item].text;
+  }
+
+  function localLink(p) {
+    // Get obj from data binding
+    var item = p.element.dataset.bind;
+    if (!item || !this[item] || !this[item].url)
+      return;
+    return this[item].url;
+  }
 
   function webLink(p) {
     // Get dest obj from data binding
@@ -13,7 +35,7 @@
     return url;
   }
 
-  function namedLink(p) {
+  function namedWebLink() {
     // Requires url to be in values scope
     var url = this.url;
     if (!url)
@@ -30,11 +52,25 @@
       fullname: {
         text: function() {return this.first + ' ' + this.last;}
       },
+      phone: {
+        href: function() {return 'tel:' + this.phone;}
+      },
       email: {
         href: function() {return 'mailto:' + this.email;}
       },
       link: {
         href: webLink
+      },
+      localLink: {
+        text: localText,
+        href: localLink
+      },
+      experience: {
+        content: {
+          value: {
+            text: function() {return this.value;}
+          }
+        }
       },
       forkme: {
         text: function() {return this.forkme.text;},
@@ -43,9 +79,9 @@
       credits: {
         entry: {
           text: function() {return this.text;},
-          href: namedLink
+          href: namedWebLink
         }
       }
     });
   });
-})(window.jQuery);
+});})(window.jQuery, window.Transparency);

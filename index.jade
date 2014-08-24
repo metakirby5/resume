@@ -17,49 +17,90 @@ html
 
   body.container
     // Forkme
-    .github-fork-ribbon-wrapper.right
+    #forkme.github-fork-ribbon-wrapper.right
       // Google blue hehe
-      .github-fork-ribbon(style="background-color: #4682EB")
+      .github-fork-ribbon
         a(data-bind="forkme")
 
     // Header
-    .row
-      .col-xs-12
-        h1.main-title(data-bind="fullname")
-        ul.fa-ul.inline
-          li
-            i.fa-li.fa.fa-lg.fa-phone
-            span(data-bind="phone")
-          li
-            i.fa-li.fa.fa-lg.fa-envelope
-            a(data-bind="email")
-        ul.fa-ul.inline
-          li
-            i.fa-li.fa.fa-lg.fa-home
-            span(data-bind="addr1")
-            br
-            span(data-bind="addr2")
-            br
-      .col-xs-12
-        ul.fa-ul.inline.list-inline.links
-          li
-            i.fa-li.fa.fa-lg.fa-link
-            a.link(data-bind="website")
-          li
-            i.fa-li.fa.fa-lg.fa-github
-            a.link(data-bind="github")
-          li
-            i.fa-li.fa.fa-lg.fa-linkedin
-            a.link(data-bind="linkedin")
+    #header
+      .row
+        .col-xs-12.col-md-8
+          .row
+            .col-xs-12
+              h1.main-title(data-bind="fullname")
+              ul.fa-ul.inline
+                li
+                  i.fa-li.fa.fa-lg.fa-phone
+                  span(data-bind="phone")
+                li
+                  i.fa-li.fa.fa-lg.fa-envelope
+                  a(data-bind="email")
+              ul.fa-ul.inline
+                li
+                  i.fa-li.fa.fa-lg.fa-home
+                  span(data-bind="addr1")
+                  br
+                  span(data-bind="addr2")
+                  br
+            .col-xs-12
+              ul.fa-ul.inline.list-inline.links
+                li
+                  i.fa-li.fa.fa-lg.fa-link
+                  a(data-bind="website" data-extra="link")
+                li
+                  i.fa-li.fa.fa-lg.fa-github
+                  a(data-bind="github" data-extra="link")
+                li
+                  i.fa-li.fa.fa-lg.fa-linkedin
+                  a(data-bind="linkedin" data-extra="link")
+        .col-xs-12.col-md-3
+          button.btn.btn-primary.btn-lg.btn-block Print me?
+          a.btn.btn-default.btn-lg.btn-block(data-bind="json" data-extra="localLink")
+    hr
+    
+    #about
+      span.h-inline.h4 Who am I?
+      span(data-bind="tagline")
 
     hr
 
+    #education
+      div(data-bind="education")
+        .row
+          .col-xs-12.col-sm-6.col-md-4.col-left
+            label(data-bind="school")
+          .col-xs-12.col-sm-3.col-md-4.col-center
+            label(data-bind="grades")
+          .col-xs-12.col-sm-3.col-md-4.col-right
+            label(data-bind="dates")
+        table.table.table-striped.table-condensed
+          tbody(data-bind="classes")
+            tr
+              td(data-bind="name")
+              td(data-bind="content")
+              td(data-bind="date")
 
+    hr
 
-    h4 Thanks to:
-    ul.list-inline(data-bind="credits")
-      li
-        a(data-bind="entry")
+    #experience
+      table.table.table-striped.table-condensed(data-bind="experience")
+        tbody
+          tr
+            td(data-bind="name")
+            td(data-bind="role")
+            td(data-bind="content")
+              ul.list-unstyled
+                li(data-bind="value")
+            td.date(data-bind="date")
+
+    hr
+
+    #credits
+      span.h-inline.h4 Thanks to:
+      ul.inline.list-inline(data-bind="credits")
+        li
+          a(data-bind="entry")
        
     // jQuery CDN
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")

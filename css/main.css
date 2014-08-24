@@ -2,7 +2,10 @@ body {
   padding-top: 20px;
 }
 hr {
-  margin: 0;
+  margin: 10px 0;
+}
+.h-inline {
+  padding-right: 10px;
 }
 ul.inline {
   margin-right: 10px;
@@ -20,8 +23,34 @@ ul.fa-ul.list-inline>li {
     display: block;
   }
 }
+@media only screen and (min-width: 768px) {
+  .row .col-left {
+    text-align: left;
+  }
+  .row .col-center {
+    text-align: center;
+  }
+  .row .col-right {
+    text-align: right;
+  }
+}
+td.date {
+  width: 175px;
+}
+kbd a {
+  color: #fff;
+}
+kbd a:hover {
+  color: #ccc;
+}
+.github-fork-ribbon {
+  background-color: #4682eb;
+}
 .main-title {
   display: inline-block;
   margin-top: 0;
   margin-right: 20px;
+}
+.college {
+  margin-bottom: 5px;
 }
