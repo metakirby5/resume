@@ -1,6 +1,9 @@
 body {
   padding-top: 20px;
 }
+hr {
+  margin: 0;
+}
 ul.inline {
   margin-right: 10px;
 }
@@ -17,14 +20,17 @@ ul.fa-ul.list-inline>li {
     display: block;
   }
 }
-/* Specific styles */
 .main-title {
   display: inline-block;
   margin-top: 0;
   margin-right: 20px;
 }
-.forkme {
+.forkme-box {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+.forkme-box a {
   padding-left: 20px;
   font-size: 2em;
-  line-height: 5em;
 }

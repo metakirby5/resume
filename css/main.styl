@@ -1,7 +1,11 @@
 xs-break = 768px
 
+// Basics
 body
   padding-top: 20px
+
+hr
+  margin 0
 
 ul.inline
   @media only screen and (min-width: xs-break)
@@ -13,13 +17,16 @@ ul.fa-ul.list-inline>li
     display: block
   padding-right: 40px
 
-/* Specific styles */
+// Specific styles
 .main-title
   display: inline-block
   margin-top: 0
   margin-right: 20px
 
-.forkme
-  padding-left: 20px
-  font-size: 2em
-  line-height: 5em
+.forkme-box
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  a
+    padding-left: 20px
+    font-size: 2em

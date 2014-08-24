@@ -15,6 +15,7 @@ html
     link(rel="stylesheet", href="css/main.css")
 
   body.container
+    // Header
     .row
       .col-xs-12.col-md-8
         .row
@@ -45,11 +46,15 @@ html
               li
                 i.fa-li.fa.fa-lg.fa-linkedin
                 a.link(data-bind="linkedin")
-      .col-md-4.hidden-xs.hidden-sm
+      .forkme-box.col-md-4.hidden-xs.hidden-sm
         i.fa.fa-5x.fa-github
-        a.forkme(data-bind="forkme")
+        a(data-bind="forkme")
+
     hr
-    h3 Thanks to:
+
+    
+
+    h4 Thanks to:
     ul.list-inline(data-bind="credits")
       li
         a(data-bind="entry")
