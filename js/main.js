@@ -1,6 +1,6 @@
 (function($, Transparency) { $(function() {
 
-  // Config
+  // Make transparency only match data-bind and data-extra
   Transparency.matcher = function(element, key) {
     return (element.el.getAttribute('data-bind') === key ||
             element.el.getAttribute('data-extra') === key);

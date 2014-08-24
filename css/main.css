@@ -1,3 +1,9 @@
+@media print {
+  a:link:after,
+  a:visited:after {
+    content: "";
+  }
+}
 body {
   padding-top: 20px;
 }
@@ -10,7 +16,7 @@ hr {
 ul.inline {
   margin-right: 10px;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   ul.inline {
     display: inline-block;
   }
@@ -18,12 +24,12 @@ ul.inline {
 ul.fa-ul.list-inline>li {
   padding-right: 40px;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   ul.fa-ul.list-inline>li {
     display: block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .row .col-left {
     text-align: left;
   }

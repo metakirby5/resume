@@ -1,4 +1,10 @@
+// Variables
 xs-break = 768px
+
+// Override print behavior
+@media print
+  a:link:after, a:visited:after
+    content ""
 
 // Basics
 body
@@ -11,17 +17,17 @@ hr
   padding-right 10px
 
 ul.inline
-  @media only screen and (min-width xs-break)
+  @media (min-width xs-break)
     display inline-block
   margin-right 10px
 
 ul.fa-ul.list-inline>li
-  @media only screen and (max-width xs-break)
+  @media (max-width xs-break)
     display block
   padding-right 40px
 
 .row
-  @media only screen and (min-width xs-break)
+  @media (min-width xs-break)
     .col-left
       text-align left
     .col-center
