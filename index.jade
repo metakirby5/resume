@@ -12,47 +12,49 @@ html
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/vendor/font-mfizz-1.2/font-mfizz.css")
+    link(rel="stylesheet", href="css/vendor/gh-fork-ribbon.css")
     link(rel="stylesheet", href="css/main.css")
 
   body.container
+    // Forkme
+    .github-fork-ribbon-wrapper.right
+      // Google blue hehe
+      .github-fork-ribbon(style="background-color: #4682EB")
+        a(data-bind="forkme")
+
     // Header
     .row
-      .col-xs-12.col-md-8
-        .row
-          .col-xs-12
-            h1.main-title(data-bind="fullname")
-            ul.fa-ul.inline
-              li
-                i.fa-li.fa.fa-lg.fa-phone
-                span(data-bind="phone")
-              li
-                i.fa-li.fa.fa-lg.fa-envelope
-                a(data-bind="email")
-            ul.fa-ul.inline
-              li
-                i.fa-li.fa.fa-lg.fa-home
-                span(data-bind="addr1")
-                br
-                span(data-bind="addr2")
-                br
-          .col-xs-12
-            ul.fa-ul.inline.list-inline.links
-              li
-                i.fa-li.fa.fa-lg.fa-link
-                a.link(data-bind="website")
-              li
-                i.fa-li.fa.fa-lg.fa-github
-                a.link(data-bind="github")
-              li
-                i.fa-li.fa.fa-lg.fa-linkedin
-                a.link(data-bind="linkedin")
-      .forkme-box.col-md-4.hidden-xs.hidden-sm
-        i.fa.fa-5x.fa-github
-        a(data-bind="forkme")
+      .col-xs-12
+        h1.main-title(data-bind="fullname")
+        ul.fa-ul.inline
+          li
+            i.fa-li.fa.fa-lg.fa-phone
+            span(data-bind="phone")
+          li
+            i.fa-li.fa.fa-lg.fa-envelope
+            a(data-bind="email")
+        ul.fa-ul.inline
+          li
+            i.fa-li.fa.fa-lg.fa-home
+            span(data-bind="addr1")
+            br
+            span(data-bind="addr2")
+            br
+      .col-xs-12
+        ul.fa-ul.inline.list-inline.links
+          li
+            i.fa-li.fa.fa-lg.fa-link
+            a.link(data-bind="website")
+          li
+            i.fa-li.fa.fa-lg.fa-github
+            a.link(data-bind="github")
+          li
+            i.fa-li.fa.fa-lg.fa-linkedin
+            a.link(data-bind="linkedin")
 
     hr
 
-    
+
 
     h4 Thanks to:
     ul.list-inline(data-bind="credits")

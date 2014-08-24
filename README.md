@@ -1,4 +1,6 @@
 resume
 ======
 
-My Resume
+My Resume.
+
+Credits in data.json.
