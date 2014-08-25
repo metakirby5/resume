@@ -79,7 +79,7 @@ html
               tr
                 td(data-bind="name")
                 td(data-bind="content")
-                td(data-bind="date")
+                td(data-bind="date" align="right")
 
     #experience
       h4 Experience
@@ -89,10 +89,11 @@ html
             tr
               td(data-bind="name")
               td(data-bind="role")
-              td
+              td(data-bind="date" align="right")
+            tr
+              td(colspan="3")
                 ul.list-unstyled(data-bind="content")
                   li(data-bind="value")
-              td.date(data-bind="date")
 
     #skills
       span.h-inline.h4 Skills:
@@ -109,10 +110,11 @@ html
             tr
               td(data-bind="name")
               td(data-bind="role")
-              td
+              td(data-bind="date" align="right")
+            tr
+              td(colspan="3")
                 ul.list-unstyled(data-bind="content")
                   li(data-bind="value")
-              td.date(data-bind="date")
 
     #organizations
       span.h-inline.h4 Organizations:
