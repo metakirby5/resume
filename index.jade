@@ -24,7 +24,7 @@ html
 
     #header
       .row
-        .col-xs-12.col-md-8.col-print-12
+        .col-xs-12.col-md-8.col-lg-7.col-print-12
           .row
             .col-xs-12
               h1.main-title(data-bind="fullname")
@@ -53,14 +53,16 @@ html
                 li
                   i.fa-li.fa.fa-lg.fa-linkedin
                   a(data-bind="linkedin" data-extra="link")
-        .col-xs-12.col-md-3.col-print-3
-          a.btn.btn-default.btn-lg.btn-block.hidden-print.json-button(href="data/data.json")
+        .col-xs-12.col-md-3.col-lg-4.hidden-print
+          a.btn.btn-primary.btn-md.btn-block(onclick="window.print()")
+            | Print me?
+          a.btn.btn-default.btn-md.btn-block.json-button(href="data/data.json")
             | Want the JSON?
 
     hr
     
     #about
-      span.h-inline.h4 Who am I?
+      .h-inline.h4 Who am I?
       span(data-bind="tagline")
 
     #education
@@ -96,7 +98,7 @@ html
                   li(data-bind="value")
 
     #skills
-      span.h-inline.h4 Skills:
+      .h-inline.h4 Skills:
       ul.fa-ul.inline.list-inline(data-bind="skills")
         li
           i.fa-li.fa.fa-lg(data-bind="icon")
@@ -117,12 +119,12 @@ html
                   li(data-bind="value")
 
     #organizations
-      span.h-inline.h4 Organizations:
+      .h-inline.h4 Organizations:
       ul.inline.list-inline.block-sm(data-bind="organizations")
         li(data-bind="namedate")
 
     #credits.hidden-print
-      span.h-inline.h4 Thanks to:
+      .h-inline.h4 Thanks to:
       ul.inline.list-inline(data-bind="credits")
         li
           a(data-bind="entry")

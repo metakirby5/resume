@@ -5,8 +5,10 @@ xs-break = 768px
 @media print
   body
     font-size 10px
-    #header
-      font-size 1.4rem
+    h1
+      font-size 3rem
+    h4, .h4
+      font-size 1.5rem
   a:link:after, a:visited:after
     content ""
   for size in (1..12)
@@ -21,23 +23,29 @@ xs-break = 768px
 body
   padding-top 20px
 
+for size in (4..6)
+  h{size}, .h{size}
+    margin-top 0
+
 hr
   margin 0 0 10px 0
 
 .h-inline
+  display inline-block
   padding-right 10px
 
-ul.inline
-  @media screen and (min-width xs-break), print
-    display inline-block
-  margin-right 10px
+ul
+  &.inline
+    @media screen and (min-width xs-break), print
+      display inline-block
+    margin-right 10px
  
-ul.block-sm>li
-  @media screen and (max-width xs-break - 1)
-    display block
+  &.block-sm>li
+    @media screen and (max-width xs-break - 1)
+      display block
 
-ul.fa-ul.list-inline>li
-  padding-right 40px
+  &.fa-ul.list-inline>li
+    padding-right 40px
 
 .row
   @media screen and (min-width xs-break), print
@@ -47,6 +55,10 @@ ul.fa-ul.list-inline>li
       text-align center
     .col-right
       text-align right
+
+table
+  ul
+    margin-bottom 0
 
 kbd a
   color white

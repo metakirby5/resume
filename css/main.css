@@ -2,8 +2,12 @@
   body {
     font-size: 10px;
   }
-  body #header {
-    font-size: 1.4rem;
+  body h1 {
+    font-size: 3rem;
+  }
+  body h4,
+  body .h4 {
+    font-size: 1.5rem;
   }
   a:link:after,
   a:visited:after {
@@ -97,10 +101,23 @@
 body {
   padding-top: 20px;
 }
+h4,
+.h4 {
+  margin-top: 0;
+}
+h5,
+.h5 {
+  margin-top: 0;
+}
+h6,
+.h6 {
+  margin-top: 0;
+}
 hr {
   margin: 0 0 10px 0;
 }
 .h-inline {
+  display: inline-block;
   padding-right: 10px;
 }
 ul.inline {
@@ -129,6 +146,9 @@ ul.fa-ul.list-inline>li {
   .row .col-right {
     text-align: right;
   }
+}
+table ul {
+  margin-bottom: 0;
 }
 kbd a {
   color: #fff;
