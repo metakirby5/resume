@@ -78,12 +78,6 @@
             return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
           }
         }
-      },
-      credits: {
-        entry: {
-          text: function(p) {return commaize(this.name, p.index, data.credits);},
-          href: namedWebLink
-        }
       }
     });
   }).fail(function(jqXHR, msg, err) {
@@ -91,4 +85,18 @@
     if (document.location.hostname !== "localhost")
       window.location.replace('error.html?msg='+msg+'&err='+err);
   });
+
+  $.getJSON('data/credits.json', function(data) {
+    $('#credits-list').render(data, {
+      entry: {
+        text: function(p) {return commaize(this.name, p.index, data);},
+        href: namedWebLink
+      }
+    });
+  }).fail(function(jqXHR, msg, err) {
+    console.log(msg, err);
+    if (document.location.hostname !== "localhost")
+      window.location.replace('error.html?msg='+msg+'&err='+err);
+  });
+
 });})(window.jQuery, window.Transparency);

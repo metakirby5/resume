@@ -1,0 +1,94 @@
+{
+  "first": "Ethan",
+  "last": "C",
+  "phone": "+1 234 567 8910",
+  "email": "you@website.com",
+  "website": "website.com",
+  "github": "github.com/metakirby5",
+  "linkedin": "linkedin.com/in/you",
+  "hummingbird": "hummingbird.me/users/you",
+  "tagline": "Something catchy.",
+  "education": [
+    {
+      "school": "College",
+      "grades": "GPA: 4.0/4.0",
+      "dates": "date",
+      "classes": [
+        {
+          "name": "Class 1",
+          "content": "Lorem ipsum dolor sit.",
+          "date": "date"
+        },
+        {
+          "name": "Class 2",
+          "content": "Lorem ipsum dolor sit.",
+          "date": "date"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "name": "Company 1",
+      "role": "Intern",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "date"
+    },
+    {
+      "name": "Company 2",
+      "role": "Coffee runner",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloribus!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, praesentium."
+      ],
+      "date": "date"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Programming Competitions",
+      "role": "Participant",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "date"
+    },
+    {
+      "name": "Did some cool things",
+      "role": "Individual",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "date"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Javascript",
+      "icon": "icon-javascript"
+    },
+    {
+      "name": "HTML",
+      "icon": "icon-html"
+    },
+    {
+      "name": "CSS",
+      "icon": "icon-css"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "IEEE",
+      "date": "2013"
+    },
+    {
+      "name": "Anime Club",
+      "date": "2013"
+    }
+  ]
+}
