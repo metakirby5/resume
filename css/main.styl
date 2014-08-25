@@ -7,10 +7,8 @@ sec-margin = 15px
 
 // Override print behavior
 @media print
-  body
-    font-size 10px
-    h4, .h4
-      font-size 1.5rem
+  html
+    font-size 12px
   a:link:after, a:visited:after
     content ""
   for size in (1..12)
@@ -22,8 +20,14 @@ sec-margin = 15px
       padding-left 15px
 
 // Basics
+@media screen
+  html
+    font-size 14px
+
 body
-  padding-top 20px
+  font-size 1rem
+  @media screen
+    padding-top 20px
 
 hr
   margin 0 0 (sec-margin * 2 / 3) 0
@@ -34,6 +38,9 @@ section
 for size in (4..6)
   h{size}, .h{size}
     margin (sec-margin / 3) 0
+
+h4, .h4
+  font-size 1.25rem
 
 .h-inline
   display inline-block
@@ -99,9 +106,12 @@ kbd a
   display block
   margin-top 0
   margin-right 20px
-  height 7rem
-  font-size 6rem
+  height 5rem
+  font-size 4rem
   font-weight 100
+
+.tagline
+  font-size 1.1rem
 
 .college
   margin-bottom (sec-margin / 3)

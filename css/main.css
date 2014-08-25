@@ -1,10 +1,6 @@
 @media print {
-  body {
-    font-size: 10px;
-  }
-  body h4,
-  body .h4 {
-    font-size: 1.5rem;
+  html {
+    font-size: 12px;
   }
   a:link:after,
   a:visited:after {
@@ -95,8 +91,18 @@
     padding-left: 15px;
   }
 }
+@media screen {
+  html {
+    font-size: 14px;
+  }
+}
 body {
-  padding-top: 20px;
+  font-size: 1rem;
+}
+@media screen {
+  body {
+    padding-top: 20px;
+  }
 }
 hr {
   margin: 0 0 10px 0;
@@ -115,6 +121,10 @@ h5,
 h6,
 .h6 {
   margin: 5px 0;
+}
+h4,
+.h4 {
+  font-size: 1.25rem;
 }
 .h-inline {
   display: inline-block;
@@ -189,14 +199,17 @@ kbd a:hover {
   display: block;
   margin-top: 0;
   margin-right: 20px;
-  height: 7rem;
-  font-size: 6rem;
+  height: 5rem;
+  font-size: 4rem;
   font-weight: 100;
 }
 @media screen and (min-width: 992px), print {
   .main-title {
     display: inline-block;
   }
+}
+.tagline {
+  font-size: 1.1rem;
 }
 .college {
   margin-bottom: 5px;
