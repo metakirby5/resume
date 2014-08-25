@@ -60,12 +60,17 @@ table
   ul
     margin-bottom 0
 
-i.fa-stack-icon
+.fa.stackee
   position absolute
   left 0
   width 100%
   text-align center
-  &.fa-box
+  &.inverse
+    color white
+  &.box
+    z-index -1
+    &:before
+      content '\f0c8'
     font-size 1.33em
     top -2px
 
@@ -81,8 +86,7 @@ kbd a
 .main-title
   @media screen and (min-width sm-break), print
     display inline-block
-  @media screen and (min-width md-break)
-    margin-right 5px
+  display block
   margin-top 0
   margin-right 20px
   font-size 6rem

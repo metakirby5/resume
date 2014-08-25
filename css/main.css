@@ -147,15 +147,22 @@ ul.fa-ul.list-inline>li {
 table ul {
   margin-bottom: 0;
 }
-i.fa-stack-icon {
+.fa.stackee {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
-i.fa-stack-icon.fa-box {
+.fa.stackee.inverse {
+  color: #fff;
+}
+.fa.stackee.box {
+  z-index: -1;
   font-size: 1.33em;
   top: -2px;
+}
+.fa.stackee.box:before {
+  content: '\f0c8';
 }
 kbd a {
   color: #fff;
@@ -167,6 +174,7 @@ kbd a:hover {
   background-color: #4682eb;
 }
 .main-title {
+  display: block;
   margin-top: 0;
   margin-right: 20px;
   font-size: 6rem;
@@ -175,11 +183,6 @@ kbd a:hover {
 @media screen and (min-width: 992px), print {
   .main-title {
     display: inline-block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-title {
-    margin-right: 5px;
   }
 }
 .btn-spaced {
