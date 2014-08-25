@@ -1,3 +1,13 @@
+mixin h4-icon(text, icon, inline)
+  if inline
+    .h-inline.h4
+      i.fa.fa-fw(class=icon)
+      span=' '+text
+  else
+    h4
+      i.fa.fa-fw(class=icon)
+      span=' '+text
+
 doctype html
 html
   head
@@ -38,7 +48,7 @@ html
                   i.fa-li.fa.fa-lg.fa-envelope
                   a(data-bind="email")
                 li
-                  i.fa-li.fa.fa-lg.fa-home
+                  i.fa-li.fa.fa-lg.fa-map-marker
                   span(data-bind="home")
               ul.fa-ul.inline
                 li
@@ -64,11 +74,11 @@ html
     hr
     
     section#about
-      .h-inline.h4 Who am I?
+      +h4-icon('Who am I?', 'fa-user', true)
       span(data-bind="tagline")
 
     section#education
-      h4 Education
+      +h4-icon('Education', 'fa-graduation-cap')
       div(data-bind="education")
         .row
           .col-xs-12.col-sm-4.col-print-4.col-left
@@ -86,7 +96,7 @@ html
                 td(data-bind="date" align="right")
 
     section#experience
-      h4 Experience
+      +h4-icon('Experience', 'fa-suitcase')
       .table-responsive
         table.table.table-striped.table-condensed
           tbody(data-bind="experience")
@@ -100,7 +110,7 @@ html
                   li(data-bind="value")
 
     section#skills
-      .h-inline.h4 Skills:
+      +h4-icon('Skills', 'fa-tasks')
       ul.fa-ul.inline.list-inline(data-bind="skills")
         li
           i.fa-li.fa.fa-lg(data-bind="icon")
@@ -121,12 +131,12 @@ html
                   li(data-bind="value")
 
     section#organizations
-      .h-inline.h4 Organizations:
+      +h4-icon('Organizations', 'fa-university')
       ul.inline.list-inline.block-sm(data-bind="organizations")
         li(data-bind="namedate")
 
     section#credits.hidden-print
-      .h-inline.h4 Thanks to:
+      +h4-icon('Thanks to:', 'fa-heart', true)
       ul.inline.list-inline(data-bind="credits")
         li
           a(data-bind="entry")
