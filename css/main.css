@@ -167,6 +167,11 @@ kbd a:hover {
     display: inline-block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-title {
+    margin-right: 5px;
+  }
+}
 .btn-spaced {
   margin-bottom: 10px;
 }

@@ -1,6 +1,7 @@
 // Variables
 xs-break = 768px
 sm-break = 992px
+md-break = 1200px
 
 // Override print behavior
 @media print
@@ -71,6 +72,8 @@ kbd a
 .main-title
   @media screen and (min-width sm-break), print
     display inline-block
+  @media screen and (min-width md-break)
+    margin-right 5px
   margin-top 0
   margin-right 20px
   font-size 6rem

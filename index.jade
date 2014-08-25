@@ -42,24 +42,24 @@ html
               .main-title(data-bind="fullname")
               ul.fa-ul.inline
                 li
-                  i.fa-li.fa.fa-lg.fa-phone
-                  a(data-bind="phone")
-                li
-                  i.fa-li.fa.fa-lg.fa-envelope
-                  a(data-bind="email")
-                li
-                  i.fa-li.fa.fa-lg.fa-map-marker
-                  span(data-bind="home")
-              ul.fa-ul.inline
-                li
-                  i.fa-li.fa.fa-lg.fa-link
+                  i.fa-li.fa.fa-lg.fa-external-link-square
                   a(data-bind="website" data-extra="link")
                 li
-                  i.fa-li.fa.fa-lg.fa-github
+                  i.fa-li.fa.fa-lg.fa-phone-square
+                  a(data-bind="phone")
+                li
+                  i.fa-li.fa.fa-lg.fa-envelope-square
+                  a(data-bind="email")
+              ul.fa-ul.inline
+                li
+                  i.fa-li.fa.fa-lg.fa-github-square
                   a(data-bind="github" data-extra="link")
                 li
-                  i.fa-li.fa.fa-lg.fa-linkedin
+                  i.fa-li.fa.fa-lg.fa-linkedin-square
                   a(data-bind="linkedin" data-extra="link")
+                li
+                  i.fa-li.fa.fa-lg.fa-h-square
+                  a(data-bind="hummingbird" data-extra="link")
         .col-xs-12.col-lg-3.hidden-print
           .row
             .col-xs-6.col-lg-12
@@ -117,7 +117,7 @@ html
           span(data-bind="name")
 
     section#projects
-      h4 Projects
+      +h4-icon('Projects', 'fa-pencil')
       .table-responsive
         table.table.table-striped.table-condensed
           tbody(data-bind="projects")
