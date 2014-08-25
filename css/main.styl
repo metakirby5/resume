@@ -3,11 +3,19 @@ xs-break = 768px
 
 // Override print behavior
 @media print
+  body
+    font-size 10px
+    #header
+      font-size 1.4rem
   a:link:after, a:visited:after
     content ""
   for size in (1..12)
     .col-print-{size}
       width (size/12)*100% !important
+      position relative
+      min-height 1px
+      padding-right 15px
+      padding-left 15px
 
 // Basics
 body
@@ -60,5 +68,6 @@ kbd a
 .college
   margin-bottom 5px
 
-#skills li
-  margin-bottom 5px
+#skills
+  li
+    margin-bottom 5px

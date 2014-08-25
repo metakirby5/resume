@@ -1,43 +1,97 @@
 @media print {
+  body {
+    font-size: 10px;
+  }
+  body #header {
+    font-size: 1.4rem;
+  }
   a:link:after,
   a:visited:after {
     content: "";
   }
   .col-print-1 {
     width: 8.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-2 {
     width: 16.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-3 {
     width: 25% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-4 {
     width: 33.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-5 {
     width: 41.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-6 {
     width: 50% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-7 {
     width: 58.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-8 {
     width: 66.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-9 {
     width: 75% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-10 {
     width: 83.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-11 {
     width: 91.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-print-12 {
     width: 100% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 body {
