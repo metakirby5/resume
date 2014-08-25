@@ -107,6 +107,9 @@ body {
 hr {
   margin: 0 0 10px 0;
 }
+hr.smallmargin {
+  margin: 0 0 5px 0;
+}
 section {
   margin-bottom: 15px;
 }

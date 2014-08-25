@@ -86,6 +86,7 @@ html
 
       section#education
         +h4-icon('Education', 'fa-graduation-cap')
+        hr.smallmargin
         div(data-bind="education")
           .row
             .col-xs-12.col-sm-4.col-print-4.col-left
@@ -118,6 +119,7 @@ html
 
       section#skills
         +h4-icon('Skills', 'fa-tasks')
+        hr.smallmargin
         ul.fa-ul.inline.list-inline(data-bind="skills")
           li
             i.fa-li.fa(data-bind="icon")
@@ -139,6 +141,7 @@ html
 
       section#organizations
         +h4-icon('Organizations', 'fa-university')
+        hr.smallmargin
         ul.inline.list-inline.block-sm(data-bind="organizations")
           li(data-bind="namedate")
 
