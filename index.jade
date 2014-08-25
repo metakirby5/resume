@@ -24,151 +24,152 @@ html
     link(rel="stylesheet", href="css/vendor/gh-fork-ribbon.css")
     link(rel="stylesheet", href="css/main.css")
 
-  body.container
+  body
+    .container
 
-    #forkme.hidden-print
-      .github-fork-ribbon-wrapper.right
-        // Google blue hehe
-        .github-fork-ribbon
-          a(href="https://github.com/metakirby5/resume")
-            i.fa.fa-code-fork
-            |   Fork me on GitHub!
+      #forkme.hidden-print
+        .github-fork-ribbon-wrapper.right
+          // Google blue hehe
+          .github-fork-ribbon
+            a(href="https://github.com/metakirby5/resume")
+              i.fa.fa-code-fork
+              |   Fork me on GitHub!
 
-    section#header
-      .row
-        .col-xs-12.col-lg-8.col-print-12
-          .row
-            .col-xs-12
-              .main-title(data-bind="fullname")
-              ul.fa-ul.inline
-                li
-                  span.fa-li.hidden-print
-                    i.fa.stackee.box
-                    i.fa.fa-map-marker.stackee.inverse
-                  i.fa-li.fa.fa-lg.fa-h-square.visible-print
-                  a(data-bind="location")
-                li
-                  i.fa-li.fa.fa-lg.fa-phone-square
-                  a(data-bind="phone")
-                li
-                  i.fa-li.fa.fa-lg.fa-envelope-square
-                  a(data-bind="email")
-              ul.fa-ul.inline
-                li
-                  span.fa-li.hidden-print
-                    i.fa.stackee.box
-                    i.fa.fa-link.stackee.inverse
-                  i.fa-li.fa.fa-lg.fa-external-link-square.visible-print
-                  a(data-bind="website" data-extra="link")
-                li
-                  i.fa-li.fa.fa-lg.fa-github-square
-                  a(data-bind="github" data-extra="link")
-                li
-                  i.fa-li.fa.fa-lg.fa-linkedin-square
-                  a(data-bind="linkedin" data-extra="link")
-        .col-xs-12.col-lg-3.hidden-print
-          .row
-            .col-xs-6.col-lg-12
-              a.btn.btn-primary.btn-md.btn-block.btn-spaced(onclick="window.print()")
-                i.fa.fa-print
-                |   Print me?
-            .col-xs-6.col-lg-12
-              a.btn.btn-default.btn-md.btn-block.btn-spaced(href="data/data.json")
-                i.fa.fa-file-code-o
-                |   Want the JSON?
-
-    hr
-    
-    section#about
-      +h4-icon('Who am I?', 'fa-user', true)
-      span(data-bind="tagline")
-
-    section#education
-      +h4-icon('Education', 'fa-graduation-cap')
-      div(data-bind="education")
+      section#header
         .row
-          .col-xs-12.col-sm-4.col-print-4.col-left
-            label(data-bind="school")
-          .col-xs-12.col-sm-4.col-print-4.col-center
-            label(data-bind="grades")
-          .col-xs-12.col-sm-4.col-print-4.col-right
-            label(data-bind="dates")
+          .col-xs-12.col-lg-8.col-print-12
+            .row
+              .col-xs-12
+                .main-title(data-bind="fullname")
+                ul.fa-ul.inline
+                  li
+                    span.fa-li.hidden-print
+                      i.fa.stackee.box
+                      i.fa.fa-map-marker.stackee.inverse
+                    i.fa-li.fa.fa-lg.fa-h-square.visible-print
+                    a(data-bind="location")
+                  li
+                    i.fa-li.fa.fa-lg.fa-phone-square
+                    a(data-bind="phone")
+                  li
+                    i.fa-li.fa.fa-lg.fa-envelope-square
+                    a(data-bind="email")
+                ul.fa-ul.inline
+                  li
+                    span.fa-li.hidden-print
+                      i.fa.stackee.box
+                      i.fa.fa-link.stackee.inverse
+                    i.fa-li.fa.fa-lg.fa-external-link-square.visible-print
+                    a(data-bind="website" data-extra="link")
+                  li
+                    i.fa-li.fa.fa-lg.fa-github-square
+                    a(data-bind="github" data-extra="link")
+                  li
+                    i.fa-li.fa.fa-lg.fa-linkedin-square
+                    a(data-bind="linkedin" data-extra="link")
+          .col-xs-12.col-lg-3.hidden-print
+            .row
+              .col-xs-6.col-lg-12
+                a.btn.btn-primary.btn-md.btn-block.btn-spaced(onclick="window.print()")
+                  i.fa.fa-print
+                  |   Print me?
+              .col-xs-6.col-lg-12
+                a.btn.btn-default.btn-md.btn-block.btn-spaced(href="data/data.json")
+                  i.fa.fa-file-code-o
+                  |   Want the JSON?
+
+      hr
+      
+      section#about
+        +h4-icon('Who am I?', 'fa-user', true)
+        span(data-bind="tagline")
+
+      section#education
+        +h4-icon('Education', 'fa-graduation-cap')
+        div(data-bind="education")
+          .row
+            .col-xs-12.col-sm-4.col-print-4.col-left
+              label(data-bind="school")
+            .col-xs-12.col-sm-4.col-print-4.col-center
+              label(data-bind="grades")
+            .col-xs-12.col-sm-4.col-print-4.col-right
+              label(data-bind="dates")
+          .table-responsive
+            table.table.table-striped.table-condensed
+              tbody(data-bind="classes")
+                tr
+                  td(data-bind="name")
+                  td(data-bind="content")
+                  td(data-bind="date" align="right")
+
+      section#experience
+        +h4-icon('Experience', 'fa-suitcase')
         .table-responsive
           table.table.table-striped.table-condensed
-            tbody(data-bind="classes")
+            tbody(data-bind="experience")
               tr
                 td(data-bind="name")
-                td(data-bind="content")
+                td(data-bind="role")
                 td(data-bind="date" align="right")
+              tr
+                td(colspan="3")
+                  ul.list-unstyled(data-bind="content")
+                    li(data-bind="value")
 
-    section#experience
-      +h4-icon('Experience', 'fa-suitcase')
-      .table-responsive
-        table.table.table-striped.table-condensed
-          tbody(data-bind="experience")
-            tr
-              td(data-bind="name")
-              td(data-bind="role")
-              td(data-bind="date" align="right")
-            tr
-              td(colspan="3")
-                ul.list-unstyled(data-bind="content")
-                  li(data-bind="value")
+      section#skills
+        +h4-icon('Skills', 'fa-tasks')
+        ul.fa-ul.inline.list-inline(data-bind="skills")
+          li
+            i.fa-li.fa(data-bind="icon")
+            span(data-bind="name")
 
-    section#skills
-      +h4-icon('Skills', 'fa-tasks')
-      ul.fa-ul.inline.list-inline(data-bind="skills")
-        li
-          i.fa-li.fa(data-bind="icon")
-          span(data-bind="name")
+      section#projects
+        +h4-icon('Projects', 'fa-pencil')
+        .table-responsive
+          table.table.table-striped.table-condensed
+            tbody(data-bind="projects")
+              tr
+                td(data-bind="name")
+                td(data-bind="role")
+                td(data-bind="date" align="right")
+              tr
+                td(colspan="3")
+                  ul.list-unstyled(data-bind="content")
+                    li(data-bind="value")
 
-    section#projects
-      +h4-icon('Projects', 'fa-pencil')
-      .table-responsive
-        table.table.table-striped.table-condensed
-          tbody(data-bind="projects")
-            tr
-              td(data-bind="name")
-              td(data-bind="role")
-              td(data-bind="date" align="right")
-            tr
-              td(colspan="3")
-                ul.list-unstyled(data-bind="content")
-                  li(data-bind="value")
+      section#organizations
+        +h4-icon('Organizations', 'fa-university')
+        ul.inline.list-inline.block-sm(data-bind="organizations")
+          li(data-bind="namedate")
 
-    section#organizations
-      +h4-icon('Organizations', 'fa-university')
-      ul.inline.list-inline.block-sm(data-bind="organizations")
-        li(data-bind="namedate")
+      section#credits.hidden-print
+        +h4-icon('Thanks to:', 'fa-heart', true)
+        ul#credits-list.inline.list-inline
+          li
+            a(data-bind="entry")
+         
+      // jQuery CDN
+      script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+      // jQuery local fallback
+      script.
+        window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\\/script>');
 
-    section#credits.hidden-print
-      +h4-icon('Thanks to:', 'fa-heart', true)
-      ul#credits-list.inline.list-inline
-        li
-          a(data-bind="entry")
-       
-    // jQuery CDN
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-    // jQuery local fallback
-    script.
-      window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\\/script>');
+      // Bootstrap JS CDN
+      script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+      // Bootstrap JS local fallback
+      script.
+        if(typeof($.fn.modal) === 'undefined')
+          document.write('<script src="js/vendor/bootstrap.min.js"><\\/script>');
 
-    // Bootstrap JS CDN
-    script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
-    // Bootstrap JS local fallback
-    script.
-      if(typeof($.fn.modal) === 'undefined')
-        document.write('<script src="js/vendor/bootstrap.min.js"><\\/script>');
+      // Bootstrap CSS local fallback
+      script.
+        $(function() {
+          var bodyColor = $('body').css('color');
+          if(bodyColor != 'rgb(51, 51, 51)') {
+            $("head").prepend('<link rel="stylesheet" href="css/vendor/bootstrap.min.css">');
+          }
+        });
 
-    // Bootstrap CSS local fallback
-    script.
-      $(function() {
-        var bodyColor = $('body').css('color');
-        if(bodyColor != 'rgb(51, 51, 51)') {
-          $("head").prepend('<link rel="stylesheet" href="css/vendor/bootstrap.min.css">');
-        }
-      });
-
-    script(src="js/vendor/transparency.min.js")
-    script(src="js/plugins.js")
-    script(src="js/main.js")
+      script(src="js/vendor/transparency.min.js")
+      script(src="js/plugins.js")
+      script(src="js/main.js")
