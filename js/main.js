@@ -35,7 +35,7 @@
     return str + (index !== arr.length - 1 ? ',' : '');
   }
 
-  $.getJSON('data.json', function(data) {
+  $.getJSON('data/data.json', function(data) {
     $('html').render(data, {
       fullname: {
         text: function() {return this.first + ' ' + this.last;}
