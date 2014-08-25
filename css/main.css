@@ -98,6 +98,12 @@
 body {
   padding-top: 20px;
 }
+hr {
+  margin: 0 0 15px 0;
+}
+section {
+  margin-bottom: 15px;
+}
 h4,
 .h4 {
   margin: 5px 0;
@@ -110,12 +116,12 @@ h6,
 .h6 {
   margin: 5px 0;
 }
-hr {
-  margin: 0 0 10px 0;
-}
 .h-inline {
   display: inline-block;
   margin-right: 10px;
+}
+ul {
+  margin-bottom: 0;
 }
 ul.inline {
   margin-right: 10px;
@@ -144,7 +150,13 @@ ul.fa-ul.list-inline>li {
     text-align: right;
   }
 }
-table ul {
+.row .space-em {
+  margin-bottom: 5px;
+}
+.row .space-em:last-of-type {
+  margin-bottom: 0;
+}
+.table {
   margin-bottom: 0;
 }
 .fa.stackee {
@@ -177,6 +189,7 @@ kbd a:hover {
   display: block;
   margin-top: 0;
   margin-right: 20px;
+  height: 7rem;
   font-size: 6rem;
   font-weight: 100;
 }
@@ -184,9 +197,6 @@ kbd a:hover {
   .main-title {
     display: inline-block;
   }
-}
-.btn-spaced {
-  margin-bottom: 10px;
 }
 .college {
   margin-bottom: 5px;

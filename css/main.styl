@@ -3,6 +3,8 @@ xs-break = 768px
 sm-break = 992px
 md-break = 1200px
 
+sec-margin = 15px
+
 // Override print behavior
 @media print
   body
@@ -23,18 +25,22 @@ md-break = 1200px
 body
   padding-top 20px
 
+hr
+  margin 0 0 sec-margin 0
+
+section
+  margin-bottom sec-margin
+
 for size in (4..6)
   h{size}, .h{size}
-    margin 5px 0
-
-hr
-  margin 0 0 10px 0
+    margin (sec-margin / 3) 0
 
 .h-inline
   display inline-block
   margin-right 10px
 
 ul
+  margin-bottom 0
   &.inline
     @media screen and (min-width xs-break), print
       display inline-block
@@ -56,9 +62,13 @@ ul
     .col-right
       text-align right
 
-table
-  ul
-    margin-bottom 0
+  .space-em
+    margin-bottom (sec-margin / 3)
+    &:last-of-type
+      margin-bottom 0
+
+.table
+  margin-bottom 0
 
 .fa.stackee
   position absolute
@@ -89,15 +99,13 @@ kbd a
   display block
   margin-top 0
   margin-right 20px
+  height 7rem
   font-size 6rem
   font-weight 100
 
-.btn-spaced
-  margin-bottom 10px
-
 .college
-  margin-bottom 5px
+  margin-bottom (sec-margin / 3)
 
 #skills
   li
-    margin-bottom 5px
+    margin-bottom (sec-margin / 3)
