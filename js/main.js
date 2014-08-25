@@ -46,6 +46,11 @@
       email: {
         href: function() {return 'mailto:' + this.email;}
       },
+      location: {
+        href: function() {
+          return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
+        }
+      },
       link: {
         href: webLink
       },

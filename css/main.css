@@ -147,6 +147,16 @@ ul.fa-ul.list-inline>li {
 table ul {
   margin-bottom: 0;
 }
+i.fa-stack-icon {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+i.fa-stack-icon.fa-box {
+  font-size: 1.33em;
+  top: -2px;
+}
 kbd a {
   color: #fff;
 }

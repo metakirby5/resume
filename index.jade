@@ -42,24 +42,28 @@ html
               .main-title(data-bind="fullname")
               ul.fa-ul.inline
                 li
-                  i.fa-li.fa.fa-lg.fa-external-link-square
-                  a(data-bind="website" data-extra="link")
-                li
                   i.fa-li.fa.fa-lg.fa-phone-square
                   a(data-bind="phone")
                 li
                   i.fa-li.fa.fa-lg.fa-envelope-square
                   a(data-bind="email")
+                li
+                  span.fa-li
+                    i.fa.fa-square.fa-stack-icon.fa-box
+                    i.fa.fa-map-marker.fa-stack-icon.fa-inverse
+                  a(data-bind="location")
               ul.fa-ul.inline
+                li
+                  span.fa-li
+                    i.fa.fa-square.fa-stack-icon.fa-box
+                    i.fa.fa-link.fa-stack-icon.fa-inverse
+                  a(data-bind="website" data-extra="link")
                 li
                   i.fa-li.fa.fa-lg.fa-github-square
                   a(data-bind="github" data-extra="link")
                 li
                   i.fa-li.fa.fa-lg.fa-linkedin-square
                   a(data-bind="linkedin" data-extra="link")
-                li
-                  i.fa-li.fa.fa-lg.fa-h-square
-                  a(data-bind="hummingbird" data-extra="link")
         .col-xs-12.col-lg-3.hidden-print
           .row
             .col-xs-6.col-lg-12
