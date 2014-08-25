@@ -1,6 +1,6 @@
 @media print {
   html {
-    font-size: 12px;
+    font-size: 9pt;
   }
   a:link:after,
   a:visited:after {
@@ -93,7 +93,7 @@
 }
 @media screen {
   html {
-    font-size: 14px;
+    font-size: 10pt;
   }
 }
 body {
