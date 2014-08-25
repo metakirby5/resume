@@ -22,12 +22,12 @@ html
         .github-fork-ribbon
           a(href="https://github.com/metakirby5/resume") Fork me on GitHub!
 
-    #header
+    section#header
       .row
-        .col-xs-12.col-md-8.col-lg-7.col-print-12
+        .col-xs-12.col-lg-8.col-print-12
           .row
             .col-xs-12
-              h1.main-title(data-bind="fullname")
+              .main-title(data-bind="fullname")
               ul.fa-ul.inline
                 li
                   i.fa-li.fa.fa-lg.fa-phone
@@ -35,15 +35,10 @@ html
                 li
                   i.fa-li.fa.fa-lg.fa-envelope
                   a(data-bind="email")
-              ul.fa-ul.inline
                 li
                   i.fa-li.fa.fa-lg.fa-home
-                  span(data-bind="addr1")
-                  br
-                  span(data-bind="addr2")
-                  br
-            .col-xs-12
-              ul.fa-ul.inline.list-inline.block-sm
+                  span(data-bind="home")
+              ul.fa-ul.inline
                 li
                   i.fa-li.fa.fa-lg.fa-link
                   a(data-bind="website" data-extra="link")
@@ -53,19 +48,22 @@ html
                 li
                   i.fa-li.fa.fa-lg.fa-linkedin
                   a(data-bind="linkedin" data-extra="link")
-        .col-xs-12.col-md-3.col-lg-4.hidden-print
-          a.btn.btn-primary.btn-md.btn-block(onclick="window.print()")
-            | Print me?
-          a.btn.btn-default.btn-md.btn-block.json-button(href="data/data.json")
-            | Want the JSON?
+        .col-xs-12.col-lg-3.hidden-print
+          .row
+            .col-xs-6.col-lg-12
+              a.btn.btn-primary.btn-md.btn-block.btn-spaced(onclick="window.print()")
+                | Print me?
+            .col-xs-6.col-lg-12
+              a.btn.btn-default.btn-md.btn-block.btn-spaced(href="data/data.json")
+                | Want the JSON?
 
     hr
     
-    #about
+    section#about
       .h-inline.h4 Who am I?
       span(data-bind="tagline")
 
-    #education
+    section#education
       h4 Education
       div(data-bind="education")
         .row
@@ -83,7 +81,7 @@ html
                 td(data-bind="content")
                 td(data-bind="date" align="right")
 
-    #experience
+    section#experience
       h4 Experience
       .table-responsive
         table.table.table-striped.table-condensed
@@ -97,14 +95,14 @@ html
                 ul.list-unstyled(data-bind="content")
                   li(data-bind="value")
 
-    #skills
+    section#skills
       .h-inline.h4 Skills:
       ul.fa-ul.inline.list-inline(data-bind="skills")
         li
           i.fa-li.fa.fa-lg(data-bind="icon")
           span(data-bind="name")
 
-    #projects
+    section#projects
       h4 Projects
       .table-responsive
         table.table.table-striped.table-condensed
@@ -118,12 +116,12 @@ html
                 ul.list-unstyled(data-bind="content")
                   li(data-bind="value")
 
-    #organizations
+    section#organizations
       .h-inline.h4 Organizations:
       ul.inline.list-inline.block-sm(data-bind="organizations")
         li(data-bind="namedate")
 
-    #credits.hidden-print
+    section#credits.hidden-print
       .h-inline.h4 Thanks to:
       ul.inline.list-inline(data-bind="credits")
         li

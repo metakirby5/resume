@@ -2,9 +2,6 @@
   body {
     font-size: 10px;
   }
-  body h1 {
-    font-size: 3rem;
-  }
   body h4,
   body .h4 {
     font-size: 1.5rem;
@@ -103,15 +100,15 @@ body {
 }
 h4,
 .h4 {
-  margin-top: 0;
+  margin: 5px 0;
 }
 h5,
 .h5 {
-  margin-top: 0;
+  margin: 5px 0;
 }
 h6,
 .h6 {
-  margin-top: 0;
+  margin: 5px 0;
 }
 hr {
   margin: 0 0 10px 0;
@@ -160,11 +157,17 @@ kbd a:hover {
   background-color: #4682eb;
 }
 .main-title {
-  display: inline-block;
   margin-top: 0;
   margin-right: 20px;
+  font-size: 6rem;
+  font-weight: 100;
 }
-.json-button {
+@media screen and (min-width: 992px), print {
+  .main-title {
+    display: inline-block;
+  }
+}
+.btn-spaced {
   margin-bottom: 10px;
 }
 .college {
