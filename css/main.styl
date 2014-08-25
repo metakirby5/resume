@@ -79,7 +79,7 @@ ul
 
 .fa.stackee
   position absolute
-  left 0
+  left 0.5px // No idea how this makes sense, but it works...
   width 100%
   text-align center
   &.inverse
@@ -89,7 +89,7 @@ ul
     &:before
       content '\f0c8'
     font-size 1.33em
-    top -2px
+    top -3px
 
 kbd a
   color white
@@ -100,15 +100,24 @@ kbd a
 .github-fork-ribbon
   background-color #4682EB 
 
-.main-title
-  @media screen and (min-width sm-break), print
-    display inline-block
-  display block
-  margin-top 0
-  margin-right 20px
-  height 5rem
-  font-size 4rem
-  font-weight 100
+#header
+  .contact
+    @media screen and (max-width md-break - 1)
+      margin-bottom (sec-margin / 3)
+
+    .main-title
+      @media screen and (min-width sm-break), print
+        display inline-block
+      display block
+      margin-top 0
+      margin-right 20px
+      height 5.5rem
+      font-size 4.75rem
+      font-weight 100
+
+  .btn-holder
+    @media screen and (max-width md-break - 1)
+      margin-bottom 0
 
 .tagline
   font-size 1.1rem

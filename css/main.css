@@ -171,7 +171,7 @@ ul.fa-ul.list-inline>li {
 }
 .fa.stackee {
   position: absolute;
-  left: 0;
+  left: 0.5px;
   width: 100%;
   text-align: center;
 }
@@ -181,7 +181,7 @@ ul.fa-ul.list-inline>li {
 .fa.stackee.box {
   z-index: -1;
   font-size: 1.33em;
-  top: -2px;
+  top: -3px;
 }
 .fa.stackee.box:before {
   content: '\f0c8';
@@ -195,17 +195,27 @@ kbd a:hover {
 .github-fork-ribbon {
   background-color: #4682eb;
 }
-.main-title {
+@media screen and (max-width: 1199px) {
+  #header .contact {
+    margin-bottom: 5px;
+  }
+}
+#header .contact .main-title {
   display: block;
   margin-top: 0;
   margin-right: 20px;
-  height: 5rem;
-  font-size: 4rem;
+  height: 5.5rem;
+  font-size: 4.75rem;
   font-weight: 100;
 }
 @media screen and (min-width: 992px), print {
-  .main-title {
+  #header .contact .main-title {
     display: inline-block;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #header .btn-holder {
+    margin-bottom: 0;
   }
 }
 .tagline {
