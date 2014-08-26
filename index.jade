@@ -85,8 +85,8 @@ html
         span.tagline(data-bind="tagline")
 
       .row
-        .col-xs-12.col-md-7.col-print-12
-          section#education(data-cmd="hide-if-not" data-values="education")
+        .col-xs-12.col-md-7.col-print-12(data-cmd="hide-if-not" data-values="education")
+          section#education
             +h4-icon('Education', 'fa-graduation-cap')
             hr.smallmargin
             div(data-bind="education")
@@ -104,8 +104,8 @@ html
                       td(data-bind="name")
                       td(data-bind="content")
                       td(data-bind="date" align="right")
-        .col-xs-12.col-md-5.col-print-12
-          section#skills(data-cmd="hide-if-not" data-values="skills")
+        .col-xs-12.col-md-5.col-print-12(data-cmd="hide-if-not" data-values="skills")
+          section#skills
             +h4-icon('Skills', 'fa-tasks')
             hr.smallmargin
             ul.fa-ul.inline.list-inline(data-bind="skills")
@@ -114,10 +114,10 @@ html
                 span(data-bind="name")
 
       .row
-        .col-xs-12.col-md-7
+        .col-xs-12.col-md-7(data-cmd="hide-if-not" data-values="experience projects")
           .row
-            .col-xs-12.col-print-12
-              section#experience(data-cmd="hide-if-not" data-values="experience")
+            .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="experience")
+              section#experience
                 +h4-icon('Experience', 'fa-suitcase')
                 .table-responsive
                   table.table.table-striped.table-super-condensed
@@ -130,8 +130,8 @@ html
                         td(colspan="3")
                           ul.list-unstyled(data-bind="content")
                             li(data-bind="value")
-            .col-xs-12.col-print-12
-              section#projects(data-cmd="hide-if-not" data-values="projects")
+            .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="projects")
+              section#projects
                 +h4-icon('Projects', 'fa-pencil')
                 .table-responsive
                   table.table.table-striped.table-super-condensed
@@ -144,8 +144,8 @@ html
                         td(colspan="3")
                           ul.list-unstyled(data-bind="content")
                             li(data-bind="value")
-        .col-xs-12.col-md-5
-          section#organizations(data-cmd="hide-if-not" data-values="organizations")
+        .col-xs-12.col-md-5(data-cmd="hide-if-not" data-values="organizations")
+          section#organizations
             +h4-icon('Organizations', 'fa-university')
             hr.smallmargin
             ul.inline.list-inline.block-sm(data-bind="organizations")
