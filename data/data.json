@@ -1,0 +1,173 @@
+{
+  "first": "Ethan",
+  "last": "Chan",
+  "website": "ethanchan.com",
+  "github": "github.com/metakirby5",
+  "linkedin": "linkedin.com/in/ethanjchan",
+  "tagline": "UCSD undergrad, CS-lover, ambitious learner, gamer, otaku, math geek.",
+  "education": [
+    {
+      "school": "UCSD - BS Computer Science",
+      "grades": "GPA: 4.0/4.0",
+      "dates": "Sep. 2013 - Jun. 2017",
+      "classes": [
+        {
+          "name": "CSE30",
+          "content": "Computer Organization/Systems Programming in C/SPARC Assembly",
+          "date": "Spring 2013"
+        },
+        {
+          "name": "CSE21",
+          "content": "Math for Algorithms/Systems",
+          "date": "Spring 2013"
+        },
+        {
+          "name": "CSE12/15L",
+          "content": "Data Structures/Object-Oriented Design in C/C++",
+          "date": "Winter 2013"
+        },
+        {
+          "name": "CSE20",
+          "content": "Discrete Math",
+          "date": "Winter 2013"
+        },
+        {
+          "name": "CSE11",
+          "content": "OOP and design in Java (Swing GUI, Objectdraw)",
+          "date": "Fall 2013"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "cu",
+      "name": "CircleUp",
+      "role": "Software Engineering Intern",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "Jun. 2014 - Sep. 2014",
+      "extra": "Here's what I did at CircleUp."
+    },
+    {
+      "id": "psp",
+      "name": "Perspectium",
+      "role": "Software Engineering Intern",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloribus!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, praesentium."
+      ],
+      "date": "Jul. 2013 - Aug. 2013",
+      "extra": "Here's what I did at Perspectium."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Programming Competitions",
+      "role": "Participant",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "Nov. 2013 - Present"
+    },
+    {
+      "name": "FIRST Robotics Team 1538",
+      "role": "Director of Engineering",
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      ],
+      "date": "Aug. 2009 - Aug. 2013"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Django"
+    },
+    {
+      "name": "Node.js / Express",
+      "icon": "icon-nodejs"
+    },
+    {
+      "name": "Angular.js",
+      "icon": "icon-google-developers"
+    },
+    {
+      "name": "Python",
+      "icon": "icon-python"
+    },
+    {
+      "name": "Javascript",
+      "icon": "icon-javascript"
+    },
+    {
+      "name": "MySQL",
+      "icon": "icon-mysql"
+    },
+    {
+      "name": "HTML",
+      "icon": "fa-html5"
+    },
+    {
+      "name": "CSS (SASS, Stylus)",
+      "icon": "fa-css3"
+    },
+    {
+      "name": "C",
+      "icon": "icon-c"
+    },
+    {
+      "name": "C++",
+      "icon": "icon-cplusplus"
+    },
+    {
+      "name": "Java",
+      "icon": "icon-java-bold"
+    },
+    {
+      "name": "PHP",
+      "icon": "icon-php"
+    },
+    {
+      "name": "BASH",
+      "icon": "fa-terminal"
+    },
+    {
+      "name": "Git",
+      "icon": "fa-git"
+    },
+    {
+      "name": "Linux",
+      "icon": "fa-linux"
+    },
+    {
+      "name": "Mac",
+      "icon": "fa-apple"
+    },
+    {
+      "name": "Windows",
+      "icon": "fa-windows"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Warren College Honors Society",
+      "date": "2014"
+    },
+    {
+      "name": "Computer Science & Engineering Society",
+      "date": "2013"
+    },
+    {
+      "name": "IEEE",
+      "date": "2013"
+    },
+    {
+      "name": "Video Game Development Society",
+      "date": "2013"
+    }
+  ]
+}
