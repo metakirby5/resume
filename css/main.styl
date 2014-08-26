@@ -11,7 +11,7 @@ sec-margin = 15px
   margin 5mm
 @media print
   html
-    font-size 9pt
+    font-size 10pt
   body
     margin 0
   a:link:after, a:visited:after
@@ -87,6 +87,8 @@ ul
 
 .table
   font-size .8rem 
+  @media screen
+    font-size 1rem
   margin-bottom 0
   &.table-super-condensed
     & > thead, & > tbody, & > tfoot
@@ -147,10 +149,6 @@ kbd a
   .btn-holder
     @media screen and (max-width md-break - 1)
       margin-bottom 0
-
-#about
-  .tagline
-    font-size 1.1rem
 
 #education
   .college

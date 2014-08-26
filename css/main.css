@@ -4,7 +4,7 @@
 }
 @media print {
   html {
-    font-size: 9pt;
+    font-size: 10pt;
   }
   body {
     margin: 0;
@@ -188,6 +188,11 @@ ul.fa-ul.list-inline>li {
   font-size: 0.8rem;
   margin-bottom: 0;
 }
+@media screen {
+  .table {
+    font-size: 1rem;
+  }
+}
 .table.table-super-condensed > thead > tr > td,
 .table.table-super-condensed > tbody > tr > td,
 .table.table-super-condensed > tfoot > tr > td,
@@ -262,9 +267,6 @@ kbd a:hover {
   #header .btn-holder {
     margin-bottom: 0;
   }
-}
-#about .tagline {
-  font-size: 1.1rem;
 }
 #education .college {
   margin-bottom: 5px;
