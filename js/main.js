@@ -38,17 +38,26 @@
   $.getJSON('data/data.json', function(data) {
     $('html').render(data, {
       fullname: {
-        text: function() {return this.first + ' ' + this.last;}
+        text: function() {
+          return this.first + ' ' + this.last;
+        }
       },
       phone: {
-        href: function() {return 'tel:' + this.phone.replace(/\s+/g, '');}
+        href: function() {
+          if (this.phone)
+            return 'tel:' + this.phone.replace(/\s+/g, '');
+        }
       },
       email: {
-        href: function() {return 'mailto:' + this.email;}
+        href: function() {
+          if (this.email)
+            return 'mailto:' + this.email;
+        }
       },
       location: {
         href: function() {
-          return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
+          if (this.location)
+            return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
         }
       },
       link: {
@@ -57,30 +66,42 @@
       experience: {
         content: {
           value: {
-            text: function() {return this.value;}
+            text: function() {
+              return this.value;
+            }
           }
         }
       },
       skills: {
         icon: {
-          text: function() {return '';},
-          class: function(p) {return p.element.className + ' ' + (this.icon || 'fa-code');}
+          text: function() {
+            return '';
+          },
+          class: function(p) {
+            return p.element.className + ' ' + (this.icon || 'fa-code');
+          }
         },
         name: {
-          text: function(p) {return commaize(this.name, p.index, data.skills);}
+          text: function(p) {
+            if (this.name && data.skills)
+              return commaize(this.name, p.index, data.skills);
+          }
         }
       },
       projects: {
         content: {
           value: {
-            text: function() {return this.value;}
+            text: function() {
+              return this.value;
+            }
           }
         }
       },
       organizations: {
         namedate: {
           text: function(p) {
-            return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
+            if (this.name && this.date && data.organizations)
+              return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
           }
         }
       }
@@ -94,7 +115,10 @@
   $.getJSON('data/credits.json', function(data) {
     $('#credits-list').render(data, {
       entry: {
-        text: function(p) {return commaize(this.name, p.index, data);},
+        text: function(p) {
+          if (this.name && data)
+            return commaize(this.name, p.index, data);
+        },
         href: namedWebLink
       }
     });
