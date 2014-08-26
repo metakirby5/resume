@@ -173,7 +173,16 @@ ul.fa-ul.list-inline>li {
   margin-bottom: 0;
 }
 .table {
+  font-size: 0.8rem;
   margin-bottom: 0;
+}
+.table.table-super-condensed > thead > tr > td,
+.table.table-super-condensed > tbody > tr > td,
+.table.table-super-condensed > tfoot > tr > td,
+.table.table-super-condensed > thead > th > td,
+.table.table-super-condensed > tbody > th > td,
+.table.table-super-condensed > tfoot > th > td {
+  padding: 3px;
 }
 .fa.stackee {
   position: absolute;
@@ -192,6 +201,10 @@ ul.fa-ul.list-inline>li {
 .fa.stackee.box:before {
   content: '\f0c8';
 }
+.table-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 kbd a {
   color: #fff;
 }
@@ -209,6 +222,7 @@ kbd a:hover {
 #header .contact .main-title {
   display: block;
   margin-top: 0;
+  margin-bottom: 15px;
   margin-right: 20px;
   height: 5.5rem;
   font-size: 4.75rem;
@@ -219,15 +233,28 @@ kbd a:hover {
     display: inline-block;
   }
 }
+@media screen and (min-width: 1200px), print {
+  #header .contact .main-title {
+    margin-bottom: 0;
+  }
+}
+#header .contact ul {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px), print {
+  #header .contact ul {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 1199px) {
   #header .btn-holder {
     margin-bottom: 0;
   }
 }
-.tagline {
+#about .tagline {
   font-size: 1.1rem;
 }
-.college {
+#education .college {
   margin-bottom: 5px;
 }
 #skills li {
