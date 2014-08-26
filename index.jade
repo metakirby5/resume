@@ -41,7 +41,7 @@ html
             .row
               .col-xs-12
                 .main-title(data-bind="fullname")
-                ul.fa-ul.inline
+                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="location phone email")
                   li(data-cmd="hide-if-not" data-values="location")
                     span.fa-li.hidden-print
                       i.fa.stackee.box
@@ -54,7 +54,7 @@ html
                   li(data-cmd="hide-if-not" data-values="email")
                     i.fa-li.fa.fa-lg.fa-envelope-square
                     a(data-bind="email")
-                ul.fa-ul.inline
+                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
                   li(data-cmd="hide-if-not" data-values="website")
                     span.fa-li.hidden-print
                       i.fa.stackee.box
