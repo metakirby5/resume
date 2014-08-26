@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Jade",
+    "url": "http://jade-lang.com/"
+  },
+  {
+    "name": "Stylus",
+    "url": "http://learnboost.github.io/stylus/"
+  },
+  {
+    "name": "jQuery",
+    "url": "http://jquery.com/"
+  },
+  {
+    "name": "Transparency",
+    "url": "http://leonidas.github.io/transparency/"
+  },
+  {
+    "name": "HTML5 Boilerplate",
+    "url": "http://html5boilerplate.com/"
+  },
+  {
+    "name": "Twitter Bootstrap",
+    "url": "http://getbootstrap.com/"
+  },
+  {
+    "name": "Font Awesome",
+    "url": "http://fortawesome.github.io/Font-Awesome/"
+  },
+  {
+    "name": "Font Mfizz",
+    "url": "http://mfizz.com/oss/font-mfizz"
+  },
+  {
+    "name": "github-fork-ribbon",
+    "url": "http://simonwhitaker.github.io/github-fork-ribbon-css/"
+  }
+]

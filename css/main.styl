@@ -1,0 +1,132 @@
+// Variables
+xs-break = 768px
+sm-break = 992px
+md-break = 1200px
+
+sec-margin = 15px
+
+// Override print behavior
+@media print
+  html
+    font-size 9pt
+  a:link:after, a:visited:after
+    content ""
+  for size in (1..12)
+    .col-print-{size}
+      width (size/12)*100% !important
+      position relative
+      min-height 1px
+      padding-right 15px
+      padding-left 15px
+
+// Basics
+@media screen
+  html
+    font-size 10pt
+
+body
+  font-size 1rem
+  @media screen
+    padding-top 20px
+
+hr
+  margin 0 0 (sec-margin * 2 / 3) 0
+  &.smallmargin
+    margin 0 0 (sec-margin / 3) 0
+
+section
+  margin-bottom sec-margin
+
+for size in (4..6)
+  h{size}, .h{size}
+    margin (sec-margin / 3) 0
+
+h4, .h4
+  font-size 1.25rem
+
+.h-inline
+  display inline-block
+  margin-right 10px
+
+ul
+  margin-bottom 0
+  &.inline
+    @media screen and (min-width xs-break), print
+      display inline-block
+    margin-right 10px
+ 
+  &.block-sm>li
+    @media screen and (max-width xs-break - 1)
+      display block
+
+  &.fa-ul.list-inline>li
+    padding-right 40px
+
+.row
+  @media screen and (min-width xs-break), print
+    .col-left
+      text-align left
+    .col-center
+      text-align center
+    .col-right
+      text-align right
+
+  .space-em
+    margin-bottom (sec-margin / 3)
+    &:last-of-type
+      margin-bottom 0
+
+.table
+  margin-bottom 0
+
+.fa.stackee
+  position absolute
+  left 0.05em // No idea how this makes sense, but it works...
+  width 100%
+  text-align center
+  &.inverse
+    color white
+  &.box
+    z-index -1
+    &:before
+      content '\f0c8'
+    font-size 1.33em
+    top -0.1em
+
+kbd a
+  color white
+  &:hover
+    color #CCCCCC
+
+// Specific styles
+.github-fork-ribbon
+  background-color #4682EB 
+
+#header
+  .contact
+    @media screen and (max-width md-break - 1)
+      margin-bottom (sec-margin / 3)
+
+    .main-title
+      @media screen and (min-width sm-break), print
+        display inline-block
+      display block
+      margin-top 0
+      margin-right 20px
+      height 5.5rem
+      font-size 4.75rem
+      font-weight 100
+
+  .btn-holder
+    @media screen and (max-width md-break - 1)
+      margin-bottom 0
+
+.tagline
+  font-size 1.1rem
+
+.college
+  margin-bottom (sec-margin / 3)
+
+#skills
+  li
+    margin-bottom (sec-margin / 3)

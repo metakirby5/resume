@@ -1,0 +1,232 @@
+@media print {
+  html {
+    font-size: 9pt;
+  }
+  a:link:after,
+  a:visited:after {
+    content: "";
+  }
+  .col-print-1 {
+    width: 8.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-2 {
+    width: 16.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-3 {
+    width: 25% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-4 {
+    width: 33.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-5 {
+    width: 41.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-6 {
+    width: 50% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-7 {
+    width: 58.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-8 {
+    width: 66.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-9 {
+    width: 75% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-10 {
+    width: 83.3333333333333% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-11 {
+    width: 91.6666666666667% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-print-12 {
+    width: 100% !important;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media screen {
+  html {
+    font-size: 10pt;
+  }
+}
+body {
+  font-size: 1rem;
+}
+@media screen {
+  body {
+    padding-top: 20px;
+  }
+}
+hr {
+  margin: 0 0 10px 0;
+}
+hr.smallmargin {
+  margin: 0 0 5px 0;
+}
+section {
+  margin-bottom: 15px;
+}
+h4,
+.h4 {
+  margin: 5px 0;
+}
+h5,
+.h5 {
+  margin: 5px 0;
+}
+h6,
+.h6 {
+  margin: 5px 0;
+}
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+.h-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+ul {
+  margin-bottom: 0;
+}
+ul.inline {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px), print {
+  ul.inline {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 767px) {
+  ul.block-sm>li {
+    display: block;
+  }
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
+}
+@media screen and (min-width: 768px), print {
+  .row .col-left {
+    text-align: left;
+  }
+  .row .col-center {
+    text-align: center;
+  }
+  .row .col-right {
+    text-align: right;
+  }
+}
+.row .space-em {
+  margin-bottom: 5px;
+}
+.row .space-em:last-of-type {
+  margin-bottom: 0;
+}
+.table {
+  margin-bottom: 0;
+}
+.fa.stackee {
+  position: absolute;
+  left: 0.05em;
+  width: 100%;
+  text-align: center;
+}
+.fa.stackee.inverse {
+  color: #fff;
+}
+.fa.stackee.box {
+  z-index: -1;
+  font-size: 1.33em;
+  top: -0.1em;
+}
+.fa.stackee.box:before {
+  content: '\f0c8';
+}
+kbd a {
+  color: #fff;
+}
+kbd a:hover {
+  color: #ccc;
+}
+.github-fork-ribbon {
+  background-color: #4682eb;
+}
+@media screen and (max-width: 1199px) {
+  #header .contact {
+    margin-bottom: 5px;
+  }
+}
+#header .contact .main-title {
+  display: block;
+  margin-top: 0;
+  margin-right: 20px;
+  height: 5.5rem;
+  font-size: 4.75rem;
+  font-weight: 100;
+}
+@media screen and (min-width: 992px), print {
+  #header .contact .main-title {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #header .btn-holder {
+    margin-bottom: 0;
+  }
+}
+.tagline {
+  font-size: 1.1rem;
+}
+.college {
+  margin-bottom: 5px;
+}
+#skills li {
+  margin-bottom: 5px;
+}
