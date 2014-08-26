@@ -1,14 +1,13 @@
 (function($, Transparency) {
 
-  // Make transparency only match data-bind and data-extra
+  // Make transparency only match data-bind and data-cmd
   Transparency.matcher = function(element, key) {
     return (element.el.getAttribute('data-bind') === key ||
-            element.el.getAttribute('data-extra') === key);
+            element.el.getAttribute('data-cmd') === key);
   };
 
   function hideIfNot(p) {
-    // Get required data items
-    var req = p.element.dataset.bind;
+    var req = p.element.dataset.values;
     if (!req)
       return;
 
