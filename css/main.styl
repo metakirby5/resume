@@ -55,21 +55,21 @@ h4, .h4
   display inline-block
   margin-right 10px
 
-ul
-  margin-bottom 0
-  &.inline
-    @media screen and (min-width xs-break), print
-      display inline-block
-    margin-right 10px
- 
-  &.block-sm>li
-    @media screen and (max-width xs-break - 1)
-      display block
-
-  &.fa-ul
-    margin-left 24px
-    &.list-inline>li
-      padding-right 40px
+.no-mb-xs
+  @media screen and (max-width xs-break - 1)
+    margin-bottom 0 !important
+.no-mb-sm
+  @media screen and (min-width xs-break) and (max-width sm-break - 1)
+    margin-bottom 0 !important
+.no-mb-md
+  @media screen and (min-width sm-break) and (max-width md-break - 1)
+    margin-bottom 0 !important
+.no-mb-lg
+  @media scren and (min-width md-break)
+    margin-bottom 0 !important
+.no-mb-print
+  @media print
+    margin-bottom 0 !important
 
 .row
   @media screen and (min-width xs-break), print
@@ -85,6 +85,10 @@ ul
     &:last-of-type
       margin-bottom 0
 
+.table-label
+  font-size 0.9rem
+  font-weight bold 
+
 .table
   font-size .8rem 
   @media screen
@@ -95,6 +99,18 @@ ul
       & > tr, & > th
         & > td
           padding 3px
+
+ul
+  margin-bottom 0
+  &.inline
+    @media screen and (min-width xs-break), print
+      display inline-block
+    margin-right 10px
+ 
+  &.fa-ul
+    margin-left 24px
+    &.list-inline>li
+      padding-right 40px
 
 .fa.stackee
   position absolute
@@ -110,10 +126,6 @@ ul
     font-size 1.33em
     top -0.1em
 
-.table-label
-  font-size 0.9rem
-  font-weight bold 
-
 kbd a
   color white
   &:hover
@@ -125,8 +137,9 @@ kbd a
 
 #header
   .contact
-    @media screen and (max-width md-break - 1)
-      margin-bottom (sec-margin / 3)
+    @media screen and (min-width md-break), print
+      margin-bottom 0
+    margin-bottom (sec-margin / 3)
 
     .main-title
       @media screen and (min-width sm-break), print
@@ -135,9 +148,9 @@ kbd a
         margin-bottom 0
       display block
       margin-top 0
-      margin-bottom sec-margin
+      margin-bottom (sec-margin / 2)
       margin-right 20px
-      height 5.5rem
+      line-height 5rem
       font-size 4.75rem
       font-weight 100
 
@@ -145,10 +158,6 @@ kbd a
       @media screen and (min-width md-break), print
         margin-bottom 0
       margin-bottom sec-margin 
-
-  .btn-holder
-    @media screen and (max-width md-break - 1)
-      margin-bottom 0
 
 #education
   .college
