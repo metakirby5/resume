@@ -4,7 +4,7 @@
   "website": "ethanchan.com",
   "github": "github.com/metakirby5",
   "linkedin": "linkedin.com/in/ethanjchan",
-  "tagline": "UCSD undergrad, CS-lover, ambitious learner, gamer, otaku, math geek.",
+  "tagline": "UCSD undergrad, ambitious learner, midnight coder, anime-lover, and maybe your future intern.",
   "education": [
     {
       "school": "UCSD - BS Computer Science",
@@ -41,26 +41,33 @@
   ],
   "experience": [
     {
-      "id": "cu",
       "name": "CircleUp",
       "role": "Software Engineering Intern",
       "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+        "Developed across the web stack spectrum using the Django framework",
+        "Implemented a newsfeed section interfacing with several API's such as Prismic.io and Disqus",
+        "Introduced responsive web design to key flows",
+        "Contributed with test coverage (unit and integration) consistently above 95%"
       ],
-      "date": "Jun. 2014 - Sep. 2014",
-      "extra": "Here's what I did at CircleUp."
+      "date": "Jun. 2014 - Sep. 2014"
     },
     {
-      "id": "psp",
       "name": "Perspectium",
       "role": "Software Engineering Intern",
       "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloribus!",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, praesentium."
+        "Developed an endpoint-based SQL table management API in Java",
+        "Co-managed a SCRUM board to promote agile software development lifecycle"
       ],
-      "date": "Jul. 2013 - Aug. 2013",
-      "extra": "Here's what I did at Perspectium."
+      "date": "Jul. 2013 - Aug. 2013"
+    },
+    {
+      "name": "BlueChip Machine and Fabrication",
+      "role": "Mechanical Engineering Intern",
+      "content": [
+        "Collaborated with a partner to prototype and machine a custom aluminum project",
+        "Designed products in SolidWorks and Adobe Illustrator, machined on a CNC mill with MasterCam"
+      ],
+      "date": "Jun. 2013 - Jul. 2013"
     }
   ],
   "projects": [
@@ -68,8 +75,8 @@
       "name": "Programming Competitions",
       "role": "Participant",
       "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+        "Winter 2014 Microsoft Coding Challenge: 3rd/100+; 6 problems total; 1.5 hours",
+        "Fall 2013 Women in Computing Beginner’s Programming Competition: 8th/74; 14 problems total; 2.5 hours"
       ],
       "date": "Nov. 2013 - Present"
     },
@@ -77,8 +84,9 @@
       "name": "FIRST Robotics Team 1538",
       "role": "Director of Engineering",
       "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!",
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+        "Led the prototyping, design, machining, and assembly of the team’s consistently top-seeded robot",
+        "Coached team members in soft & technical skills via engineering projects and one-on-one training",
+        "Networked with industry heads, organizations, and sponsors to expand and maintain team relationships"
       ],
       "date": "Aug. 2009 - Aug. 2013"
     }
