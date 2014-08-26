@@ -79,7 +79,13 @@ ul
       margin-bottom 0
 
 .table
+  font-size .8rem 
   margin-bottom 0
+  &.table-super-condensed
+    & > thead, & > tbody, & > tfoot
+      & > tr, & > th
+        & > td
+          padding 3px
 
 .fa.stackee
   position absolute
@@ -94,6 +100,10 @@ ul
       content '\f0c8'
     font-size 1.33em
     top -0.1em
+
+.table-label
+  font-size 0.9rem
+  font-weight bold 
 
 kbd a
   color white
@@ -131,11 +141,13 @@ kbd a
     @media screen and (max-width md-break - 1)
       margin-bottom 0
 
-.tagline
-  font-size 1.1rem
+#about
+  .tagline
+    font-size 1.1rem
 
-.college
-  margin-bottom (sec-margin / 3)
+#education
+  .college
+    margin-bottom (sec-margin / 3)
 
 #skills
   li

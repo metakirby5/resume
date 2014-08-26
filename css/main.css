@@ -173,7 +173,16 @@ ul.fa-ul.list-inline>li {
   margin-bottom: 0;
 }
 .table {
+  font-size: 0.8rem;
   margin-bottom: 0;
+}
+.table.table-super-condensed > thead > tr > td,
+.table.table-super-condensed > tbody > tr > td,
+.table.table-super-condensed > tfoot > tr > td,
+.table.table-super-condensed > thead > th > td,
+.table.table-super-condensed > tbody > th > td,
+.table.table-super-condensed > tfoot > th > td {
+  padding: 3px;
 }
 .fa.stackee {
   position: absolute;
@@ -191,6 +200,10 @@ ul.fa-ul.list-inline>li {
 }
 .fa.stackee.box:before {
   content: '\f0c8';
+}
+.table-label {
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 kbd a {
   color: #fff;
@@ -238,10 +251,10 @@ kbd a:hover {
     margin-bottom: 0;
   }
 }
-.tagline {
+#about .tagline {
   font-size: 1.1rem;
 }
-.college {
+#education .college {
   margin-bottom: 5px;
 }
 #skills li {
