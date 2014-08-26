@@ -149,6 +149,9 @@ ul.inline {
     display: block;
   }
 }
+ul.fa-ul {
+  margin-left: 24px;
+}
 ul.fa-ul.list-inline>li {
   padding-right: 40px;
 }

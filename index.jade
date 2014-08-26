@@ -41,32 +41,32 @@ html
             .row
               .col-xs-12
                 .main-title(data-bind="fullname")
-                ul.fa-ul.inline
-                  li
+                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="location phone email")
+                  li(data-cmd="hide-if-not" data-values="location")
                     span.fa-li.hidden-print
                       i.fa.stackee.box
                       i.fa.fa-map-marker.stackee.inverse
                     i.fa-li.fa.fa-lg.fa-h-square.visible-print
                     a(data-bind="location")
-                  li
+                  li(data-cmd="hide-if-not" data-values="phone")
                     i.fa-li.fa.fa-lg.fa-phone-square
                     a(data-bind="phone")
-                  li
+                  li(data-cmd="hide-if-not" data-values="email")
                     i.fa-li.fa.fa-lg.fa-envelope-square
                     a(data-bind="email")
-                ul.fa-ul.inline
-                  li
+                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
+                  li(data-cmd="hide-if-not" data-values="website")
                     span.fa-li.hidden-print
                       i.fa.stackee.box
                       i.fa.fa-link.stackee.inverse
                     i.fa-li.fa.fa-lg.fa-external-link-square.visible-print
-                    a(data-bind="website" data-extra="link")
-                  li
+                    a(data-bind="website" data-cmd="link")
+                  li(data-cmd="hide-if-not" data-values="github")
                     i.fa-li.fa.fa-lg.fa-github-square
-                    a(data-bind="github" data-extra="link")
-                  li
+                    a(data-bind="github" data-cmd="link")
+                  li(data-cmd="hide-if-not" data-values="linkedin")
                     i.fa-li.fa.fa-lg.fa-linkedin-square
-                    a(data-bind="linkedin" data-extra="link")
+                    a(data-bind="linkedin" data-cmd="link")
           .col-xs-12.col-lg-3.hidden-print
             .row
               .col-xs-6.col-lg-12.space-em.btn-holder
@@ -80,11 +80,11 @@ html
 
       hr
       
-      section#about
+      section#about(data-cmd="hide-if-not" data-values="tagline")
         +h4-icon('Who am I?', 'fa-user', true)
         span.tagline(data-bind="tagline")
 
-      section#education
+      section#education(data-cmd="hide-if-not" data-values="education")
         +h4-icon('Education', 'fa-graduation-cap')
         hr.smallmargin
         div(data-bind="education")
@@ -103,7 +103,7 @@ html
                   td(data-bind="content")
                   td(data-bind="date" align="right")
 
-      section#experience
+      section#experience(data-cmd="hide-if-not" data-values="experience")
         +h4-icon('Experience', 'fa-suitcase')
         .table-responsive
           table.table.table-striped.table-condensed
@@ -117,7 +117,7 @@ html
                   ul.list-unstyled(data-bind="content")
                     li(data-bind="value")
 
-      section#skills
+      section#skills(data-cmd="hide-if-not" data-values="skills")
         +h4-icon('Skills', 'fa-tasks')
         hr.smallmargin
         ul.fa-ul.inline.list-inline(data-bind="skills")
@@ -125,7 +125,7 @@ html
             i.fa-li.fa(data-bind="icon")
             span(data-bind="name")
 
-      section#projects
+      section#projects(data-cmd="hide-if-not" data-values="projects")
         +h4-icon('Projects', 'fa-pencil')
         .table-responsive
           table.table.table-striped.table-condensed
@@ -139,7 +139,7 @@ html
                   ul.list-unstyled(data-bind="content")
                     li(data-bind="value")
 
-      section#organizations
+      section#organizations(data-cmd="hide-if-not" data-values="organizations")
         +h4-icon('Organizations', 'fa-university')
         hr.smallmargin
         ul.inline.list-inline.block-sm(data-bind="organizations")
