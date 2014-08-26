@@ -145,27 +145,30 @@ h4,
   display: inline-block;
   margin-right: 10px;
 }
-ul {
-  margin-bottom: 0;
-}
-ul.inline {
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px), print {
-  ul.inline {
-    display: inline-block;
-  }
-}
 @media screen and (max-width: 767px) {
-  ul.block-sm>li {
-    display: block;
+  .no-mb-xs {
+    margin-bottom: 0 !important;
   }
 }
-ul.fa-ul {
-  margin-left: 24px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .no-mb-sm {
+    margin-bottom: 0 !important;
+  }
 }
-ul.fa-ul.list-inline>li {
-  padding-right: 40px;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .no-mb-md {
+    margin-bottom: 0 !important;
+  }
+}
+@media scren and (min-width: 1200px) {
+  .no-mb-lg {
+    margin-bottom: 0 !important;
+  }
+}
+@media print {
+  .no-mb-print {
+    margin-bottom: 0 !important;
+  }
 }
 @media screen and (min-width: 768px), print {
   .row .col-left {
@@ -184,6 +187,10 @@ ul.fa-ul.list-inline>li {
 .row .space-em:last-of-type {
   margin-bottom: 0;
 }
+.table-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 .table {
   font-size: 0.8rem;
   margin-bottom: 0;
@@ -200,6 +207,23 @@ ul.fa-ul.list-inline>li {
 .table.table-super-condensed > tbody > th > td,
 .table.table-super-condensed > tfoot > th > td {
   padding: 3px;
+}
+ul {
+  margin-bottom: 0;
+}
+ul.inline {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px), print {
+  ul.inline {
+    display: inline-block;
+  }
+}
+ul.fa-ul {
+  margin-left: 24px;
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
 }
 .fa.stackee {
   position: absolute;
@@ -218,10 +242,6 @@ ul.fa-ul.list-inline>li {
 .fa.stackee.box:before {
   content: '\f0c8';
 }
-.table-label {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
 kbd a {
   color: #fff;
 }
@@ -231,17 +251,20 @@ kbd a:hover {
 .github-fork-ribbon {
   background-color: #4682eb;
 }
-@media screen and (max-width: 1199px) {
+#header .contact {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1200px), print {
   #header .contact {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 }
 #header .contact .main-title {
   display: block;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
   margin-right: 20px;
-  height: 5.5rem;
+  line-height: 5rem;
   font-size: 4.75rem;
   font-weight: 100;
 }
@@ -260,11 +283,6 @@ kbd a:hover {
 }
 @media screen and (min-width: 1200px), print {
   #header .contact ul {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 1199px) {
-  #header .btn-holder {
     margin-bottom: 0;
   }
 }
