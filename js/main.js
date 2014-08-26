@@ -1,7 +1,8 @@
 (function($, Transparency, Konami) {
 
   var konamid = false;
-  var EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/embed/zKdwTgrow3E?rel=0&hd=1&autoplay=1&loop=1"></iframe>';
+  var VIDEO_ID = 'zKdwTgrow3E';
+  var EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?rel=0&hd=1&autoplay=1&loop=1&playlist=,"></iframe>';
 
   // Make transparency only match data-bind and data-cmd
   Transparency.matcher = function(element, key) {
