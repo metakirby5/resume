@@ -1,4 +1,7 @@
-(function($, Transparency) {
+(function($, Transparency, Konami) {
+
+  var konamid = false;
+  var EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/embed/zKdwTgrow3E?rel=0&hd=1&autoplay=1&loop=1"></iframe>';
 
   // Make transparency only match data-bind and data-cmd
   Transparency.matcher = function(element, key) {
@@ -146,6 +149,14 @@
       if (document.location.hostname !== "localhost")
         window.location.replace('error.html?msg='+msg+'&err='+err);
     });
+
+    // Konami it up
+    new Konami(function() {
+      if (!konamid) {
+        konamid = true;
+        $('body').append(EMBED);
+      }
+    });
   });
 
-})(window.jQuery, window.Transparency);
+})(window.jQuery, window.Transparency, window.Konami);
