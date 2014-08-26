@@ -118,7 +118,12 @@ hr.smallmargin {
   margin: 0 0 5px 0;
 }
 section {
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
+}
+@media screen {
+  section {
+    margin-bottom: 15px;
+  }
 }
 h4,
 .h4 {
