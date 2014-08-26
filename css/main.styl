@@ -40,7 +40,9 @@ hr
     margin 0 0 (sec-margin / 3) 0
 
 section
-  margin-bottom sec-margin
+  @media screen
+    margin-bottom sec-margin
+  margin-bottom (sec-margin / 2)
 
 for size in (4..6)
   h{size}, .h{size}
