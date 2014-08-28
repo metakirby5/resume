@@ -9,8 +9,8 @@ nmx-red0 = #D64937
 nmx-red1 = #C24130
 nmx-red2 = #AD3A2B 
 
-body
-  @media screen
+@media screen
+  body
     background-color nmx-white 
     color nmx-grey4
 
@@ -21,6 +21,11 @@ body
       color nmx-red0
       &:hover
         color nmx-red1
+
+    kbd a
+      color nmx-white
+      &:hover
+        color nmx-grey2
 
     .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
       background-color nmx-grey1

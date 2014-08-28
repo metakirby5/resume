@@ -32,6 +32,23 @@ h6,
   display: inline-block;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px), print {
+  .row .col-left {
+    text-align: left;
+  }
+  .row .col-center {
+    text-align: center;
+  }
+  .row .col-right {
+    text-align: right;
+  }
+}
+.row .space-em {
+  margin-bottom: 5px;
+}
+.row .space-em:last-of-type {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 767px) {
   .no-mb-xs {
     margin-bottom: 0 !important;
@@ -51,6 +68,40 @@ h6,
   .no-mb-lg {
     margin-bottom: 0 !important;
   }
+}
+ul {
+  margin-bottom: 0;
+}
+ul.inline {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px), print {
+  ul.inline {
+    display: inline-block;
+  }
+}
+ul.fa-ul {
+  margin-left: 24px;
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
+}
+.fa.stackee {
+  position: absolute;
+  left: 0.05em;
+  width: 100%;
+  text-align: center;
+}
+.fa.stackee.inverse {
+  color: #fff;
+}
+.fa.stackee.box {
+  z-index: -1;
+  font-size: 1.33em;
+  top: -0.1em;
+}
+.fa.stackee.box:before {
+  content: '\f0c8';
 }
 @page {
   size: auto;
@@ -170,6 +221,12 @@ h6,
   body a:hover {
     color: #c24130;
   }
+  body kbd a {
+    color: #f9f9f9;
+  }
+  body kbd a:hover {
+    color: #dedede;
+  }
   body .table-striped>tbody>tr:nth-child(odd)>td,
   body .table-striped>tbody>tr:nth-child(odd)>th {
     background-color: #eee;
@@ -216,23 +273,6 @@ h4,
 .h4 {
   font-size: 1.25rem;
 }
-@media screen and (min-width: 768px), print {
-  .row .col-left {
-    text-align: left;
-  }
-  .row .col-center {
-    text-align: center;
-  }
-  .row .col-right {
-    text-align: right;
-  }
-}
-.row .space-em {
-  margin-bottom: 5px;
-}
-.row .space-em:last-of-type {
-  margin-bottom: 0;
-}
 .table-label {
   font-size: 0.9rem;
   font-weight: bold;
@@ -253,46 +293,6 @@ h4,
 .table.table-super-condensed > tbody > th > td,
 .table.table-super-condensed > tfoot > th > td {
   padding: 3px;
-}
-ul {
-  margin-bottom: 0;
-}
-ul.inline {
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px), print {
-  ul.inline {
-    display: inline-block;
-  }
-}
-ul.fa-ul {
-  margin-left: 24px;
-}
-ul.fa-ul.list-inline>li {
-  padding-right: 40px;
-}
-.fa.stackee {
-  position: absolute;
-  left: 0.05em;
-  width: 100%;
-  text-align: center;
-}
-.fa.stackee.inverse {
-  color: #fff;
-}
-.fa.stackee.box {
-  z-index: -1;
-  font-size: 1.33em;
-  top: -0.1em;
-}
-.fa.stackee.box:before {
-  content: '\f0c8';
-}
-kbd a {
-  color: #fff;
-}
-kbd a:hover {
-  color: #ccc;
 }
 #header .contact {
   margin-bottom: 5px;

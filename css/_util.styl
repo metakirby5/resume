@@ -20,7 +20,18 @@ for size in (4..6)
 .h-inline
   display inline-block
   margin-right 10px
-  
+
+.row
+  @media screen and (min-width xs-break), print
+    for alignment in left center right
+      .col-{alignment}
+        text-align alignment
+
+  .space-em
+    margin-bottom (sec-margin / 3)
+    &:last-of-type
+      margin-bottom 0
+
 .no-mb-xs
   @media screen and (max-width xs-break - 1)
     margin-bottom 0 !important
@@ -33,3 +44,29 @@ for size in (4..6)
 .no-mb-lg
   @media screen and (min-width md-break)
     margin-bottom 0 !important
+
+ul
+  margin-bottom 0
+  &.inline
+    @media screen and (min-width xs-break), print
+      display inline-block
+    margin-right 10px
+ 
+  &.fa-ul
+    margin-left 24px
+    &.list-inline>li
+      padding-right 40px
+
+.fa.stackee
+  position absolute
+  left 0.05em // No idea how this makes sense, but it works...
+  width 100%
+  text-align center
+  &.inverse
+    color #FFFFFF
+  &.box
+    z-index -1
+    &:before
+      content '\f0c8'
+    font-size 1.33em
+    top -0.1em

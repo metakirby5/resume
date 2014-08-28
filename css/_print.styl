@@ -5,10 +5,13 @@
 @media print
   html
     font-size 10pt
+
   body
     margin 0
+
   a:link:after, a:visited:after
     content ""
+
   for size in (1..12)
     .col-print-{size}
       width (size/12)*100% !important
