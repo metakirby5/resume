@@ -136,10 +136,6 @@
       "icon": "icon-java-bold"
     },
     {
-      "name": "PHP",
-      "icon": "icon-php"
-    },
-    {
       "name": "BASH",
       "icon": "fa-terminal"
     },
