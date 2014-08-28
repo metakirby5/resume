@@ -1,0 +1,48 @@
+nmx-white = #F9F9F9
+nmx-grey0 = #F2F2F2
+nmx-grey1 = #EEEEEE
+nmx-grey2 = #DEDEDE
+nmx-grey3 = #CCCCCC
+nmx-grey4 = #333333
+nmx-black = #2D2D2D
+nmx-red0 = #D64937
+nmx-red1 = #C24130
+nmx-red2 = #AD3A2B 
+
+body
+  @media screen
+    background-color nmx-white 
+    color nmx-grey4
+
+    ::selection, ::-moz-selection
+      background nmx-red0
+
+    a
+      color nmx-red0
+      &:hover
+        color nmx-red1
+
+    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
+      background-color nmx-grey1
+
+    .fa.stackee.inverse
+      color nmx-white 
+
+    .github-fork-ribbon
+      background-color nmx-red0 
+
+    .btn-primary
+      color nmx-white
+      background-color nmx-red0
+      border-color nmx-red1
+      &:hover
+        background-color nmx-red1
+        border-color nmx-red2
+
+    .btn-default
+      color nmx-grey4
+      background-color nmx-white
+      border-color nmx-grey2
+      &:hover
+        background-color nmx-grey0
+        border-color nmx-grey3

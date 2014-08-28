@@ -1,0 +1,35 @@
+body
+  // We'll fade this in after ajax
+  display none
+  opacity 0
+
+hr
+  margin 0 0 (sec-margin * 2 / 3) 0
+  &.smallmargin
+    margin 0 0 (sec-margin / 3) 0
+
+section
+  @media screen
+    margin-bottom sec-margin
+  margin-bottom (sec-margin / 2)
+
+for size in (4..6)
+  h{size}, .h{size}
+    margin (sec-margin / 3) 0
+
+.h-inline
+  display inline-block
+  margin-right 10px
+  
+.no-mb-xs
+  @media screen and (max-width xs-break - 1)
+    margin-bottom 0 !important
+.no-mb-sm
+  @media screen and (min-width xs-break) and (max-width sm-break - 1)
+    margin-bottom 0 !important
+.no-mb-md
+  @media screen and (min-width sm-break) and (max-width md-break - 1)
+    margin-bottom 0 !important
+.no-mb-lg
+  @media screen and (min-width md-break)
+    margin-bottom 0 !important

@@ -1,3 +1,57 @@
+body {
+  display: none;
+  opacity: 0;
+}
+hr {
+  margin: 0 0 10px 0;
+}
+hr.smallmargin {
+  margin: 0 0 5px 0;
+}
+section {
+  margin-bottom: 7.5px;
+}
+@media screen {
+  section {
+    margin-bottom: 15px;
+  }
+}
+h4,
+.h4 {
+  margin: 5px 0;
+}
+h5,
+.h5 {
+  margin: 5px 0;
+}
+h6,
+.h6 {
+  margin: 5px 0;
+}
+.h-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .no-mb-xs {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .no-mb-sm {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .no-mb-md {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .no-mb-lg {
+    margin-bottom: 0 !important;
+  }
+}
 @page {
   size: auto;
   margin: 5mm;
@@ -97,18 +151,8 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-}
-@media screen {
-  html {
-    font-size: 14px;
-  }
-}
-body {
-  font-size: 1rem;
-}
-@media screen {
-  body {
-    padding-top: 20px;
+  .no-mb-print {
+    margin-bottom: 0 !important;
   }
 }
 @media screen {
@@ -116,9 +160,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-  body ::selection {
-    background: #d64937;
-  }
+  body ::selection,
   body ::-moz-selection {
     background: #d64937;
   }
@@ -154,71 +196,25 @@ body {
   }
   body .btn-default:hover {
     background-color: #f2f2f2;
-    border-color: #d4d4d4;
+    border-color: #ccc;
   }
-}
-.container {
-  display: none;
-  opacity: 0;
-}
-hr {
-  margin: 0 0 10px 0;
-}
-hr.smallmargin {
-  margin: 0 0 5px 0;
-}
-section {
-  margin-bottom: 7.5px;
 }
 @media screen {
-  section {
-    margin-bottom: 15px;
+  html {
+    font-size: 14px;
   }
 }
-h4,
-.h4 {
-  margin: 5px 0;
+body {
+  font-size: 1rem;
 }
-h5,
-.h5 {
-  margin: 5px 0;
-}
-h6,
-.h6 {
-  margin: 5px 0;
+@media screen {
+  body {
+    padding-top: 20px;
+  }
 }
 h4,
 .h4 {
   font-size: 1.25rem;
-}
-.h-inline {
-  display: inline-block;
-  margin-right: 10px;
-}
-@media screen and (max-width: 767px) {
-  .no-mb-xs {
-    margin-bottom: 0 !important;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .no-mb-sm {
-    margin-bottom: 0 !important;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .no-mb-md {
-    margin-bottom: 0 !important;
-  }
-}
-@media scren and (min-width: 1200px) {
-  .no-mb-lg {
-    margin-bottom: 0 !important;
-  }
-}
-@media print {
-  .no-mb-print {
-    margin-bottom: 0 !important;
-  }
 }
 @media screen and (min-width: 768px), print {
   .row .col-left {

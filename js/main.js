@@ -162,7 +162,7 @@
             function(a, b) {return a && (b === 'success');},
             true
           ))
-        $('.container').css('display', 'block').fadeTo('slow', 1);
+        $('body').css('display', 'block').fadeTo('slow', 1);
     });
 
     // shhhh
