@@ -166,6 +166,12 @@ html
       script.
         window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\\/script>');
 
+      // Underscore CDN
+      script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js")
+      // Underscore local fallback
+      script.
+        window._ || document.write('<script src="js/vendor/underscore-min.js"><\\/script>');
+
       // Bootstrap JS CDN
       script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
       // Bootstrap JS local fallback
@@ -183,6 +189,5 @@ html
         });
 
       script(src="js/vendor/transparency.min.js")
-      script(src="js/vendor/konami.js")
       script(src="js/plugins.js")
       script(src="js/main.js")

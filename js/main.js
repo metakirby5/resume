@@ -1,8 +1,10 @@
-(function($, Transparency, Konami) {
+(function($, _, Transparency) {
 
-  var konamid = false;
-  var VIDEO_ID = 'zKdwTgrow3E';
-  var EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>';
+  var VIDEO_ID = 'zKdwTgrow3E',
+      EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
+      SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+  var kkeys = [];
 
   // Make transparency only match data-bind and data-cmd
   Transparency.matcher = function(element, key) {
@@ -151,13 +153,16 @@
         window.location.replace('error.html?msg='+msg+'&err='+err);
     });
 
-    // Konami it up
-    new Konami(function() {
-      if (!konamid) {
-        konamid = true;
+    // shhhh
+    $(document).keydown(function(e) {
+      kkeys.push(e.keyCode);
+      if (kkeys.length > SECRET.length)
+        kkeys.shift();
+      if (_.isEqual(kkeys, SECRET)) {
+        $(document).unbind('keydown', arguments.callee);
         $('body').append(EMBED);
       }
     });
   });
 
-})(window.jQuery, window.Transparency, window.Konami);
+})(window.jQuery, window._, window.Transparency);

@@ -12,6 +12,10 @@
     "url": "http://jquery.com/"
   },
   {
+    "name": "Underscore",
+    "url": "http://underscorejs.org/"
+  },
+  {
     "name": "Transparency",
     "url": "http://leonidas.github.io/transparency/"
   },
