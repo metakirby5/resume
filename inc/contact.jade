@@ -1,0 +1,29 @@
+.row
+  .col-xs-12
+    .main-title(data-bind="fullname")
+    ul.fa-ul.inline(data-cmd="hide-if-not" data-values="location phone email")
+      li(data-cmd="hide-if-not" data-values="location")
+        span.fa-li.hidden-print
+          i.fa.stackee.box
+          i.fa.fa-map-marker.stackee.inverse
+        i.fa-li.fa.fa-lg.fa-h-square.visible-print
+        a(data-bind="location")
+      li(data-cmd="hide-if-not" data-values="phone")
+        i.fa-li.fa.fa-lg.fa-phone-square
+        a(data-bind="phone")
+      li(data-cmd="hide-if-not" data-values="email")
+        i.fa-li.fa.fa-lg.fa-envelope-square
+        a(data-bind="email")
+    ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
+      li(data-cmd="hide-if-not" data-values="website")
+        span.fa-li.hidden-print
+          i.fa.stackee.box
+          i.fa.fa-link.stackee.inverse
+        i.fa-li.fa.fa-lg.fa-external-link-square.visible-print
+        a(data-bind="website" data-cmd="link")
+      li(data-cmd="hide-if-not" data-values="github")
+        i.fa-li.fa.fa-lg.fa-github-square
+        a(data-bind="github" data-cmd="link")
+      li(data-cmd="hide-if-not" data-values="linkedin")
+        i.fa-li.fa.fa-lg.fa-linkedin-square
+        a(data-bind="linkedin" data-cmd="link")

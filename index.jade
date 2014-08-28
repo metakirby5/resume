@@ -1,207 +1,48 @@
-mixin h4-icon(text, icon, inline)
-  if inline
-    .h-inline.h4
-      i.fa.fa-fw(class=icon)
-      span=' '+text
-  else
-    h4
-      i.fa.fa-fw(class=icon)
-      span=' '+text
+include inc/mixins.jade
 
 doctype html
-//
-  |     w     i     r     e     d
-                               ___________
-                        _,,oood88888888888booo.._
-                   ,ood8888888888888888888888888888boo._
-                ,d888888888888888888888888888888888888888oo
-             _d888888888888888888888888888888888888888888888o._
-           ,d88888888888888888888888888888888888888888888888888b.
-         ,d888888888888888888888888888888888888888888888888888888p
-       ,o888888888888888888888888888888888888888888888888888888888L
-      ,888888888888888888888888888888888888888888888888888888888888b
-     ,88888888888888888888888888888888888888888888888888888888888888.
-    ,8888888888888888888888888888888888888888888888888888888888888888
-    d8888888888888888888888888888888888888888888888888888888888888888b
-   ,888888888888888888888888888888888888888888888888888888888888888888b
-   d8888888888888888888888888888888888888888888888888888888888888888888.
-   8888888888888888888888P""`'78888888888888888888888888888888888888888b
-  ,888888888888888888888"     d888888888888P"888888888888888888888888888
-  d88888888888888888888P      Y88888888888P  "88888888d88888888888888888b
-  d888888888888888PY88P         Y88Y' `YP"    Y"    "YP"88888888888888PY8
-  888888888888888P  Y8           `"`        _.ooo888oo. 8P88888888888'  "
-  888888888888"" _.oo88888oo.             `" ,--- __      `8888888888
-  88888888888P  "     __ ---.                 oP"88887o.   :Y88888P'8.
-  Y8888888888b     .od888"o.`                    Y88P  Y   :. '"Y'_88b
-   ""88888888K    Y. Y88P                      -._____;    888Y _`"Y88.
-     "88888l  l    `.___..-'                               88',d88:d88'
-      Y8P"Y8.  l                                           : 88888:888p
-       "   Y8b.                                            :d88888:8888.
-            `8888b                                        ,8888888:88888b
-             Y8888b                                      d88888888:888888"
-             dbd888b.                ` '                d888888888:888P'
-            d888888888o_             .--             _p88888888888;P'
-           `YP"Y888888888b.                          Y8888P"Y88888
-                 '''"YP"""YP=p._                     |       d8888
-                             [  '-.._      _.-       `.      d8888
-                =jf=        ,'       ''-'''            l     Y8888
-                           j                            l    d8888
-                          '------------------------------`   `"""'
-  |
+include inc/wired.jade
+
 html
   head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     meta(name="description", content="Ethan Chan's Resume")
-
     title(data-bind="fullname")
 
     // Stylesheets
-    link(rel="stylesheet", href="css/vendor/bootstrap.min.css")
-    link(rel="stylesheet", href="css/vendor/font-awesome-4.2.0/css/font-awesome.min.css")
-    link(rel="stylesheet", href="css/vendor/font-mfizz-1.2/font-mfizz.css")
-    link(rel="stylesheet", href="css/vendor/gh-fork-ribbon.css")
-    link(rel="stylesheet", href="css/main.css")
-
+    include inc/css.jade
   body
     .container
 
-      #forkme.hidden-print
-        .github-fork-ribbon-wrapper.right
-          .github-fork-ribbon
-            a(href="https://github.com/metakirby5/resume")
-              i.fa.fa-code-fork
-              |   Fork me on GitHub!
+      include inc/forkme.jade
 
-      section#header
-        .row
-          .col-xs-12.col-lg-8.col-print-12.contact
-            .row
-              .col-xs-12
-                .main-title(data-bind="fullname")
-                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="location phone email")
-                  li(data-cmd="hide-if-not" data-values="location")
-                    span.fa-li.hidden-print
-                      i.fa.stackee.box
-                      i.fa.fa-map-marker.stackee.inverse
-                    i.fa-li.fa.fa-lg.fa-h-square.visible-print
-                    a(data-bind="location")
-                  li(data-cmd="hide-if-not" data-values="phone")
-                    i.fa-li.fa.fa-lg.fa-phone-square
-                    a(data-bind="phone")
-                  li(data-cmd="hide-if-not" data-values="email")
-                    i.fa-li.fa.fa-lg.fa-envelope-square
-                    a(data-bind="email")
-                ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
-                  li(data-cmd="hide-if-not" data-values="website")
-                    span.fa-li.hidden-print
-                      i.fa.stackee.box
-                      i.fa.fa-link.stackee.inverse
-                    i.fa-li.fa.fa-lg.fa-external-link-square.visible-print
-                    a(data-bind="website" data-cmd="link")
-                  li(data-cmd="hide-if-not" data-values="github")
-                    i.fa-li.fa.fa-lg.fa-github-square
-                    a(data-bind="github" data-cmd="link")
-                  li(data-cmd="hide-if-not" data-values="linkedin")
-                    i.fa-li.fa.fa-lg.fa-linkedin-square
-                    a(data-bind="linkedin" data-cmd="link")
-          .col-xs-12.col-lg-3.hidden-print
-            .row
-              .col-xs-12.col-sm-6.col-lg-12.space-em.no-mb-sm.no-mb-md
-                a.btn.btn-primary.btn-md.btn-block(onclick="window.print()")
-                  i.fa.fa-print
-                  |   Print me?
-              .col-xs-12.col-sm-6.col-lg-12.space-em.no-mb-sm.no-mb-md
-                a.btn.btn-default.btn-md.btn-block(href="data/data.json")
-                  i.fa.fa-file-code-o
-                  |   Want the JSON?
+      include inc/header.jade
 
       hr
       
-      section#about(data-cmd="hide-if-not" data-values="tagline")
-        +h4-icon('Who am I?', 'fa-user', true)
-        em.tagline(data-bind="tagline")
+      include inc/about.jade
 
       .row
         .col-xs-12.col-md-8.col-print-12(data-cmd="hide-if-not" data-values="education")
-          section#education
-            +h4-icon('Education', 'fa-graduation-cap')
-            hr.smallmargin
-            div(data-bind="education")
-              .row
-                .col-xs-12.col-sm-4.col-print-4.col-left
-                  span.table-label(data-bind="school")
-                .col-xs-12.col-sm-4.col-print-4.col-center
-                  span.table-label(data-bind="grades")
-                .col-xs-12.col-sm-4.col-print-4.col-right
-                  span.table-label(data-bind="dates")
-              .table-responsive
-                table.table.table-striped.table-super-condensed
-                  tbody(data-bind="classes")
-                    tr
-                      td(data-bind="name")
-                      td(data-bind="content")
-                      td(data-bind="date" align="right")
+          include inc/education.jade
 
         .col-xs-12.col-md-4.col-print-12(data-cmd="hide-if-not" data-values="skills")
-          section#skills
-            +h4-icon('Skills', 'fa-tasks')
-            hr.smallmargin
-            ul.fa-ul.inline.list-inline(data-bind="skills")
-              li
-                i.fa-li.fa(data-bind="icon")
-                span(data-bind="name")
+          include inc/skills.jade
 
       .row
         .col-xs-12.col-md-8(data-cmd="hide-if-not" data-values="experience projects")
           .row
             .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="experience")
-              section#experience
-                +h4-icon('Experience', 'fa-suitcase')
-                .table-responsive
-                  table.table.table-striped.table-super-condensed
-                    tbody(data-bind="experience")
-                      tr
-                        td: a(data-bind="name")
-                        td(data-bind="role")
-                        td(data-bind="date" align="right")
-                      tr
-                        td(colspan="3")
-                          ul.list-unstyled(data-bind="content")
-                            li(data-bind="value")
+              include inc/experience.jade
 
             .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="projects")
-              section#projects
-                +h4-icon('Projects', 'fa-pencil')
-                .table-responsive
-                  table.table.table-striped.table-super-condensed
-                    tbody(data-bind="projects")
-                      tr
-                        td(data-bind="name")
-                        td(data-bind="role")
-                        td(data-bind="date" align="right")
-                      tr
-                        td(colspan="3")
-                          ul.list-unstyled(data-bind="content")
-                            li(data-bind="value")
+              include inc/projects.jade
 
         .col-xs-12.col-md-4(data-cmd="hide-if-not" data-values="organizations")
-          section#organizations
-            +h4-icon('Organizations', 'fa-university')
-            hr.smallmargin
-            ul.inline.list-inline(data-bind="organizations")
-              li(data-bind="namedate")
+            include inc/organizations.jade
 
-      section#credits.hidden-print
-        +h4-icon('Thanks to:', 'fa-heart', true)
-        ul#credits-list.inline.list-inline
-          li
-            a(data-bind="entry")
-         
+      include inc/credits.jade
+
       // Scripts
-      script(src="js/vendor/jquery-2.1.1.min.js")
-      script(src="js/vendor/underscore-min.js")
-      script(src="js/vendor/bootstrap.min.js")
-      script(src="js/vendor/transparency.min.js")
-      script(src="js/plugins.js")
-      script(src="js/main.js")
+      include inc/js.jade

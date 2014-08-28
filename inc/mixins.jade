@@ -1,0 +1,14 @@
+mixin css(sheet)
+  link(rel="stylesheet", href=sheet)
+mixin js(script)
+  script(src=script)
+
+mixin h4-icon(text, icon, inline)
+  if inline
+    .h-inline.h4
+      i.fa.fa-fw(class=icon)
+      span=' '+text
+  else
+    h4
+      i.fa.fa-fw(class=icon)
+      span=' '+text
