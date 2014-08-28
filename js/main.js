@@ -60,6 +60,9 @@
   }
 
   $(function() {
+    // Fade in after ajax
+    $('body').hide();
+
     $.when(
       $.getJSON('data/data.json', function(data) {
         $('html').render(data, {
@@ -162,7 +165,7 @@
             function(a, b) {return a && (b === 'success');},
             true
           ))
-        $('body').hide().fadeIn('slow');
+        $('body').fadeIn('slow');
     });
 
     // shhhh
