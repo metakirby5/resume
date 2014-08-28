@@ -1,30 +1,9 @@
-// Variables
-xs-break = 768px
-sm-break = 992px
-md-break = 1200px
+@require '_vars.styl'
+@require '_util.styl'
+@require '_print.styl'
+@require '_screen_color.styl'
 
-sec-margin = 15px
-
-// Override print behavior
-@page
-  size auto
-  margin 5mm
-@media print
-  html
-    font-size 10pt
-  body
-    margin 0
-  a:link:after, a:visited:after
-    content ""
-  for size in (1..12)
-    .col-print-{size}
-      width (size/12)*100% !important
-      position relative
-      min-height 1px
-      padding-right 15px
-      padding-left 15px
-
-// Basics
+// General
 @media screen
   html
     font-size 14px
@@ -33,95 +12,9 @@ body
   font-size 1rem
   @media screen
     padding-top 20px
-  @media screen
-    background-color #f9f9f9 
-    color #333333
-    ::selection {
-      background #d64937
-    }
-    ::-moz-selection {
-      background #d64937
-    }
-    a
-      color #d64937
-      &:hover
-        color #C24130
-    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
-      background-color #EEEEEE
-    .fa.stackee.inverse
-      color #f9f9f9 
-    .github-fork-ribbon
-      background-color #d64937 
-    .btn-primary
-      color #f9f9f9
-      background-color #d64937
-      border-color #C24130
-      &:hover
-        background-color #C24130
-        border-color #AD3A2B 
-    .btn-default
-      color #333333
-      background-color #f9f9f9
-      border-color #dedede
-      &:hover
-        background-color #f2f2f2
-        border-color #D4D4D4
-
-.container
-  // We'll fade this in after ajax
-  display none
-  opacity 0
-
-hr
-  margin 0 0 (sec-margin * 2 / 3) 0
-  &.smallmargin
-    margin 0 0 (sec-margin / 3) 0
-
-section
-  @media screen
-    margin-bottom sec-margin
-  margin-bottom (sec-margin / 2)
-
-for size in (4..6)
-  h{size}, .h{size}
-    margin (sec-margin / 3) 0
 
 h4, .h4
   font-size 1.25rem
-
-.h-inline
-  display inline-block
-  margin-right 10px
-
-.no-mb-xs
-  @media screen and (max-width xs-break - 1)
-    margin-bottom 0 !important
-.no-mb-sm
-  @media screen and (min-width xs-break) and (max-width sm-break - 1)
-    margin-bottom 0 !important
-.no-mb-md
-  @media screen and (min-width sm-break) and (max-width md-break - 1)
-    margin-bottom 0 !important
-.no-mb-lg
-  @media scren and (min-width md-break)
-    margin-bottom 0 !important
-.no-mb-print
-  @media print
-    margin-bottom 0 !important
-
-.row
-  @media screen and (min-width xs-break), print
-    .col-left
-      text-align left
-    .col-center
-      text-align center
-    .col-right
-      text-align right
-
-  .space-em
-    margin-bottom (sec-margin / 3)
-    &:last-of-type
-      margin-bottom 0
 
 .table-label
   font-size 0.9rem
@@ -138,38 +31,8 @@ h4, .h4
         & > td
           padding 3px
 
-ul
-  margin-bottom 0
-  &.inline
-    @media screen and (min-width xs-break), print
-      display inline-block
-    margin-right 10px
- 
-  &.fa-ul
-    margin-left 24px
-    &.list-inline>li
-      padding-right 40px
 
-.fa.stackee
-  position absolute
-  left 0.05em // No idea how this makes sense, but it works...
-  width 100%
-  text-align center
-  &.inverse
-    color #FFFFFF
-  &.box
-    z-index -1
-    &:before
-      content '\f0c8'
-    font-size 1.33em
-    top -0.1em
-
-kbd a
-  color #FFFFFF
-  &:hover
-    color #CCCCCC
-
-// Specific styles
+// Specific
 #header
   .contact
     @media screen and (min-width md-break), print

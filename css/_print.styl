@@ -1,0 +1,24 @@
+@page
+  size auto
+  margin 5mm
+
+@media print
+  html
+    font-size 10pt
+
+  body
+    margin 0
+
+  a:link:after, a:visited:after
+    content ""
+
+  for size in (1..12)
+    .col-print-{size}
+      width (size/12)*100% !important
+      position relative
+      min-height 1px
+      padding-right 15px
+      padding-left 15px
+
+  .no-mb-print
+      margin-bottom 0 !important

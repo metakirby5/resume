@@ -1,3 +1,108 @@
+body {
+  display: none;
+  opacity: 0;
+}
+hr {
+  margin: 0 0 10px 0;
+}
+hr.smallmargin {
+  margin: 0 0 5px 0;
+}
+section {
+  margin-bottom: 7.5px;
+}
+@media screen {
+  section {
+    margin-bottom: 15px;
+  }
+}
+h4,
+.h4 {
+  margin: 5px 0;
+}
+h5,
+.h5 {
+  margin: 5px 0;
+}
+h6,
+.h6 {
+  margin: 5px 0;
+}
+.h-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px), print {
+  .row .col-left {
+    text-align: left;
+  }
+  .row .col-center {
+    text-align: center;
+  }
+  .row .col-right {
+    text-align: right;
+  }
+}
+.row .space-em {
+  margin-bottom: 5px;
+}
+.row .space-em:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .no-mb-xs {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .no-mb-sm {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .no-mb-md {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .no-mb-lg {
+    margin-bottom: 0 !important;
+  }
+}
+ul {
+  margin-bottom: 0;
+}
+ul.inline {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px), print {
+  ul.inline {
+    display: inline-block;
+  }
+}
+ul.fa-ul {
+  margin-left: 24px;
+}
+ul.fa-ul.list-inline>li {
+  padding-right: 40px;
+}
+.fa.stackee {
+  position: absolute;
+  left: 0.05em;
+  width: 100%;
+  text-align: center;
+}
+.fa.stackee.inverse {
+  color: #fff;
+}
+.fa.stackee.box {
+  z-index: -1;
+  font-size: 1.33em;
+  top: -0.1em;
+}
+.fa.stackee.box:before {
+  content: '\f0c8';
+}
 @page {
   size: auto;
   margin: 5mm;
@@ -97,18 +202,8 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-}
-@media screen {
-  html {
-    font-size: 14px;
-  }
-}
-body {
-  font-size: 1rem;
-}
-@media screen {
-  body {
-    padding-top: 20px;
+  .no-mb-print {
+    margin-bottom: 0 !important;
   }
 }
 @media screen {
@@ -116,9 +211,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-  body ::selection {
-    background: #d64937;
-  }
+  body ::selection,
   body ::-moz-selection {
     background: #d64937;
   }
@@ -127,6 +220,12 @@ body {
   }
   body a:hover {
     color: #c24130;
+  }
+  body kbd a {
+    color: #f9f9f9;
+  }
+  body kbd a:hover {
+    color: #dedede;
   }
   body .table-striped>tbody>tr:nth-child(odd)>td,
   body .table-striped>tbody>tr:nth-child(odd)>th {
@@ -154,88 +253,25 @@ body {
   }
   body .btn-default:hover {
     background-color: #f2f2f2;
-    border-color: #d4d4d4;
+    border-color: #ccc;
   }
-}
-.container {
-  display: none;
-  opacity: 0;
-}
-hr {
-  margin: 0 0 10px 0;
-}
-hr.smallmargin {
-  margin: 0 0 5px 0;
-}
-section {
-  margin-bottom: 7.5px;
 }
 @media screen {
-  section {
-    margin-bottom: 15px;
+  html {
+    font-size: 14px;
   }
 }
-h4,
-.h4 {
-  margin: 5px 0;
+body {
+  font-size: 1rem;
 }
-h5,
-.h5 {
-  margin: 5px 0;
-}
-h6,
-.h6 {
-  margin: 5px 0;
+@media screen {
+  body {
+    padding-top: 20px;
+  }
 }
 h4,
 .h4 {
   font-size: 1.25rem;
-}
-.h-inline {
-  display: inline-block;
-  margin-right: 10px;
-}
-@media screen and (max-width: 767px) {
-  .no-mb-xs {
-    margin-bottom: 0 !important;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .no-mb-sm {
-    margin-bottom: 0 !important;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .no-mb-md {
-    margin-bottom: 0 !important;
-  }
-}
-@media scren and (min-width: 1200px) {
-  .no-mb-lg {
-    margin-bottom: 0 !important;
-  }
-}
-@media print {
-  .no-mb-print {
-    margin-bottom: 0 !important;
-  }
-}
-@media screen and (min-width: 768px), print {
-  .row .col-left {
-    text-align: left;
-  }
-  .row .col-center {
-    text-align: center;
-  }
-  .row .col-right {
-    text-align: right;
-  }
-}
-.row .space-em {
-  margin-bottom: 5px;
-}
-.row .space-em:last-of-type {
-  margin-bottom: 0;
 }
 .table-label {
   font-size: 0.9rem;
@@ -257,46 +293,6 @@ h4,
 .table.table-super-condensed > tbody > th > td,
 .table.table-super-condensed > tfoot > th > td {
   padding: 3px;
-}
-ul {
-  margin-bottom: 0;
-}
-ul.inline {
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px), print {
-  ul.inline {
-    display: inline-block;
-  }
-}
-ul.fa-ul {
-  margin-left: 24px;
-}
-ul.fa-ul.list-inline>li {
-  padding-right: 40px;
-}
-.fa.stackee {
-  position: absolute;
-  left: 0.05em;
-  width: 100%;
-  text-align: center;
-}
-.fa.stackee.inverse {
-  color: #fff;
-}
-.fa.stackee.box {
-  z-index: -1;
-  font-size: 1.33em;
-  top: -0.1em;
-}
-.fa.stackee.box:before {
-  content: '\f0c8';
-}
-kbd a {
-  color: #fff;
-}
-kbd a:hover {
-  color: #ccc;
 }
 #header .contact {
   margin-bottom: 5px;
