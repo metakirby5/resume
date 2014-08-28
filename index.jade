@@ -18,8 +18,8 @@ html
     title(data-bind="fullname")
 
     // Stylesheets
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/vendor/bootstrap.min.css")
+    link(rel="stylesheet", href="css/vendor/font-awesome-4.2.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/vendor/font-mfizz-1.2/font-mfizz.css")
     link(rel="stylesheet", href="css/vendor/gh-fork-ribbon.css")
     link(rel="stylesheet", href="css/main.css")
@@ -159,34 +159,10 @@ html
           li
             a(data-bind="entry")
          
-      // jQuery CDN
-      script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-      // jQuery local fallback
-      script.
-        window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\\/script>');
-
-      // Underscore CDN
-      script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js")
-      // Underscore local fallback
-      script.
-        window._ || document.write('<script src="js/vendor/underscore-min.js"><\\/script>');
-
-      // Bootstrap JS CDN
-      script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
-      // Bootstrap JS local fallback
-      script.
-        if(typeof($.fn.modal) === 'undefined')
-          document.write('<script src="js/vendor/bootstrap.min.js"><\\/script>');
-
-      // Bootstrap CSS local fallback
-      script.
-        $(function() {
-          var bodyColor = $('body').css('color');
-          if(bodyColor != 'rgb(51, 51, 51)') {
-            $("head").prepend('<link rel="stylesheet" href="css/vendor/bootstrap.min.css">');
-          }
-        });
-
+      // Scripts
+      script(src="js/vendor/jquery-2.1.1.min.js")
+      script(src="js/vendor/underscore-min.js")
+      script(src="js/vendor/bootstrap.min.js")
       script(src="js/vendor/transparency.min.js")
       script(src="js/plugins.js")
       script(src="js/main.js")

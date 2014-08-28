@@ -116,8 +116,17 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
+  body:selection {
+    background: #d64937;
+  }
+  body:-moz-selection {
+    background: #d64937;
+  }
   body a {
-    color: #46a9ff;
+    color: #d64937;
+  }
+  body a:hover {
+    color: #c24130;
   }
   body .table-striped>tbody>tr:nth-child(odd)>td,
   body .table-striped>tbody>tr:nth-child(odd)>th {
@@ -127,17 +136,25 @@ body {
     color: #f9f9f9;
   }
   body .github-fork-ribbon {
-    background-color: #46a9ff;
+    background-color: #d64937;
   }
   body .btn-primary {
     color: #f9f9f9;
-    background-color: #46a9ff;
-    border-color: #357ebd;
+    background-color: #d64937;
+    border-color: #c24130;
+  }
+  body .btn-primary:hover {
+    background-color: #c24130;
+    border-color: #ad3a2b;
   }
   body .btn-default {
     color: #333;
     background-color: #f9f9f9;
-    border-color: #ccc;
+    border-color: #dedede;
+  }
+  body .btn-default:hover {
+    background-color: #f2f2f2;
+    border-color: #d4d4d4;
   }
 }
 .container {

@@ -36,22 +36,36 @@ body
   @media screen
     background-color #f9f9f9 
     color #333333
+    &:selection {
+      background #d64937
+    }
+    &:-moz-selection {
+      background #d64937
+    }
     a
-      color #46A9FF
+      color #d64937
+      &:hover
+        color #C24130
     .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
       background-color #dedede
     .fa.stackee.inverse
       color #f9f9f9 
     .github-fork-ribbon
-      background-color #46A9FF 
+      background-color #d64937 
     .btn-primary
       color #f9f9f9
-      background-color #46A9FF
-      border-color #357ebd
+      background-color #d64937
+      border-color #C24130
+      &:hover
+        background-color #C24130
+        border-color #AD3A2B 
     .btn-default
       color #333333
       background-color #f9f9f9
-      border-color #cccccc
+      border-color #dedede
+      &:hover
+        background-color #f2f2f2
+        border-color #D4D4D4
 
 .container
   // We'll fade this in after ajax

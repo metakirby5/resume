@@ -36,6 +36,10 @@
     "url": "http://mfizz.com/oss/font-mfizz"
   },
   {
+    "name": "Numix",
+    "url": "http://satya164.github.io/numix/"
+  },
+  {
     "name": "github-fork-ribbon",
     "url": "http://simonwhitaker.github.io/github-fork-ribbon-css/"
   }
