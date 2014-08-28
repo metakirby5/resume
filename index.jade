@@ -123,7 +123,7 @@ html
                   table.table.table-striped.table-super-condensed
                     tbody(data-bind="experience")
                       tr
-                        td(data-bind="name")
+                        td: a(data-bind="name")
                         td(data-bind="role")
                         td(data-bind="date" align="right")
                       tr

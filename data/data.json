@@ -42,6 +42,7 @@
   "experience": [
     {
       "name": "CircleUp",
+      "url": "http://circleup.com/",
       "role": "Software Engineering Intern",
       "content": [
         "Developed across the web stack spectrum using the Django framework",
@@ -53,6 +54,7 @@
     },
     {
       "name": "Perspectium",
+      "url": "http://www.perspectium.com/",
       "role": "Software Engineering Intern",
       "content": [
         "Developed an endpoint-based SQL table management API in Java",

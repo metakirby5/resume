@@ -96,6 +96,9 @@
             href: webLink
           },
           experience: {
+            name: {
+              href: namedWebLink
+            },
             content: {
               value: {
                 text: function() {
