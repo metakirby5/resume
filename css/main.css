@@ -130,7 +130,7 @@ body {
   }
   body .table-striped>tbody>tr:nth-child(odd)>td,
   body .table-striped>tbody>tr:nth-child(odd)>th {
-    background-color: #dedede;
+    background-color: #eee;
   }
   body .fa.stackee.inverse {
     color: #f9f9f9;
