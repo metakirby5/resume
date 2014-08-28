@@ -111,6 +111,10 @@ body {
     padding-top: 20px;
   }
 }
+.container {
+  display: none;
+  opacity: 0;
+}
 hr {
   margin: 0 0 10px 0;
 }
