@@ -116,10 +116,10 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-  body:selection {
+  body ::selection {
     background: #d64937;
   }
-  body:-moz-selection {
+  body ::-moz-selection {
     background: #d64937;
   }
   body a {
