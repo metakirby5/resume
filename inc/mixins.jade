@@ -3,7 +3,16 @@ mixin css(sheet)
 mixin js(script)
   script(src=script)
 
-mixin h4-icon(text, icon, inline)
+mixin li-i(icon)
+  i.fa-li.fa.fa-lg(class=icon)
+
+mixin li-i-stacked(screen, print)
+  span.fa-li.hidden-print
+    i.fa.stackee.box
+    i.fa.stackee.inverse(class=screen)
+  i.fa-li.fa.fa-lg.visible-print(class=print)
+
+mixin h4-i(text, icon, inline)
   if inline
     .h-inline.h4
       i.fa.fa-fw(class=icon)
