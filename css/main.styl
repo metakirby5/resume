@@ -33,6 +33,44 @@ body
   font-size 1rem
   @media screen
     padding-top 20px
+  @media screen
+    background-color #f9f9f9 
+    color #333333
+    ::selection {
+      background #d64937
+    }
+    ::-moz-selection {
+      background #d64937
+    }
+    a
+      color #d64937
+      &:hover
+        color #C24130
+    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
+      background-color #EEEEEE
+    .fa.stackee.inverse
+      color #f9f9f9 
+    .github-fork-ribbon
+      background-color #d64937 
+    .btn-primary
+      color #f9f9f9
+      background-color #d64937
+      border-color #C24130
+      &:hover
+        background-color #C24130
+        border-color #AD3A2B 
+    .btn-default
+      color #333333
+      background-color #f9f9f9
+      border-color #dedede
+      &:hover
+        background-color #f2f2f2
+        border-color #D4D4D4
+
+.container
+  // We'll fade this in after ajax
+  display none
+  opacity 0
 
 hr
   margin 0 0 (sec-margin * 2 / 3) 0
@@ -118,7 +156,7 @@ ul
   width 100%
   text-align center
   &.inverse
-    color white
+    color #FFFFFF
   &.box
     z-index -1
     &:before
@@ -127,14 +165,11 @@ ul
     top -0.1em
 
 kbd a
-  color white
+  color #FFFFFF
   &:hover
     color #CCCCCC
 
 // Specific styles
-.github-fork-ribbon
-  background-color #4682EB 
-
 #header
   .contact
     @media screen and (min-width md-break), print

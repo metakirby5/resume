@@ -9,6 +9,45 @@ mixin h4-icon(text, icon, inline)
       span=' '+text
 
 doctype html
+//
+  |     w     i     r     e     d
+                               ___________
+                        _,,oood88888888888booo.._
+                   ,ood8888888888888888888888888888boo._
+                ,d888888888888888888888888888888888888888oo
+             _d888888888888888888888888888888888888888888888o._
+           ,d88888888888888888888888888888888888888888888888888b.
+         ,d888888888888888888888888888888888888888888888888888888p
+       ,o888888888888888888888888888888888888888888888888888888888L
+      ,888888888888888888888888888888888888888888888888888888888888b
+     ,88888888888888888888888888888888888888888888888888888888888888.
+    ,8888888888888888888888888888888888888888888888888888888888888888
+    d8888888888888888888888888888888888888888888888888888888888888888b
+   ,888888888888888888888888888888888888888888888888888888888888888888b
+   d8888888888888888888888888888888888888888888888888888888888888888888.
+   8888888888888888888888P""`'78888888888888888888888888888888888888888b
+  ,888888888888888888888"     d888888888888P"888888888888888888888888888
+  d88888888888888888888P      Y88888888888P  "88888888d88888888888888888b
+  d888888888888888PY88P         Y88Y' `YP"    Y"    "YP"88888888888888PY8
+  888888888888888P  Y8           `"`        _.ooo888oo. 8P88888888888'  "
+  888888888888"" _.oo88888oo.             `" ,--- __      `8888888888
+  88888888888P  "     __ ---.                 oP"88887o.   :Y88888P'8.
+  Y8888888888b     .od888"o.`                    Y88P  Y   :. '"Y'_88b
+   ""88888888K    Y. Y88P                      -._____;    888Y _`"Y88.
+     "88888l  l    `.___..-'                               88',d88:d88'
+      Y8P"Y8.  l                                           : 88888:888p
+       "   Y8b.                                            :d88888:8888.
+            `8888b                                        ,8888888:88888b
+             Y8888b                                      d88888888:888888"
+             dbd888b.                ` '                d888888888:888P'
+            d888888888o_             .--             _p88888888888;P'
+           `YP"Y888888888b.                          Y8888P"Y88888
+                 '''"YP"""YP=p._                     |       d8888
+                             [  '-.._      _.-       `.      d8888
+                =jf=        ,'       ''-'''            l     Y8888
+                           j                            l    d8888
+                          '------------------------------`   `"""'
+  |
 html
   head
     meta(charset="utf-8")
@@ -18,8 +57,8 @@ html
     title(data-bind="fullname")
 
     // Stylesheets
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/vendor/bootstrap.min.css")
+    link(rel="stylesheet", href="css/vendor/font-awesome-4.2.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/vendor/font-mfizz-1.2/font-mfizz.css")
     link(rel="stylesheet", href="css/vendor/gh-fork-ribbon.css")
     link(rel="stylesheet", href="css/main.css")
@@ -29,7 +68,6 @@ html
 
       #forkme.hidden-print
         .github-fork-ribbon-wrapper.right
-          // Google blue hehe
           .github-fork-ribbon
             a(href="https://github.com/metakirby5/resume")
               i.fa.fa-code-fork
@@ -82,7 +120,7 @@ html
       
       section#about(data-cmd="hide-if-not" data-values="tagline")
         +h4-icon('Who am I?', 'fa-user', true)
-        span.tagline(data-bind="tagline")
+        em.tagline(data-bind="tagline")
 
       .row
         .col-xs-12.col-md-8.col-print-12(data-cmd="hide-if-not" data-values="education")
@@ -124,7 +162,7 @@ html
                   table.table.table-striped.table-super-condensed
                     tbody(data-bind="experience")
                       tr
-                        td(data-bind="name")
+                        td: a(data-bind="name")
                         td(data-bind="role")
                         td(data-bind="date" align="right")
                       tr
@@ -160,29 +198,10 @@ html
           li
             a(data-bind="entry")
          
-      // jQuery CDN
-      script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-      // jQuery local fallback
-      script.
-        window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\\/script>');
-
-      // Bootstrap JS CDN
-      script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
-      // Bootstrap JS local fallback
-      script.
-        if(typeof($.fn.modal) === 'undefined')
-          document.write('<script src="js/vendor/bootstrap.min.js"><\\/script>');
-
-      // Bootstrap CSS local fallback
-      script.
-        $(function() {
-          var bodyColor = $('body').css('color');
-          if(bodyColor != 'rgb(51, 51, 51)') {
-            $("head").prepend('<link rel="stylesheet" href="css/vendor/bootstrap.min.css">');
-          }
-        });
-
+      // Scripts
+      script(src="js/vendor/jquery-2.1.1.min.js")
+      script(src="js/vendor/underscore-min.js")
+      script(src="js/vendor/bootstrap.min.js")
       script(src="js/vendor/transparency.min.js")
-      script(src="js/vendor/konami.js")
       script(src="js/plugins.js")
       script(src="js/main.js")

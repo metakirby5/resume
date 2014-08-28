@@ -12,6 +12,10 @@
     "url": "http://jquery.com/"
   },
   {
+    "name": "Underscore",
+    "url": "http://underscorejs.org/"
+  },
+  {
     "name": "Transparency",
     "url": "http://leonidas.github.io/transparency/"
   },
@@ -30,6 +34,10 @@
   {
     "name": "Font Mfizz",
     "url": "http://mfizz.com/oss/font-mfizz"
+  },
+  {
+    "name": "Numix",
+    "url": "http://satya164.github.io/numix/"
   },
   {
     "name": "github-fork-ribbon",

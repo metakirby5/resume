@@ -1,8 +1,16 @@
-(function($, Transparency, Konami) {
+(function($, _, Transparency) {
 
-  var konamid = false;
-  var VIDEO_ID = 'zKdwTgrow3E';
-  var EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>';
+  var VIDEO_ID = 'zKdwTgrow3E',
+      EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
+      SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+  var kkeys = [];
+
+  function errRedirect(jqXHR, msg, err) {
+    console.log(msg, err);
+    if (document.location.hostname !== "localhost")
+      window.location.replace('error.html?msg='+msg+'&err='+err);
+  }
 
   // Make transparency only match data-bind and data-cmd
   Transparency.matcher = function(element, key) {
@@ -52,112 +60,121 @@
   }
 
   $(function() {
-    $.getJSON('data/data.json', function(data) {
-      $('html').render(data, {
-        'hide-if-not': {
-          text: function() {
-            return '';
-          },
-          style: hideIfNot
-        },
-        fullname: {
-          text: function() {
-            return (this.first || '') + (this.first && this.last ? ' ' : '') + (this.last || '');
-          }
-        },
-        phone: {
-          href: function() {
-            if (this.phone)
-              return 'tel:' + this.phone.replace(/\s+/g, '');
-          }
-        },
-        email: {
-          href: function() {
-            if (this.email)
-              return 'mailto:' + this.email;
-          }
-        },
-        location: {
-          href: function() {
-            if (this.location)
-              return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
-          }
-        },
-        link: {
-          href: webLink
-        },
-        experience: {
-          content: {
-            value: {
-              text: function() {
-                return this.value;
-              }
-            }
-          }
-        },
-        skills: {
-          icon: {
+    $.when(
+      $.getJSON('data/data.json', function(data) {
+        $('html').render(data, {
+          'hide-if-not': {
             text: function() {
               return '';
             },
-            class: function(p) {
-              return p.element.className + ' ' + (this.icon || 'fa-code');
+            style: hideIfNot
+          },
+          fullname: {
+            text: function() {
+              return (this.first || '') + (this.first && this.last ? ' ' : '') + (this.last || '');
             }
           },
-          name: {
-            text: function(p) {
-              if (this.name && data.skills)
-                return commaize(this.name, p.index, data.skills);
+          phone: {
+            href: function() {
+              if (this.phone)
+                return 'tel:' + this.phone.replace(/\s+/g, '');
             }
-          }
-        },
-        projects: {
-          content: {
-            value: {
+          },
+          email: {
+            href: function() {
+              if (this.email)
+                return 'mailto:' + this.email;
+            }
+          },
+          location: {
+            href: function() {
+              if (this.location)
+                return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
+            }
+          },
+          link: {
+            href: webLink
+          },
+          experience: {
+            name: {
+              href: namedWebLink
+            },
+            content: {
+              value: {
+                text: function() {
+                  return this.value;
+                }
+              }
+            }
+          },
+          skills: {
+            icon: {
               text: function() {
-                return this.value;
+                return '';
+              },
+              class: function(p) {
+                return p.element.className + ' ' + (this.icon || 'fa-code');
+              }
+            },
+            name: {
+              text: function(p) {
+                if (this.name && data.skills)
+                  return commaize(this.name, p.index, data.skills);
+              }
+            }
+          },
+          projects: {
+            content: {
+              value: {
+                text: function() {
+                  return this.value;
+                }
+              }
+            }
+          },
+          organizations: {
+            namedate: {
+              text: function(p) {
+                if (this.name && this.date && data.organizations)
+                  return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
               }
             }
           }
-        },
-        organizations: {
-          namedate: {
+        });
+      }).fail(errRedirect),
+
+      $.getJSON('data/credits.json', function(data) {
+        $('#credits-list').render(data, {
+          entry: {
             text: function(p) {
-              if (this.name && this.date && data.organizations)
-                return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
-            }
+              if (this.name && data)
+                return commaize(this.name, p.index, data);
+            },
+            href: namedWebLink
           }
-        }
-      });
-    }).fail(function(jqXHR, msg, err) {
-      console.log(msg, err);
-      if (document.location.hostname !== "localhost")
-        window.location.replace('error.html?msg='+msg+'&err='+err);
+        });
+      }).fail(errRedirect)
+    ).
+
+    then(function() {
+      if (_.reduce(
+            _.map(arguments, function(arg) {return arg[1];}),
+            function(a, b) {return a && (b === 'success');},
+            true
+          ))
+        $('.container').css('display', 'block').fadeTo('slow', 1);
     });
 
-    $.getJSON('data/credits.json', function(data) {
-      $('#credits-list').render(data, {
-        entry: {
-          text: function(p) {
-            if (this.name && data)
-              return commaize(this.name, p.index, data);
-          },
-          href: namedWebLink
-        }
-      });
-    }).fail(function(jqXHR, msg, err) {
-      console.log(msg, err);
-      if (document.location.hostname !== "localhost")
-        window.location.replace('error.html?msg='+msg+'&err='+err);
-    });
-
-    // Konami it up
-    new Konami(function() {
-      if (!konamid) {
-        konamid = true;
+    // shhhh
+    $(document).keydown(function(e) {
+      kkeys.push(e.keyCode);
+      if (kkeys.length > SECRET.length)
+        kkeys.shift();
+      if (_.isEqual(kkeys, SECRET)) {
+        $(document).unbind('keydown', arguments.callee);
         $('body').append(EMBED);
       }
     });
   });
 
-})(window.jQuery, window.Transparency, window.Konami);
+})(window.jQuery, window._, window.Transparency);
