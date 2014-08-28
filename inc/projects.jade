@@ -1,0 +1,13 @@
+section#projects
+  +h4-icon('Projects', 'fa-pencil')
+  .table-responsive
+    table.table.table-striped.table-super-condensed
+      tbody(data-bind="projects")
+        tr
+          td(data-bind="name")
+          td(data-bind="role")
+          td(data-bind="date" align="right")
+        tr
+          td(colspan="3")
+            ul.list-unstyled(data-bind="content")
+              li(data-bind="value")
