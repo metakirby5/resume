@@ -154,14 +154,12 @@
     ).
 
     then(function() {
-      setTimeout(function() {
       if (_.reduce(
             _.map(arguments, function(arg) {return arg[1];}),
             function(a, b) {return a && (b === 'success');},
             true
           ))
         $('.container').css('display', 'block').fadeTo('slow', 1);
-      }, 1000);
     });
 
     // shhhh
