@@ -33,6 +33,25 @@ body
   font-size 1rem
   @media screen
     padding-top 20px
+  @media screen
+    background-color #f9f9f9 
+    color #333333
+    a
+      color #46A9FF
+    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
+      background-color #dedede
+    .fa.stackee.inverse
+      color #f9f9f9 
+    .github-fork-ribbon
+      background-color #46A9FF 
+    .btn-primary
+      color #f9f9f9
+      background-color #46A9FF
+      border-color #357ebd
+    .btn-default
+      color #333333
+      background-color #f9f9f9
+      border-color #cccccc
 
 .container
   // We'll fade this in after ajax
@@ -123,7 +142,7 @@ ul
   width 100%
   text-align center
   &.inverse
-    color white
+    color #FFFFFF
   &.box
     z-index -1
     &:before
@@ -132,15 +151,11 @@ ul
     top -0.1em
 
 kbd a
-  color white
+  color #FFFFFF
   &:hover
     color #CCCCCC
 
 // Specific styles
-.github-fork-ribbon
-  // Google blue hehe
-  background-color #4682EB 
-
 #header
   .contact
     @media screen and (min-width md-break), print

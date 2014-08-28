@@ -111,6 +111,35 @@ body {
     padding-top: 20px;
   }
 }
+@media screen {
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  body a {
+    color: #46a9ff;
+  }
+  body .table-striped>tbody>tr:nth-child(odd)>td,
+  body .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #dedede;
+  }
+  body .fa.stackee.inverse {
+    color: #f9f9f9;
+  }
+  body .github-fork-ribbon {
+    background-color: #46a9ff;
+  }
+  body .btn-primary {
+    color: #f9f9f9;
+    background-color: #46a9ff;
+    border-color: #357ebd;
+  }
+  body .btn-default {
+    color: #333;
+    background-color: #f9f9f9;
+    border-color: #ccc;
+  }
+}
 .container {
   display: none;
   opacity: 0;
@@ -251,9 +280,6 @@ kbd a {
 }
 kbd a:hover {
   color: #ccc;
-}
-.github-fork-ribbon {
-  background-color: #4682eb;
 }
 #header .contact {
   margin-bottom: 5px;
