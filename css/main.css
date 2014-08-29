@@ -203,13 +203,15 @@ ul.fa-ul.list-inline>li {
   }
 }
 @media screen {
+  ::selection {
+    background: #d64937;
+  }
+  ::-moz-selection {
+    background: #d64937;
+  }
   body {
     background-color: #f9f9f9;
     color: #333;
-  }
-  body ::selection,
-  body ::-moz-selection {
-    background: #d64937;
   }
   body a {
     color: #d64937;

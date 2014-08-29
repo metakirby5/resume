@@ -10,12 +10,14 @@ nmx-red1 = #C24130
 nmx-red2 = #AD3A2B 
 
 @media screen
+  ::selection
+    background nmx-red0
+  ::-moz-selection
+    background nmx-red0
+
   body
     background-color nmx-white 
     color nmx-grey4
-
-    ::selection, ::-moz-selection
-      background nmx-red0
 
     a
       color nmx-red0
