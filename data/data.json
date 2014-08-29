@@ -17,22 +17,22 @@
         {
           "name": "CSE30",
           "content": "Computer Organization/Systems Programming in C/SPARC Assembly",
-          "date": "Spring 2013"
+          "date": "Spring 2014"
         },
         {
           "name": "CSE21",
           "content": "Math for Algorithms/Systems",
-          "date": "Spring 2013"
+          "date": "Spring 2014"
         },
         {
           "name": "CSE12/15L",
           "content": "Data Structures/Object-Oriented Design in C/C++",
-          "date": "Winter 2013"
+          "date": "Winter 2014"
         },
         {
           "name": "CSE20",
           "content": "Discrete Math",
-          "date": "Winter 2013"
+          "date": "Winter 2014"
         },
         {
           "name": "CSE11",
@@ -164,6 +164,10 @@
   "organizations": [
     {
       "name": "Warren College Honors Society",
+      "date": "2014"
+    },
+    {
+      "name": "National Society of Collegiate Scholars",
       "date": "2014"
     },
     {
