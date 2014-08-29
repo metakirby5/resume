@@ -21,7 +21,7 @@
   var getIdx = _.curry(function(idx, arr) {return arr[idx];});
 
   function commaize(str, index, arr) {
-    return str + ((index !== arr.length) - 1 ? ',' : '');
+    return str + ((index !== arr.length - 1) ? ',' : '');
   }
 
   // Takes object with width:func(curWidth)
@@ -38,7 +38,7 @@
 
     $(base);
     $(window).resize(base);
-  };
+  }
 
   function errRedirect(jqXHR, msg, err) {
     console.log(msg, err);
