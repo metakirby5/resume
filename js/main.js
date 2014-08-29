@@ -1,20 +1,43 @@
 (function($, _, Transparency) {
 
+  "use strict";
+
   // Constants
-  var VIDEO_ID = 'zKdwTgrow3E',
+  var XS = 0,
+      SM = 768,
+      MD = 992,
+      LG = 1200,
+      VIDEO_ID = 'zKdwTgrow3E',
       EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
       SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-
-  // Utilities
-  var getIdx = _.curry(function(idx, arr) {return arr[idx];});
 
   // Globals
   var kkeys = [];
 
-  // Make transparency only match data-bind and data-cmd
-  Transparency.matcher = function(element, key) {
-    return (element.el.getAttribute('data-bind') === key ||
-            element.el.getAttribute('data-cmd') === key);
+  // Utilities
+  var pLog = _.curry(function(qty, text, args) {
+    console.log.apply(console, [text + ': '].concat(Array.prototype.slice.call(arguments, 2, qty + 2)));
+  });
+  var getIdx = _.curry(function(idx, arr) {return arr[idx];});
+
+  function commaize(str, index, arr) {
+    return str + ((index !== arr.length) - 1 ? ',' : '');
+  }
+
+  // Takes object with width:func(curWidth)
+  function onWidths(obj) {
+    // Initialize 0 if not already there
+    if (!obj[0])
+      obj[0] = function(){};
+
+    var base = function() {
+      var $width = $(window).width();
+      var reduction = function(a, v, k) {return $width > k ? k : a}
+      obj[_.reduce(obj, reduction, 0)]($width);
+    };
+
+    $(base);
+    $(window).resize(base);
   };
 
   function errRedirect(jqXHR, msg, err) {
@@ -22,6 +45,12 @@
     if (document.location.hostname !== "localhost")
       window.location.replace('error.html?msg='+msg+'&err='+err);
   }
+
+  // Make transparency only match data-bind and data-cmd
+  Transparency.matcher = function(element, key) {
+    return (element.el.getAttribute('data-bind') === key ||
+            element.el.getAttribute('data-cmd') === key);
+  };
 
   function hideIfNot(p) {
     var req = p.element.dataset.values;
@@ -60,14 +89,11 @@
     return url;
   }
 
-  function commaize(str, index, arr) {
-    return str + ((index !== arr.length) - 1 ? ',' : '');
-  }
-
   $(function() {
     // Fade in after ajax
     $('body').hide();
 
+    // Ajax calls
     $.when(
       $.getJSON('data/data.json', function(data) {
         $('html').render(data, {
@@ -170,6 +196,15 @@
       if (_(arguments).map(getIdx(1)).reduce(reduction, true))
         $('body').fadeIn('slow');
     });
+
+    // Other listeners
+    var widths = {};
+    var pLog1 = pLog(1);
+    widths[XS] = pLog1('XS');
+    widths[SM] = pLog1('SM');
+    widths[MD] = pLog1('MD');
+    widths[LG] = pLog1('LG');
+    onWidths(widths);
 
     // shhhh
     $(document).keydown(function(e) {
