@@ -204,10 +204,10 @@ ul.fa-ul.list-inline>li {
 }
 @media screen {
   ::selection {
-    background: #d64937;
+    background: #f5b4ab;
   }
   ::-moz-selection {
-    background: #d64937;
+    background: #f5b4ab;
   }
   body {
     background-color: #f9f9f9;
