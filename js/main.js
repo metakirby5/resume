@@ -207,12 +207,13 @@
     onWidths(widths);
 
     // shhhh
-    $(document).keydown(function(e) {
+    var secretFunc;
+    $(document).keydown(secretFunc = function(e) {
       kkeys.push(e.keyCode);
       if (kkeys.length > SECRET.length)
         kkeys.shift();
       if (_.isEqual(kkeys, SECRET)) {
-        $(document).unbind('keydown', arguments.callee);
+        $(document).unbind('keydown', secretFunc);
         $('body').append(EMBED);
       }
     });
