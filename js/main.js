@@ -1,10 +1,44 @@
 (function($, _, Transparency) {
 
-  var VIDEO_ID = 'zKdwTgrow3E',
+  "use strict";
+
+  // Constants
+  var XS = 0,
+      SM = 768,
+      MD = 992,
+      LG = 1200,
+      VIDEO_ID = 'zKdwTgrow3E',
       EMBED = '<iframe style="visibility:hidden;display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
       SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
+  // Globals
   var kkeys = [];
+
+  // Utilities
+  var pLog = _.curry(function(qty, text, args) {
+    console.log.apply(console, [text + ': '].concat(Array.prototype.slice.call(arguments, 2, qty + 2)));
+  });
+  var getIdx = _.curry(function(idx, arr) {return arr[idx];});
+
+  function commaize(str, index, arr) {
+    return str + ((index !== arr.length) - 1 ? ',' : '');
+  }
+
+  // Takes object with width:func(curWidth)
+  function onWidths(obj) {
+    // Initialize 0 if not already there
+    if (!obj[0])
+      obj[0] = function(){};
+
+    var base = function() {
+      var $width = $(window).width();
+      var reduction = function(a, v, k) {return $width > k ? k : a}
+      obj[_.reduce(obj, reduction, 0)]($width);
+    };
+
+    $(base);
+    $(window).resize(base);
+  };
 
   function errRedirect(jqXHR, msg, err) {
     console.log(msg, err);
@@ -24,10 +58,10 @@
       return;
 
     req = req.split(' ');
-    for (var i = 0; i < req.length; i++) {
-      if (!this[req[i]])
-        return 'display: none';
-    }
+    var reduction = function(a, b) {return a && !b;};
+
+    if (_(req).reduce(reduction, true))
+      return 'display: none';
   }
 
   function webLink(p) {
@@ -55,14 +89,11 @@
     return url;
   }
 
-  function commaize(str, index, arr) {
-    return str + (index !== arr.length - 1 ? ',' : '');
-  }
-
   $(function() {
     // Fade in after ajax
     $('body').hide();
 
+    // Ajax calls
     $.when(
       $.getJSON('data/data.json', function(data) {
         $('html').render(data, {
@@ -160,13 +191,20 @@
     ).
 
     then(function() {
-      if (_.reduce(
-            _.map(arguments, function(arg) {return arg[1];}),
-            function(a, b) {return a && (b === 'success');},
-            true
-          ))
+      var reduction = function(a, b) {return a && (b === 'success');};
+
+      if (_(arguments).map(getIdx(1)).reduce(reduction, true))
         $('body').fadeIn('slow');
     });
+
+    // Other listeners
+    var widths = {};
+    var pLog1 = pLog(1);
+    widths[XS] = pLog1('XS');
+    widths[SM] = pLog1('SM');
+    widths[MD] = pLog1('MD');
+    widths[LG] = pLog1('LG');
+    onWidths(widths);
 
     // shhhh
     $(document).keydown(function(e) {

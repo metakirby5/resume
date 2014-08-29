@@ -17,22 +17,22 @@
         {
           "name": "CSE30",
           "content": "Computer Organization/Systems Programming in C/SPARC Assembly",
-          "date": "Spring 2013"
+          "date": "Spring 2014"
         },
         {
           "name": "CSE21",
           "content": "Math for Algorithms/Systems",
-          "date": "Spring 2013"
+          "date": "Spring 2014"
         },
         {
           "name": "CSE12/15L",
           "content": "Data Structures/Object-Oriented Design in C/C++",
-          "date": "Winter 2013"
+          "date": "Winter 2014"
         },
         {
           "name": "CSE20",
           "content": "Discrete Math",
-          "date": "Winter 2013"
+          "date": "Winter 2014"
         },
         {
           "name": "CSE11",
@@ -167,6 +167,10 @@
       "date": "2014"
     },
     {
+      "name": "National Society of Collegiate Scholars",
+      "date": "2014"
+    },
+    {
       "name": "Computer Science & Engineering Society",
       "date": "2013"
     },
@@ -175,7 +179,7 @@
       "date": "2013"
     },
     {
-      "name": "Video Game Development Society",
+      "name": "Video Game Development Club",
       "date": "2013"
     }
   ]

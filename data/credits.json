@@ -12,8 +12,8 @@
     "url": "http://jquery.com/"
   },
   {
-    "name": "Underscore",
-    "url": "http://underscorejs.org/"
+    "name": "Lo-Dash",
+    "url": "http://lodash.com/"
   },
   {
     "name": "Transparency",
