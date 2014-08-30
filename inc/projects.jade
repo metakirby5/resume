@@ -1,12 +1,13 @@
 section#projects
   +h4-i('Projects', 'fa-pencil')
-  .table-responsive(data-bind="projects")
-    table.table.table-super-condensed
-      tbody.meta
-        tr.active
-          td.name(data-bind="name")
-          td.role(data-bind="role")
-          td.date(data-bind="date")
-      tbody.content(data-bind="content")
-        tr
-          td(data-bind="value" colspan="3")
+  div(data-bind="projects")
+    .table-responsive
+      table.table.table-super-condensed
+        tbody.meta
+          tr.active
+            td.name(data-bind="name")
+            td.role(data-bind="role")
+            td.date(data-bind="date")
+        tbody.content(data-bind="content")
+          tr
+            td(data-bind="value" colspan="3")
