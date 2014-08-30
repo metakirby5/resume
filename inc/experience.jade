@@ -1,11 +1,11 @@
 section#experience
   +h4-i('Experience', 'fa-suitcase')
   .table-responsive
-    table.table.table-striped.table-super-condensed
+    table.table.table-super-condensed
       tbody(data-bind="experience")
-        tr
+        tr.active
           td: a(data-bind="name")
-          td(data-bind="role")
+          td(data-bind="role" align="center")
           td(data-bind="date" align="right")
         tr
           td(colspan="3")

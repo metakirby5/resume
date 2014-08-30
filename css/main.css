@@ -1,28 +1,28 @@
 hr {
-  margin: 0 0 10px 0;
+  margin: 0 0 13.333333333333334px 0;
 }
 hr.smallmargin {
-  margin: 0 0 5px 0;
+  margin: 0 0 6.666666666666667px 0;
 }
 section {
-  margin-bottom: 7.5px;
+  margin-bottom: 10px;
 }
 @media screen {
   section {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 h4,
 .h4 {
-  margin: 5px 0;
+  margin: 6.666666666666667px 0;
 }
 h5,
 .h5 {
-  margin: 5px 0;
+  margin: 6.666666666666667px 0;
 }
 h6,
 .h6 {
-  margin: 5px 0;
+  margin: 6.666666666666667px 0;
 }
 .h-inline {
   display: inline-block;
@@ -40,7 +40,7 @@ h6,
   }
 }
 .row .space-em {
-  margin-bottom: 5px;
+  margin-bottom: 6.666666666666667px;
 }
 .row .space-em:last-of-type {
   margin-bottom: 0;
@@ -225,8 +225,12 @@ ul.fa-ul.list-inline>li {
   body kbd a:hover {
     color: #dedede;
   }
-  body .table-striped>tbody>tr:nth-child(odd)>td,
-  body .table-striped>tbody>tr:nth-child(odd)>th {
+  body .table > thead > tr.active > td,
+  body .table > tbody > tr.active > td,
+  body .table > tfoot > tr.active > td,
+  body .table > thead > tr.active > th,
+  body .table > tbody > tr.active > th,
+  body .table > tfoot > tr.active > th {
     background-color: #eee;
   }
   body .fa.stackee.inverse {
@@ -292,8 +296,13 @@ h4,
 .table.table-super-condensed > tfoot > th > td {
   padding: 3px;
 }
+@media screen {
+  li {
+    line-height: 1.75rem;
+  }
+}
 #header .contact {
-  margin-bottom: 5px;
+  margin-bottom: 6.666666666666667px;
 }
 @media screen and (min-width: 1200px), print {
   #header .contact {
@@ -303,7 +312,7 @@ h4,
 #header .contact .main-title {
   display: block;
   margin-top: 0;
-  margin-bottom: 7.5px;
+  margin-bottom: 10px;
   margin-right: 20px;
   line-height: 5rem;
   font-size: 4.75rem;
@@ -320,7 +329,7 @@ h4,
   }
 }
 #header .contact ul {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px), print {
   #header .contact ul {
@@ -328,8 +337,8 @@ h4,
   }
 }
 #education .college {
-  margin-bottom: 5px;
+  margin-bottom: 6.666666666666667px;
 }
 #skills li {
-  margin-bottom: 5px;
+  margin-bottom: 6.666666666666667px;
 }

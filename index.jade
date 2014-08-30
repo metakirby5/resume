@@ -23,21 +23,20 @@ html
       
       include inc/about.jade
 
-      .row
-        .col-xs-12.col-md-8.col-print-12(data-cmd="hide-if-not" data-values="education")
-          include inc/education.jade
+      div(data-cmd="hide-if-not" data-values="experience")
+        include inc/experience.jade
 
-        .col-xs-12.col-md-4.col-print-12(data-cmd="hide-if-not" data-values="skills")
+
+      .row
+        .col-xs-12.col-md-4.col-md-push-8.col-print-12(data-cmd="hide-if-not" data-values="skills")
           include inc/skills.jade
 
-      .row
-        .col-xs-12.col-md-8(data-cmd="hide-if-not" data-values="experience projects")
-          .row
-            .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="experience")
-              include inc/experience.jade
+        .col-xs-12.col-md-8.col-md-pull-4.col-print-12(data-cmd="hide-if-not" data-values="education")
+          include inc/education.jade
 
-            .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="projects")
-              include inc/projects.jade
+      .row
+        .col-xs-12.col-md-8.col-print-12(data-cmd="hide-if-not" data-values="projects")
+          include inc/projects.jade
 
         .col-xs-12.col-md-4(data-cmd="hide-if-not" data-values="organizations")
             include inc/organizations.jade

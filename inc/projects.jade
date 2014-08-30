@@ -1,9 +1,9 @@
 section#projects
   +h4-i('Projects', 'fa-pencil')
   .table-responsive
-    table.table.table-striped.table-super-condensed
+    table.table.table-super-condensed
       tbody(data-bind="projects")
-        tr
+        tr.active
           td(data-bind="name")
           td(data-bind="role" align="center")
           td(data-bind="date" align="right")
