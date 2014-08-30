@@ -336,23 +336,30 @@ h4,
     margin-bottom: 0;
   }
 }
-#education table tbody.college-meta + tbody {
+#experience table tr.meta .date {
+  text-align: right;
+}
+#education table tbody.meta + tbody {
   border-top: 0;
 }
-#education table .college {
+#education table tbody.meta td > div {
   display: inline-block;
   float: left;
 }
-#education table .college.school {
+#education table tbody.meta td > div.school {
   width: 40%;
 }
-#education table .college.grades {
+#education table tbody.meta td > div.grades {
   width: 30%;
 }
-#education table .college.dates {
+#education table tbody.meta td > div.dates {
   width: 30%;
   text-align: right;
 }
-#skills li {
-  margin-bottom: 6.666666666666667px;
+#education table tbody.classes .date {
+  width: 120px;
+  text-align: right;
+}
+#projects table tr.meta .date {
+  text-align: right;
 }

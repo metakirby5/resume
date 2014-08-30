@@ -60,21 +60,37 @@ h4, .h4
         margin-bottom 0
       margin-bottom sec-margin 
 
+#experience
+  table
+    tr
+      &.meta
+        .date
+          text-align right
+
 #education
   table
-    tbody.college-meta + tbody
-      border-top 0
-    .college
-      display inline-block
-      float left
-      &.school
-        width 40%
-      &.grades
-        width 30%
-      &.dates
-        width 30%
-        text-align right
+    tbody
+      &.meta
+        & + tbody
+          border-top 0
+        & td > div
+          display inline-block
+          float left
+          &.school
+            width 40%
+          &.grades
+            width 30%
+          &.dates
+            width 30%
+            text-align right
+      &.classes
+        .date
+          width 120px
+          text-align right
 
-#skills
-  li
-    margin-bottom (sec-margin / 3)
+#projects
+  table
+    tr
+      &.meta
+        .date
+          text-align right

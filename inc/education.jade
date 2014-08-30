@@ -2,14 +2,14 @@ section#education
   +h4-i('Education', 'fa-graduation-cap')
   .table-responsive(data-bind="education")
     table.table.table-super-condensed
-      tbody.college-meta
+      tbody.meta
         tr.active
           td(colspan="3")
-            .college.school(data-bind="school")
-            .college.grades(data-bind="grades")
-            .college.dates(data-bind="dates")
-      tbody(data-bind="classes")
+            .school(data-bind="school")
+            .grades(data-bind="grades")
+            .dates(data-bind="dates")
+      tbody.classes(data-bind="classes")
         tr
-          td(data-bind="name")
-          td(data-bind="content")
-          td(data-bind="date" align="right")
+          td.name(data-bind="name")
+          td.content(data-bind="content")
+          td.date(data-bind="date")

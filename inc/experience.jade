@@ -3,11 +3,11 @@ section#experience
   .table-responsive
     table.table.table-super-condensed
       tbody(data-bind="experience")
-        tr.active
-          td: a(data-bind="name")
-          td(data-bind="role")
-          td(data-bind="date" align="right")
-        tr
+        tr.active.meta
+          td.name: a(data-bind="name")
+          td.role(data-bind="role")
+          td.date(data-bind="date")
+        tr.content
           td(colspan="3")
             ul.list-unstyled(data-bind="content")
               li(data-bind="value")
