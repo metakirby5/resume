@@ -195,6 +195,8 @@
 
       if (_(arguments).map(getIdx(1)).reduce(reduction, true))
         $('body').fadeIn('slow');
+      else
+        errRedirect(null, 'Not all ajax calls returned success', arguments);
     });
 
     // Other listeners
