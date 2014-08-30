@@ -1,12 +1,16 @@
 section#experience
   +h4-i('Experience', 'fa-suitcase')
-  .table-responsive(data-bind="experience")
-    table.table.table-super-condensed
-      tbody.meta
-        tr.active
-          td.name: a(data-bind="name")
-          td.role(data-bind="role")
-          td.date(data-bind="date")
-      tbody.content(data-bind="content")
-        tr
-          td(data-bind="value" colspan="3")
+  .row(data-bind="experience")
+    .col-xs-12.col-md-9.col-md-push-3.col-print-12
+      .table-responsive
+        table.table.table-super-condensed
+          tbody.meta
+            tr.active
+              td.name: a(data-bind="name")
+              td.role(data-bind="role")
+              td.date(data-bind="date")
+          tbody.content(data-bind="content")
+            tr
+              td(data-bind="value" colspan="3")
+    .col-md-3.col-md-pull-9.hidden-xs.hidden-sm.hidden-print
+      img.img-responsive.img-thumbnail(data-bind="image")

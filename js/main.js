@@ -52,8 +52,8 @@
             element.el.getAttribute('data-cmd') === key);
   };
 
-  function hideIfNot(p) {
-    var req = p.element.dataset.values;
+  var hideIfNot = _.curry(function(key, p) {
+    var req = p.element.dataset[key];
     if (!req)
       return;
 
@@ -62,7 +62,7 @@
 
     if (_(req).reduce(reduction, true))
       return 'display: none';
-  }
+  });
 
   var webLink = function(p) {
     // Get dest obj from data binding
@@ -101,7 +101,13 @@
             text: function() {
               return '';
             },
-            style: hideIfNot
+            style: hideIfNot('values')
+          },
+          'hide-if-not-bound': {
+            text: function() {
+              return '';
+            },
+            style: hideIfNot('bind')
           },
           fullname: {
             text: function() {
@@ -138,6 +144,14 @@
                 text: function() {
                   return this.value;
                 }
+              }
+            },
+            image: {
+              src: function() {
+                return this.image || '';
+              },
+              style: function() {
+                return !!this.image || 'display: none';
               }
             }
           },
