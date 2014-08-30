@@ -201,6 +201,17 @@ ul.fa-ul.list-inline>li {
   .no-mb-print {
     margin-bottom: 0 !important;
   }
+  .table > thead > tr.active > td,
+  .table > tbody > tr.active > td,
+  .table > tfoot > tr.active > td {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
 }
 @media screen {
   ::selection {
@@ -336,7 +347,17 @@ h4,
     margin-bottom: 0;
   }
 }
-#experience table tr.meta .date {
+#experience table tbody.meta + tbody {
+  border-top: 0;
+}
+#experience table tbody.meta .name {
+  width: 40%;
+}
+#experience table tbody.meta .role {
+  width: 30%;
+}
+#experience table tbody.meta .date {
+  width: 30%;
   text-align: right;
 }
 #education table tbody.meta + tbody {
@@ -360,6 +381,16 @@ h4,
   width: 120px;
   text-align: right;
 }
-#projects table tr.meta .date {
+#projects table tbody.meta + tbody {
+  border-top: 0;
+}
+#projects table tbody.meta .name {
+  width: 40%;
+}
+#projects table tbody.meta .role {
+  width: 30%;
+}
+#projects table tbody.meta .date {
+  width: 30%;
   text-align: right;
 }

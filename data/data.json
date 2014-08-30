@@ -50,8 +50,7 @@
       "content": [
         "Developed across the web stack spectrum using the Django framework",
         "Implemented a newsfeed section interfacing with several API's such as Prismic.io and Disqus",
-        "Introduced responsive web design to key flows",
-        "Contributed with test coverage (unit and integration) consistently above 95%"
+        "Introduced responsive web design to key flows"
       ],
       "date": "Jun. 2014 - Sep. 2014"
     },

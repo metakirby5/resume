@@ -1,6 +1,7 @@
 @require '_vars.styl'
 @require '_util.styl'
 @require '_print.styl'
+@require '_print_color.styl'
 @require '_screen_color.styl'
 
 // General
@@ -62,9 +63,16 @@ h4, .h4
 
 #experience
   table
-    tr
+    tbody
       &.meta
+        & + tbody
+          border-top 0
+        .name
+          width 40%
+        .role
+          width 30%
         .date
+          width 30%
           text-align right
 
 #education
@@ -90,7 +98,14 @@ h4, .h4
 
 #projects
   table
-    tr
+    tbody
       &.meta
+        & + tbody
+          border-top 0
+        .name
+          width 40%
+        .role
+          width 30%
         .date
+          width 30%
           text-align right
