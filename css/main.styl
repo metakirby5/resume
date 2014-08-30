@@ -29,7 +29,7 @@ h4, .h4
     & > thead, & > tbody, & > tfoot
       & > tr, & > th
         & > td
-          padding 3px
+          padding 3px 10px
 
 @media screen
   li
@@ -61,8 +61,19 @@ h4, .h4
       margin-bottom sec-margin 
 
 #education
-  .college
-    margin-bottom (sec-margin / 3)
+  table
+    tbody.college-meta + tbody
+      border-top 0
+    .college
+      display inline-block
+      float left
+      &.school
+        width 40%
+      &.grades
+        width 30%
+      &.dates
+        width 30%
+        text-align right
 
 #skills
   li

@@ -294,7 +294,7 @@ h4,
 .table.table-super-condensed > thead > th > td,
 .table.table-super-condensed > tbody > th > td,
 .table.table-super-condensed > tfoot > th > td {
-  padding: 3px;
+  padding: 3px 10px;
 }
 @media screen {
   li {
@@ -336,8 +336,22 @@ h4,
     margin-bottom: 0;
   }
 }
-#education .college {
-  margin-bottom: 6.666666666666667px;
+#education table tbody.college-meta + tbody {
+  border-top: 0;
+}
+#education table .college {
+  display: inline-block;
+  float: left;
+}
+#education table .college.school {
+  width: 40%;
+}
+#education table .college.grades {
+  width: 30%;
+}
+#education table .college.dates {
+  width: 30%;
+  text-align: right;
 }
 #skills li {
   margin-bottom: 6.666666666666667px;
