@@ -64,7 +64,7 @@
       return 'display: none';
   }
 
-  function webLink(p) {
+  var webLink = function(p) {
     // Get dest obj from data binding
     var dest = p.element.dataset.bind;
     if (!dest || !this[dest])
@@ -75,9 +75,9 @@
     if (url.indexOf('http://'))
       url = 'http://' + url;
     return url;
-  }
+  };
 
-  function namedWebLink() {
+  var namedWebLink = function() {
     // Requires url to be in values scope
     var url = this.url;
     if (!url)
@@ -87,7 +87,7 @@
     if (url.indexOf('http://'))
       url = 'http://' + url;
     return url;
-  }
+  };
 
   $(function() {
     // Fade in after ajax
