@@ -16,7 +16,7 @@
 
   // Utilities
   var pLog = _.curry(function(qty, text, args) {
-    console.log.apply(console, [text + ': '].concat(Array.prototype.slice.call(arguments, 2, qty + 2)));
+    console.log.apply(console, [text + ': '].concat([].slice.call(arguments, 2, qty + 2)));
   });
   var getIdx = _.curry(function(idx, arr) {return arr[idx];});
 
