@@ -31,7 +31,7 @@
       obj[0] = function(){};
 
     var base = function() {
-      var $width = $(window).width();
+      var $width = window.outerWidth;
       var reduction = function(a, v, k) {return $width > k ? k : a;};
       obj[_.reduce(obj, reduction, 0)]($width);
     };
