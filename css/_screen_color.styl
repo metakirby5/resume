@@ -30,8 +30,11 @@ nmx-red3 = #AD3A2B
       &:hover
         color nmx-grey2
 
-    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th
-      background-color nmx-grey1
+    .table
+      & > thead, & > tbody, & > tfoot
+        & > tr.active
+         & > td, & > th
+            background-color nmx-grey1
 
     .fa.stackee.inverse
       color nmx-white 

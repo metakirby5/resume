@@ -16,27 +16,32 @@
       "classes": [
         {
           "name": "CSE30",
-          "content": "Computer Organization/Systems Programming in C/SPARC Assembly",
+          "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
           "date": "Spring 2014"
         },
         {
           "name": "CSE21",
-          "content": "Math for Algorithms/Systems",
+          "content": "Mathematics for Algorithms and Systems",
           "date": "Spring 2014"
         },
         {
-          "name": "CSE12/15L",
-          "content": "Data Structures/Object-Oriented Design in C/C++",
+          "name": "CSE12",
+          "content": "Basic Data Structures and Object-Oriented Design: C/C++",
+          "date": "Winter 2014"
+        },
+        {
+          "name": "CSE15L",
+          "content": "Software Tools and Techniques Laboratory",
           "date": "Winter 2014"
         },
         {
           "name": "CSE20",
-          "content": "Discrete Math",
+          "content": "Discrete Mathematics",
           "date": "Winter 2014"
         },
         {
           "name": "CSE11",
-          "content": "OOP and design in Java (Swing GUI, Objectdraw)",
+          "content": "Introduction to Computer Science and Object Oriented Programming: Java",
           "date": "Fall 2013"
         }
       ]
@@ -50,10 +55,10 @@
       "content": [
         "Developed across the web stack spectrum using the Django framework",
         "Implemented a newsfeed section interfacing with several API's such as Prismic.io and Disqus",
-        "Introduced responsive web design to key flows",
-        "Contributed with test coverage (unit and integration) consistently above 95%"
+        "Introduced responsive web design to key flows"
       ],
-      "date": "Jun. 2014 - Sep. 2014"
+      "date": "Jun. 2014 - Sep. 2014",
+      "image": "img/circleup.png"
     },
     {
       "name": "Perspectium",
@@ -63,7 +68,8 @@
         "Developed an endpoint-based SQL table management API in Java",
         "Co-managed a SCRUM board to promote agile software development lifecycle"
       ],
-      "date": "Jul. 2013 - Aug. 2013"
+      "date": "Jul. 2013 - Aug. 2013",
+      "image": "img/perspectium.png"
     },
     {
       "name": "BlueChip Machine and Fabrication",
@@ -72,7 +78,8 @@
         "Collaborated with a partner to prototype and machine a custom aluminum project",
         "Designed products in SolidWorks and Adobe Illustrator, machined on a CNC mill with MasterCam"
       ],
-      "date": "Jun. 2013 - Jul. 2013"
+      "date": "Jun. 2013 - Jul. 2013",
+      "image": "img/bluechip.jpg"
     }
   ],
   "projects": [
@@ -87,7 +94,7 @@
     },
     {
       "name": "FIRST Robotics Team 1538",
-      "role": "Director of Engineering",
+      "role": "Lead Engineer",
       "content": [
         "Led the prototyping, design, machining, and assembly of the team’s consistently top-seeded robot",
         "Coached team members in soft & technical skills via engineering projects and one-on-one training",
