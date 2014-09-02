@@ -16,27 +16,32 @@
       "classes": [
         {
           "name": "CSE30",
-          "content": "Computer Organization/Systems Programming in C/SPARC Assembly",
+          "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
           "date": "Spring 2014"
         },
         {
           "name": "CSE21",
-          "content": "Math for Algorithms/Systems",
+          "content": "Mathematics for Algorithms and Systems",
           "date": "Spring 2014"
         },
         {
-          "name": "CSE12/15L",
-          "content": "Data Structures/Object-Oriented Design in C/C++",
+          "name": "CSE12",
+          "content": "Basic Data Structures and Object-Oriented Design: C/C++",
+          "date": "Winter 2014"
+        },
+        {
+          "name": "CSE15L",
+          "content": "Software Tools and Techniques Laboratory",
           "date": "Winter 2014"
         },
         {
           "name": "CSE20",
-          "content": "Discrete Math",
+          "content": "Discrete Mathematics",
           "date": "Winter 2014"
         },
         {
           "name": "CSE11",
-          "content": "OOP and design in Java (Swing GUI, Objectdraw)",
+          "content": "Introduction to Computer Science and Object Oriented Programming: Java",
           "date": "Fall 2013"
         }
       ]
