@@ -21,11 +21,11 @@ html
 
       hr
       
-      include inc/about.jade
+      div(data-cmd="hide-if-not" data-values="tagline")
+        include inc/about.jade
 
-      .row
-        .col-xs-12.col-print-12(data-cmd="hide-if-not" data-values="experience")
-          include inc/experience.jade
+      div(data-cmd="hide-if-not" data-values="experience")
+        include inc/experience.jade
 
       hr.hidden-xs.hidden-sm.hidden-print
 
