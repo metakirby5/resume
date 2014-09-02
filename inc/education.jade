@@ -1,18 +1,16 @@
 section#education
   +h4-i('Education', 'fa-graduation-cap')
-  hr.smallmargin
   div(data-bind="education")
-    .row
-      .col-xs-12.col-sm-4.col-print-4.col-left
-        span.table-label(data-bind="school")
-      .col-xs-12.col-sm-4.col-print-4.col-center
-        span.table-label(data-bind="grades")
-      .col-xs-12.col-sm-4.col-print-4.col-right
-        span.table-label(data-bind="dates")
     .table-responsive
-      table.table.table-striped.table-super-condensed
-        tbody(data-bind="classes")
+      table.table.table-super-condensed
+        tbody.meta
+          tr.active
+            td(colspan="3")
+              .school(data-bind="school")
+              .grades(data-bind="grades")
+              .dates(data-bind="dates")
+        tbody.classes(data-bind="classes")
           tr
-            td(data-bind="name")
-            td(data-bind="content")
-            td(data-bind="date" align="right")
+            td.name(data-bind="name")
+            td.content(data-bind="content")
+            td.date(data-bind="date")

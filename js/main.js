@@ -16,7 +16,7 @@
 
   // Utilities
   var pLog = _.curry(function(qty, text, args) {
-    console.log.apply(console, [text + ': '].concat(Array.prototype.slice.call(arguments, 2, qty + 2)));
+    console.log.apply(console, [text + ': '].concat([].slice.call(arguments, 2, qty + 2)));
   });
   var getIdx = _.curry(function(idx, arr) {return arr[idx];});
 
@@ -31,8 +31,8 @@
       obj[0] = function(){};
 
     var base = function() {
-      var $width = $(window).width();
-      var reduction = function(a, v, k) {return $width > k ? k : a}
+      var $width = window.outerWidth;
+      var reduction = function(a, v, k) {return $width >= +k && +k > +a ? +k : +a;};
       obj[_.reduce(obj, reduction, 0)]($width);
     };
 
@@ -52,8 +52,8 @@
             element.el.getAttribute('data-cmd') === key);
   };
 
-  function hideIfNot(p) {
-    var req = p.element.dataset.values;
+  var hideIfNot = _.curry(function(key, p) {
+    var req = p.element.dataset[key];
     if (!req)
       return;
 
@@ -62,9 +62,9 @@
 
     if (_(req).reduce(reduction, true))
       return 'display: none';
-  }
+  });
 
-  function webLink(p) {
+  var webLink = function(p) {
     // Get dest obj from data binding
     var dest = p.element.dataset.bind;
     if (!dest || !this[dest])
@@ -75,9 +75,9 @@
     if (url.indexOf('http://'))
       url = 'http://' + url;
     return url;
-  }
+  };
 
-  function namedWebLink() {
+  var namedWebLink = function() {
     // Requires url to be in values scope
     var url = this.url;
     if (!url)
@@ -87,7 +87,7 @@
     if (url.indexOf('http://'))
       url = 'http://' + url;
     return url;
-  }
+  };
 
   $(function() {
     // Fade in after ajax
@@ -101,7 +101,13 @@
             text: function() {
               return '';
             },
-            style: hideIfNot
+            style: hideIfNot('values')
+          },
+          'hide-if-not-bound': {
+            text: function() {
+              return '';
+            },
+            style: hideIfNot('bind')
           },
           fullname: {
             text: function() {
@@ -138,6 +144,20 @@
                 text: function() {
                   return this.value;
                 }
+              }
+            },
+            url: {
+              text: function() {
+                return '';
+              },
+              href: webLink
+            },
+            image: {
+              src: function() {
+                return this.image || '';
+              },
+              style: function() {
+                return !!this.image || 'display: none';
               }
             }
           },
@@ -195,6 +215,8 @@
 
       if (_(arguments).map(getIdx(1)).reduce(reduction, true))
         $('body').fadeIn('slow');
+      else
+        errRedirect(null, 'Not all ajax calls returned success', arguments);
     });
 
     // Other listeners

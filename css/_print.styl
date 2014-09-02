@@ -4,7 +4,7 @@
 
 @media print
   html
-    font-size 10pt
+    font-size 8pt
 
   body
     margin 0
@@ -22,3 +22,10 @@
 
   .no-mb-print
       margin-bottom 0 !important
+
+  .table
+      & > thead, & > tbody, & > tfoot
+        & > tr.active
+          & > td
+            border-top 1px solid
+            border-bottom 1px solid

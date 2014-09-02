@@ -1,6 +1,7 @@
 @require '_vars.styl'
 @require '_util.styl'
 @require '_print.styl'
+@require '_print_color.styl'
 @require '_screen_color.styl'
 
 // General
@@ -21,16 +22,17 @@ h4, .h4
   font-weight bold 
 
 .table
-  font-size .8rem 
-  @media screen
-    font-size 1rem
+  font-size 1rem
   margin-bottom 0
   &.table-super-condensed
     & > thead, & > tbody, & > tfoot
       & > tr, & > th
         & > td
-          padding 3px
+          padding 3px 10px
 
+@media screen
+  li
+    line-height 1.75rem 
 
 // Specific
 #header
@@ -57,10 +59,53 @@ h4, .h4
         margin-bottom 0
       margin-bottom sec-margin 
 
-#education
-  .college
-    margin-bottom (sec-margin / 3)
+#experience
+  .img-thumbnail
+    margin-bottom (sec-margin / 2)
+  table
+    tbody
+      &.meta
+        & + tbody
+          border-top 0
+        .name
+          width 40%
+        .role
+          width 30%
+        .date
+          width 30%
+          text-align right
 
-#skills
-  li
-    margin-bottom (sec-margin / 3)
+#education
+  table
+    tbody
+      &.meta
+        & + tbody
+          border-top 0
+        & td > div
+          display inline-block
+          float left
+          &.school
+            width 40%
+          &.grades
+            width 30%
+          &.dates
+            width 30%
+            text-align right
+      &.classes
+        .date
+          width 120px
+          text-align right
+
+#projects
+  table
+    tbody
+      &.meta
+        & + tbody
+          border-top 0
+        .name
+          width 40%
+        .role
+          width 30%
+        .date
+          width 30%
+          text-align right
