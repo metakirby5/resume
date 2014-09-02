@@ -4,7 +4,8 @@ section#experience
   div(data-bind="experience")
     .row
       .col-md-3.hidden-xs.hidden-sm.hidden-print
-        img.img-responsive.img-thumbnail(data-bind="image")
+        a(data-bind="url")
+          img.img-responsive.img-thumbnail(data-bind="image")
       .col-xs-12.col-md-9.col-print-12
         .table-responsive
           table.table.table-super-condensed

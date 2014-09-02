@@ -342,6 +342,9 @@ h4,
     margin-bottom: 0;
   }
 }
+#experience .img-thumbnail {
+  margin-bottom: 10px;
+}
 #experience table tbody.meta + tbody {
   border-top: 0;
 }

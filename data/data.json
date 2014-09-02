@@ -58,7 +58,7 @@
         "Introduced responsive web design to key flows"
       ],
       "date": "Jun. 2014 - Sep. 2014",
-      "image": "https://circleup.com/static/images/jobs/engteam.jpg"
+      "image": "img/circleup.png"
     },
     {
       "name": "Perspectium",
@@ -68,7 +68,8 @@
         "Developed an endpoint-based SQL table management API in Java",
         "Co-managed a SCRUM board to promote agile software development lifecycle"
       ],
-      "date": "Jul. 2013 - Aug. 2013"
+      "date": "Jul. 2013 - Aug. 2013",
+      "image": "img/perspectium.png"
     },
     {
       "name": "BlueChip Machine and Fabrication",
@@ -77,7 +78,8 @@
         "Collaborated with a partner to prototype and machine a custom aluminum project",
         "Designed products in SolidWorks and Adobe Illustrator, machined on a CNC mill with MasterCam"
       ],
-      "date": "Jun. 2013 - Jul. 2013"
+      "date": "Jun. 2013 - Jul. 2013",
+      "image": "img/bluechip.jpg"
     }
   ],
   "projects": [

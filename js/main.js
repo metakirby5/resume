@@ -146,6 +146,12 @@
                 }
               }
             },
+            url: {
+              text: function() {
+                return '';
+              },
+              href: webLink
+            },
             image: {
               src: function() {
                 return this.image || '';
