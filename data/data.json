@@ -7,7 +7,7 @@
   "website": "ethanchan.com",
   "github": "github.com/metakirby5",
   "linkedin": "linkedin.com/in/ethanjchan",
-  "tagline": "UCSD undergrad, ambitious learner, midnight coder, anime-lover, and maybe your future intern.",
+  "tagline": "UCSD undergraduate, ambitious learner, midnight coder, anime-lover, and maybe your future intern.",
   "education": [
     {
       "school": "UCSD - BS Computer Science",
@@ -65,7 +65,7 @@
       "url": "http://www.perspectium.com/",
       "role": "Software Engineering Intern",
       "content": [
-        "Developed an endpoint-based SQL table management API in Java",
+        "Developed an endpoint-based MySQL table management API in Java",
         "Co-managed a SCRUM board to promote agile software development lifecycle"
       ],
       "date": "Jul. 2013 - Aug. 2013",
