@@ -96,7 +96,7 @@
     {
       "name": "Resume",
       "url": "https://github.com/metakirby5/resume",
-      "role": "Solo Project",
+      "role": "Individual Project",
       "content": [
         "Created a JSON-based responsive resume using a lightweight templating engine (you're looking at it!)"
       ],
@@ -106,7 +106,7 @@
     {
       "name": "DesuSync",
       "url": "https://github.com/metakirby5/desu-sync",
-      "role": "Solo Project",
+      "role": "Individual Project",
       "content": [
         "Created an Angular.js webapp that updates a Hummingbird.me anime lists via AJAX calls to the API"
       ],
