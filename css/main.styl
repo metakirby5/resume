@@ -30,8 +30,18 @@ h4, .h4
   &.table-super-condensed
     & > thead, & > tbody, & > tfoot
       & > tr, & > th
+        &:first-of-type > td
+              border-top 0
         & > td
           padding 3px 10px
+    tbody.meta
+      border-top 1px solid
+      border-bottom 1px dotted
+      // Table borders are really weird
+      &:after
+        content:""
+      & + tbody
+        border-top 0
 
 .img-thumbnail
   margin-bottom (sec-margin / 2)
@@ -69,8 +79,6 @@ h4, .h4
   table
     tbody
       &.meta
-        & + tbody
-          border-top 0
         .name
           width 40%
         .role
@@ -83,8 +91,6 @@ h4, .h4
   table
     tbody
       &.meta
-        & + tbody
-          border-top 0
         & td > div
           display inline-block
           float left
@@ -104,8 +110,6 @@ h4, .h4
   table
     tbody
       &.meta
-        & + tbody
-          border-top 0
         .name
           width 40%
         .role
