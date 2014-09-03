@@ -55,7 +55,7 @@
   "experience": [
     {
       "name": "CircleUp",
-      "url": "http://circleup.com/",
+      "url": "https://www.circleup.com/",
       "role": "Software Engineering Intern",
       "content": [
         "Developed across the web stack spectrum using the Django framework",
@@ -96,6 +96,16 @@
         "Fall 2013 Women in Computing Beginner’s Programming Competition: 8th/74; 14 problems total; 2.5 hours"
       ],
       "date": "Nov. 2013 - Present"
+    },
+    {
+      "name": "DesuSync",
+      "url": "https://github.com/metakirby5/desu-sync",
+      "role": "Programmer",
+      "content": [
+        "Created a small Angular.js webapp that updates a user's Hummingbird.me anime list via AJAX calls to their API"
+      ],
+      "date": "Aug. 2014",
+      "hiddenPrint": true
     },
     {
       "name": "FIRST Robotics Team 1538",

@@ -58,11 +58,16 @@
       return;
 
     req = req.split(' ');
-    var reduction = function(a, b) {return a && !b;};
+    var thiz = this;
+    var reduction = function(a, b) {return a && !thiz[b];};
 
     if (_(req).reduce(reduction, true))
       return 'display: none';
   });
+
+  var hiddenPrint = function(p) {
+    return p.element.className + ' ' + (this.hiddenPrint ? 'hidden-print' : '');
+  };
 
   var webLink = function(p) {
     // Get dest obj from data binding
@@ -72,7 +77,7 @@
     var url = this[dest];
 
     // Add protocol if not already at start
-    if (url.indexOf('http://'))
+    if (url.indexOf('http://') && url.indexOf('https://'))
       url = 'http://' + url;
     return url;
   };
@@ -84,7 +89,7 @@
       return;
 
     // Add protocol if not already at start
-    if (url.indexOf('http://'))
+    if (url.indexOf('http://') && url.indexOf('https://'))
       url = 'http://' + url;
     return url;
   };
@@ -144,7 +149,8 @@
                 text: function() {
                   return this.value;
                 }
-              }
+              },
+              style: hideIfNot('bind')
             },
             url: {
               text: function() {
@@ -186,7 +192,8 @@
                 text: function() {
                   return this.value;
                 }
-              }
+              },
+              style: hideIfNot('bind')
             },
             url: {
               text: function() {
@@ -201,6 +208,9 @@
               style: function() {
                 return !!this.image || 'display: none';
               }
+            },
+            'hidden-print': {
+              class: hiddenPrint
             }
           },
           organizations: {
