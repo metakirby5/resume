@@ -103,7 +103,7 @@
       "url": "https://github.com/metakirby5/resume",
       "role": "Solo Project",
       "content": [
-        "Created a JSON-based resume with a lightweight templating engine and a responsive layout - you're looking at it!"
+        "Created a JSON-based responsive resume using a lightweight templating engine (you're looking at it!)"
       ],
       "date": "Aug. 2014",
       "image": "img/resume.png",
@@ -114,7 +114,7 @@
       "url": "https://github.com/metakirby5/desu-sync",
       "role": "Solo Project",
       "content": [
-        "Created a small Angular.js webapp that updates a user's Hummingbird.me anime list via AJAX calls to the API"
+        "Created an Angular.js webapp that updates a Hummingbird.me anime lists via AJAX calls to the API"
       ],
       "date": "Aug. 2014",
       "image": "img/desusync.png",
