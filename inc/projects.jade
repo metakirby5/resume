@@ -5,7 +5,7 @@ section#projects
       table.table.table-super-condensed
         tbody.meta
           tr.active
-            td.name(data-bind="name")
+            td.name: a(data-bind="name")
             td.role(data-bind="role")
             td.date(data-bind="date")
         tbody.content(data-bind="content")
