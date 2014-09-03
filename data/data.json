@@ -103,8 +103,7 @@
       "url": "https://github.com/metakirby5/resume",
       "role": "Solo Project",
       "content": [
-        "Created a JSON-based resume with a responsive layout - you're looking at it!",
-        "Used a lightweight client-side Javascript templating engine"
+        "Created a JSON-based resume with a lightweight templating engine and a responsive layout - you're looking at it!"
       ],
       "date": "Aug. 2014",
       "image": "img/resume.png"
