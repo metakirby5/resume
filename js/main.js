@@ -208,9 +208,6 @@
               style: function() {
                 return !!this.image || 'display: none';
               }
-            },
-            'hidden-print': {
-              class: hiddenPrint
             }
           },
           organizations: {
