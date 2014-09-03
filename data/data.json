@@ -95,16 +95,29 @@
         "Winter 2014 Microsoft Coding Challenge: 3rd/100+; 6 problems total; 1.5 hours",
         "Fall 2013 Women in Computing Beginner’s Programming Competition: 8th/74; 14 problems total; 2.5 hours"
       ],
-      "date": "Nov. 2013 - Present"
+      "date": "Nov. 2013 - Present",
+      "image": "img/bpc.jpg"
+    },
+    {
+      "name": "Resume",
+      "url": "https://github.com/metakirby5/resume",
+      "role": "Solo Project",
+      "content": [
+        "Created a JSON-based resume with a responsive layout - you're looking at it!",
+        "Used a lightweight client-side Javascript templating engine"
+      ],
+      "date": "Aug. 2014",
+      "image": "img/resume.png"
     },
     {
       "name": "DesuSync",
       "url": "https://github.com/metakirby5/desu-sync",
-      "role": "Programmer",
+      "role": "Solo Project",
       "content": [
-        "Created a small Angular.js webapp that updates a user's Hummingbird.me anime list via AJAX calls to their API"
+        "Created a small Angular.js webapp that updates a user's Hummingbird.me anime list via AJAX calls to the API"
       ],
-      "date": "Aug. 2014"
+      "date": "Aug. 2014",
+      "image": "img/desusync.png"
     },
     {
       "name": "FIRST Robotics Team 1538",
@@ -115,7 +128,8 @@
         "Coached team members in soft & technical skills via engineering projects and one-on-one training",
         "Networked with industry heads, organizations, and sponsors to expand and maintain team relationships"
       ],
-      "date": "Aug. 2009 - Aug. 2013"
+      "date": "Aug. 2009 - Aug. 2013",
+      "image": "img/frc.jpg"
     }
   ],
   "skills": [

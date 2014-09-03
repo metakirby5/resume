@@ -167,6 +167,11 @@
               }
             }
           },
+          education: {
+            classes: {
+              style: hideIfNot('bind')
+            }
+          },
           skills: {
             icon: {
               text: function() {

@@ -114,7 +114,7 @@ ul.fa-ul.list-inline>li {
 }
 @media print {
   html {
-    font-size: 8pt;
+    font-size: 7pt;
   }
   body {
     margin: 0;
@@ -312,6 +312,9 @@ h4,
 .table.table-super-condensed > tfoot > th > td {
   padding: 3px 10px;
 }
+.img-thumbnail {
+  margin-bottom: 10px;
+}
 @media screen {
   li {
     line-height: 1.75rem;
@@ -351,9 +354,6 @@ h4,
   #header .contact ul {
     margin-bottom: 0;
   }
-}
-#experience .img-thumbnail {
-  margin-bottom: 10px;
 }
 #experience table tbody.meta + tbody {
   border-top: 0;

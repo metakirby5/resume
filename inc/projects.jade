@@ -1,13 +1,20 @@
 section#projects
   +h4-i('Projects', 'fa-pencil')
+  hr.smallmargin.hidden-xs.hidden-sm.hidden-print
   div(data-bind="projects")
-    .table-responsive
-      table.table.table-super-condensed
-        tbody.meta
-          tr.active
-            td.name: a(data-bind="name")
-            td.role(data-bind="role")
-            td.date(data-bind="date")
-        tbody.content(data-bind="content")
-          tr
-            td(data-bind="value" colspan="3")
+    .row
+      .col-md-3.hidden-xs.hidden-sm.hidden-print
+        a(data-bind="url")
+          img.img-responsive.img-thumbnail(data-bind="image")
+      .col-xs-12.col-md-9.col-print-12
+        .table-responsive
+          table.table.table-super-condensed
+            tbody.meta
+              tr.active
+                td.name: a(data-bind="name")
+                td.role(data-bind="role")
+                td.date(data-bind="date")
+            tbody.content(data-bind="content")
+              tr
+                td(data-bind="value" colspan="3")
+  hr.hidden-xs.hidden-sm.hidden-print
