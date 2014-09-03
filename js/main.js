@@ -189,6 +189,9 @@
             }
           },
           projects: {
+            container: {
+              class: hiddenPrint
+            },
             name: {
               href: namedWebLink
             },

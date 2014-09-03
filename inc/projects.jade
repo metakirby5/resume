@@ -2,7 +2,7 @@ section#projects
   +h4-i('Projects', 'fa-pencil')
   hr.smallmargin.hidden-xs.hidden-sm.hidden-print
   div(data-bind="projects")
-    .row
+    .row(data-bind="container")
       .col-md-3.hidden-xs.hidden-sm.hidden-print
         a(data-bind="url")
           img.img-responsive.img-thumbnail(data-bind="image")

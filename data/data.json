@@ -106,7 +106,8 @@
         "Created a JSON-based resume with a lightweight templating engine and a responsive layout - you're looking at it!"
       ],
       "date": "Aug. 2014",
-      "image": "img/resume.png"
+      "image": "img/resume.png",
+      "hiddenPrint": true
     },
     {
       "name": "DesuSync",
@@ -116,7 +117,8 @@
         "Created a small Angular.js webapp that updates a user's Hummingbird.me anime list via AJAX calls to the API"
       ],
       "date": "Aug. 2014",
-      "image": "img/desusync.png"
+      "image": "img/desusync.png",
+      "hiddenPrint": true
     },
     {
       "name": "FIRST Robotics Team 1538",
