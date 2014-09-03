@@ -10,7 +10,7 @@
   "tagline": "UCSD undergraduate, ambitious learner, midnight coder, anime-lover, and maybe your future intern.",
   "education": [
     {
-      "school": "UCSD - BS Computer Science",
+      "school": "UCSD (BS Computer Science)",
       "grades": "GPA: 4.0/4.0",
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
@@ -45,6 +45,11 @@
           "date": "Fall 2013"
         }
       ]
+    },
+    {
+      "school": "High Tech High",
+      "grades": "GPA: 4.4/4.0",
+      "dates": "Aug. 2009 - Jun. 2013"
     }
   ],
   "experience": [
@@ -94,6 +99,7 @@
     },
     {
       "name": "FIRST Robotics Team 1538",
+      "url": "http://team1538.com/",
       "role": "Lead Engineering Student",
       "content": [
         "Led the prototyping, design, machining, and assembly of the team’s consistently top-seeded robot",

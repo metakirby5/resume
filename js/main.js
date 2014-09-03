@@ -28,7 +28,7 @@
   function onWidths(obj) {
     // Initialize 0 if not already there
     if (!obj[0])
-      obj[0] = function(){};
+      obj[0] = _.noop;
 
     var base = function() {
       var $width = window.outerWidth;
@@ -178,11 +178,28 @@
             }
           },
           projects: {
+            name: {
+              href: namedWebLink
+            },
             content: {
               value: {
                 text: function() {
                   return this.value;
                 }
+              }
+            },
+            url: {
+              text: function() {
+                return '';
+              },
+              href: webLink
+            },
+            image: {
+              src: function() {
+                return this.image || '';
+              },
+              style: function() {
+                return !!this.image || 'display: none';
               }
             }
           },
