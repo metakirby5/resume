@@ -222,6 +222,7 @@ ul.fa-ul {
     background-color: #fff;
   }
   body .entry .meta {
+    border-top-color: #eee !important;
     border-bottom: none !important;
   }
   body .entry ul.main,
@@ -406,7 +407,6 @@ h4,
 }
 #education .entry > .meta .grades {
   width: 30%;
-  text-align: center;
 }
 #education .entry > .meta .dates {
   width: 30%;
