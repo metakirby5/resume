@@ -232,6 +232,12 @@ ul.fa-ul {
   body {
     background-color: #fff;
   }
+  body hr {
+    border-color: #e0e0e0 !important;
+  }
+  body .card .meta {
+    border-color: #e0e0e0 !important;
+  }
 }
 @media screen {
   ::selection {
@@ -243,6 +249,9 @@ ul.fa-ul {
   body {
     background-color: #f5f5f5;
     color: #212121;
+  }
+  body hr {
+    border-color: #e0e0e0 !important;
   }
   body a {
     color: #03a9f4;
@@ -258,6 +267,9 @@ ul.fa-ul {
   }
   body .card {
     background-color: #fafafa;
+  }
+  body .card .meta {
+    border-color: #e0e0e0 !important;
   }
   body .fa.stackee.inverse {
     color: #f5f5f5;
@@ -339,9 +351,10 @@ h4,
 }
 .card-holder .card .card-content .meta {
   padding: 3px 0;
+  border-bottom: 1px solid;
 }
 .card-holder .card .card-content .meta > div {
-  vertical-align: text-top;
+  vertical-align: middle;
   display: inline-block;
   padding-right: 5px;
 }
@@ -353,7 +366,6 @@ h4,
 }
 .card-holder .card .card-content ul.main > li {
   padding: 1px 0;
-  padding-right: 10px;
   position: relative;
 }
 .card-holder .card .card-content ul.main > li > div {
