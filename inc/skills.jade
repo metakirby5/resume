@@ -1,7 +1,9 @@
 section#skills
   +h4-i('Skills', 'fa-tasks')
-  hr.smallmargin
-  ul.inline.list-inline(data-bind="skills")
-    li
-      i.fa.spaceright(data-bind="icon")
-      span(data-bind="name")
+  .card-holder
+    .card
+      .card-content
+        ul.inline.list-inline(data-bind="skills")
+          li
+            i.fa.spaceright(data-bind="icon")
+            span(data-bind="name")

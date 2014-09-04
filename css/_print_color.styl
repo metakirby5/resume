@@ -1,20 +1,16 @@
-nmx-white = #F9F9F9
-nmx-grey0 = #F2F2F2
-nmx-grey1 = #EEEEEE
-nmx-grey2 = #DEDEDE
-nmx-grey3 = #CCCCCC
-nmx-grey4 = #333333
-nmx-black = #2D2D2D
+c-bg = #f5f5f5
+c-light1 = #fafafa
+c-dark1 = #e0e0e0
+c-dark2 = #bdbdbd
+c-text = #212121
 
 @media print
   body
     background-color #FFFFFF 
 
-    .entry
+    hr
+      border-color c-dark1 !important
+
+    .card
       .meta
-        border-top-color #EEEEEE !important // make same as hr color
-        border-bottom none !important
-        // border-bottom-color nmx-grey3 !important
-      ul.main, ul.main > li
-        border none !important
-        // border-color nmx-grey3 !important
+        border-color c-dark1 !important

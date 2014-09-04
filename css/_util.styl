@@ -1,3 +1,22 @@
+// Mixins and Functions
+vendorize(attr, args)
+  -webkit-{attr} args
+  -moz-{attr} args
+  -ms-{attr} args
+  -o-{attr} args
+  {attr} args
+
+
+// Styles
+.dib
+  display inline-block
+.dib-print
+  @media print
+    display inline-block
+
+.vmid
+  vertical-align middle
+ 
 .coverall
   position fixed
   z-index 99999

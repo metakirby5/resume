@@ -1,60 +1,60 @@
-nmx-white = #F9F9F9
-nmx-grey0 = #F2F2F2
-nmx-grey1 = #EEEEEE
-nmx-grey2 = #DEDEDE
-nmx-grey3 = #CCCCCC
-nmx-grey4 = #333333
-nmx-black = #2D2D2D
-nmx-red0 = #F5B4AB
-nmx-red1 = #D64937
-nmx-red2 = #C24130
-nmx-red3 = #AD3A2B 
+c-bg = #f5f5f5
+c-light1 = #fafafa
+c-dark1 = #e0e0e0
+c-dark2 = #bdbdbd
+c-text = #212121
+
+c-select = #b3e5fc
+c-accent = #03a9f4
+c-accent-dark1 = #039be5
+c-accent-dark2 = #0277bd
 
 @media screen
   ::selection
-    background nmx-red0
+    background c-select
   ::-moz-selection
-    background nmx-red0
+    background c-select
 
   body
-    background-color nmx-white 
-    color nmx-grey4
+    background-color c-bg 
+    color c-text
+
+    hr
+      border-color c-dark1 !important
 
     a
-      color nmx-red1
+      color c-accent
       &:hover
-        color nmx-red2
+        color c-accent-dark1
 
     kbd a
-      color nmx-white
+      color c-bg
       &:hover
-        color nmx-grey2
+        color c-dark0
 
-    .entry
+    .card
+      background-color c-light1
       .meta
-        border-color nmx-grey3 !important
-        background-color nmx-grey1
-      ul.main, ul.main > li
-        border-color nmx-grey3 !important
+        border-color c-dark1 !important
 
     .fa.stackee.inverse
-      color nmx-white 
+      color c-bg 
 
     .github-fork-ribbon
-      background-color nmx-red1 
+      background-color c-accent 
 
     .btn-primary
-      color nmx-white
-      background-color nmx-red1
-      border-color nmx-red2
+      color c-bg
+      background-color c-accent
+      border-color c-accent-dark1
       &:hover, &:focus, &:active
-        background-color nmx-red2
-        border-color nmx-red3
+        background-color c-accent-dark1
+        border-color c-accent-dark2
 
     .btn-default
-      color nmx-grey4
-      background-color nmx-white
-      border-color nmx-grey2
+      color c-text
+      background-color c-light1
+      border-color c-dark1
       &:hover, &:focus, &:active
-        background-color nmx-grey0
-        border-color nmx-grey3
+        background-color c-dark1
+        border-color c-dark2
