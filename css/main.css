@@ -6,6 +6,9 @@
     display: inline-block;
   }
 }
+.vmid {
+  vertical-align: middle;
+}
 .coverall {
   position: fixed;
   z-index: 99999;
@@ -312,9 +315,11 @@ h4,
     padding-bottom: 10px;
   }
 }
+.card-holder .card {
+  overflow: hidden;
+}
 @media screen {
   .card-holder .card {
-    padding: 10px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -326,31 +331,32 @@ h4,
     -o-box-shadow: -2px 2px 10px 2px #eee;
     box-shadow: -2px 2px 10px 2px #eee;
   }
-  .card-holder .card.nopad {
-    padding: 0;
+}
+@media screen {
+  .card-holder .card .card-content {
+    padding: 10px;
   }
 }
-.card-holder .card > .meta {
+.card-holder .card .card-content .meta {
   padding: 3px 0;
 }
-.card-holder .card > .meta > div {
+.card-holder .card .card-content .meta > div {
   vertical-align: text-top;
   display: inline-block;
   padding-right: 5px;
 }
-.card-holder .card > .meta > div:last-of-type {
+.card-holder .card .card-content .meta > div:last-of-type {
   padding-right: 0;
 }
-.card-holder .card > ul.main {
-  padding-left: 0;
-  margin-left: 10px;
-  list-style: none;
+.card-holder .card .card-content ul.main {
+  list-style-type: square;
 }
-.card-holder .card > ul.main > li {
-  padding: 1px 10px;
+.card-holder .card .card-content ul.main > li {
+  padding: 1px 0;
+  padding-right: 10px;
   position: relative;
 }
-.card-holder .card > ul.main > li > div {
+.card-holder .card .card-content ul.main > li > div {
   vertical-align: text-top;
   display: inline-block;
 }
@@ -402,43 +408,43 @@ h4,
     margin-bottom: 0;
   }
 }
-#experience .card > .meta .name {
+#experience .card-content > .meta .name {
   width: 40%;
 }
-#experience .card > .meta .role {
+#experience .card-content > .meta .role {
   width: 30%;
 }
-#experience .card > .meta .date {
+#experience .card-content > .meta .date {
   width: 30%;
   text-align: right;
 }
-#education .card > .meta .school {
+#education .card-content > .meta .school {
   width: 40%;
 }
-#education .card > .meta .grades {
+#education .card-content > .meta .grades {
   width: 30%;
 }
-#education .card > .meta .dates {
+#education .card-content > .meta .dates {
   width: 30%;
   text-align: right;
 }
-#education .card > ul.main > li .name {
+#education .card-content > ul.main > li .name {
   width: 17%;
 }
-#education .card > ul.main > li .content {
+#education .card-content > ul.main > li .content {
   width: 68%;
 }
-#education .card > ul.main > li .date {
+#education .card-content > ul.main > li .date {
   width: 15%;
   text-align: right;
 }
-#projects .card > .meta .name {
+#projects .card-content > .meta .name {
   width: 40%;
 }
-#projects .card > .meta .role {
+#projects .card-content > .meta .role {
   width: 30%;
 }
-#projects .card > .meta .date {
+#projects .card-content > .meta .date {
   width: 30%;
   text-align: right;
 }

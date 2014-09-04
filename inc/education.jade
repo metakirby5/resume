@@ -3,12 +3,13 @@ section#education
   div(data-bind="education")
     .card-holder
       .card
-        .meta
-          .school(data-bind="school")
-          .grades(data-bind="grades")
-          .dates(data-bind="dates")
-        ul.main(data-bind="classes")
-          li
-            .name(data-bind="name")
-            .content(data-bind="content")
-            .date(data-bind="date")
+        .card-content
+          .meta
+            .school(data-bind="school")
+            .grades(data-bind="grades")
+            .dates(data-bind="dates")
+          ul.main.list-unstyled(data-bind="classes")
+            li
+              .name(data-bind="name")
+              .content(data-bind="content")
+              .date(data-bind="date")
