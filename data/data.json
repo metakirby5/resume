@@ -33,16 +33,6 @@
           "name": "CSE15L",
           "content": "Software Tools and Techniques Laboratory",
           "date": "Winter 2014"
-        },
-        {
-          "name": "CSE20",
-          "content": "Discrete Mathematics",
-          "date": "Winter 2014"
-        },
-        {
-          "name": "CSE11",
-          "content": "Introduction to Computer Science and Object Oriented Programming: Java",
-          "date": "Fall 2013"
         }
       ]
     }
@@ -53,7 +43,7 @@
       "url": "https://www.circleup.com/",
       "role": "Software Engineering Intern",
       "content": [
-        "Developed across the web stack spectrum using the Django framework",
+        "Full-stack development using the Django framework",
         "Implemented a newsfeed section interfacing with several API's such as Prismic.io and Disqus",
         "Introduced responsive web design to key flows"
       ],
@@ -87,14 +77,14 @@
       "name": "Programming Competitions",
       "role": "Participant",
       "content": [
-        "Winter 2014 Microsoft Coding Challenge: 3rd/100+; 6 problems total; 1.5 hours",
-        "Fall 2013 Women in Computing Beginner’s Programming Competition: 8th/74; 14 problems total; 2.5 hours"
+        "Placed 3rd/100+ in Winter 2014 Microsoft Coding Challenge (6 problems total, 1.5 hours)",
+        "Placed 8th/74 in Fall 2013 Women in Computing Beginner’s Programming Competition (14 problems total, 2.5 hours)"
       ],
       "date": "Nov. 2013 - Present",
       "image": "img/bpc.jpg"
     },
     {
-      "name": "Resume",
+      "name": "HTML/JS Resume",
       "url": "https://github.com/metakirby5/resume",
       "role": "Individual Project",
       "content": [
