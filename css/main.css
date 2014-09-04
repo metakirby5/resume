@@ -838,7 +838,12 @@ h4,
   padding-right: 0;
 }
 .card-holder .card .card-content ul.main {
-  list-style-type: square;
+  list-style: square;
+  padding-left: 30px;
+}
+.card-holder .card .card-content ul.main.list-unstyled {
+  list-style: none outside none;
+  padding-left: 0;
 }
 .card-holder .card .card-content ul.main > li {
   padding: 1px 0;
