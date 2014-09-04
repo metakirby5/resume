@@ -15,7 +15,7 @@ body
 
 .container
   @media screen
-    padding-top 20px
+    padding-top sec-margin
 
 h4, .h4
   font-size 1.25rem
@@ -24,37 +24,40 @@ h4, .h4
   font-size 0.9rem
   font-weight bold 
 
-.card
-  @media screen
-    padding 10px
-    &.nopad
-      padding 0
-    margin-bottom sec-margin
-    vendorize('border-radius', (4px))
-    vendorize('box-shadow', (-5px 5px 20px 5px #EEEEEE))
+.card-holder
+  &:nth-of-type(n - 1)
+    @media screen
+      padding-bottom (sec-margin / 2)
 
-  & > .meta
-    padding 3px 0
+  .card
+    @media screen
+      padding 10px
+      &.nopad
+        padding 0
+      vendorize('box-shadow', (-5px 5px 20px 5px #EEEEEE))
 
-    & > div
-      vertical-align text-top
-      display inline-block
-      padding-right 5px
-      &:last-of-type
-        padding-right 0
-
-  & > ul.main
-    padding-left 0
-    margin-left 10px
-    list-style none
-
-    & > li
-      padding 1px 10px
-      position relative
+    & > .meta
+      padding 3px 0
 
       & > div
         vertical-align text-top
         display inline-block
+        padding-right 5px
+        &:last-of-type
+          padding-right 0
+
+    & > ul.main
+      padding-left 0
+      margin-left 10px
+      list-style none
+
+      & > li
+        padding 1px 10px
+        position relative
+
+        & > div
+          vertical-align text-top
+          display inline-block
 
 .img-thumbnail
   margin-bottom (sec-margin / 2)

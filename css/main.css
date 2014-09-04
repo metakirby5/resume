@@ -1,3 +1,8 @@
+@media print {
+  .dib-print {
+    display: inline-block;
+  }
+}
 .coverall {
   position: fixed;
   z-index: 99999;
@@ -308,45 +313,44 @@ h4,
   font-weight: bold;
 }
 @media screen {
-  .card {
+  .card-holder:nth-of-type(n - 1) {
+    padding-bottom: 10px;
+  }
+}
+@media screen {
+  .card-holder .card {
     padding: 10px;
-    margin-bottom: 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
     -webkit-box-shadow: -5px 5px 20px 5px #eee;
     -moz-box-shadow: -5px 5px 20px 5px #eee;
     -ms-box-shadow: -5px 5px 20px 5px #eee;
     -o-box-shadow: -5px 5px 20px 5px #eee;
     box-shadow: -5px 5px 20px 5px #eee;
   }
-  .card.nopad {
+  .card-holder .card.nopad {
     padding: 0;
   }
 }
-.card > .meta {
+.card-holder .card > .meta {
   padding: 3px 0;
 }
-.card > .meta > div {
+.card-holder .card > .meta > div {
   vertical-align: text-top;
   display: inline-block;
   padding-right: 5px;
 }
-.card > .meta > div:last-of-type {
+.card-holder .card > .meta > div:last-of-type {
   padding-right: 0;
 }
-.card > ul.main {
+.card-holder .card > ul.main {
   padding-left: 0;
   margin-left: 10px;
   list-style: none;
 }
-.card > ul.main > li {
+.card-holder .card > ul.main > li {
   padding: 1px 10px;
   position: relative;
 }
-.card > ul.main > li > div {
+.card-holder .card > ul.main > li > div {
   vertical-align: text-top;
   display: inline-block;
 }

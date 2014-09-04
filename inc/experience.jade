@@ -3,14 +3,16 @@ section#experience
   div(data-bind="experience")
     .row
       .col-md-3.hidden-xs.hidden-sm.hidden-print
-        .card
-          a(data-bind="url")
-            img.img-responsive(data-bind="image")
+        .card-holder
+          .card
+            a(data-bind="url")
+              img.img-responsive(data-bind="image")
       .col-xs-12.col-md-9.col-print-12
-        .card
-          .meta
-            .name: a(data-bind="name")
-            .role(data-bind="role")
-            .date(data-bind="date")
-          ul.main(data-bind="content")
-            li(data-bind="value")
+        .card-holder
+          .card
+            .meta
+              .name: a(data-bind="name")
+              .role(data-bind="role")
+              .date(data-bind="date")
+            ul.main(data-bind="content")
+              li(data-bind="value")
