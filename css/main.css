@@ -114,7 +114,7 @@ ul.fa-ul.list-inline>li {
 }
 @media print {
   html {
-    font-size: 7.5pt;
+    font-size: 8pt;
   }
   body {
     margin: 0;
@@ -122,6 +122,9 @@ ul.fa-ul.list-inline>li {
   a:link:after,
   a:visited:after {
     content: "";
+  }
+  hr {
+    margin: 0;
   }
   .col-print-1 {
     width: 8.3333333333333% !important;
@@ -215,6 +218,12 @@ ul.fa-ul.list-inline>li {
   body {
     background-color: #fff;
   }
+  body .entry .meta {
+    border-bottom-color: #ccc !important;
+  }
+  body .entry ul.main li {
+    border-color: #ccc !important;
+  }
 }
 @media screen {
   ::selection {
@@ -239,18 +248,12 @@ ul.fa-ul.list-inline>li {
   body kbd a:hover {
     color: #dedede;
   }
-  body .table > thead,
-  body .table > tbody,
-  body .table > tfoot {
+  body .entry .meta {
     border-color: #ccc !important;
-  }
-  body .table > thead > tr.active > td,
-  body .table > tbody > tr.active > td,
-  body .table > tfoot > tr.active > td,
-  body .table > thead > tr.active > th,
-  body .table > tbody > tr.active > th,
-  body .table > tfoot > tr.active > th {
     background-color: #eee;
+  }
+  body .entry ul.main li {
+    border-color: #ccc !important;
   }
   body .fa.stackee.inverse {
     color: #f9f9f9;
@@ -303,35 +306,33 @@ h4,
   font-size: 0.9rem;
   font-weight: bold;
 }
-.table {
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-.table.table-super-condensed > thead > tr:first-of-type > td,
-.table.table-super-condensed > tbody > tr:first-of-type > td,
-.table.table-super-condensed > tfoot > tr:first-of-type > td,
-.table.table-super-condensed > thead > th:first-of-type > td,
-.table.table-super-condensed > tbody > th:first-of-type > td,
-.table.table-super-condensed > tfoot > th:first-of-type > td {
-  border-top: 0;
-}
-.table.table-super-condensed > thead > tr > td,
-.table.table-super-condensed > tbody > tr > td,
-.table.table-super-condensed > tfoot > tr > td,
-.table.table-super-condensed > thead > th > td,
-.table.table-super-condensed > tbody > th > td,
-.table.table-super-condensed > tfoot > th > td {
+.entry > .meta {
+  border-top: 1px solid;
+  border-bottom: 1px dashed;
   padding: 3px 10px;
 }
-.table.table-super-condensed tbody.meta {
-  border-top: 1px solid;
-  border-bottom: 1px dotted;
+.entry > .meta > div {
+  vertical-align: text-top;
+  display: inline-block;
+  padding-right: 5px;
 }
-.table.table-super-condensed tbody.meta:after {
-  content: "";
+.entry > .meta > div:last-of-type {
+  padding-right: 0;
 }
-.table.table-super-condensed tbody.meta + tbody {
-  border-top: 0;
+.entry > ul.main {
+  padding: 0 10px;
+  list-style: none;
+}
+.entry > ul.main > li {
+  padding: 1px 0;
+  position: relative;
+}
+.entry > ul.main > li > div {
+  vertical-align: text-top;
+  display: inline-block;
+}
+.entry > ul.main > li:nth-child(n+2) {
+  border-top: 1px dotted;
 }
 .img-thumbnail {
   margin-bottom: 10px;
@@ -339,6 +340,11 @@ h4,
 @media screen {
   li {
     line-height: 1.75rem;
+  }
+}
+@media print {
+  li {
+    line-height: 1.5rem;
   }
 }
 #header .contact {
@@ -376,41 +382,44 @@ h4,
     margin-bottom: 0;
   }
 }
-#experience table tbody.meta .name {
+#experience .entry > .meta .name {
   width: 40%;
 }
-#experience table tbody.meta .role {
+#experience .entry > .meta .role {
   width: 30%;
 }
-#experience table tbody.meta .date {
+#experience .entry > .meta .date {
   width: 30%;
   text-align: right;
 }
-#education table tbody.meta td > div {
-  display: inline-block;
-  float: left;
-}
-#education table tbody.meta td > div.school {
+#education .entry > .meta .school {
   width: 40%;
 }
-#education table tbody.meta td > div.grades {
+#education .entry > .meta .grades {
   width: 30%;
+  text-align: center;
 }
-#education table tbody.meta td > div.dates {
+#education .entry > .meta .dates {
   width: 30%;
   text-align: right;
 }
-#education table tbody.classes .date {
-  width: 120px;
+#education .entry > ul.main > li .name {
+  width: 17%;
+}
+#education .entry > ul.main > li .content {
+  width: 68%;
+}
+#education .entry > ul.main > li .date {
+  width: 15%;
   text-align: right;
 }
-#projects table tbody.meta .name {
+#projects .entry > .meta .name {
   width: 40%;
 }
-#projects table tbody.meta .role {
+#projects .entry > .meta .role {
   width: 30%;
 }
-#projects table tbody.meta .date {
+#projects .entry > .meta .date {
   width: 30%;
   text-align: right;
 }

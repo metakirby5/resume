@@ -6,15 +6,11 @@ section#experience
       .col-md-3.hidden-xs.hidden-sm.hidden-print
         a(data-bind="url")
           img.img-responsive.img-thumbnail(data-bind="image")
-      .col-xs-12.col-md-9.col-print-12
-        .table-responsive
-          table.table.table-super-condensed
-            tbody.meta
-              tr.active
-                td.name: a(data-bind="name")
-                td.role(data-bind="role")
-                td.date(data-bind="date")
-            tbody.content(data-bind="content")
-              tr
-                td(data-bind="value" colspan="3")
+      .col-xs-12.col-md-9.col-print-12.entry
+        .meta
+          .name: a(data-bind="name")
+          .role(data-bind="role")
+          .date(data-bind="date")
+        ul.main(data-bind="content")
+          li(data-bind="value")
   hr.hidden-xs.hidden-sm.hidden-print

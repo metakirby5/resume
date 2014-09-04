@@ -1,16 +1,13 @@
 section#education
   +h4-i('Education', 'fa-graduation-cap')
   div(data-bind="education")
-    .table-responsive
-      table.table.table-super-condensed
-        tbody.meta
-          tr.active
-            td(colspan="3")
-              .school(data-bind="school")
-              .grades(data-bind="grades")
-              .dates(data-bind="dates")
-        tbody.classes(data-bind="classes")
-          tr
-            td.name(data-bind="name")
-            td.content(data-bind="content")
-            td.date(data-bind="date")
+    .entry
+      .meta
+        .school(data-bind="school")
+        .grades(data-bind="grades")
+        .dates(data-bind="dates")
+      ul.main(data-bind="classes")
+        li
+          .name(data-bind="name")
+          .content(data-bind="content")
+          .date(data-bind="date")

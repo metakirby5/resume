@@ -24,31 +24,42 @@ h4, .h4
   font-size 0.9rem
   font-weight bold 
 
-.table
-  font-size 1rem
-  margin-bottom 0
-  &.table-super-condensed
-    & > thead, & > tbody, & > tfoot
-      & > tr, & > th
-        &:first-of-type > td
-              border-top 0
-        & > td
-          padding 3px 10px
-    tbody.meta
-      border-top 1px solid
-      border-bottom 1px dotted
-      // Table borders are really weird
-      &:after
-        content:""
-      & + tbody
-        border-top 0
+.entry
+  & > .meta
+    border-top 1px solid
+    border-bottom 1px dashed
+    padding 3px 10px
+
+    & > div
+      vertical-align text-top
+      display inline-block
+      padding-right 5px
+      &:last-of-type
+        padding-right 0
+
+  & > ul.main
+    padding 0 10px
+    list-style none
+
+    & > li
+      padding 1px 0
+      position relative
+
+      & > div
+        vertical-align text-top
+        display inline-block
+
+    & > li:nth-child(n+2)
+      border-top 1px dotted
 
 .img-thumbnail
   margin-bottom (sec-margin / 2)
 
-@media screen
-  li
+li
+  @media screen
     line-height 1.75rem 
+  @media print
+    line-height 1.5rem 
 
 // Specific
 #header
@@ -76,44 +87,43 @@ h4, .h4
       margin-bottom sec-margin 
 
 #experience
-  table
-    tbody
-      &.meta
-        .name
-          width 40%
-        .role
-          width 30%
-        .date
-          width 30%
-          text-align right
+  .entry
+    & > .meta
+      .name
+        width 40%
+      .role
+        width 30%
+      .date
+        width 30%
+        text-align right
 
 #education
-  table
-    tbody
-      &.meta
-        & td > div
-          display inline-block
-          float left
-          &.school
-            width 40%
-          &.grades
-            width 30%
-          &.dates
-            width 30%
-            text-align right
-      &.classes
+  .entry
+    & > .meta
+      .school
+        width 40%
+      .grades
+        width 30%
+        text-align center
+      .dates
+        width 30%
+        text-align right
+    & > ul.main > li
+        .name
+          width 17%
+        .content
+          width 68%
         .date
-          width 120px
+          width 15%
           text-align right
 
 #projects
-  table
-    tbody
-      &.meta
-        .name
-          width 40%
-        .role
-          width 30%
-        .date
-          width 30%
-          text-align right
+  .entry
+    & > .meta
+      .name
+        width 40%
+      .role
+        width 30%
+      .date
+        width 30%
+        text-align right
