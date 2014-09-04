@@ -121,7 +121,8 @@ ul.fa-ul {
 }
 @page {
   size: auto;
-  margin: 7mm 5mm 7mm 5mm;
+  margin: 5mm;
+  margin-top: 0;
 }
 @media print {
   html {
@@ -136,9 +137,6 @@ ul.fa-ul {
   }
   hr {
     margin: 0;
-  }
-  ul.main {
-    margin-bottom: 5px !important;
   }
   .col-print-1 {
     width: 8.3333333333333% !important;
@@ -229,6 +227,486 @@ ul.fa-ul {
   }
 }
 @media print {
+  .col-xs-push-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-1 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-2 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-3 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-4 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-5 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-6 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-7 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-8 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-9 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-10 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-11 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-push-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-xs-pull-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-push-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-sm-pull-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-push-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-md-pull-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-push-12 {
+    left: 0;
+  }
+}
+@media print {
+  .col-lg-pull-12 {
+    left: 0;
+  }
+}
+@media print {
   body {
     background-color: #fff;
   }
@@ -309,10 +787,8 @@ body {
   font-size: 1rem;
   font-family: 'Roboto' sans-serif;
 }
-@media screen {
-  .container {
-    padding-top: 20px;
-  }
+.container {
+  padding-top: 20px;
 }
 h4,
 .h4 {

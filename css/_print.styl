@@ -1,6 +1,7 @@
 @page
   size auto
-  margin 7mm 5mm 7mm 5mm
+  margin 5mm
+  margin-top 0
 
 @media print
   html
@@ -15,9 +16,6 @@
   hr
     margin 0
 
-  ul.main
-    margin-bottom 5px !important
-
   for size in (1..12)
     .col-print-{size}
       width (size/12)*100% !important
@@ -25,6 +23,11 @@
       min-height 1px
       padding-right 15px
       padding-left 15px
+    for width in xs sm md lg
+      for action in push pull
+        .col-{width}-{action}-{size}
+          @media print
+            left 0
 
   .no-mb-print
       margin-bottom 0 !important
