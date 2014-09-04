@@ -1,3 +1,6 @@
+.dib {
+  display: inline-block;
+}
 @media print {
   .dib-print {
     display: inline-block;
@@ -226,57 +229,49 @@ ul.fa-ul {
   body {
     background-color: #fff;
   }
-  body .entry .meta {
-    border-top-color: #eee !important;
-    border-bottom: none !important;
-  }
-  body .entry ul.main,
-  body .entry ul.main > li {
-    border: none !important;
-  }
 }
 @media screen {
   ::selection {
-    background: #d0d9ff;
+    background: #b3e5fc;
   }
   ::-moz-selection {
-    background: #d0d9ff;
+    background: #b3e5fc;
   }
   body {
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     color: #212121;
   }
   body a {
-    color: #5677fc;
+    color: #03a9f4;
   }
   body a:hover {
-    color: #3b50ce;
+    color: #039be5;
   }
   body kbd a {
-    color: #fafafa;
+    color: #f5f5f5;
   }
   body kbd a:hover {
     color: c-dark0;
   }
   body .card {
-    border: 1px solid #e0e0e0;
+    background-color: #fafafa;
   }
   body .fa.stackee.inverse {
-    color: #fafafa;
+    color: #f5f5f5;
   }
   body .github-fork-ribbon {
-    background-color: #5677fc;
+    background-color: #03a9f4;
   }
   body .btn-primary {
-    color: #fafafa;
-    background-color: #5677fc;
-    border-color: #3b50ce;
+    color: #f5f5f5;
+    background-color: #03a9f4;
+    border-color: #039be5;
   }
   body .btn-primary:hover,
   body .btn-primary:focus,
   body .btn-primary:active {
-    background-color: #3b50ce;
-    border-color: #2a36b1;
+    background-color: #039be5;
+    border-color: #0277bd;
   }
   body .btn-default {
     color: #212121;
@@ -320,11 +315,16 @@ h4,
 @media screen {
   .card-holder .card {
     padding: 10px;
-    -webkit-box-shadow: -5px 5px 20px 5px #eee;
-    -moz-box-shadow: -5px 5px 20px 5px #eee;
-    -ms-box-shadow: -5px 5px 20px 5px #eee;
-    -o-box-shadow: -5px 5px 20px 5px #eee;
-    box-shadow: -5px 5px 20px 5px #eee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: -2px 2px 10px 2px #eee;
+    -moz-box-shadow: -2px 2px 10px 2px #eee;
+    -ms-box-shadow: -2px 2px 10px 2px #eee;
+    -o-box-shadow: -2px 2px 10px 2px #eee;
+    box-shadow: -2px 2px 10px 2px #eee;
   }
   .card-holder .card.nopad {
     padding: 0;
