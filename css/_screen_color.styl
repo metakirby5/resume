@@ -1,60 +1,54 @@
-nmx-white = #F9F9F9
-nmx-grey0 = #F2F2F2
-nmx-grey1 = #EEEEEE
-nmx-grey2 = #DEDEDE
-nmx-grey3 = #CCCCCC
-nmx-grey4 = #333333
-nmx-black = #2D2D2D
-nmx-red0 = #F5B4AB
-nmx-red1 = #D64937
-nmx-red2 = #C24130
-nmx-red3 = #AD3A2B 
+c-bg = #fafafa
+c-dark1 = #e0e0e0
+c-dark2 = #bdbdbd
+c-text = #212121
+
+c-select = #d0d9ff
+c-accent = #5677fc
+c-accent-dark1 = #3b50ce
+c-accent-dark2 = #2a36b1 
 
 @media screen
   ::selection
-    background nmx-red0
+    background c-select
   ::-moz-selection
-    background nmx-red0
+    background c-select
 
   body
-    background-color nmx-white 
-    color nmx-grey4
+    background-color c-bg 
+    color c-text
 
     a
-      color nmx-red1
+      color c-accent
       &:hover
-        color nmx-red2
+        color c-accent-dark1
 
     kbd a
-      color nmx-white
+      color c-bg
       &:hover
-        color nmx-grey2
+        color c-dark0
 
-    .entry
-      .meta
-        border-color nmx-grey3 !important
-        background-color nmx-grey1
-      ul.main, ul.main > li
-        border-color nmx-grey3 !important
+    .card
+      border 1px solid c-dark1
 
     .fa.stackee.inverse
-      color nmx-white 
+      color c-bg 
 
     .github-fork-ribbon
-      background-color nmx-red1 
+      background-color c-accent 
 
     .btn-primary
-      color nmx-white
-      background-color nmx-red1
-      border-color nmx-red2
+      color c-bg
+      background-color c-accent
+      border-color c-accent-dark1
       &:hover, &:focus, &:active
-        background-color nmx-red2
-        border-color nmx-red3
+        background-color c-accent-dark1
+        border-color c-accent-dark2
 
     .btn-default
-      color nmx-grey4
-      background-color nmx-white
-      border-color nmx-grey2
+      color c-text
+      background-color c-bg
+      border-color c-dark1
       &:hover, &:focus, &:active
-        background-color nmx-grey0
-        border-color nmx-grey3
+        background-color c-dark1
+        border-color c-dark2

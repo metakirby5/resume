@@ -232,62 +232,57 @@ ul.fa-ul {
 }
 @media screen {
   ::selection {
-    background: #f5b4ab;
+    background: #d0d9ff;
   }
   ::-moz-selection {
-    background: #f5b4ab;
+    background: #d0d9ff;
   }
   body {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #fafafa;
+    color: #212121;
   }
   body a {
-    color: #d64937;
+    color: #5677fc;
   }
   body a:hover {
-    color: #c24130;
+    color: #3b50ce;
   }
   body kbd a {
-    color: #f9f9f9;
+    color: #fafafa;
   }
   body kbd a:hover {
-    color: #dedede;
+    color: c-dark0;
   }
-  body .entry .meta {
-    border-color: #ccc !important;
-    background-color: #eee;
-  }
-  body .entry ul.main,
-  body .entry ul.main > li {
-    border-color: #ccc !important;
+  body .card {
+    border: 1px solid #e0e0e0;
   }
   body .fa.stackee.inverse {
-    color: #f9f9f9;
+    color: #fafafa;
   }
   body .github-fork-ribbon {
-    background-color: #d64937;
+    background-color: #5677fc;
   }
   body .btn-primary {
-    color: #f9f9f9;
-    background-color: #d64937;
-    border-color: #c24130;
+    color: #fafafa;
+    background-color: #5677fc;
+    border-color: #3b50ce;
   }
   body .btn-primary:hover,
   body .btn-primary:focus,
   body .btn-primary:active {
-    background-color: #c24130;
-    border-color: #ad3a2b;
+    background-color: #3b50ce;
+    border-color: #2a36b1;
   }
   body .btn-default {
-    color: #333;
-    background-color: #f9f9f9;
-    border-color: #dedede;
+    color: #212121;
+    background-color: #fafafa;
+    border-color: #e0e0e0;
   }
   body .btn-default:hover,
   body .btn-default:focus,
   body .btn-default:active {
-    background-color: #f2f2f2;
-    border-color: #ccc;
+    background-color: #e0e0e0;
+    border-color: #bdbdbd;
   }
 }
 @media screen {
@@ -312,37 +307,48 @@ h4,
   font-size: 0.9rem;
   font-weight: bold;
 }
-.entry > .meta {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding: 3px 10px;
+@media screen {
+  .card {
+    padding: 10px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: -5px 5px 20px 5px #eee;
+    -moz-box-shadow: -5px 5px 20px 5px #eee;
+    -ms-box-shadow: -5px 5px 20px 5px #eee;
+    -o-box-shadow: -5px 5px 20px 5px #eee;
+    box-shadow: -5px 5px 20px 5px #eee;
+  }
+  .card.nopad {
+    padding: 0;
+  }
 }
-.entry > .meta > div {
+.card > .meta {
+  padding: 3px 0;
+}
+.card > .meta > div {
   vertical-align: text-top;
   display: inline-block;
   padding-right: 5px;
 }
-.entry > .meta > div:last-of-type {
+.card > .meta > div:last-of-type {
   padding-right: 0;
 }
-.entry > ul.main {
+.card > ul.main {
   padding-left: 0;
-  margin-left: 20px;
-  border-left: 1px solid;
-  margin-bottom: -1px;
-  border-bottom: 1px solid;
+  margin-left: 10px;
   list-style: none;
 }
-.entry > ul.main > li {
+.card > ul.main > li {
   padding: 1px 10px;
   position: relative;
 }
-.entry > ul.main > li > div {
+.card > ul.main > li > div {
   vertical-align: text-top;
   display: inline-block;
-}
-.entry > ul.main > li:nth-child(n+2) {
-  border-top: 1px solid;
 }
 .img-thumbnail {
   margin-bottom: 10px;
@@ -392,43 +398,43 @@ h4,
     margin-bottom: 0;
   }
 }
-#experience .entry > .meta .name {
+#experience .card > .meta .name {
   width: 40%;
 }
-#experience .entry > .meta .role {
+#experience .card > .meta .role {
   width: 30%;
 }
-#experience .entry > .meta .date {
+#experience .card > .meta .date {
   width: 30%;
   text-align: right;
 }
-#education .entry > .meta .school {
+#education .card > .meta .school {
   width: 40%;
 }
-#education .entry > .meta .grades {
+#education .card > .meta .grades {
   width: 30%;
 }
-#education .entry > .meta .dates {
+#education .card > .meta .dates {
   width: 30%;
   text-align: right;
 }
-#education .entry > ul.main > li .name {
+#education .card > ul.main > li .name {
   width: 17%;
 }
-#education .entry > ul.main > li .content {
+#education .card > ul.main > li .content {
   width: 68%;
 }
-#education .entry > ul.main > li .date {
+#education .card > ul.main > li .date {
   width: 15%;
   text-align: right;
 }
-#projects .entry > .meta .name {
+#projects .card > .meta .name {
   width: 40%;
 }
-#projects .entry > .meta .role {
+#projects .card > .meta .role {
   width: 30%;
 }
-#projects .entry > .meta .date {
+#projects .card > .meta .date {
   width: 30%;
   text-align: right;
 }

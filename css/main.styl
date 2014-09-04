@@ -24,11 +24,17 @@ h4, .h4
   font-size 0.9rem
   font-weight bold 
 
-.entry
+.card
+  @media screen
+    padding 10px
+    &.nopad
+      padding 0
+    margin-bottom sec-margin
+    vendorize('border-radius', (4px))
+    vendorize('box-shadow', (-5px 5px 20px 5px #EEEEEE))
+
   & > .meta
-    border-top 1px solid
-    border-bottom 1px solid
-    padding 3px 10px
+    padding 3px 0
 
     & > div
       vertical-align text-top
@@ -39,10 +45,7 @@ h4, .h4
 
   & > ul.main
     padding-left 0
-    margin-left 20px
-    border-left 1px solid 
-    margin-bottom -1px
-    border-bottom 1px solid
+    margin-left 10px
     list-style none
 
     & > li
@@ -52,9 +55,6 @@ h4, .h4
       & > div
         vertical-align text-top
         display inline-block
-
-    & > li:nth-child(n+2)
-      border-top 1px solid
 
 .img-thumbnail
   margin-bottom (sec-margin / 2)
@@ -91,7 +91,7 @@ li
       margin-bottom sec-margin 
 
 #experience
-  .entry
+  .card
     & > .meta
       .name
         width 40%
@@ -102,7 +102,7 @@ li
         text-align right
 
 #education
-  .entry
+  .card
     & > .meta
       .school
         width 40%
@@ -121,7 +121,7 @@ li
           text-align right
 
 #projects
-  .entry
+  .card
     & > .meta
       .name
         width 40%
