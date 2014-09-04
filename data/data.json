@@ -108,7 +108,7 @@
       "url": "https://github.com/metakirby5/desu-sync",
       "role": "Individual Project",
       "content": [
-        "Created an Angular.js webapp that updates a Hummingbird.me anime lists via AJAX calls to the API"
+        "Created an Angular.js webapp that updates Hummingbird.me anime lists via AJAX calls to the API"
       ],
       "date": "Aug. 2014",
       "image": "img/desusync.png"
