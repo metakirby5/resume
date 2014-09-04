@@ -221,7 +221,8 @@ ul.fa-ul.list-inline>li {
   body .entry .meta {
     border-bottom-color: #ccc !important;
   }
-  body .entry ul.main li {
+  body .entry ul.main,
+  body .entry ul.main > li {
     border-color: #ccc !important;
   }
 }
@@ -252,7 +253,8 @@ ul.fa-ul.list-inline>li {
     border-color: #ccc !important;
     background-color: #eee;
   }
-  body .entry ul.main li {
+  body .entry ul.main,
+  body .entry ul.main > li {
     border-color: #ccc !important;
   }
   body .fa.stackee.inverse {
@@ -308,7 +310,7 @@ h4,
 }
 .entry > .meta {
   border-top: 1px solid;
-  border-bottom: 1px dashed;
+  border-bottom: 1px solid;
   padding: 3px 10px;
 }
 .entry > .meta > div {
@@ -320,11 +322,13 @@ h4,
   padding-right: 0;
 }
 .entry > ul.main {
-  padding: 0 10px;
+  padding-left: 0;
+  margin-left: 20px;
+  border-left: 1px solid;
   list-style: none;
 }
 .entry > ul.main > li {
-  padding: 1px 0;
+  padding: 1px 10px;
   position: relative;
 }
 .entry > ul.main > li > div {
@@ -332,7 +336,7 @@ h4,
   display: inline-block;
 }
 .entry > ul.main > li:nth-child(n+2) {
-  border-top: 1px dotted;
+  border-top: 1px solid;
 }
 .img-thumbnail {
   margin-bottom: 10px;
