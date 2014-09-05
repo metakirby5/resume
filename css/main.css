@@ -753,7 +753,7 @@ ul.fa-ul {
     background-color: #fafafa;
     border-color: #e0e0e0 !important;
   }
-  body .card .card-img-holder {
+  body .card .card-img {
     border-color: #e0e0e0 !important;
   }
   body .card .meta {
@@ -837,30 +837,27 @@ h4,
     box-shadow: -2px 2px 10px 2px #eee;
   }
 }
-.card .card-img-holder {
-  overflow: hidden;
-  width: 100%;
+.card .card-img {
   height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border-bottom: 1px solid;
 }
 @media screen and (min-width: 992px) {
-  .card .card-img-holder {
-    height: 100%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .card .card-img-holder {
+  .card .card-img {
     border-bottom: none;
     border-right: 1px solid;
   }
 }
-.card .card-img-holder .card-img {
-  width: 100%;
-  height: auto;
-}
 @media screen {
   .card .card-content {
     padding: 10px 20px;
+    padding-top: 0;
   }
 }
 .card .card-content .meta {
@@ -897,6 +894,11 @@ h4,
 .card .card-content ul.main > li > div {
   vertical-align: text-top;
   display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .card .card-content {
+    padding-top: 10px;
+  }
 }
 .img-thumbnail {
   margin-bottom: 10px;

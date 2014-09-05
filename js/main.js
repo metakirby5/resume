@@ -69,6 +69,14 @@
     return p.element.className + ' ' + (this.hiddenPrint ? 'hidden-print' : '');
   };
 
+  var noText = function() {
+    return '';
+  };
+
+  var defaultBGI = function() {
+    return 'background-image: url(' + (this.image || 'img/default.png') + ')';
+  };
+
   var webLink = function(p) {
     // Get dest obj from data binding
     var dest = p.element.dataset.bind;
@@ -103,15 +111,11 @@
       $.getJSON('data/data.json', function(data) {
         $('html').render(data, {
           'hide-if-not': {
-            text: function() {
-              return '';
-            },
+            text: noText,
             style: hideIfNot('values')
           },
           'hide-if-not-bound': {
-            text: function() {
-              return '';
-            },
+            text: noText,
             style: hideIfNot('bind')
           },
           fullname: {
@@ -156,19 +160,13 @@
               style: hideIfNot('bind')
             },
             url: {
-              text: function() {
-                return '';
-              },
+              text: noText,
               href: webLink,
               target: function() {return '_blank';}
             },
             image: {
-              src: function() {
-                return this.image || 'img/default.png';
-              },
-              style: function() {
-                return !!this.image || 'display: none';
-              }
+              text: noText,
+              style: defaultBGI
             }
           },
           education: {
@@ -178,9 +176,7 @@
           },
           skills: {
             icon: {
-              text: function() {
-                return '';
-              },
+              text: noText,
               class: function(p) {
                 return p.element.className + ' ' + (this.icon || 'fa-code');
               }
@@ -209,19 +205,13 @@
               style: hideIfNot('bind')
             },
             url: {
-              text: function() {
-                return '';
-              },
+              text: noText,
               href: webLink,
               target: function() {return '_blank';}
             },
             image: {
-              src: function() {
-                return this.image || 'img/default.png';
-              },
-              style: function() {
-                return !!this.image || 'display: none';
-              }
+              text: noText,
+              style: defaultBGI
             }
           },
           organizations: {
