@@ -135,14 +135,17 @@
             href: function() {
               if (this.location)
                 return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
-            }
+            },
+            target: function() {return '_blank';}
           },
           link: {
-            href: webLink
+            href: webLink,
+            target: function() {return '_blank';}
           },
           experience: {
             name: {
-              href: namedWebLink
+              href: namedWebLink,
+              target: function() {return '_blank';}
             },
             content: {
               value: {
@@ -156,7 +159,8 @@
               text: function() {
                 return '';
               },
-              href: webLink
+              href: webLink,
+              target: function() {return '_blank';}
             },
             image: {
               src: function() {
@@ -193,7 +197,8 @@
               class: hiddenPrint
             },
             name: {
-              href: namedWebLink
+              href: namedWebLink,
+              target: function() {return '_blank';}
             },
             content: {
               value: {
@@ -207,7 +212,8 @@
               text: function() {
                 return '';
               },
-              href: webLink
+              href: webLink,
+              target: function() {return '_blank';}
             },
             image: {
               src: function() {
@@ -236,7 +242,8 @@
               if (this.name && data)
                 return commaize(this.name, p.index, data);
             },
-            href: namedWebLink
+            href: namedWebLink,
+            target: function() {return '_blank';}
           }
         });
       }).fail(errRedirect)
