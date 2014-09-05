@@ -4,9 +4,10 @@ section#projects
     .card-holder
       .card
         .row(data-bind="container")
-          .col-md-3.hidden-xs.hidden-sm.hidden-print
-            a(data-bind="url")
-              img.card-img.img-responsive(data-bind="image")
+          .col-xs-12.col-md-3.hidden-print
+            .card-img-holder
+              a(data-bind="url")
+                img.card-img.img-responsive(data-bind="image")
           .col-xs-12.col-md-9.col-print-12
             .card-content
               .meta

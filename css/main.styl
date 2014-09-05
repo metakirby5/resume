@@ -35,6 +35,22 @@ h4, .h4
       vendorize('border-radius', (2px))
       vendorize('box-shadow', (-2px 2px 10px 2px #EEEEEE))
 
+    .card-img-holder
+      overflow hidden
+      max-height 200px
+      @media screen and (min-width sm-break)
+        max-height auto
+
+      border-bottom 1px solid
+      @media screen and (min-width sm-break)
+        border-bottom none
+        border-right 1px solid
+
+      .card-img
+        margin-top -100px
+        @media screen and (min-width sm-break)
+          margin-top 0
+
     .card-content
       @media screen
         padding (sec-margin / 2)
