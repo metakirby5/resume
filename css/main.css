@@ -19,10 +19,12 @@
   font-size: 3rem;
 }
 hr {
-  margin: 0 0 13.333333333333334px 0;
+  margin: 0 0 10px 0;
 }
-hr.smallmargin {
-  margin: 0 0 6.666666666666667px 0;
+@media screen {
+  hr {
+    margin: 0 0 20px;
+  }
 }
 section {
   margin-bottom: 10px;
@@ -34,37 +36,48 @@ section {
 }
 h4,
 .h4 {
-  margin: 4px 0;
+  margin: 0;
+  margin-bottom: 4px;
 }
 @media screen {
   h4,
   .h4 {
-    margin: 6.666666666666667px 0;
+    margin-bottom: 6.666666666666667px;
   }
 }
 h5,
 .h5 {
-  margin: 4px 0;
+  margin: 0;
+  margin-bottom: 4px;
 }
 @media screen {
   h5,
   .h5 {
-    margin: 6.666666666666667px 0;
+    margin-bottom: 6.666666666666667px;
   }
 }
 h6,
 .h6 {
-  margin: 4px 0;
+  margin: 0;
+  margin-bottom: 4px;
 }
 @media screen {
   h6,
   .h6 {
-    margin: 6.666666666666667px 0;
+    margin-bottom: 6.666666666666667px;
   }
 }
 .h-inline {
-  display: inline-block;
-  margin-right: 10px;
+  float: none;
+  display: block;
+  margin-right: 0;
+}
+@media screen and (min-width: 992px), print {
+  .h-inline {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 .row .space-em {
   margin-bottom: 6.666666666666667px;
@@ -140,9 +153,6 @@ ul.fa-ul {
   a:link:after,
   a:visited:after {
     content: "";
-  }
-  hr {
-    margin: 0;
   }
   .col-print-1 {
     width: 8.3333333333333% !important;

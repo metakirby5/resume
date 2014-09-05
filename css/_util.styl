@@ -27,9 +27,9 @@ vendorize(attr, args)
   font-size 3rem
 
 hr
-  margin 0 0 (sec-margin * 2 / 3) 0
-  &.smallmargin
-    margin 0 0 (sec-margin / 3) 0
+  @media screen
+    margin 0 0 sec-margin
+  margin 0 0 (sec-margin / 2) 0
 
 section
   @media screen
@@ -38,13 +38,19 @@ section
 
 for size in (4..6)
   h{size}, .h{size}
+    margin 0
     @media screen
-      margin (sec-margin / 3) 0
-    margin (sec-margin / 5) 0
+      margin-bottom (sec-margin / 3)
+    margin-bottom (sec-margin / 5)
 
 .h-inline
-  display inline-block
-  margin-right 10px
+  float none
+  display block
+  margin-right 0
+  @media screen and (min-width sm-break), print
+    float left
+    display inline-block
+    margin-right 10px
 
 .row
   .space-em
