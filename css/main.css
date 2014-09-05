@@ -824,17 +824,17 @@ h4,
 @media screen {
   .card {
     border: 1px solid;
-    border-bottom: 4px solid;
+    border-bottom: 3px solid;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
-    -webkit-box-shadow: -2px 2px 10px 2px #eee;
-    -moz-box-shadow: -2px 2px 10px 2px #eee;
-    -ms-box-shadow: -2px 2px 10px 2px #eee;
-    -o-box-shadow: -2px 2px 10px 2px #eee;
-    box-shadow: -2px 2px 10px 2px #eee;
+    -webkit-box-shadow: 0px 7px 20px -10px;
+    -moz-box-shadow: 0px 7px 20px -10px;
+    -ms-box-shadow: 0px 7px 20px -10px;
+    -o-box-shadow: 0px 7px 20px -10px;
+    box-shadow: 0px 7px 20px -10px;
   }
 }
 .card .card-img {
