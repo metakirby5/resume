@@ -48,17 +48,6 @@ h6,
   display: inline-block;
   margin-right: 10px;
 }
-@media screen and (min-width: 768px), print {
-  .row .col-left {
-    text-align: left;
-  }
-  .row .col-center {
-    text-align: center;
-  }
-  .row .col-right {
-    text-align: right;
-  }
-}
 .row .space-em {
   margin-bottom: 6.666666666666667px;
 }
@@ -124,7 +113,7 @@ ul.fa-ul {
 }
 @page {
   size: auto;
-  margin: 5mm;
+  margin: 7.5mm 5mm;
 }
 @media print {
   html {

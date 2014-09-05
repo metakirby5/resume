@@ -45,11 +45,6 @@ for size in (4..6)
   margin-right 10px
 
 .row
-  @media screen and (min-width xs-break), print
-    for alignment in left center right
-      .col-{alignment}
-        text-align alignment
-
   .space-em
     margin-bottom (sec-margin / 3)
     &:last-of-type

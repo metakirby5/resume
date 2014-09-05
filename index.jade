@@ -40,7 +40,7 @@ html
           include inc/education.jade
 
       // Duplicate for alt layout
-      .visible-xs.visible-sm(data-cmd="hide-if-not" data-values="projects")
+      .visible-xs.visible-sm.visible-print(data-cmd="hide-if-not" data-values="projects")
         include inc/projects.jade
 
       div(data-cmd="hide-if-not" data-values="organizations")
