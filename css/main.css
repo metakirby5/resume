@@ -748,6 +748,7 @@ ul.fa-ul {
   }
   body .card {
     background-color: #fafafa;
+    border-color: #e0e0e0 !important;
   }
   body .card .card-img-holder {
     border-color: #e0e0e0 !important;
@@ -814,6 +815,7 @@ h4,
 }
 @media screen {
   .card-holder .card {
+    border-bottom: 3px solid;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -852,7 +854,7 @@ h4,
 }
 @media screen {
   .card-holder .card .card-content {
-    padding: 10px;
+    padding: 10px 20px;
   }
 }
 .card-holder .card .card-content .meta {
