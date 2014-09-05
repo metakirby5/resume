@@ -43,9 +43,10 @@
       "url": "https://www.circleup.com/",
       "role": "Software Engineering Intern",
       "content": [
-        "Full-stack development using the Django framework",
-        "Implemented a newsfeed section interfacing with several API's such as Prismic.io and Disqus",
-        "Introduced responsive web design to key flows"
+        "Full-stack development using the Django framework and Angular.js",
+        "Implemented a \"community\" newsfeed section interfacing with several API's such as Prismic.io and Disqus",
+        "Introduced responsive web design to key flows, increasing mobile conversion rates",
+        "Strengthened site security via anti-XSS measures and cookie protection"
       ],
       "date": "Jun. 2014 - Sep. 2014",
       "image": "img/circleup.png"
@@ -88,7 +89,8 @@
       "url": "https://github.com/metakirby5/resume",
       "role": "Individual Project",
       "content": [
-        "Created a JSON-based responsive resume using a lightweight templating engine (you're looking at it!)"
+        "Created a JSON-based resume using a lightweight templating engine (you're looking at it!)",
+        "Implemented responsive web design to ensure mobile compatibility (check this out on your phone!)"
       ],
       "date": "Aug. 2014",
       "image": "img/resume.png"
@@ -98,7 +100,9 @@
       "url": "https://github.com/metakirby5/desu-sync",
       "role": "Individual Project",
       "content": [
-        "Created an Angular.js webapp that updates Hummingbird.me anime lists via AJAX calls to the API"
+        "Created an Node.js/Angular.js webapp that updates Hummingbird.me anime lists via AJAX calls to the API",
+        "Utilized the HTML5 File API to allow easy drag-and-drop updating of anime lists from local files",
+        "Implemented redundancy checking and update queues to minimize the number of queries made"
       ],
       "date": "Aug. 2014",
       "image": "img/desusync.png"

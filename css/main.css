@@ -125,11 +125,10 @@ ul.fa-ul {
 @page {
   size: auto;
   margin: 5mm;
-  margin-top: 0;
 }
 @media print {
   html {
-    font-size: 8.5pt;
+    font-size: 8.4pt;
   }
   body {
     margin: 0;
@@ -794,8 +793,10 @@ body {
   font-size: 1rem;
   font-family: 'Roboto' sans-serif;
 }
-.container {
-  padding-top: 20px;
+@media screen {
+  .container {
+    padding-top: 20px;
+  }
 }
 h4,
 .h4 {
