@@ -823,7 +823,8 @@ h4,
 }
 @media screen {
   .card {
-    border-bottom: 3px solid;
+    border: 1px solid;
+    border-bottom: 4px solid;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
