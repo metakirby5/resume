@@ -132,7 +132,7 @@ ul.fa-ul {
 }
 @media print {
   html {
-    font-size: 8.4pt;
+    font-size: 8.9pt;
   }
   body {
     margin: 0;
@@ -931,7 +931,7 @@ h4,
   }
 }
 #header .contact ul {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px), print {
   #header .contact ul {
