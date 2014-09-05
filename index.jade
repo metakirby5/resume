@@ -29,7 +29,7 @@ html
       div(data-cmd="hide-if-not" data-values="experience")
         include inc/experience.jade
 
-      .hidden-xs.hidden-sm.hidden-print(data-cmd="hide-if-not" data-values="projects")
+      .hidden-print(data-cmd="hide-if-not" data-values="projects")
         include inc/projects.jade
 
       .row
@@ -40,7 +40,7 @@ html
           include inc/education.jade
 
       // Duplicate for alt layout
-      .visible-xs.visible-sm.visible-print(data-cmd="hide-if-not" data-values="projects")
+      .visible-print(data-cmd="hide-if-not" data-values="projects")
         include inc/projects.jade
 
       div(data-cmd="hide-if-not" data-values="organizations")
