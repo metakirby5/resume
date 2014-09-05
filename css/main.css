@@ -868,12 +868,19 @@ h4,
   border-bottom: 1px solid;
 }
 .card .card-content .meta > div {
-  vertical-align: middle;
-  display: inline-block;
-  padding-right: 5px;
+  width: 100%;
+  text-align: center;
 }
-.card .card-content .meta > div:last-of-type {
-  padding-right: 0;
+@media screen and (min-width: 768px) {
+  .card .card-content .meta > div {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    padding-right: 5px;
+  }
+  .card .card-content .meta > div:last-of-type {
+    padding-right: 0;
+  }
 }
 .card .card-content ul.main {
   list-style: square;
@@ -939,25 +946,29 @@ h4,
     margin-bottom: 0;
   }
 }
-#experience .card-content > .meta .name {
-  width: 40%;
+@media screen and (min-width: 768px) {
+  #experience .card-content > .meta .name {
+    width: 40%;
+  }
+  #experience .card-content > .meta .role {
+    width: 30%;
+  }
+  #experience .card-content > .meta .date {
+    width: 30%;
+    text-align: right;
+  }
 }
-#experience .card-content > .meta .role {
-  width: 30%;
-}
-#experience .card-content > .meta .date {
-  width: 30%;
-  text-align: right;
-}
-#education .card-content > .meta .school {
-  width: 40%;
-}
-#education .card-content > .meta .grades {
-  width: 30%;
-}
-#education .card-content > .meta .dates {
-  width: 30%;
-  text-align: right;
+@media screen and (min-width: 768px) {
+  #education .card-content > .meta .school {
+    width: 40%;
+  }
+  #education .card-content > .meta .grades {
+    width: 30%;
+  }
+  #education .card-content > .meta .dates {
+    width: 30%;
+    text-align: right;
+  }
 }
 #education .card-content > ul.main > li .name {
   width: 17%;
@@ -969,13 +980,15 @@ h4,
   width: 15%;
   text-align: right;
 }
-#projects .card-content > .meta .name {
-  width: 40%;
-}
-#projects .card-content > .meta .role {
-  width: 30%;
-}
-#projects .card-content > .meta .date {
-  width: 30%;
-  text-align: right;
+@media screen and (min-width: 768px) {
+  #projects .card-content > .meta .name {
+    width: 40%;
+  }
+  #projects .card-content > .meta .role {
+    width: 30%;
+  }
+  #projects .card-content > .meta .date {
+    width: 30%;
+    text-align: right;
+  }
 }

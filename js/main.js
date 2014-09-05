@@ -164,7 +164,7 @@
             },
             image: {
               src: function() {
-                return this.image || '';
+                return this.image || 'img/default.png';
               },
               style: function() {
                 return !!this.image || 'display: none';
@@ -217,7 +217,7 @@
             },
             image: {
               src: function() {
-                return this.image || '';
+                return this.image || 'img/default.png';
               },
               style: function() {
                 return !!this.image || 'display: none';

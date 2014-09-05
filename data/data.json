@@ -46,7 +46,7 @@
         "Full-stack development using the Django framework and Angular.js",
         "Implemented a \"community\" newsfeed section interfacing with several API's such as Prismic.io and Disqus",
         "Introduced responsive web design to key flows, increasing mobile conversion rates",
-        "Strengthened site security via anti-XSS measures and cookie protection"
+        "Strengthened site security via anti-XSS measures, cookie protection, unit tests, and integration tests"
       ],
       "date": "Jun. 2014 - Sep. 2014",
       "image": "img/circleup.png"

@@ -63,11 +63,15 @@ h4, .h4
       border-bottom 1px solid
 
       & > div
-        vertical-align middle
-        display inline-block
-        padding-right 5px
-        &:last-of-type
-          padding-right 0
+        width 100%
+        text-align center
+        @media screen and (min-width xs-break)
+          vertical-align middle
+          display inline-block
+          text-align left
+          padding-right 5px
+          &:last-of-type
+            padding-right 0
 
     ul.main
       list-style square
@@ -122,24 +126,26 @@ li
 #experience
   .card-content
     & > .meta
-      .name
-        width 40%
-      .role
-        width 30%
-      .date
-        width 30%
-        text-align right
+      @media screen and (min-width xs-break)
+        .name
+          width 40%
+        .role
+          width 30%
+        .date
+          width 30%
+          text-align right
 
 #education
   .card-content
     & > .meta
-      .school
-        width 40%
-      .grades
-        width 30%
-      .dates
-        width 30%
-        text-align right
+      @media screen and (min-width xs-break)
+        .school
+          width 40%
+        .grades
+          width 30%
+        .dates
+          width 30%
+          text-align right
     & > ul.main > li
         .name
           width 17%
@@ -152,10 +158,11 @@ li
 #projects
   .card-content
     & > .meta
-      .name
-        width 40%
-      .role
-        width 30%
-      .date
-        width 30%
-        text-align right
+      @media screen and (min-width xs-break)
+        .name
+          width 40%
+        .role
+          width 30%
+        .date
+          width 30%
+          text-align right
