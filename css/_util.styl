@@ -38,7 +38,9 @@ section
 
 for size in (4..6)
   h{size}, .h{size}
-    margin (sec-margin / 3) 0
+    @media screen
+      margin (sec-margin / 3) 0
+    margin (sec-margin / 5) 0
 
 .h-inline
   display inline-block

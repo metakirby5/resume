@@ -34,15 +34,33 @@ section {
 }
 h4,
 .h4 {
-  margin: 6.666666666666667px 0;
+  margin: 4px 0;
+}
+@media screen {
+  h4,
+  .h4 {
+    margin: 6.666666666666667px 0;
+  }
 }
 h5,
 .h5 {
-  margin: 6.666666666666667px 0;
+  margin: 4px 0;
+}
+@media screen {
+  h5,
+  .h5 {
+    margin: 6.666666666666667px 0;
+  }
 }
 h6,
 .h6 {
-  margin: 6.666666666666667px 0;
+  margin: 4px 0;
+}
+@media screen {
+  h6,
+  .h6 {
+    margin: 6.666666666666667px 0;
+  }
 }
 .h-inline {
   display: inline-block;
@@ -848,7 +866,7 @@ h4,
   }
 }
 .card-holder .card .card-content .meta {
-  padding: 3px 0;
+  padding-bottom: 3px;
   border-bottom: 1px solid;
 }
 .card-holder .card .card-content .meta > div {
