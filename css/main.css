@@ -857,7 +857,7 @@ h4,
 @media screen {
   .card .card-content {
     padding: 10px 20px;
-    padding-top: 0;
+    padding-top: 10px;
   }
 }
 .card .card-content .meta {
@@ -896,11 +896,6 @@ h4,
 .card .card-content ul.main > li > div {
   vertical-align: text-top;
   display: inline-block;
-}
-@media screen and (min-width: 768px) {
-  .card .card-content {
-    padding-top: 10px;
-  }
 }
 .img-thumbnail {
   margin-bottom: 10px;
