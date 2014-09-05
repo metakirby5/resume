@@ -24,65 +24,65 @@ h4, .h4
   font-size 0.9rem
   font-weight bold 
 
-.card-holder
-  &:nth-of-type(n - 1)
-    @media screen
-      padding-bottom (sec-margin / 2)
+.card
+  overflow hidden
 
-  .card
+  @media screen
+    margin-bottom (sec-margin / 2)
+    &:last-of-type
+      margin-bottom 0
+
+  @media screen
+    border-bottom 3px solid
+    vendorize('border-radius', (2px))
+    vendorize('box-shadow', (-2px 2px 10px 2px #EEEEEE))
+
+  .card-img-holder
     overflow hidden
+    max-height 200px
+    @media screen and (min-width sm-break)
+      max-height auto
 
+    border-bottom 1px solid
+    @media screen and (min-width sm-break)
+      border-bottom none
+      border-right 1px solid
+
+    .card-img
+      margin-top -100px
+      @media screen and (min-width sm-break)
+        margin-top 0
+
+  .card-content
     @media screen
-      border-bottom 3px solid
-      vendorize('border-radius', (2px))
-      vendorize('box-shadow', (-2px 2px 10px 2px #EEEEEE))
+      padding (sec-margin / 2) sec-margin
 
-    .card-img-holder
-      overflow hidden
-      max-height 200px
-      @media screen and (min-width sm-break)
-        max-height auto
-
+    .meta
+      padding-bottom 3px
       border-bottom 1px solid
-      @media screen and (min-width sm-break)
-        border-bottom none
-        border-right 1px solid
 
-      .card-img
-        margin-top -100px
-        @media screen and (min-width sm-break)
-          margin-top 0
+      & > div
+        vertical-align middle
+        display inline-block
+        padding-right 5px
+        &:last-of-type
+          padding-right 0
 
-    .card-content
-      @media screen
-        padding (sec-margin / 2) sec-margin
+    ul.main
+      list-style square
+      padding-left 30px
 
-      .meta
-        padding-bottom 3px
-        border-bottom 1px solid
+      &.list-unstyled
+        list-style none outside none
+        padding-left 0
+
+      & > li
+        padding 1px 0
+        position relative
 
         & > div
-          vertical-align middle
+          vertical-align text-top
           display inline-block
-          padding-right 5px
-          &:last-of-type
-            padding-right 0
-
-      ul.main
-        list-style square
-        padding-left 30px
-
-        &.list-unstyled
-          list-style none outside none
-          padding-left 0
-
-        & > li
-          padding 1px 0
-          position relative
-
-          & > div
-            vertical-align text-top
-            display inline-block
 
 .img-thumbnail
   margin-bottom (sec-margin / 2)

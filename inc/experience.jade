@@ -1,18 +1,17 @@
 section#experience
   +h4-i('Experience', 'fa-suitcase')
   div(data-bind="experience")
-    .card-holder
-      .card
-        .row
-          .col-xs-12.col-md-3.hidden-print
-            .card-img-holder
-              a(data-bind="url")
-                img.card-img.img-responsive(data-bind="image")
-          .col-xs-12.col-md-9.col-print-12
-            .card-content
-              .meta
-                .name: a(data-bind="name")
-                .role(data-bind="role")
-                .date(data-bind="date")
-              ul.main(data-bind="content")
-                li(data-bind="value")
+    .card
+      .row
+        .col-xs-12.col-md-3.hidden-print
+          .card-img-holder
+            a(data-bind="url")
+              img.card-img.img-responsive(data-bind="image")
+        .col-xs-12.col-md-9.col-print-12
+          .card-content
+            .meta
+              .name: a(data-bind="name")
+              .role(data-bind="role")
+              .date(data-bind="date")
+            ul.main(data-bind="content")
+              li(data-bind="value")
