@@ -61,9 +61,10 @@ h4, .h4
       border-bottom 1px solid
 
       & > div
-        width 100%
-        text-align center
-        @media screen and (min-width xs-break)
+        @media screen
+          width 100%
+          text-align center
+        @media screen and (min-width xs-break), print
           vertical-align middle
           display inline-block
           text-align left
@@ -124,7 +125,7 @@ li
 #experience
   .card-content
     & > .meta
-      @media screen and (min-width xs-break)
+      @media screen and (min-width xs-break), print
         .name
           width 40%
         .role
@@ -136,7 +137,7 @@ li
 #education
   .card-content
     & > .meta
-      @media screen and (min-width xs-break)
+      @media screen and (min-width xs-break), print
         .school
           width 40%
         .grades
@@ -156,7 +157,7 @@ li
 #projects
   .card-content
     & > .meta
-      @media screen and (min-width xs-break)
+      @media screen and (min-width xs-break), print
         .name
           width 40%
         .role

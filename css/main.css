@@ -864,11 +864,13 @@ h4,
   padding-bottom: 3px;
   border-bottom: 1px solid;
 }
-.card .card-content .meta > div {
-  width: 100%;
-  text-align: center;
+@media screen {
+  .card .card-content .meta > div {
+    width: 100%;
+    text-align: center;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
   .card .card-content .meta > div {
     vertical-align: middle;
     display: inline-block;
@@ -948,7 +950,7 @@ h4,
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
   #experience .card-content > .meta .name {
     width: 40%;
   }
@@ -960,7 +962,7 @@ h4,
     text-align: right;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
   #education .card-content > .meta .school {
     width: 40%;
   }
@@ -982,7 +984,7 @@ h4,
   width: 15%;
   text-align: right;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), print {
   #projects .card-content > .meta .name {
     width: 40%;
   }
