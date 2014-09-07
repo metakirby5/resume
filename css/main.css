@@ -991,6 +991,14 @@ h4,
     margin-bottom: 0;
   }
 }
+#about .card {
+  display: block;
+  width: initial;
+}
+#about .card .content {
+  display: block;
+  width: initial;
+}
 @media screen and (min-width: 768px), print {
   #experience .card-content > .meta .name {
     width: 40%;
