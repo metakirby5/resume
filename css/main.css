@@ -759,7 +759,7 @@ li.commaize:last-child:after {
   }
   body .card {
     background-color: #fafafa;
-    border-color: #e0e0e0 !important;
+    border-color: #d2d2d2 !important;
   }
   body .card .card-img {
     border-color: #e0e0e0 !important;
@@ -838,12 +838,12 @@ h4,
 @media screen {
   .card {
     border: 1px solid;
-    border-bottom: 5px solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    border-bottom: 4px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
   }
 }
 .card .card-img {
