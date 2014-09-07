@@ -814,14 +814,8 @@ h4,
 }
 .card {
   overflow: hidden;
-}
-.card:before,
-.card:after {
   display: table;
-  content: " ";
-}
-.card:after {
-  clear: both;
+  width: 100%;
 }
 @media screen {
   .card {
@@ -843,8 +837,8 @@ h4,
   }
 }
 .card .card-img {
-  float: left;
   width: 100%;
+  display: table-cell;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -866,7 +860,6 @@ h4,
   }
 }
 .card .card-img + .card-content {
-  float: left;
   width: 100%;
 }
 @media screen and (min-width: 992px) {
@@ -879,6 +872,9 @@ h4,
     border-bottom: none;
     border-right: 1px solid;
   }
+}
+.card .card-content {
+  display: table-cell;
 }
 @media screen {
   .card .card-content {
