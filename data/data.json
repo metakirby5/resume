@@ -33,6 +33,16 @@
           "name": "CSE15L",
           "content": "Software Tools and Techniques Laboratory",
           "date": "Winter 2014"
+        },
+        {
+          "name": "CSE20",
+          "content": "Discrete Mathematics",
+          "date": "Winter 2014"
+        },
+        {
+          "name": "CSE11",
+          "content": "Introduction to Computer Science and Object Oriented Programming: Java",
+          "date": "Fall 2013"
         }
       ]
     }
@@ -71,6 +81,16 @@
       ],
       "date": "Jun. 2013 - Jul. 2013",
       "image": "img/bluechip.jpg"
+    },
+    {
+      "name": "SPAWAR",
+      "role": "Ecological Analysis Intern",
+      "content": [
+        "Independently populated a marine particle size survey which provided useful biological heuristics",
+        "Followed military lab protocol in collecting data and analyzing it in Microsoft Excel"
+      ],
+      "date": "Jun. 2012 - Aug. 2012",
+      "hiddenPrint": true
     }
   ],
   "projects": [
@@ -83,6 +103,15 @@
       ],
       "date": "Nov. 2013 - Present",
       "image": "img/bpc.jpg"
+    },
+    {
+      "name": "DesuPlayer",
+      "role": "Team Project",
+      "content": [
+        "TBD"
+      ],
+      "date": "Ongoing",
+      "hiddenPrint": true
     },
     {
       "name": "HTML/JS Resume",

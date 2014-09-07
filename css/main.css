@@ -1030,6 +1030,11 @@ h4,
     text-align: right;
   }
 }
+@media print {
+  #education .card-content .classes tr:nth-of-type(n+5) {
+    display: none;
+  }
+}
 @media screen and (min-width: 992px), print {
   #projects .card-content > .meta .name {
     width: 40%;

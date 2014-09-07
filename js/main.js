@@ -143,6 +143,9 @@
             target: function() {return '_blank';}
           },
           experience: {
+            container: {
+              class: hiddenPrint
+            },
             name: {
               href: namedWebLink,
               target: function() {return '_blank';}
