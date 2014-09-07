@@ -118,7 +118,7 @@
       "url": "https://github.com/metakirby5/resume",
       "role": "Individual Project",
       "content": [
-        "Created a JSON-based resume using a lightweight templating engine (you're looking at it!)",
+        "Created a JSON-based resume by leveraging AJAX techniques and a JS templating engine (you're looking at it!)",
         "Implemented responsive web design to ensure mobile and print compatibility (check this out on your phone!)"
       ],
       "date": "Aug. 2014",
