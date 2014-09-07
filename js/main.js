@@ -61,8 +61,13 @@
       return 'display: none';
   });
 
+  var addClasses = _.curry(function(classes, p) {
+    return p.element.className + ' ' + classes.join(' ');
+  });
+
   var hiddenPrint = function(p) {
-    return p.element.className + ' ' + (this.hiddenPrint ? 'hidden-print' : '');
+    if (this.hiddenPrint)
+      return addClasses(['hidden-print'], p);
   };
 
   var noText = function() {
