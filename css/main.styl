@@ -26,7 +26,7 @@ h4, .h4
 
 .card
   overflow hidden
-  @media screen and (min-width sm-break)
+  @media screen and (min-width xs-break)
     width 100%
     display table
     & > *
@@ -45,7 +45,7 @@ h4, .h4
   .card-img
     @media print
       display none
-    @media screen and (min-width sm-break)
+    @media screen and (min-width xs-break)
       width 30%
       & + .card-content
         width 70%
@@ -56,7 +56,7 @@ h4, .h4
     background-position 50% 50%
 
     border-bottom 1px solid
-    @media screen and (min-width sm-break)
+    @media screen and (min-width xs-break)
       border-bottom none
       border-right 1px solid
 
@@ -73,7 +73,7 @@ h4, .h4
         @media screen
           width 100%
           text-align center
-        @media screen and (min-width xs-break), print
+        @media screen and (min-width sm-break), print
           float left
           text-align left
           padding-right 5px
@@ -156,7 +156,7 @@ li
 #experience
   .card-content
     & > .meta
-      @media screen and (min-width xs-break), print
+      @media screen and (min-width sm-break), print
         .name
           width 40%
         .role
@@ -168,7 +168,7 @@ li
 #education
   .card-content
     & > .meta
-      @media screen and (min-width xs-break), print
+      @media screen and (min-width sm-break), print
         .school
           width 40%
         .grades
@@ -180,7 +180,7 @@ li
 #projects
   .card-content
     & > .meta
-      @media screen and (min-width xs-break), print
+      @media screen and (min-width sm-break), print
         .name
           width 40%
         .role
