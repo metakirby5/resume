@@ -147,10 +147,10 @@
             target: function() {return '_blank';}
           },
           experience: {
-            name: {
-              href: namedWebLink,
-              target: function() {return '_blank';}
-            },
+            // name: {
+            //   href: namedWebLink,
+            //   target: function() {return '_blank';}
+            // },
             content: {
               value: {
                 text: function() {
@@ -192,10 +192,10 @@
             container: {
               class: hiddenPrint
             },
-            name: {
-              href: namedWebLink,
-              target: function() {return '_blank';}
-            },
+            // name: {
+            //   href: namedWebLink,
+            //   target: function() {return '_blank';}
+            // },
             content: {
               value: {
                 text: function() {

@@ -1,16 +1,12 @@
 section#projects
   +h4-i('Projects', 'fa-pencil')
   div(data-bind="projects")
-    .card
-      .row(data-bind="container")
-        .col-xs-12.col-md-3.hidden-print
-          a(data-bind="url")
-            .card-img(data-bind="image")
-        .col-xs-12.col-md-9.col-print-12
-          .card-content
-            .meta
-              .name: a(data-bind="name")
-              .role(data-bind="role")
-              .date(data-bind="date")
-            ul.main(data-bind="content")
-              li(data-bind="value")
+    .card(data-bind="container")
+      .card-img(data-bind="image")
+      .card-content
+        .meta
+          .name: a(data-bind="name")
+          .role(data-bind="role")
+          .date(data-bind="date")
+        ul.main(data-bind="content")
+          li(data-bind="value")

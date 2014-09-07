@@ -815,6 +815,14 @@ h4,
 .card {
   overflow: hidden;
 }
+.card:before,
+.card:after {
+  display: table;
+  content: "";
+}
+.card:after {
+  clear: both;
+}
 @media screen {
   .card {
     margin-bottom: 10px;
@@ -826,20 +834,17 @@ h4,
 @media screen {
   .card {
     border: 1px solid;
-    border-bottom: 3px solid;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 7px 20px -10px;
-    -moz-box-shadow: 0px 7px 20px -10px;
-    -ms-box-shadow: 0px 7px 20px -10px;
-    -o-box-shadow: 0px 7px 20px -10px;
-    box-shadow: 0px 7px 20px -10px;
+    border-bottom: 5px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
   }
 }
 .card .card-img {
+  float: left;
+  width: 100%;
   height: 200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -849,6 +854,25 @@ h4,
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-bottom: 1px solid;
+}
+@media print {
+  .card .card-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card .card-img {
+    width: 30%;
+  }
+}
+.card .card-img + .card-content {
+  float: left;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .card .card-img + .card-content {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 992px) {
   .card .card-img {
@@ -866,6 +890,14 @@ h4,
   padding-bottom: 3px;
   border-bottom: 1px solid;
 }
+.card .card-content .meta:before,
+.card .card-content .meta:after {
+  display: table;
+  content: "";
+}
+.card .card-content .meta:after {
+  clear: both;
+}
 @media screen {
   .card .card-content .meta > div {
     width: 100%;
@@ -874,8 +906,7 @@ h4,
 }
 @media screen and (min-width: 768px), print {
   .card .card-content .meta > div {
-    vertical-align: middle;
-    display: inline-block;
+    float: left;
     text-align: left;
     padding-right: 5px;
   }
@@ -932,7 +963,6 @@ h4,
 @media screen and (min-width: 992px), print {
   #header .contact .main-title {
     float: left;
-    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px), print {
@@ -962,10 +992,10 @@ h4,
     width: 40%;
   }
   #experience .card-content > .meta .role {
-    width: 29%;
+    width: 35%;
   }
   #experience .card-content > .meta .date {
-    width: 30%;
+    width: 25%;
     text-align: right;
   }
 }
@@ -974,18 +1004,29 @@ h4,
     width: 40%;
   }
   #education .card-content > .meta .grades {
-    width: 29%;
+    width: 35%;
   }
   #education .card-content > .meta .dates {
-    width: 30%;
+    width: 25%;
     text-align: right;
   }
+}
+#education .card-content > ul.main > li:before,
+#education .card-content > ul.main > li:after {
+  display: table;
+  content: "";
+}
+#education .card-content > ul.main > li:after {
+  clear: both;
+}
+#education .card-content > ul.main > li div {
+  float: left;
 }
 #education .card-content > ul.main > li .name {
   width: 20%;
 }
 #education .card-content > ul.main > li .content {
-  width: 64%;
+  width: 65%;
 }
 #education .card-content > ul.main > li .date {
   width: 15%;
@@ -996,7 +1037,7 @@ h4,
     width: 40%;
   }
   #projects .card-content > .meta .role {
-    width: 29%;
+    width: 30%;
   }
   #projects .card-content > .meta .date {
     width: 30%;
