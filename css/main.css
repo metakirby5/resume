@@ -818,7 +818,7 @@ h4,
 .card:before,
 .card:after {
   display: table;
-  content: "";
+  content: " ";
 }
 .card:after {
   clear: both;
@@ -893,7 +893,7 @@ h4,
 .card .card-content .meta:before,
 .card .card-content .meta:after {
   display: table;
-  content: "";
+  content: " ";
 }
 .card .card-content .meta:after {
   clear: both;
@@ -1014,7 +1014,7 @@ h4,
 #education .card-content > ul.main > li:before,
 #education .card-content > ul.main > li:after {
   display: table;
-  content: "";
+  content: " ";
 }
 #education .card-content > ul.main > li:after {
   clear: both;
