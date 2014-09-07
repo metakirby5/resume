@@ -169,13 +169,15 @@ Y8888888888b     .od888"o.`                    Y88P  Y   :. '"Y'_88b
                     <div data-bind="grades" class="grades"></div>
                     <div data-bind="dates" class="dates"></div>
                   </div>
-                  <ul data-bind="classes" class="main list-unstyled">
-                    <li>
-                      <div data-bind="name" class="name"></div>
-                      <div data-bind="content" class="content"></div>
-                      <div data-bind="date" class="date"></div>
-                    </li>
-                  </ul>
+                  <table class="main">
+                    <tbody data-bind="classes">
+                      <tr>
+                        <td data-bind="name" class="nowrap"></td>
+                        <td data-bind="content"></td>
+                        <td data-bind="date" class="nowrap text-right"></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

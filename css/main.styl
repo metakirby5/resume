@@ -99,6 +99,17 @@ h4, .h4
           vertical-align text-top
           display inline-block
 
+    table.main
+      width 100%
+      max-width 100%
+      margin-bottom 0
+
+      td
+        padding 3px
+        border none !important
+        &.nowrap
+          white-space nowrap
+
 .img-thumbnail
   margin-bottom (sec-margin / 2)
 
@@ -169,17 +180,6 @@ li
         .dates
           width 25%
           text-align right
-    & > ul.main > li
-      clearfix()
-      div
-        float left
-      .name
-        width 20%
-      .content
-        width 65%
-      .date
-        width 15%
-        text-align right
 
 #projects
   .card-content

@@ -7,8 +7,9 @@ section#education
           .school(data-bind="school")
           .grades(data-bind="grades")
           .dates(data-bind="dates")
-        ul.main.list-unstyled(data-bind="classes")
-          li
-            .name(data-bind="name")
-            .content(data-bind="content")
-            .date(data-bind="date")
+        table.main
+          tbody(data-bind="classes")
+            tr
+              td.nowrap(data-bind="name")
+              td(data-bind="content")
+              td.nowrap.text-right(data-bind="date")
