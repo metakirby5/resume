@@ -13,6 +13,12 @@ clearfix()
   &:after
     clear both
 
+commaize()
+  &:after
+   content ', '
+  &:last-child:after
+   content ''
+
 // Styles
 .dib
   display inline-block
@@ -99,3 +105,6 @@ ul
         content '\f0c8'
       font-size 1.33em
       top -0.1em
+
+li.commaize
+  commaize()

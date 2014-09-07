@@ -131,6 +131,12 @@ ul.fa-ul {
 .fa.stackee.box:before {
   content: '\f0c8';
 }
+li.commaize:after {
+  content: ', ';
+}
+li.commaize:last-child:after {
+  content: '';
+}
 @page {
   size: auto;
   margin: 7.5mm 5mm;

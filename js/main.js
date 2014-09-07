@@ -20,10 +20,6 @@
   });
   var getIdx = _.curry(function(idx, arr) {return arr[idx];});
 
-  function commaize(str, index, arr) {
-    return str + ((index !== arr.length - 1) ? ',' : '');
-  }
-
   // Takes object with width:func(curWidth)
   function onWidths(obj) {
     // Initialize 0 if not already there
@@ -180,12 +176,6 @@
               class: function(p) {
                 return p.element.className + ' ' + (this.icon || 'fa-code');
               }
-            },
-            name: {
-              text: function(p) {
-                if (this.name && data.skills)
-                  return commaize(this.name, p.index, data.skills);
-              }
             }
           },
           projects: {
@@ -217,8 +207,7 @@
           organizations: {
             namedate: {
               text: function(p) {
-                if (this.name && this.date && data.organizations)
-                  return commaize(this.name + ' (' + this.date + ')', p.index, data.organizations);
+                return this.name + (this.date ? ' (' + this.date + ')' : '');
               }
             }
           }
@@ -228,9 +217,8 @@
       $.getJSON('data/credits.json', function(data) {
         $('#credits-list').render(data, {
           entry: {
-            text: function(p) {
-              if (this.name && data)
-                return commaize(this.name, p.index, data);
+            text: function() {
+              return this.name;
             },
             href: namedWebLink,
             target: function() {return '_blank';}
