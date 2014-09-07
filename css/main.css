@@ -105,6 +105,9 @@ h6,
     margin-bottom: 0 !important;
   }
 }
+table td.nowrap {
+  white-space: nowrap;
+}
 ul {
   margin-bottom: 0;
 }
@@ -940,11 +943,9 @@ h4,
   margin-bottom: 0;
 }
 .card .card-content table.main td {
+  vertical-align: top;
   padding: 3px;
   border: none !important;
-}
-.card .card-content table.main td.nowrap {
-  white-space: nowrap;
 }
 .img-thumbnail {
   margin-bottom: 10px;
