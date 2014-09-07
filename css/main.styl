@@ -104,21 +104,24 @@ li
 
     .main-title
       @media screen and (min-width sm-break), print
+        float left
         display inline-block
       @media screen and (min-width md-break), print
         margin-bottom 0
       display block
       margin-top 0
       margin-bottom (sec-margin / 2)
-      margin-right 20px
+      margin-right (sec-margin / 2)
       line-height 4.5rem
       font-size 4.5rem
       font-weight 100
 
-    ul
-      @media screen and (min-width md-break), print
-        margin-bottom 0
-      margin-bottom (sec-margin / 2)
+    .contact-bullets
+      white-space nowrap
+      ul
+        @media screen and (min-width md-break), print
+          margin-bottom 0
+        margin-bottom (sec-margin / 2)
 
 #experience
   .card-content
@@ -127,7 +130,7 @@ li
         .name
           width 40%
         .role
-          width 30%
+          width 29%
         .date
           width 30%
           text-align right
@@ -139,15 +142,15 @@ li
         .school
           width 40%
         .grades
-          width 30%
+          width 29%
         .dates
           width 30%
           text-align right
     & > ul.main > li
         .name
-          width 17%
+          width 20%
         .content
-          width 68%
+          width 64%
         .date
           width 15%
           text-align right
@@ -159,7 +162,7 @@ li
         .name
           width 40%
         .role
-          width 30%
+          width 29%
         .date
           width 30%
           text-align right

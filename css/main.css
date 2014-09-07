@@ -932,13 +932,14 @@ h4,
   display: block;
   margin-top: 0;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   line-height: 4.5rem;
   font-size: 4.5rem;
   font-weight: 100;
 }
 @media screen and (min-width: 992px), print {
   #header .contact .main-title {
+    float: left;
     display: inline-block;
   }
 }
@@ -947,11 +948,14 @@ h4,
     margin-bottom: 0;
   }
 }
-#header .contact ul {
+#header .contact .contact-bullets {
+  white-space: nowrap;
+}
+#header .contact .contact-bullets ul {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px), print {
-  #header .contact ul {
+  #header .contact .contact-bullets ul {
     margin-bottom: 0;
   }
 }
@@ -960,7 +964,7 @@ h4,
     width: 40%;
   }
   #experience .card-content > .meta .role {
-    width: 30%;
+    width: 29%;
   }
   #experience .card-content > .meta .date {
     width: 30%;
@@ -972,7 +976,7 @@ h4,
     width: 40%;
   }
   #education .card-content > .meta .grades {
-    width: 30%;
+    width: 29%;
   }
   #education .card-content > .meta .dates {
     width: 30%;
@@ -980,10 +984,10 @@ h4,
   }
 }
 #education .card-content > ul.main > li .name {
-  width: 17%;
+  width: 20%;
 }
 #education .card-content > ul.main > li .content {
-  width: 68%;
+  width: 64%;
 }
 #education .card-content > ul.main > li .date {
   width: 15%;
@@ -994,7 +998,7 @@ h4,
     width: 40%;
   }
   #projects .card-content > .meta .role {
-    width: 30%;
+    width: 29%;
   }
   #projects .card-content > .meta .date {
     width: 30%;
