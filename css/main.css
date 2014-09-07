@@ -872,6 +872,7 @@ h4,
   }
 }
 @media screen and (min-width: 992px) {
+  a > .card .card-img + .card-content,
   .card .card-img + .card-content {
     width: 70%;
   }
