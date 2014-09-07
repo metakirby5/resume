@@ -108,14 +108,6 @@ h6,
 ul {
   margin-bottom: 0;
 }
-ul.inline {
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px), print {
-  ul.inline {
-    display: inline-block;
-  }
-}
 ul.fa-ul {
   margin-left: 24px;
 }
@@ -952,7 +944,13 @@ h4,
   white-space: nowrap;
 }
 #header .contact .contact-bullets ul {
+  margin-right: 10px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px), print {
+  #header .contact .contact-bullets ul {
+    display: inline-block;
+  }
 }
 @media screen and (min-width: 1200px), print {
   #header .contact .contact-bullets ul {
