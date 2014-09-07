@@ -29,6 +29,8 @@ h4, .h4
   @media screen and (min-width sm-break)
     width 100%
     display table
+    & > *
+      display table-cell
 
   @media screen
     margin-bottom (sec-margin / 2)
@@ -44,12 +46,9 @@ h4, .h4
     @media print
       display none
     @media screen and (min-width sm-break)
-      display table-cell
       width 30%
-    a > &, &
       & + .card-content
-        @media screen and (min-width sm-break)
-          width 70%
+        width 70%
 
     height 200px
     vendorize('background-size', (cover))
@@ -62,11 +61,8 @@ h4, .h4
       border-right 1px solid
 
   .card-content
-    @media screen and (min-width sm-break)
-      display table-cell
     @media screen
       padding (sec-margin / 2) sec-margin
-      padding-top (sec-margin / 2)
 
     .meta
       padding-bottom 3px

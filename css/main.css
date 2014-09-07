@@ -829,6 +829,9 @@ h4,
     width: 100%;
     display: table;
   }
+  .card > * {
+    display: table-cell;
+  }
 }
 @media screen {
   .card {
@@ -867,12 +870,8 @@ h4,
 }
 @media screen and (min-width: 992px) {
   .card .card-img {
-    display: table-cell;
     width: 30%;
   }
-}
-@media screen and (min-width: 992px) {
-  a > .card .card-img + .card-content,
   .card .card-img + .card-content {
     width: 70%;
   }
@@ -883,15 +882,9 @@ h4,
     border-right: 1px solid;
   }
 }
-@media screen and (min-width: 992px) {
-  .card .card-content {
-    display: table-cell;
-  }
-}
 @media screen {
   .card .card-content {
     padding: 10px 20px;
-    padding-top: 10px;
   }
 }
 .card .card-content .meta {
