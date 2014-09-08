@@ -2,7 +2,7 @@
 
   "use strict";
 
-  // Constants
+  // # Constants
   var XS = 0,
       SM = 768,
       MD = 992,
@@ -11,10 +11,10 @@
       EMBED = '<iframe style="position:fixed" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
       SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
-  // Globals
+  // # Globals
   var kkeys = [];
 
-  // Utilities
+  // # Utilities
   var pLog = _.curry(function(qty, text, args) {
     console.log.apply(console, [text + ': '].concat([].slice.call(arguments, 2, qty + 2)));
   });
@@ -48,6 +48,7 @@
             element.el.getAttribute('data-cmd') === key);
   };
 
+  // # Directive helpers
   var hideIfNot = _.curry(function(key, p) {
     var req = p.element.dataset[key];
     if (!req)
@@ -72,6 +73,10 @@
 
   var noText = function() {
     return '';
+  };
+
+  var targetBlank = function() {
+    return '_blank';
   };
 
   var defaultBGI = function() {
@@ -103,6 +108,34 @@
     return url;
   };
 
+  // # Directive blocks
+  var card = {
+    container: {
+      class: hiddenPrint
+    },
+    name: {
+      href: namedWebLink,
+      target: targetBlank
+    },
+    content: {
+      value: {
+        text: function() {
+          return this.value;
+        }
+      },
+      style: hideIfNot('bind')
+    },
+    url: {
+      text: noText,
+      href: webLink,
+      target: targetBlank
+    },
+    image: {
+      text: noText,
+      style: defaultBGI
+    }
+  };
+
   $(function() {
     // Fade in after ajax
     $('body').hide();
@@ -121,7 +154,7 @@
           },
           fullname: {
             text: function() {
-              return (this.first || '') + (this.first && this.last ? ' ' : '') + (this.last || '');
+              return [this.first, this.last].join(' ');
             }
           },
           phone: {
@@ -141,43 +174,13 @@
               if (this.location)
                 return 'https://www.google.com/maps/place/' + this.location.replace(/\s+/g, '+');
             },
-            target: function() {return '_blank';}
+            target: targetBlank
           },
           link: {
             href: webLink,
-            target: function() {return '_blank';}
+            target: targetBlank
           },
-          experience: {
-            container: {
-              class: hiddenPrint
-            },
-            name: {
-              href: namedWebLink,
-              target: function() {return '_blank';}
-            },
-            content: {
-              value: {
-                text: function() {
-                  return this.value;
-                }
-              },
-              style: hideIfNot('bind')
-            },
-            url: {
-              text: noText,
-              href: webLink,
-              target: function() {return '_blank';}
-            },
-            image: {
-              text: noText,
-              style: defaultBGI
-            }
-          },
-          education: {
-            classes: {
-              style: hideIfNot('bind')
-            }
-          },
+          experience: card,
           skills: {
             icon: {
               text: noText,
@@ -186,32 +189,7 @@
               }
             }
           },
-          projects: {
-            container: {
-              class: hiddenPrint
-            },
-            name: {
-              href: namedWebLink,
-              target: function() {return '_blank';}
-            },
-            content: {
-              value: {
-                text: function() {
-                  return this.value;
-                }
-              },
-              style: hideIfNot('bind')
-            },
-            url: {
-              text: noText,
-              href: webLink,
-              target: function() {return '_blank';}
-            },
-            image: {
-              text: noText,
-              style: defaultBGI
-            }
-          },
+          projects: card,
           organizations: {
             namedate: {
               text: function(p) {
@@ -229,7 +207,7 @@
               return this.name;
             },
             href: namedWebLink,
-            target: function() {return '_blank';}
+            target: targetBlank
           }
         });
       }).fail(errRedirect)

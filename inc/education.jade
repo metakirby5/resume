@@ -7,7 +7,7 @@ section#education
           .school(data-bind="school")
           .grades(data-bind="grades")
           .dates(data-bind="dates")
-        table.main
+        table.main(data-cmd="hide-if-not" data-values="classes")
           tbody.classes(data-bind="classes")
             tr
               td.nowrap(data-bind="name")
