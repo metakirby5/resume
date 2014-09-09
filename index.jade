@@ -13,10 +13,10 @@ html
     // Stylesheets
     include inc/css.jade
   body
-    include inc/overlays.jade
+    .hidden-print
+      include inc/overlays.jade
 
     .container
-
       include inc/header.jade
 
       hr
