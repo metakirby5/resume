@@ -762,7 +762,7 @@ li.commaize:last-child:after {
   }
   body .card {
     background-color: #fafafa;
-    border-color: #d2d2d2 !important;
+    border-color: #ccc !important;
   }
   body .card .card-img {
     border-color: #e0e0e0 !important;
@@ -880,15 +880,16 @@ h4,
   .card {
     margin-bottom: 30px;
     border: 1px solid;
+    border-bottom: 4px solid;
     -webkit-box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
     box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    -ms-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
   .card:last-of-type {
     margin-bottom: 0;
