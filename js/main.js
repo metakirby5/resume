@@ -122,10 +122,10 @@ var card = {
       }
     }
   },
-  // name: {
-  //   href: namedWebLink,
-  //   target: targetBlank
-  // },
+  name: {
+    href: namedWebLink,
+    target: targetBlank
+  },
   content: {
     value: {
       text: function() {
@@ -142,8 +142,8 @@ var card = {
   image: {
     text: noText,
     style: defaultBGI,
-    // href: namedWebLink,
-    // target: targetBlank
+    href: namedWebLink,
+    target: targetBlank
   }
 };
 
