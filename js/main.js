@@ -252,7 +252,6 @@ $(function() {
     if ($window.scrollTop() + $window.height() >= $document.height() - 1)
       $('.fadeaway.bottom').addClass('disable');
   };
-  processFadeaways();
   $window.scroll(processFadeaways);
 
   // shhhh
