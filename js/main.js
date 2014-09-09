@@ -64,13 +64,9 @@ var hideIfNotData = _.curry(function(key, p) {
     return 'display: none';
 });
 
-var addClasses = _.curry(function(classes, p) {
-  return p.element.className + ' ' + classes.join(' ');
-});
-
 var hiddenPrint = function(p) {
   if (this.hiddenPrint)
-    return addClasses(['hidden-print'], p);
+    return [p.element.className, 'hidden-print'].join(' ');
 };
 
 var noText = function() {
@@ -134,7 +130,16 @@ var card = {
   },
   image: {
     text: noText,
-    style: defaultBGI
+    style: function() {
+      return [defaultBGI.call(this), this.url ? 'cursor: pointer' : ''].join(';');
+    },
+    js: function(p) {
+      var thiz = this;
+      if (thiz.url)
+        $(p.element).click(function() {
+          window.open(thiz.url);
+        });
+    }
   }
 };
 
@@ -186,7 +191,7 @@ $(function() {
           icon: {
             text: noText,
             class: function(p) {
-              return p.element.className + ' ' + (this.icon || 'fa-code');
+              return [p.element.className, this.icon || 'fa-code'].join(' ');
             }
           }
         },
@@ -195,7 +200,7 @@ $(function() {
           meta: {
             class: function(p) {
               if (!this.classes)
-                return addClasses(['no-classes'], p);
+                return [p.element.className, 'no-classes'].join(' ');
             }
           },
           main: {
