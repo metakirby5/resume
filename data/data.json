@@ -84,12 +84,14 @@
     },
     {
       "name": "SPAWAR",
+      "url": "http://www.public.navy.mil/spawar/",
       "role": "Ecological Analysis Intern",
       "content": [
         "Independently populated a marine particle size survey which provided useful biological heuristics",
         "Followed military lab protocol in collecting data and analyzing it in Microsoft Excel"
       ],
       "date": "Jun. 2012 - Aug. 2012",
+      "image": "img/spawar.jpg",
       "hiddenPrint": true
     }
   ],
@@ -106,9 +108,10 @@
     },
     {
       "name": "DesuPlayer",
-      "role": "Team Project",
+      "url": "https://github.com/connorworley/DesuPlayer",
+      "role": "Web Programmer",
       "content": [
-        "TBD"
+        "An anime-streaming webapp with synchronized timestamps and anime list integration (ongoing)"
       ],
       "date": "Ongoing",
       "hiddenPrint": true
