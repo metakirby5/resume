@@ -3,11 +3,11 @@ section#education
   div(data-bind="education")
     .card
       .card-content
-        .meta
+        .meta(data-bind="meta")
           .school(data-bind="school")
           .grades(data-bind="grades")
           .dates(data-bind="dates")
-        table.main
+        table.main(data-bind="main")
           tbody.classes(data-bind="classes")
             tr
               td.nowrap(data-bind="name")

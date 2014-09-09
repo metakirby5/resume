@@ -188,6 +188,20 @@ $(function() {
           }
         },
         projects: card,
+        education: {
+          meta: {
+            class: function(p) {
+              if (!this.classes)
+                return addClasses(['no-classes'], p);
+            }
+          },
+          main: {
+            style: function() {
+              if (!this.classes)
+                return 'display: none';
+            }
+          }
+        },
         organizations: {
           namedate: {
             text: function(p) {
