@@ -138,6 +138,7 @@ var card = {
   }
 };
 
+// # Page ready
 $(function() {
   // Fade in after ajax
   $('body').hide();
@@ -236,7 +237,7 @@ $(function() {
       errRedirect(null, 'Not all ajax calls returned success', arguments);
   });
 
-  // Other listeners
+  // Log breakpoints (that's all for now)
   var widths = {};
   var pLog1 = pLog(1);
   widths[XS] = pLog1('XS');
@@ -244,6 +245,12 @@ $(function() {
   widths[MD] = pLog1('MD');
   widths[LG] = pLog1('LG');
   onWidths(widths);
+
+  // Hide print button if can't print
+  if (!window.print) {
+    $('#printme-button').hide();
+    $('#JSON-button').removeClass('col-sm-6');
+  }
 
   // Fadeaways
   var processFadeaways = function() {
