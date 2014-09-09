@@ -859,6 +859,11 @@ h4,
 }
 .card {
   overflow: hidden;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 .card > * {
   display: block;
@@ -890,6 +895,16 @@ h4,
     -webkit-border-radius: 3px;
     border-radius: 3px;
   }
+}
+.card.prereveal {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .card .card-img {
   height: 200px;
