@@ -12,7 +12,9 @@ var XS = 0,
     SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 // # Globals
-var kkeys = [];
+var $window = $(window),
+    $document = $(document),
+    kkeys = [];
 
 // # Utilities
 var pLog = _.curry(function(qty, text, args) {
@@ -242,6 +244,16 @@ $(function() {
   widths[MD] = pLog1('MD');
   widths[LG] = pLog1('LG');
   onWidths(widths);
+
+  // Fadeaways
+  var processFadeaways = function() {
+    $('.fadeaway').removeClass('disable');
+
+    if ($window.scrollTop() + $window.height() >= $document.height() - 1)
+      $('.fadeaway.bottom').addClass('disable');
+  };
+  processFadeaways();
+  $window.scroll(processFadeaways);
 
   // shhhh
   var secretFunc;

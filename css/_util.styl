@@ -1,17 +1,10 @@
 // Mixins and Functions
-vendorize(attr, args)
+vendorize(attr args)
   -webkit-{attr} args
   -moz-{attr} args
   -ms-{attr} args
   -o-{attr} args
   {attr} args
-
-clearfix()
-  &:before, &:after
-    display table
-    content " "
-  &:after
-    clear both
 
 commaize()
   &:after
