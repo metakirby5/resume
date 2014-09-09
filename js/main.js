@@ -14,6 +14,7 @@ var XS = 0,
 // # Globals
 var $window = $(window),
     $document = $(document),
+    $html = $('html'),
     $body = $('body'),
     kkeys = [];
 
@@ -156,7 +157,7 @@ $(function() {
   // Ajax calls
   $.when(
     $.getJSON('data/data.json', function(data) {
-      $body.render(data, {
+      $html.render(data, {
         'hide-if-not': {
           style: hideIfNotData('values')
         },
