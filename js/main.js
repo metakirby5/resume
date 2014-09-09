@@ -130,16 +130,9 @@ var card = {
   },
   image: {
     text: noText,
-    style: function() {
-      return [defaultBGI.call(this), this.url ? 'cursor: pointer' : ''].join(';');
-    },
-    js: function(p) {
-      var thiz = this;
-      if (thiz.url)
-        $(p.element).click(function() {
-          window.open(thiz.url);
-        });
-    }
+    style: defaultBGI,
+    href: namedWebLink,
+    target: targetBlank
   }
 };
 
