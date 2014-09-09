@@ -795,7 +795,7 @@ li.commaize:last-child:after {
   body .btn-default:hover,
   body .btn-default:focus,
   body .btn-default:active {
-    background-color: #e0e0e0;
+    background-color: #f6f6f6;
     border-color: #bdbdbd;
   }
 }
@@ -860,11 +860,6 @@ h4,
 .card {
   overflow: hidden;
   z-index: 5;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
 }
 .card > * {
   display: block;
@@ -883,29 +878,43 @@ h4,
 }
 @media screen {
   .card {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    -webkit-box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
   }
   .card:last-of-type {
     margin-bottom: 0;
   }
-}
-@media screen {
-  .card {
-    border: 1px solid;
-    border-bottom: 4px solid;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+  .card.prereveal {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
-}
-.card.prereveal {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
+  .card.has-link {
+    cursor: pointer;
+  }
+  .card.has-link:hover {
+    -webkit-transform: translateY(-3.75px);
+    -moz-transform: translateY(-3.75px);
+    -o-transform: translateY(-3.75px);
+    -ms-transform: translateY(-3.75px);
+    transform: translateY(-3.75px);
+    -webkit-box-shadow: 0 10px 50px -10px rgba(0,0,0,0.75);
+    box-shadow: 0 10px 50px -10px rgba(0,0,0,0.75);
+  }
 }
 .card .card-img {
   height: 200px;
@@ -945,6 +954,9 @@ h4,
   padding-bottom: 3px;
   border-bottom: 1px solid;
   zoom: 1;
+}
+.card .card-content .meta a {
+  text-decoration: none;
 }
 .card .card-content .meta:before,
 .card .card-content .meta:after {

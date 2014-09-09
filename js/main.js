@@ -110,12 +110,22 @@ var namedWebLink = function() {
 // # Directive blocks
 var card = {
   container: {
-    class: hiddenPrint
+    class: hiddenPrint,
+    js: function(p) {
+      var $card = $(p.element);
+      var url = this.url;
+      if (url) {
+        $card.addClass('has-link');
+        $card.click(function() {
+          window.open(url);
+        });
+      }
+    }
   },
-  name: {
-    href: namedWebLink,
-    target: targetBlank
-  },
+  // name: {
+  //   href: namedWebLink,
+  //   target: targetBlank
+  // },
   content: {
     value: {
       text: function() {
@@ -132,8 +142,8 @@ var card = {
   image: {
     text: noText,
     style: defaultBGI,
-    href: namedWebLink,
-    target: targetBlank
+    // href: namedWebLink,
+    // target: targetBlank
   }
 };
 

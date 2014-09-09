@@ -40,6 +40,7 @@ h4, .h4
 
 .card
   card-height = 200px
+  card-margin = 30px
 
   overflow hidden
   z-index 5
@@ -55,19 +56,24 @@ h4, .h4
       height card-height
 
   @media screen
-    margin-bottom (sec-margin / 2)
+    margin-bottom card-margin
     &:last-of-type
       margin-bottom 0
 
-  @media screen
     border 1px solid
-    border-bottom 4px solid
+    // border-bottom 4px solid
+    box-shadow 0 5px 30px -10px rgba(0, 0, 0, 0.75)
     border-radius 3px
 
-  transition all 0.25s ease-out
-  &.prereveal
-    opacity 0
-    transform translateY(-(sec-margin))
+    transition all 0.25s ease-out
+    &.prereveal
+      opacity 0
+      transform translateY(-(sec-margin))
+    &.has-link
+      cursor pointer
+      &:hover
+        transform translateY(-(card-margin/8))
+        box-shadow 0 10px 50px -10px rgba(0, 0, 0, 0.75)
 
   .card-img
     @media print
@@ -95,6 +101,9 @@ h4, .h4
     .meta
       padding-bottom 3px
       border-bottom 1px solid
+
+      a
+        text-decoration none
 
       clearfix()
       & > div
