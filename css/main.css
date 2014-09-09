@@ -806,7 +806,7 @@ li.commaize:last-child:after {
 }
 body {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 }
 .fadeaway {
   position: fixed;
