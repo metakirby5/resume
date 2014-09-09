@@ -39,7 +39,10 @@ h4, .h4
   font-size 1.25rem
 
 .card
+  card-height = 200px
+
   overflow hidden
+  z-index 5
   & > *
     display block
   @media screen and (min-width xs-break)
@@ -49,7 +52,7 @@ h4, .h4
       display table-cell
 
     &.uni-height
-      height 200px
+      height card-height
 
   @media screen
     margin-bottom (sec-margin / 2)
@@ -64,12 +67,12 @@ h4, .h4
   transition all 0.25s ease-out
   &.prereveal
     opacity 0
-    transform translateY(-10px)
+    transform translateY(-(sec-margin))
 
   .card-img
     @media print
       display none
-    height 200px
+    height card-height
     @media screen and (min-width xs-break)
       height auto
       width 30%
