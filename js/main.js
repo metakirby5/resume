@@ -236,13 +236,13 @@ $(function() {
   });
 
   // Log breakpoints (that's all for now)
-  var widths = {};
-  var pLog1 = pLog(1);
-  widths[XS] = pLog1('XS');
-  widths[SM] = pLog1('SM');
-  widths[MD] = pLog1('MD');
-  widths[LG] = pLog1('LG');
-  onWidths(widths);
+  // var widths = {};
+  // var pLog1 = pLog(1);
+  // widths[XS] = pLog1('XS');
+  // widths[SM] = pLog1('SM');
+  // widths[MD] = pLog1('MD');
+  // widths[LG] = pLog1('LG');
+  // onWidths(widths);
 
   // Hide print button if can't print
   if (!window.print) {
