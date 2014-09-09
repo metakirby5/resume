@@ -48,6 +48,9 @@ h4, .h4
     & > *
       display table-cell
 
+    &.uni-height
+      height 200px
+
   @media screen
     margin-bottom (sec-margin / 2)
     &:last-of-type
@@ -61,12 +64,13 @@ h4, .h4
   .card-img
     @media print
       display none
+    height 200px
     @media screen and (min-width xs-break)
+      height auto
       width 30%
       & + .card-content
         width 70%
 
-    height 200px
     background-size cover
     background-repeat no-repeat
     background-position 50% 50%

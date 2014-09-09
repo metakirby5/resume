@@ -871,6 +871,9 @@ h4,
   .card > * {
     display: table-cell;
   }
+  .card.uni-height {
+    height: 200px;
+  }
 }
 @media screen {
   .card {
@@ -904,6 +907,7 @@ h4,
 }
 @media screen and (min-width: 768px) {
   .card .card-img {
+    height: auto;
     width: 30%;
   }
   .card .card-img + .card-content {
