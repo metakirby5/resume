@@ -817,10 +817,6 @@ h4,
 .h4 {
   font-size: 1.25rem;
 }
-.table-label {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
 .card {
   overflow: hidden;
 }
@@ -940,9 +936,6 @@ h4,
   vertical-align: top;
   padding: 3px;
   border: none !important;
-}
-.img-thumbnail {
-  margin-bottom: 10px;
 }
 @media screen {
   li {

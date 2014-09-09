@@ -49,7 +49,7 @@ Transparency.matcher = function(element, key) {
 };
 
 // # Directive helpers
-var hideIfNot = _.curry(function(key, p) {
+var hideIfNotData = _.curry(function(key, p) {
   var req = p.element.dataset[key];
   if (!req)
     return;
@@ -123,7 +123,7 @@ var card = {
         return this.value;
       }
     },
-    style: hideIfNot('bind')
+    style: hideIfNotData('bind')
   },
   url: {
     text: noText,
@@ -145,12 +145,10 @@ $(function() {
     $.getJSON('data/data.json', function(data) {
       $('html').render(data, {
         'hide-if-not': {
-          text: noText,
-          style: hideIfNot('values')
+          style: hideIfNotData('values')
         },
         'hide-if-not-bound': {
-          text: noText,
-          style: hideIfNot('bind')
+          style: hideIfNotData('bind')
         },
         fullname: {
           text: function() {
