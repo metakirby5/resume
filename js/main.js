@@ -149,6 +149,7 @@ var card = {
 
 // # Page ready
 $(function() {
+
   // Fade in after ajax
   $body.hide();
 
