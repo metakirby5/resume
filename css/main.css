@@ -897,7 +897,7 @@ a.card:hover {
 }
 @media screen {
   .card {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 1px solid;
     border-bottom: 4px solid;
     -webkit-border-radius: 3px;
