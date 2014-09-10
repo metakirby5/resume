@@ -1,7 +1,8 @@
 c-bg = #f5f5f5
 c-light1 = #fafafa
+c-light2 = #f6f6f6
 c-dark1 = #e0e0e0
-c-dark15 = #d2d2d2
+c-dark15 = #cccccc
 c-dark2 = #bdbdbd
 c-text = #212121
 
@@ -20,45 +21,49 @@ c-accent-dark2 = #0277bd
     background-color c-bg 
     color c-text
 
-    hr
+  hr
+    border-color c-dark1 !important
+
+  a
+    color c-accent
+    &:hover
+      color c-accent-dark1
+
+  kbd a
+    color c-bg
+    &:hover
+      color c-dark0
+
+  .card
+    background-color c-light1
+    border-color c-dark15 !important
+    a&, a&:hover
+      color c-text !important
+    .card-img
       border-color c-dark1 !important
+    .meta
+      border-color c-dark1 !important
+      .name
+        color c-accent
 
-    a
-      color c-accent
-      &:hover
-        color c-accent-dark1
+  .fa.stackee.inverse
+    color c-bg
 
-    kbd a
-      color c-bg
-      &:hover
-        color c-dark0
+  .github-fork-ribbon
+    background-color c-accent
 
-    .card
-      background-color c-light1
-      border-color c-dark15 !important
-      .card-img
-        border-color c-dark1 !important
-      .meta
-        border-color c-dark1 !important
+  .btn-primary
+    color c-light1
+    background-color c-accent
+    border-color c-accent-dark1
+    &:hover, &:focus, &:active
+      background-color c-accent-dark1
+      border-color c-accent-dark2
 
-    .fa.stackee.inverse
-      color c-bg 
-
-    .github-fork-ribbon
-      background-color c-accent 
-
-    .btn-primary
-      color c-light1
-      background-color c-accent
-      border-color c-accent-dark1
-      &:hover, &:focus, &:active
-        background-color c-accent-dark1
-        border-color c-accent-dark2
-
-    .btn-default
-      color c-text
-      background-color c-light1
-      border-color c-dark1
-      &:hover, &:focus, &:active
-        background-color c-dark1
-        border-color c-dark2
+  .btn-default
+    color c-text
+    background-color c-light1
+    border-color c-dark1
+    &:hover, &:focus, &:active
+      background-color c-light2
+      border-color c-dark2

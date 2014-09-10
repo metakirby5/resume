@@ -14,6 +14,8 @@ var XS = 0,
 // # Globals
 var $window = $(window),
     $document = $(document),
+    $html = $('html'),
+    $body = $('body'),
     kkeys = [];
 
 // # Utilities
@@ -35,7 +37,7 @@ function onWidths(obj) {
   };
 
   $(base);
-  $(window).resize(base);
+  $window.resize(base);
 }
 
 function errRedirect(jqXHR, msg, err) {
@@ -109,11 +111,13 @@ var namedWebLink = function() {
 // # Directive blocks
 var card = {
   container: {
-    class: hiddenPrint
-  },
-  name: {
+    class: hiddenPrint,
     href: namedWebLink,
-    target: targetBlank
+    target: targetBlank,
+    js: function(p) {
+      if (this.url)
+        $(p.element).addClass('has-link');
+    }
   },
   content: {
     value: {
@@ -131,20 +135,19 @@ var card = {
   image: {
     text: noText,
     style: defaultBGI,
-    href: namedWebLink,
-    target: targetBlank
   }
 };
 
 // # Page ready
 $(function() {
+
   // Fade in after ajax
-  $('body').hide();
+  $body.hide();
 
   // Ajax calls
   $.when(
     $.getJSON('data/data.json', function(data) {
-      $('html').render(data, {
+      $html.render(data, {
         'hide-if-not': {
           style: hideIfNotData('values')
         },
@@ -229,9 +232,17 @@ $(function() {
   then(function() {
     var reduction = function(a, b) {return a && (b === 'success');};
 
-    if (_(arguments).map(getIdx(1)).reduce(reduction, true))
-      $('body').fadeIn('slow');
-    else
+    if (_(arguments).map(getIdx(1)).reduce(reduction, true)) {
+      var $cards = $('.card');
+      $cards.addClass('prereveal');
+      $body.fadeIn('slow');
+      $cards.each(function(idx) {
+        var thiz = this;
+        setTimeout(function() {
+          $(thiz).removeClass('prereveal');
+        }, 100 * (idx + 1));
+      });
+    } else
       errRedirect(null, 'Not all ajax calls returned success', arguments);
   });
 
@@ -261,13 +272,13 @@ $(function() {
 
   // shhhh
   var secretFunc;
-  $(document).keydown(secretFunc = function(e) {
+  $document.keydown(secretFunc = function(e) {
     kkeys.push(e.keyCode);
     if (kkeys.length > SECRET.length)
       kkeys.shift();
     if (_.isEqual(kkeys, SECRET)) {
-      $(document).unbind('keydown', secretFunc);
-      $('body').append(EMBED);
+      $document.unbind('keydown', secretFunc);
+      $body.append(EMBED);
     }
   });
 });
