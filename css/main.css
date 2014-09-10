@@ -68,14 +68,12 @@ h6,
   }
 }
 .h-inline {
-  float: none;
   display: block;
   margin-right: 0;
 }
 @media screen and (min-width: 992px), print {
   .h-inline {
     float: left;
-    display: inline-block;
     margin-right: 10px;
   }
 }
