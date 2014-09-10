@@ -111,13 +111,7 @@ var namedWebLink = function() {
 // # Directive blocks
 var card = {
   container: {
-    class: hiddenPrint,
-    href: namedWebLink,
-    target: targetBlank,
-    js: function(p) {
-      if (this.url)
-        $(p.element).addClass('has-link');
-    }
+    class: hiddenPrint
   },
   content: {
     value: {
@@ -127,14 +121,22 @@ var card = {
     },
     style: hideIfNotData('bind')
   },
-  url: {
-    text: noText,
-    href: webLink,
-    target: targetBlank
-  },
   image: {
     text: noText,
     style: defaultBGI,
+    href: namedWebLink,
+    target: targetBlank
+  },
+  cta: {
+    text: noText,
+    href: namedWebLink,
+    target: targetBlank
+  },
+  'cta-content': {
+    style: function() {
+      if (!this.url)
+        return 'display: none';
+    }
   }
 };
 

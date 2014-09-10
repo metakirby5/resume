@@ -1,12 +1,4 @@
 section#projects
   +h4-i('Projects', 'fa-pencil')
   div(data-bind="projects")
-    a.card.uni-height(data-bind="container")
-      .card-img(data-bind="image")
-      .card-content
-        .meta
-          .name(data-bind="name")
-          .role(data-bind="role")
-          .date(data-bind="date")
-        ul.main(data-bind="content")
-          li(data-bind="value")
+    include _card.jade

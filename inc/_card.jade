@@ -1,0 +1,11 @@
+.card.uni-height(data-bind="container")
+  a.card-img(data-bind="image")
+  .card-content
+    .meta
+      .name(data-bind="name")
+      .role(data-bind="role")
+      .date(data-bind="date")
+    ul.main(data-bind="content")
+      li(data-bind="value")
+  a.card-chevron(data-bind="cta")
+    .fa.fa-chevron-circle-right(data-bind="cta-content")

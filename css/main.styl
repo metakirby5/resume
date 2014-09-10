@@ -20,7 +20,7 @@ body
   pointer-events none
   width 100%
   height 100px
-  transition all 0.25s
+  transition all transition-speed ease-out
 
   for direction in top bottom
     &.{direction}
@@ -31,7 +31,7 @@ body
     opacity 0
 
 .container
-  transition all 0.25s ease-out
+  transition all transition-speed ease-out
   @media screen
     padding-top sec-margin
 
@@ -40,7 +40,7 @@ h4, .h4
 
 .card
   card-height = 200px
-  card-margin = 30px
+  card-margin = 15px
 
   overflow hidden
   z-index 5
@@ -71,18 +71,17 @@ h4, .h4
 
     border 1px solid
     border-bottom 4px solid
-    box-shadow 0 5px 30px -10px rgba(0, 0, 0, 0.75)
+    // box-shadow 0 5px 30px -10px rgba(0, 0, 0, 0.75)
     border-radius 3px
 
-    transition all 0.2s ease-out
+    transition all transition-speed ease-out
     &.prereveal
       opacity 0
       transform translateY(-(sec-margin))
-    &.has-link
-      cursor pointer
-      &:hover
-        transform translateY(-(card-margin/8))
-        box-shadow 0 10px 50px -10px rgba(0, 0, 0, 0.75)
+    // &.has-link
+    //   &:hover
+    //     transform translateY(-(card-margin/8))
+    //     box-shadow 0 10px 50px -10px rgba(0, 0, 0, 0.75)
 
   // Contents
   .card-img
@@ -92,8 +91,6 @@ h4, .h4
     @media screen and (min-width xs-break)
       height auto
       width 30%
-      & + .card-content
-        width 70%
 
     background-size cover
     background-repeat no-repeat
@@ -103,6 +100,21 @@ h4, .h4
     @media screen and (min-width xs-break)
       border-bottom none
       border-right 1px solid
+
+  .card-chevron
+    @media print
+      display none
+    text-align center
+    vertical-align middle
+    font-size 3rem
+    text-decoration none
+    transition all transition-speed ease-out
+    @media screen and (min-width xs-break)
+      width 10%
+    border-top 1px solid
+    @media screen and (min-width xs-break)
+      border-top none
+      border-left 1px solid
 
   .card-content
     @media screen
@@ -158,6 +170,9 @@ li
     line-height 1.75rem 
   @media print
     line-height 1.5rem 
+
+.btn
+  transition all transition-speed ease-out
 
 // Specific
 #forkme

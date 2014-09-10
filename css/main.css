@@ -766,8 +766,16 @@ li.commaize:last-child:after {
   a.card:hover {
     color: #212121 !important;
   }
-  .card .card-img {
+  .card .card-img,
+  .card .card-chevron {
     border-color: #e0e0e0 !important;
+  }
+  .card .card-chevron {
+    background-color: #03a9f4;
+    color: #fafafa;
+  }
+  .card .card-chevron:hover {
+    color: #e0e0e0;
   }
   .card .meta {
     border-color: #e0e0e0 !important;
@@ -819,11 +827,11 @@ body {
   pointer-events: none;
   width: 100%;
   height: 100px;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .fadeaway.top {
   top: 0;
@@ -847,11 +855,11 @@ body {
   filter: alpha(opacity=0);
 }
 .container {
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 @media screen {
   .container {
@@ -889,11 +897,9 @@ a.card:hover {
 }
 @media screen {
   .card {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: 1px solid;
     border-bottom: 4px solid;
-    -webkit-box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
-    box-shadow: 0 5px 30px -10px rgba(0,0,0,0.75);
     -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: all 0.2s ease-out;
@@ -915,18 +921,6 @@ a.card:hover {
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-  .card.has-link {
-    cursor: pointer;
-  }
-  .card.has-link:hover {
-    -webkit-transform: translateY(-3.75px);
-    -moz-transform: translateY(-3.75px);
-    -o-transform: translateY(-3.75px);
-    -ms-transform: translateY(-3.75px);
-    transform: translateY(-3.75px);
-    -webkit-box-shadow: 0 10px 50px -10px rgba(0,0,0,0.75);
-    box-shadow: 0 10px 50px -10px rgba(0,0,0,0.75);
-  }
 }
 .card .card-img {
   height: 200px;
@@ -947,14 +941,39 @@ a.card:hover {
     height: auto;
     width: 30%;
   }
-  .card .card-img + .card-content {
-    width: 70%;
-  }
 }
 @media screen and (min-width: 768px) {
   .card .card-img {
     border-bottom: none;
     border-right: 1px solid;
+  }
+}
+.card .card-chevron {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-top: 1px solid;
+}
+@media print {
+  .card .card-chevron {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card .card-chevron {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card .card-chevron {
+    border-top: none;
+    border-left: 1px solid;
   }
 }
 @media screen {
@@ -1029,6 +1048,13 @@ a.card:hover {
   li {
     line-height: 1.5rem;
   }
+}
+.btn {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 #forkme .github-fork-ribbon-wrapper {
   z-index: 10;
