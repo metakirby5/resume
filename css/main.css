@@ -767,14 +767,15 @@ li.commaize:last-child:after {
     color: #212121 !important;
   }
   .card .card-img,
-  .card .card-chevron {
+  .card .card-cta {
     border-color: #e0e0e0 !important;
   }
-  .card .card-chevron {
+  .card .card-cta {
     background-color: #03a9f4;
     color: #fafafa;
   }
-  .card .card-chevron:hover {
+  .card .card-cta:hover {
+    background-color: #039be5;
     color: #e0e0e0;
   }
   .card .meta {
@@ -948,10 +949,11 @@ a.card:hover {
     border-right: 1px solid;
   }
 }
-.card .card-chevron {
+.card .card-cta {
   text-align: center;
   vertical-align: middle;
-  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 5rem;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -961,17 +963,17 @@ a.card:hover {
   border-top: 1px solid;
 }
 @media print {
-  .card .card-chevron {
+  .card .card-cta {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .card .card-chevron {
+  .card .card-cta {
     width: 10%;
   }
 }
 @media screen and (min-width: 768px) {
-  .card .card-chevron {
+  .card .card-cta {
     border-top: none;
     border-left: 1px solid;
   }
