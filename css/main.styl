@@ -217,43 +217,32 @@ li
       display block
       width initial
 
-#experience
+#experience, #projects
   .card-content
     & > .meta
-        .name
-          width 40%
-        .role
-          width 35%
-        .date
-          width 25%
-          text-align right
+      .name
+        width 40%
+      .role
+        width 35%
+      .date
+        width 25%
+        text-align right
 
 #education
   .card-content
     & > .meta
+      .school
+        width 40%
+      .grades
+        width 35%
+      .dates
+        width 25%
+        text-align right
       &.no-classes
         padding-bottom 0
         border-bottom none
-        .school
-          width 40%
-        .grades
-          width 35%
-        .dates
-          width 25%
-          text-align right
     .classes
       // Limit the amount of classes printed to top 4
       tr:nth-of-type(n+5)
         @media print
           display none
-
-#projects
-  .card-content
-    & > .meta
-        .name
-          width 40%
-        .role
-          width 35%
-        .date
-          width 25%
-          text-align right

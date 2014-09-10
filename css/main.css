@@ -1113,13 +1113,26 @@ a.card:hover {
   display: block;
   width: initial;
 }
-#experience .card-content > .meta .name {
+#experience .card-content > .meta .name,
+#projects .card-content > .meta .name {
   width: 40%;
 }
-#experience .card-content > .meta .role {
+#experience .card-content > .meta .role,
+#projects .card-content > .meta .role {
   width: 35%;
 }
-#experience .card-content > .meta .date {
+#experience .card-content > .meta .date,
+#projects .card-content > .meta .date {
+  width: 25%;
+  text-align: right;
+}
+#education .card-content > .meta .school {
+  width: 40%;
+}
+#education .card-content > .meta .grades {
+  width: 35%;
+}
+#education .card-content > .meta .dates {
   width: 25%;
   text-align: right;
 }
@@ -1127,28 +1140,8 @@ a.card:hover {
   padding-bottom: 0;
   border-bottom: none;
 }
-#education .card-content > .meta.no-classes .school {
-  width: 40%;
-}
-#education .card-content > .meta.no-classes .grades {
-  width: 35%;
-}
-#education .card-content > .meta.no-classes .dates {
-  width: 25%;
-  text-align: right;
-}
 @media print {
   #education .card-content .classes tr:nth-of-type(n+5) {
     display: none;
   }
-}
-#projects .card-content > .meta .name {
-  width: 40%;
-}
-#projects .card-content > .meta .role {
-  width: 35%;
-}
-#projects .card-content > .meta .date {
-  width: 25%;
-  text-align: right;
 }
