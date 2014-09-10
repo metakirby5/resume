@@ -44,6 +44,14 @@ h4, .h4
 
   overflow hidden
   z-index 5
+
+  // Reset
+  a&, a&:hover
+    text-decoration none
+    color initial
+
+  // Layout
+  display block
   & > *
     display block
   @media screen and (min-width xs-break)
@@ -55,6 +63,7 @@ h4, .h4
     &.uni-height
       height card-height
 
+  // Appearance
   @media screen
     margin-bottom card-margin
     &:last-of-type
@@ -75,6 +84,7 @@ h4, .h4
         transform translateY(-(card-margin/8))
         box-shadow 0 10px 50px -10px rgba(0, 0, 0, 0.75)
 
+  // Contents
   .card-img
     @media print
       display none

@@ -112,20 +112,12 @@ var namedWebLink = function() {
 var card = {
   container: {
     class: hiddenPrint,
-    js: function(p) {
-      var $card = $(p.element);
-      var url = this.url;
-      if (url) {
-        $card.addClass('has-link');
-        $card.click(function() {
-          window.open(url);
-        });
-      }
-    }
-  },
-  name: {
     href: namedWebLink,
-    target: targetBlank
+    target: targetBlank,
+    js: function(p) {
+      if (this.url)
+        $(p.element).addClass('has-link');
+    }
   },
   content: {
     value: {
@@ -143,8 +135,6 @@ var card = {
   image: {
     text: noText,
     style: defaultBGI,
-    href: namedWebLink,
-    target: targetBlank
   }
 };
 
