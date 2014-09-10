@@ -951,7 +951,7 @@ a.card:hover {
 .card .card-chevron {
   text-align: center;
   vertical-align: middle;
-  font-size: 3rem;
+  font-size: 4rem;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
