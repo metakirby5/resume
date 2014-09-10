@@ -142,7 +142,7 @@ li.commaize:last-child:after {
 }
 @page {
   size: auto;
-  margin: 5mm;
+  margin: 7.5mm 5mm;
 }
 @media print {
   html {
