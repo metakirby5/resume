@@ -129,10 +129,10 @@ h4, .h4
 
       clearfix()
       & > div
-        @media screen
-          width 100%
-          text-align center
-        @media screen and (min-width sm-break), print
+        @media screen and (max-width md-break - 1)
+          width 100% !important
+          text-align center !important
+        @media screen and (min-width md-break), print
           float left
           text-align left
           padding-right 5px
@@ -219,7 +219,6 @@ li
 #experience
   .card-content
     & > .meta
-      @media screen and (min-width sm-break), print
         .name
           width 40%
         .role
@@ -234,7 +233,6 @@ li
       &.no-classes
         padding-bottom 0
         border-bottom none
-      @media screen and (min-width sm-break), print
         .school
           width 40%
         .grades
@@ -251,11 +249,10 @@ li
 #projects
   .card-content
     & > .meta
-      @media screen and (min-width sm-break), print
         .name
           width 40%
         .role
-          width 30%
+          width 35%
         .date
-          width 30%
+          width 25%
           text-align right
