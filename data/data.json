@@ -15,32 +15,32 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
-          "name": "CSE30",
+          "name": "CSE 30",
           "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
           "date": "Spring 2014"
         },
         {
-          "name": "CSE21",
+          "name": "CSE 21",
           "content": "Mathematics for Algorithms and Systems",
           "date": "Spring 2014"
         },
         {
-          "name": "CSE12",
+          "name": "CSE 12",
           "content": "Basic Data Structures and Object-Oriented Design: C/C++",
           "date": "Winter 2014"
         },
         {
-          "name": "CSE15L",
+          "name": "CSE 15L",
           "content": "Software Tools and Techniques Laboratory",
           "date": "Winter 2014"
         },
         {
-          "name": "CSE20",
+          "name": "CSE 20",
           "content": "Discrete Mathematics",
           "date": "Winter 2014"
         },
         {
-          "name": "CSE11",
+          "name": "CSE 11",
           "content": "Introduction to Computer Science and Object Oriented Programming: Java",
           "date": "Fall 2013"
         }
@@ -203,6 +203,14 @@
     {
       "name": "Git",
       "icon": "fa-git"
+    },
+    {
+        "name": "SPARC Assembly",
+        "icon": "fa-cogs"
+    },
+    {
+        "name": "Verilog",
+        "icon": "fa-cogs"
     },
     {
       "name": "Linux",
