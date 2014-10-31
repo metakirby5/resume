@@ -107,16 +107,6 @@
       "image": "img/bpc.jpg"
     },
     {
-      "name": "DesuPlayer",
-      "url": "https://github.com/connorworley/DesuPlayer",
-      "role": "Web Programmer",
-      "content": [
-        "An anime-streaming webapp with synchronized timestamps and anime list integration (ongoing)"
-      ],
-      "date": "Ongoing",
-      "hiddenPrint": true
-    },
-    {
       "name": "HTML/JS Resume",
       "url": "https://github.com/metakirby5/resume",
       "role": "Individual Project",
@@ -235,15 +225,15 @@
       "date": "2014"
     },
     {
+      "name": "Golden Key",
+      "date": "2014"
+    },
+    {
       "name": "Computer Science & Engineering Society",
       "date": "2013"
     },
     {
       "name": "IEEE",
-      "date": "2013"
-    },
-    {
-      "name": "Video Game Development Club",
       "date": "2013"
     }
   ]
