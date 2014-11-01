@@ -240,6 +240,12 @@ li.commaize:last-child:after {
   .no-mb-print {
     margin-bottom: 0 !important;
   }
+  section {
+    margin-bottom: 10px;
+  }
+  table td {
+    padding: 1px !important;
+  }
 }
 @media print {
   .col-xs-push-1 {
