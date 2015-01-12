@@ -15,6 +15,16 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
+          "name": "CSE 100",
+          "content": "Advanced Data Structures",
+          "date": "Fall 2014"
+        },
+        {
+          "name": "CSE 140",
+          "content": "Components and Design Techniques for Digital Systems",
+          "date": "Fall 2014"
+        },
+        {
           "name": "CSE 30",
           "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
           "date": "Spring 2014"
