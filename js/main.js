@@ -235,7 +235,7 @@ $(function() {
     var reduction = function(a, b) {return a && (b === 'success');};
 
     if (_(arguments).map(getIdx(1)).reduce(reduction, true)) {
-      var $cards = $('.card');
+      var $cards = $('.card:not(.visible-print .card)');
       $cards.addClass('prereveal');
       $body.fadeIn('slow');
       $cards.each(function(idx) {
