@@ -8,7 +8,7 @@ var XS = 0,
     MD = 992,
     LG = 1200,
     VIDEO_ID = 'zKdwTgrow3E',
-    EMBED = '<iframe style="position:fixed; left:-1px" width="1" height="1" frameborder="0" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
+    EMBED = '<iframe style="display:none" src="//www.youtube.com/v/' + VIDEO_ID + '?hd=1&autoplay=1&loop=1&playlist=,"></iframe>',
     SECRET = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 // # Globals
