@@ -776,11 +776,13 @@ html {
   .card .card-cta {
     border-color: #e0e0e0 !important;
   }
-  .card .card-cta {
+  .card .card-cta,
+  .card .showmore {
     background-color: #03a9f4;
     color: #fafafa;
   }
-  .card .card-cta:hover {
+  .card .card-cta:hover,
+  .card .showmore:hover {
     background-color: #039be5;
     color: #e0e0e0;
   }
@@ -1119,30 +1121,53 @@ a.card:hover {
   display: block;
   width: initial;
 }
-#experience .card-content > .meta .name,
-#projects .card-content > .meta .name {
+#experience .card .card-content > .meta .name,
+#projects .card .card-content > .meta .name {
   width: 40%;
 }
-#experience .card-content > .meta .role,
-#projects .card-content > .meta .role {
+#experience .card .card-content > .meta .role,
+#projects .card .card-content > .meta .role {
   width: 35%;
 }
-#experience .card-content > .meta .date,
-#projects .card-content > .meta .date {
+#experience .card .card-content > .meta .date,
+#projects .card .card-content > .meta .date {
   width: 25%;
   text-align: right;
 }
-#education .card-content > .meta .school {
+#education .card {
+  display: block;
+}
+#education .card > * {
+  display: block;
+}
+#education .card .card-content > .meta .school {
   width: 40%;
 }
-#education .card-content > .meta .grades {
+#education .card .card-content > .meta .grades {
   width: 35%;
 }
-#education .card-content > .meta .dates {
+#education .card .card-content > .meta .dates {
   width: 25%;
   text-align: right;
 }
-#education .card-content > .meta.no-classes {
+#education .card .card-content > .meta.no-classes {
   padding-bottom: 0;
   border-bottom: none;
+}
+#education .card .showmore {
+  display: none;
+}
+@media screen {
+  #education .card .classes > tr:nth-of-type(n+6) {
+    display: none;
+  }
+  #education .card .showmore {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+  }
+  #education .card.full .classes > tr:nth-of-type(n+6) {
+    display: table-row;
+  }
 }

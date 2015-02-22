@@ -218,26 +218,52 @@ li
       width initial
 
 #experience, #projects
-  .card-content
-    & > .meta
-      .name
-        width 40%
-      .role
-        width 35%
-      .date
-        width 25%
-        text-align right
+  .card
+    .card-content
+      & > .meta
+        .name
+          width 40%
+        .role
+          width 35%
+        .date
+          width 25%
+          text-align right
 
 #education
-  .card-content
-    & > .meta
-      .school
-        width 40%
-      .grades
-        width 35%
-      .dates
-        width 25%
-        text-align right
-      &.no-classes
-        padding-bottom 0
-        border-bottom none
+  .card
+    // No table-cell display here
+    display block
+    & > *
+      display block
+
+    .card-content
+      & > .meta
+        .school
+          width 40%
+        .grades
+          width 35%
+        .dates
+          width 25%
+          text-align right
+        &.no-classes
+          padding-bottom 0
+          border-bottom none
+
+    // Expandable class list
+    .showmore          // Mobile first
+      display none
+
+    @media screen
+      // Collapsed
+      .classes > tr:nth-of-type(n+6)
+        display none
+      .showmore
+        cursor pointer
+        text-align center
+        vertical-align middle
+        display block
+
+      &.full
+        .classes > tr:nth-of-type(n+6)
+          display table-row
+
