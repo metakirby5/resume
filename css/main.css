@@ -142,10 +142,10 @@ li.commaize:last-child:after {
   size: auto;
   margin: 7.5mm 5mm;
 }
+html {
+  font-size: 8.5pt;
+}
 @media print {
-  html {
-    font-size: 8.9pt;
-  }
   body {
     margin: 0;
   }
