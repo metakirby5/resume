@@ -1146,8 +1146,3 @@ a.card:hover {
   padding-bottom: 0;
   border-bottom: none;
 }
-@media print {
-  #education .card-content .classes tr:nth-of-type(n+5) {
-    display: none;
-  }
-}

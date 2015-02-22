@@ -9,7 +9,7 @@ section#education
           .dates(data-bind="dates")
         table.main(data-bind="main")
           tbody.classes(data-bind="classes")
-            tr
+            tr(data-bind="item")
               td.nowrap(data-bind="name")
               td(data-bind="content")
               td.nowrap.text-right(data-bind="date")

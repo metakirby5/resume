@@ -15,14 +15,25 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
+          "name": "CSE 101",
+          "content": "Design and Analysis of Algorithms",
+          "date": "Winter 2015"
+        },
+        {
+          "name": "LIGN 165",
+          "content": "Computational Linguistics: Python",
+          "date": "Winter 2015"
+        },
+        {
           "name": "CSE 100",
-          "content": "Advanced Data Structures",
+          "content": "Advanced Data Structures: C++",
           "date": "Fall 2014"
         },
         {
-          "name": "CSE 140",
-          "content": "Components and Design Techniques for Digital Systems",
-          "date": "Fall 2014"
+          "name": "CSE 140/L",
+          "content": "Components and Design Techniques for Digital Systems: Verilog",
+          "date": "Fall 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 30",
@@ -37,22 +48,26 @@
         {
           "name": "CSE 12",
           "content": "Basic Data Structures and Object-Oriented Design: C/C++",
-          "date": "Winter 2014"
+          "date": "Winter 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 15L",
           "content": "Software Tools and Techniques Laboratory",
-          "date": "Winter 2014"
+          "date": "Winter 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 20",
           "content": "Discrete Mathematics",
-          "date": "Winter 2014"
+          "date": "Winter 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 11",
           "content": "Introduction to Computer Science and Object Oriented Programming: Java",
-          "date": "Fall 2013"
+          "date": "Fall 2013",
+          "hiddenPrint": true
         }
       ]
     }

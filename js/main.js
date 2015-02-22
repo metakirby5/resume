@@ -206,6 +206,11 @@ $(function() {
               if (!this.classes)
                 return 'display: none';
             }
+          },
+          classes: {
+            item: {
+              class: hiddenPrint
+            }
           }
         },
         organizations: {
