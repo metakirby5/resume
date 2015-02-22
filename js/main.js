@@ -115,7 +115,7 @@ var card = {
   },
   content: {
     value: {
-      text: function() {
+      html: function() {
         return this.value;
       }
     },
@@ -280,7 +280,7 @@ $(function() {
       $icon.removeClass(iconCollapsed);
       $icon.addClass(iconFull);
     }
-  })
+  });
 
   // Hide print button if can't print
   if (!window.print) {

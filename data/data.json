@@ -74,6 +74,17 @@
   ],
   "experience": [
     {
+      "name": "UCSD CSE Tutoring",
+      "url": "http://www.cse.ucsd.edu/TutorsReaders",
+      "role": "Tutor",
+      "content": [
+        "Provided guidance to students in CSE labs 4 hours per week",
+        "Articulated detailed answers to student questions on an online discussion board",
+        "Supplied valuable feedback to students by grading programming assignments and exams",
+        "<b>Courses to date:</b> Intro to CS and OOP: Java (Winter 2015)"
+      ]
+    },
+    {
       "name": "CircleUp",
       "url": "https://www.circleup.com/",
       "role": "Software Engineering Intern",
@@ -105,7 +116,8 @@
         "Designed products in SolidWorks and Adobe Illustrator, machined on a CNC mill with MasterCam"
       ],
       "date": "Jun. 2013 - Jul. 2013",
-      "image": "img/bluechip.jpg"
+      "image": "img/bluechip.jpg",
+      "hiddenPrint": true
     },
     {
       "name": "SPAWAR",
