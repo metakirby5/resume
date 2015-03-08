@@ -236,12 +236,12 @@
       "icon": "fa-git"
     },
     {
-        "name": "SPARC Assembly",
-        "icon": "fa-cogs"
+      "name": "SPARC Assembly",
+      "icon": "fa-cogs"
     },
     {
-        "name": "Verilog",
-        "icon": "fa-cogs"
+      "name": "Verilog",
+      "icon": "fa-cogs"
     },
     {
       "name": "Linux",
