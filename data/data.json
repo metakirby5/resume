@@ -200,6 +200,10 @@
       "icon": "icon-javascript"
     },
     {
+      "name": "Ruby",
+      "icon": "icon-ruby"
+    },
+    {
       "name": "MySQL",
       "icon": "icon-mysql"
     },
