@@ -254,6 +254,10 @@
     {
       "name": "Windows",
       "icon": "fa-windows"
+    },
+    {
+      "name": "Japanese (N5)",
+      "icon": "fa-language"
     }
   ],
   "organizations": [
