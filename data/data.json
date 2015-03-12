@@ -204,6 +204,10 @@
       "icon": "icon-ruby"
     },
     {
+      "name": "Rails",
+      "icon": "icon-ruby-on-rails"
+    },
+    {
       "name": "MySQL",
       "icon": "icon-mysql"
     },
