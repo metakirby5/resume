@@ -113,6 +113,10 @@ var card = {
   container: {
     class: hiddenPrint
   },
+  name: {
+    href: namedWebLink,
+    target: targetBlank
+  },
   content: {
     value: {
       html: function() {
