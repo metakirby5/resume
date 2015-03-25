@@ -20,7 +20,7 @@ html
       include inc/header.jade
 
       hr
-      
+
       div(data-cmd="hide-if-not" data-values="tagline")
         include inc/about.jade
 
@@ -41,7 +41,7 @@ html
       .visible-print(data-cmd="hide-if-not" data-values="projects")
         include inc/projects.jade
 
-      div(data-cmd="hide-if-not" data-values="organizations")
+      .hidden-print(data-cmd="hide-if-not" data-values="organizations")
         include inc/organizations.jade
 
       include inc/credits.jade
