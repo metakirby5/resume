@@ -200,6 +200,10 @@
       "icon": "icon-nodejs"
     },
     {
+      "name": "Rails",
+      "icon": "icon-ruby-on-rails"
+    },
+    {
       "name": "Angular.js",
       "icon": "icon-google-developers"
     },
@@ -214,10 +218,6 @@
     {
       "name": "Ruby",
       "icon": "icon-ruby"
-    },
-    {
-      "name": "Rails",
-      "icon": "icon-ruby-on-rails"
     },
     {
       "name": "MySQL",
