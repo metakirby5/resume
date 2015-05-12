@@ -193,7 +193,8 @@
   ],
   "skills": [
     {
-      "name": "Django"
+      "name": "Django",
+      "icon": "icon-python"
     },
     {
       "name": "Node.js / Express",
@@ -204,8 +205,12 @@
       "icon": "icon-ruby-on-rails"
     },
     {
+      "name": "React",
+      "icon": "icon-javascript"
+    },
+    {
       "name": "Angular.js",
-      "icon": "icon-google-developers"
+      "icon": "icon-javascript"
     },
     {
       "name": "Python",
