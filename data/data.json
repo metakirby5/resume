@@ -15,6 +15,21 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
+          "name": "CSE 110",
+          "content": "Software Engineering",
+          "date": "Spring 2015"
+        },
+        {
+          "name": "CSE 105",
+          "content": "Intro/Theory of Computation",
+          "date": "Spring 2015"
+        },
+        {
+          "name": "MATH 183",
+          "content": "Statistical Methods",
+          "date": "Spring 2015"
+        },
+        {
           "name": "CSE 101",
           "content": "Design and Analysis of Algorithms",
           "date": "Winter 2015"
@@ -38,12 +53,14 @@
         {
           "name": "CSE 30",
           "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
-          "date": "Spring 2014"
+          "date": "Spring 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 21",
           "content": "Mathematics for Algorithms and Systems",
-          "date": "Spring 2014"
+          "date": "Spring 2014",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 12",
