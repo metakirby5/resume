@@ -16,7 +16,7 @@
       "classes": [
         {
           "name": "CSE 110",
-          "content": "Software Engineering",
+          "content": "Software Engineering: Python/Django/React",
           "date": "Spring 2015"
         },
         {
@@ -98,7 +98,7 @@
         "Provided guidance to students in Computer Science labs 4 hours per week",
         "Articulated detailed answers to student questions on an online discussion board",
         "Supplied valuable feedback to students by grading programming assignments and exams",
-        "<em>Courses to date:</em> Intro to CS and OOP: Java (Winter 2015)"
+        "<em>Courses to date:</em> Intro to CS and OOP: Java (Winter 2015), Advanced Data Structures: C++ (Spring 2015)"
       ],
       "image": "img/tutoring.png"
     },
@@ -151,6 +151,18 @@
     }
   ],
   "projects": [
+    {
+      "name": "HitMeUp",
+      "url": "http://sudowoodo-hitmeup.herokuapp.com/",
+      "role": "Project Manager / Lead Developer",
+      "content": [
+        "Developed a calendar comparison service using Django and React",
+        "Managed a group of ten through an agile development process",
+        "Utilized web scraping techniques to synchronize class schedules to our service as weekly recurring events"
+      ],
+      "date": "May. - Jun. 2015",
+      "image": "img/hitmeup.png"
+    },
     {
       "name": "Rails Address Book",
       "url": "https://github.com/metakirby5/rails-addressbook",
