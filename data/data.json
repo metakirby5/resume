@@ -173,7 +173,8 @@
         "Supported user authentication and per-user friendship settings"
       ],
       "date": "Mar. 2015",
-      "image": "img/addressbook.png"
+      "image": "img/addressbook.png",
+      "hiddenPrint": true
     },
     {
       "name": "HTML/JS Resume",
@@ -217,7 +218,8 @@
         "Networked with industry heads, organizations, and sponsors to expand and maintain team relationships"
       ],
       "date": "Aug. 2009 - Aug. 2013",
-      "image": "img/frc.jpg"
+      "image": "img/frc.jpg",
+      "hiddenPrint": true
     }
   ],
   "skills": [
