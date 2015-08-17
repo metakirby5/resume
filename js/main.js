@@ -267,7 +267,9 @@ $(function() {
   // onWidths(widths);
 
   // Expandable education classes
-  $('.showmore').click(function() {
+  $('.showmore').click(function(e) {
+    e.preventDefault();
+
     var $card = $(this).parent();
     var $icon = $($(this).children()[0]);
     var listFull = 'full',
