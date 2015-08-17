@@ -292,14 +292,14 @@ $(function() {
     $('#JSON-button').removeClass('col-sm-6');
   }
 
-  // Fadeaways
-  var processFadeaways = function() {
-    $('.fadeaway').removeClass('disable');
-
-    if ($window.scrollTop() + $window.height() >= $document.height() - 1)
-      $('.fadeaway.bottom').addClass('disable');
-  };
-  $window.scroll(processFadeaways);
+//   // Fadeaways
+//   var processFadeaways = function() {
+//     $('.fadeaway').removeClass('disable');
+//
+//     if ($window.scrollTop() + $window.height() >= $document.height() - 1)
+//       $('.fadeaway.bottom').addClass('disable');
+//   };
+//   $window.scroll(processFadeaways);
 
   // shhhh
   var secretFunc;

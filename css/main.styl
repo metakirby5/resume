@@ -251,6 +251,7 @@ li
 
     // Expandable class list
     .showmore          // Mobile first
+      transition all transition-speed ease-out
       display none
 
     @media screen
@@ -258,10 +259,8 @@ li
       .classes > tr:nth-of-type(n+6)
         display none
       .showmore
-        cursor pointer
-        text-align center
-        vertical-align middle
         display block
+        width 100%
 
       &.full
         .classes > tr:nth-of-type(n+6)

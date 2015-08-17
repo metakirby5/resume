@@ -164,19 +164,6 @@
       "image": "img/hitmeup.png"
     },
     {
-      "name": "Rails Address Book",
-      "url": "https://github.com/metakirby5/rails-addressbook",
-      "role": "Individual Project",
-      "content": [
-        "Accumulated working knowledge of Ruby and Rails in two days",
-        "Implemented a REST API supporting CRUD operations on contacts and friendships, with server-side validation",
-        "Supported user authentication and per-user friendship settings"
-      ],
-      "date": "Mar. 2015",
-      "image": "img/addressbook.png",
-      "hiddenPrint": true
-    },
-    {
       "name": "HTML/JS Resume",
       "url": "https://github.com/metakirby5/resume",
       "role": "Individual Project",

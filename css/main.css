@@ -154,14 +154,14 @@ html {
     content: "";
   }
   .col-print-1 {
-    width: 8.3333333333333% !important;
+    width: 8.333333333333332% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
   }
   .col-print-2 {
-    width: 16.6666666666667% !important;
+    width: 16.666666666666664% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -175,14 +175,14 @@ html {
     padding-left: 15px;
   }
   .col-print-4 {
-    width: 33.3333333333333% !important;
+    width: 33.33333333333333% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
   }
   .col-print-5 {
-    width: 41.6666666666667% !important;
+    width: 41.66666666666667% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -196,14 +196,14 @@ html {
     padding-left: 15px;
   }
   .col-print-7 {
-    width: 58.3333333333333% !important;
+    width: 58.333333333333336% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
   }
   .col-print-8 {
-    width: 66.6666666666667% !important;
+    width: 66.66666666666666% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -217,14 +217,14 @@ html {
     padding-left: 15px;
   }
   .col-print-10 {
-    width: 83.3333333333333% !important;
+    width: 83.33333333333334% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
   }
   .col-print-11 {
-    width: 91.6666666666667% !important;
+    width: 91.66666666666666% !important;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -1155,6 +1155,11 @@ a.card:hover {
   border-bottom: none;
 }
 #education .card .showmore {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   display: none;
 }
 @media screen {
@@ -1162,10 +1167,8 @@ a.card:hover {
     display: none;
   }
   #education .card .showmore {
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
     display: block;
+    width: 100%;
   }
   #education .card.full .classes > tr:nth-of-type(n+6) {
     display: table-row;
