@@ -91,6 +91,18 @@
   ],
   "experience": [
     {
+      "name": "ISA Global Leadership Program",
+      "role": "Discussion Leader Intern",
+      "content": [
+        "Helped students at Izumigaoka High School develop international perspectives",
+        "Facilitated and led small group discussions and projects",
+        "Supported Japanese students in actively using English to express thoughts and opinions"
+      ],
+      "date": "Aug. 2015",
+      "image": "img/isa.png",
+      "hiddenPrint": true
+    },
+    {
       "name": "UCSD CSE Department",
       "url": "http://www.cse.ucsd.edu/TutorsReaders",
       "role": "Tutor",
