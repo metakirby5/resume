@@ -101,7 +101,7 @@
         "Developed a single-page application with custom textarea markup and search features in React.js",
         "Emulated a bootstrap-based visual style with more efficient CSS and modern features like flexbox"
       ],
-      "date": "Oct. 2014 - Dec. 2014",
+      "date": "Oct. 2015 - Dec. 2015",
       "image": "img/atilika.png"
     },
     {
@@ -179,6 +179,18 @@
   ],
   "projects": [
     {
+      "name": "Whizkers",
+      "url": "https://github.com/metakirby5/whizkers",
+      "role": "Individual Project",
+      "content": [
+        "Created a pystache + YAML based cascading configuration file templater",
+        "Implemented features such as file watching, shallow variable evaluation, and diff generation"
+      ],
+      "date": "Jul. 2015 - Oct. 2015",
+      "image": "img/whizkers.gif",
+      "hiddenPrint": true
+    },
+    {
       "name": "HitMeUp",
       "url": "http://sudowoodo-hitmeup.herokuapp.com/",
       "role": "Project Manager / Lead Developer",
@@ -251,7 +263,7 @@
       "icon": "icon-ruby-on-rails"
     },
     {
-      "name": "React",
+      "name": "React.js",
       "icon": "icon-javascript"
     },
     {
