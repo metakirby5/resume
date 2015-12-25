@@ -97,7 +97,7 @@
       "url": "http://atilika.com/en/",
       "role": "Intern Software Engineer",
       "content": [
-        "Helped implement a Japanese text segmenter/annotator in Java using the Kuromoji library",
+        "Helped to implement a Japanese text segmenter/annotator in Java using the Kuromoji library",
         "Developed a single-page application with custom textarea markup and search features in React.js",
         "Emulated a bootstrap-based visual style with more efficient CSS and modern features like flexbox"
       ],
@@ -245,8 +245,7 @@
         "Networked with industry heads, organizations, and sponsors to expand and maintain team relationships"
       ],
       "date": "Aug. 2009 - Aug. 2013",
-      "image": "img/frc.jpg",
-      "hiddenPrint": true
+      "image": "img/frc.jpg"
     }
   ],
   "skills": [
@@ -317,14 +316,6 @@
     {
       "name": "Heroku",
       "icon": "icon-heroku"
-    },
-    {
-      "name": "SPARC Assembly",
-      "icon": "fa-cogs"
-    },
-    {
-      "name": "Verilog",
-      "icon": "fa-cogs"
     },
     {
       "name": "Linux",
