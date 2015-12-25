@@ -27,7 +27,8 @@
         {
           "name": "MATH 183",
           "content": "Statistical Methods",
-          "date": "Spring 2015"
+          "date": "Spring 2015",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 101",
@@ -37,7 +38,8 @@
         {
           "name": "LIGN 165",
           "content": "Computational Linguistics: Python",
-          "date": "Winter 2015"
+          "date": "Winter 2015",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 100",
@@ -90,6 +92,18 @@
     }
   ],
   "experience": [
+    {
+      "name": "Atilika",
+      "url": "http://atilika.com/en/",
+      "role": "Intern Software Engineer",
+      "content": [
+        "Helped implement a Japanese text segmenter/annotator in Java using the Kuromoji library",
+        "Developed a single-page application with custom textarea markup and search features in React.js",
+        "Emulated a bootstrap-based visual style with more efficient CSS and modern features like flexbox"
+      ],
+      "date": "Oct. 2014 - Dec. 2014",
+      "image": "img/atilika.png"
+    },
     {
       "name": "ISA Global Leadership Program",
       "url": "http://www.isa.co.jp/english/",
@@ -185,7 +199,8 @@
         "Implemented responsive web design to ensure mobile and print compatibility (check this out on your phone!)"
       ],
       "date": "Aug. 2014",
-      "image": "img/resume.png"
+      "image": "img/resume.png",
+      "hiddenPrint": true
     },
     {
       "name": "DesuSync",
