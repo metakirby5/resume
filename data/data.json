@@ -15,8 +15,23 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
+          "name": "CSE 132A",
+          "content": "Database System Principles",
+          "date": "Winter 2016"
+        },
+        {
+          "name": "CSE 130",
+          "content": "Programming Languages (OCaml/Python/Prolog)",
+          "date": "Winter 2016"
+        },
+        {
+          "name": "CSE 120",
+          "content": "Principles of Computer Operating Systems (C)",
+          "date": "Winter 2016"
+        },
+        {
           "name": "CSE 110",
-          "content": "Software Engineering: Python/Django/React",
+          "content": "Software Engineering (Python/Django/React)",
           "date": "Spring 2015"
         },
         {
@@ -37,24 +52,24 @@
         },
         {
           "name": "LIGN 165",
-          "content": "Computational Linguistics: Python",
+          "content": "Computational Linguistics (Python)",
           "date": "Winter 2015",
           "hiddenPrint": true
         },
         {
           "name": "CSE 100",
-          "content": "Advanced Data Structures: C++",
+          "content": "Advanced Data Structures (C++)",
           "date": "Fall 2014"
         },
         {
           "name": "CSE 140/L",
-          "content": "Components and Design Techniques for Digital Systems: Verilog",
+          "content": "Components and Design Techniques for Digital Systems (Verilog)",
           "date": "Fall 2014",
           "hiddenPrint": true
         },
         {
           "name": "CSE 30",
-          "content": "Computer Organization and Systems Programming: C/SPARC Assembly",
+          "content": "Computer Organization and Systems Programming (C/SPARC Assembly)",
           "date": "Spring 2014",
           "hiddenPrint": true
         },
@@ -66,7 +81,7 @@
         },
         {
           "name": "CSE 12",
-          "content": "Basic Data Structures and Object-Oriented Design: C/C++",
+          "content": "Basic Data Structures and Object-Oriented Design (C/C++)",
           "date": "Winter 2014",
           "hiddenPrint": true
         },
@@ -84,7 +99,7 @@
         },
         {
           "name": "CSE 11",
-          "content": "Introduction to Computer Science and Object Oriented Programming: Java",
+          "content": "Introduction to Computer Science and Object Oriented Programming (Java)",
           "date": "Fall 2013",
           "hiddenPrint": true
         }
@@ -92,6 +107,19 @@
     }
   ],
   "experience": [
+    {
+      "name": "Information Theory and Applications Workshop 2016 App",
+      "url": "http://ita.ucsd.edu/m/",
+      "role": "App Developer",
+      "content": [
+        "Created a mobile-friendly workshop schedule app used by 1000+ attendees",
+        "Rapidly prototyped and developed the app in a single week",
+        "Frequently met with customer to ensure requirements were satisfied"
+      ],
+      "date": "Jan. 2016",
+      "image": "img/ita.png",
+      "hiddenPrint": true
+    },
     {
       "name": "Atilika",
       "url": "http://atilika.com/en/",
@@ -224,7 +252,8 @@
         "Implemented redundancy checking and update queues to minimize the number of queries made"
       ],
       "date": "Aug. 2014",
-      "image": "img/desusync.png"
+      "image": "img/desusync.png",
+      "hiddenPrint": true
     },
     {
       "name": "Programming Competitions",
@@ -282,7 +311,7 @@
       "icon": "icon-ruby"
     },
     {
-      "name": "MySQL",
+      "name": "SQL",
       "icon": "icon-mysql"
     },
     {
@@ -306,6 +335,10 @@
       "icon": "icon-java-bold"
     },
     {
+      "name": "OCaml",
+      "icon": "icon-perl"
+    },
+    {
       "name": "BASH",
       "icon": "fa-terminal"
     },
@@ -318,19 +351,7 @@
       "icon": "icon-heroku"
     },
     {
-      "name": "Linux",
-      "icon": "fa-linux"
-    },
-    {
-      "name": "Mac",
-      "icon": "fa-apple"
-    },
-    {
-      "name": "Windows",
-      "icon": "fa-windows"
-    },
-    {
-      "name": "Japanese (N5)",
+      "name": "Japanese",
       "icon": "fa-language"
     }
   ],
