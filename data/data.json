@@ -7,7 +7,7 @@
   "website": "metakirby5.github.io/resume",
   "github": "github.com/metakirby5",
   "linkedin": "www.linkedin.com/in/ethanjchan",
-  "tagline": "UCSD undergraduate, quick learner, midnight coder, anime-lover, and maybe your future intern.",
+  "tagline": "UCSD undergraduate. Interests: building big ideas with beautiful code, brewing coffee, and watching anime.",
   "education": [
     {
       "school": "UCSD (B.S. Computer Science)",
@@ -15,9 +15,27 @@
       "dates": "Sep. 2013 - Jun. 2017",
       "classes": [
         {
+          "name": "CSE 123",
+          "content": "Computer Networks (C)",
+          "date": "Spring 2016",
+          "hiddenPrint": true
+        },
+        {
+          "name": "CSE 190A",
+          "content": "Computational Techniques in Robotics (Python)",
+          "date": "Spring 2016"
+        },
+        {
+          "name": "CSE 141",
+          "content": "Intro to Computer Architecture",
+          "date": "Spring 2016",
+          "hiddenPrint": true
+        },
+        {
           "name": "CSE 132A",
-          "content": "Database System Principles",
-          "date": "Winter 2016"
+          "content": "Database System Principles (SQL/JDBC)",
+          "date": "Winter 2016",
+          "hiddenPrint": true
         },
         {
           "name": "CSE 130",
@@ -99,7 +117,7 @@
         },
         {
           "name": "CSE 11",
-          "content": "Introduction to Computer Science and Object Oriented Programming (Java)",
+          "content": "Intro to Computer Science and Object Oriented Programming (Java)",
           "date": "Fall 2013",
           "hiddenPrint": true
         }
@@ -153,7 +171,7 @@
         "Provided guidance to students in Computer Science labs 4 hours per week",
         "Articulated detailed answers to student questions on an online discussion board",
         "Supplied valuable feedback to students by grading programming assignments and exams",
-        "<em>Courses to date:</em> Intro to CS and OOP: Java (Winter 2015), Advanced Data Structures: C++ (Spring 2015)"
+        "<em>Courses to date:</em> Intro to CS and OOP (Winter 2015), Advanced Data Structures (Spring 2015), Programming Languages (Spring 2016)"
       ],
       "image": "img/tutoring.png"
     },
@@ -337,6 +355,10 @@
     {
       "name": "OCaml",
       "icon": "icon-perl"
+    },
+    {
+      "name": "Scala",
+      "icon": "icon-scala"
     },
     {
       "name": "BASH",
