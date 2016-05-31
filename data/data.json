@@ -325,22 +325,6 @@
       "icon": "icon-javascript"
     },
     {
-      "name": "Ruby",
-      "icon": "icon-ruby"
-    },
-    {
-      "name": "SQL",
-      "icon": "icon-mysql"
-    },
-    {
-      "name": "HTML",
-      "icon": "fa-html5"
-    },
-    {
-      "name": "CSS (SASS, Stylus)",
-      "icon": "fa-css3"
-    },
-    {
       "name": "C",
       "icon": "icon-c"
     },
@@ -359,6 +343,22 @@
     {
       "name": "Scala",
       "icon": "icon-scala"
+    },
+    {
+      "name": "Ruby",
+      "icon": "icon-ruby"
+    },
+    {
+      "name": "HTML",
+      "icon": "fa-html5"
+    },
+    {
+      "name": "CSS (SASS, Stylus)",
+      "icon": "fa-css3"
+    },
+    {
+      "name": "SQL",
+      "icon": "icon-mysql"
     },
     {
       "name": "BASH",
