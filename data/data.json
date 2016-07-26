@@ -126,6 +126,16 @@
   ],
   "experience": [
     {
+      "name": "Pure Storage",
+      "url": "http://www.purestorage.com/",
+      "role": "Software Engineering Intern",
+      "content": [
+        "Rapidly developed project prototypes in Python",
+        "Implemented database schema changes throughout the core software stack"
+      ],
+      "date": "Jun. 2016 - Sep. 2016"
+    },
+    {
       "name": "Information Theory and Applications Workshop 2016 App",
       "url": "http://ita.ucsd.edu/m/",
       "role": "App Developer",
