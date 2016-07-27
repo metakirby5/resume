@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Ethan Chan's Resume.",
+  "main": "index.html",
+  "dependencies": {
+    "nib": "^1.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metakirby5/resume.git"
+  },
+  "author": "Ethan Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metakirby5/resume/issues"
+  },
+  "homepage": "https://github.com/metakirby5/resume#readme"
+}
