@@ -1,7 +1,7 @@
-include inc/mixins.jade
+include inc/mixins.pug
 
 doctype html
-include inc/wired.jade
+include inc/wired.pug
 
 html
   head
@@ -11,43 +11,43 @@ html
     title(data-bind="fullname")
 
     // Favicon
-    include inc/favicon.jade
+    include inc/favicon.pug
 
     // Stylesheets
-    include inc/css.jade
+    include inc/css.pug
   body
     .hidden-print
-      include inc/overlays.jade
+      include inc/overlays.pug
 
     .container
-      include inc/header.jade
+      include inc/header.pug
 
       hr
 
       div(data-cmd="hide-if-not" data-values="tagline")
-        include inc/about.jade
+        include inc/about.pug
 
       div(data-cmd="hide-if-not" data-values="experience")
-        include inc/experience.jade
+        include inc/experience.pug
 
       .hidden-print(data-cmd="hide-if-not" data-values="projects")
-        include inc/projects.jade
+        include inc/projects.pug
 
       .row
         .col-xs-12.col-md-4.col-md-push-8.col-print-12(data-cmd="hide-if-not" data-values="skills")
-          include inc/skills.jade
+          include inc/skills.pug
 
         .col-xs-12.col-md-8.col-md-pull-4.col-print-12(data-cmd="hide-if-not" data-values="education")
-          include inc/education.jade
+          include inc/education.pug
 
       // Duplicate for alt layout
       .visible-print(data-cmd="hide-if-not" data-values="projects")
-        include inc/projects.jade
+        include inc/projects.pug
 
       .hidden-print(data-cmd="hide-if-not" data-values="organizations")
-        include inc/organizations.jade
+        include inc/organizations.pug
 
-      include inc/credits.jade
+      include inc/credits.pug
 
       // Scripts
-      include inc/js.jade
+      include inc/js.pug
