@@ -1,4 +1,4 @@
-(function($, _, Transparency) {
+(function($, _, jsyaml, Transparency) {
 
 "use strict";
 
@@ -152,8 +152,8 @@ $(function() {
 
   // Ajax calls
   $.when(
-    $.getJSON('data/data.json', function(data) {
-      $html.render(data, {
+    $.get('data/data.yaml', function(data) {
+      $html.render(jsyaml.safeLoad(data), {
         'hide-if-not': {
           style: hideIfNotData('values')
         },
@@ -227,8 +227,8 @@ $(function() {
       });
     }).fail(errRedirect),
 
-    $.getJSON('data/credits.json', function(data) {
-      $('#credits-list').render(data, {
+    $.get('data/credits.yaml', function(data) {
+      $('#credits-list').render(jsyaml.safeLoad(data), {
         entry: {
           text: function() {
             return this.name;
@@ -291,7 +291,7 @@ $(function() {
   // Hide print button if can't print
   if (!window.print) {
     $('#printme-button').hide();
-    $('#JSON-button').removeClass('col-sm-6');
+    $('#yaml-button').removeClass('col-sm-6');
   }
 
 //   // Fadeaways
@@ -316,4 +316,4 @@ $(function() {
   });
 });
 
-})(window.jQuery, window._, window.Transparency);
+})(window.jQuery, window._, window.jsyaml, window.Transparency);
