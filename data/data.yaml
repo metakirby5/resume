@@ -197,6 +197,20 @@ experience:
 
 projects:
   -
+    name: "Codi.vim"
+    url: "https://github.com/metakirby5/codi.vim"
+    role: "Individual Project"
+    content:
+      - "Created an extensible interactive scratchpad implemented as a Vim
+        plugin in Vimscript"
+      - "Leveraged Vim's asynchronous job architecture to provide non-blocking
+        instant code evaluation"
+      - "Prepared extensive documentation to exhaustively describe all
+        functionality and configurable options"
+    date: "Aug. 2016"
+    image: "img/codi.gif"
+    hiddenPrint: true
+  -
     name: "Whizkers"
     url: "https://github.com/metakirby5/whizkers"
     role: "Individual Project"
