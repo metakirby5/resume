@@ -5,6 +5,9 @@
   name: "Stylus"
   url: "http://learnboost.github.io/stylus/"
 -
+  name: "JS-YAML"
+  url: "https://github.com/nodeca/js-yaml"
+-
   name: "jQuery"
   url: "http://jquery.com/"
 -
