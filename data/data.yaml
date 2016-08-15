@@ -6,7 +6,8 @@ email: "chan.ethan.5@gmail.com"
 website: "metakirby5.github.io/resume"
 github: "github.com/metakirby5"
 linkedin: "www.linkedin.com/in/ethanjchan"
-tagline: "UCSD undergraduate. Interests: building big ideas with beautiful code, brewing coffee, and watching anime."
+tagline: "UCSD undergraduate. Interests: building big ideas with beautiful
+  code, brewing coffee, and watching anime."
 
 education:
   -
@@ -69,12 +70,14 @@ education:
         date: "Fall 2014"
       -
         name: "CSE 140/L"
-        content: "Components and Design Techniques for Digital Systems (Verilog)"
+        content: "Components and Design Techniques for Digital Systems
+          (Verilog)"
         date: "Fall 2014"
         hiddenPrint: true
       -
         name: "CSE 30"
-        content: "Computer Organization and Systems Programming (C/SPARC Assembly)"
+        content: "Computer Organization and Systems Programming
+          (C/SPARC Assembly)"
         date: "Spring 2014"
         hiddenPrint: true
       -
@@ -99,7 +102,8 @@ education:
         hiddenPrint: true
       -
         name: "CSE 11"
-        content: "Intro to Computer Science and Object Oriented Programming (Java)"
+        content: "Intro to Computer Science and Object Oriented Programming
+          (Java)"
         date: "Fall 2013"
         hiddenPrint: true
 
@@ -110,7 +114,8 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Rapidly developed project prototypes in Python"
-      - "Implemented database schema changes throughout the core software stack"
+      - "Implemented database schema changes throughout the core software
+        stack"
     date: "Jun. 2016 - Sep. 2016"
     image: "img/purestorage.png"
   -
@@ -118,7 +123,8 @@ experience:
     url: "http://ita.ucsd.edu/m/"
     role: "App Developer"
     content:
-      - "Created a mobile-friendly workshop schedule app used by 1000+ attendees"
+      - "Created a mobile-friendly workshop schedule app used by 1000+
+        attendees"
       - "Rapidly prototyped and developed the app in a single week"
       - "Frequently met with customer to ensure requirements were satisfied"
     date: "Jan. 2016"
@@ -129,9 +135,12 @@ experience:
     url: "http://atilika.com/en/"
     role: "Intern Software Engineer"
     content:
-      - "Helped to implement a Japanese text segmenter/annotator in Java using the Kuromoji library"
-      - "Developed a single-page application with custom textarea markup and search features in React.js"
-      - "Emulated a bootstrap-based visual style with more efficient CSS and modern features like flexbox"
+      - "Helped to implement a Japanese text segmenter/annotator in Java using
+        the Kuromoji library"
+      - "Developed a single-page application with custom textarea markup and
+        search features in React.js"
+      - "Emulated a bootstrap-based visual style with more efficient CSS and
+        modern features like flexbox"
     date: "Oct. 2015 - Dec. 2015"
     image: "img/atilika.png"
   -
@@ -139,9 +148,11 @@ experience:
     url: "http://www.isa.co.jp/english/"
     role: "Discussion Leader Intern"
     content:
-      - "Helped students at Izumigaoka High School develop international perspectives"
+      - "Helped students at Izumigaoka High School develop international
+        perspectives"
       - "Facilitated and led small group discussions and projects"
-      - "Supported Japanese students in actively using English to express thoughts and opinions"
+      - "Supported Japanese students in actively using English to express
+        thoughts and opinions"
     date: "Aug. 2015"
     image: "img/isa.png"
     hiddenPrint: true
@@ -150,10 +161,16 @@ experience:
     url: "http://www.cse.ucsd.edu/TutorsReaders"
     role: "Tutor"
     content:
-      - "Provided guidance to students in Computer Science labs 4 hours per week"
-      - "Articulated detailed answers to student questions on an online discussion board"
-      - "Supplied valuable feedback to students by grading programming assignments and exams"
-      - "<em>Courses to date:</em> Intro to CS and OOP (Winter 2015), Advanced Data Structures (Spring 2015), Programming Languages (Spring 2016)"
+      - "Provided guidance to students in Computer Science labs 4 hours per
+        week"
+      - "Articulated detailed answers to student questions on an online
+        discussion board"
+      - "Supplied valuable feedback to students by grading programming
+        assignments and exams"
+      - "<em>Courses to date:</em>
+        Intro to CS and OOP (Winter 2015),
+        Advanced Data Structures (Spring 2015),
+        Programming Languages (Spring 2016)"
     image: "img/tutoring.png"
   -
     name: "CircleUp"
@@ -161,9 +178,12 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Full-stack development using the Django framework and Angular.js"
-      - "Implemented a \"community\" newsfeed section interfacing with several API's such as Prismic.io and Disqus"
-      - "Introduced responsive web design to key flows, increasing mobile conversion rates"
-      - "Strengthened site security via anti-XSS measures, cookie protection, unit tests, and integration tests"
+      - "Implemented a \"community\" newsfeed section interfacing with several
+        API's such as Prismic.io and Disqus"
+      - "Introduced responsive web design to key flows, increasing mobile
+        conversion rates"
+      - "Strengthened site security via anti-XSS measures, cookie protection,
+        unit tests, and integration tests"
     date: "Jun. 2014 - Sep. 2014"
     image: "img/circleup.png"
   -
@@ -172,15 +192,18 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Developed an endpoint-based MySQL table management API in Java"
-      - "Co-managed a SCRUM board to promote agile software development lifecycle"
+      - "Co-managed a SCRUM board to promote agile software development
+        lifecycle"
     date: "Jul. 2013 - Aug. 2013"
     image: "img/perspectium.png"
   -
     name: "BlueChip Machine and Fabrication"
     role: "Mechanical Engineering Intern"
     content:
-      - "Collaborated with a partner to prototype and machine a custom aluminum project"
-      - "Designed products in SolidWorks and Adobe Illustrator, machined on a CNC mill with MasterCam"
+      - "Collaborated with a partner to prototype and machine a custom
+        aluminum project"
+      - "Designed products in SolidWorks and Adobe Illustrator, machined on a
+        CNC mill with MasterCam"
     date: "Jun. 2013 - Jul. 2013"
     image: "img/bluechip.jpg"
     hiddenPrint: true
@@ -189,8 +212,10 @@ experience:
     url: "http://www.public.navy.mil/spawar/"
     role: "Ecological Analysis Intern"
     content:
-      - "Independently populated a marine particle size survey which provided useful biological heuristics"
-      - "Followed military lab protocol in collecting data and analyzing it in Microsoft Excel"
+      - "Independently populated a marine particle size survey which provided
+        useful biological heuristics"
+      - "Followed military lab protocol in collecting data and analyzing it
+        in Microsoft Excel"
     date: "Jun. 2012 - Aug. 2012"
     image: "img/spawar.jpg"
     hiddenPrint: true
@@ -214,8 +239,10 @@ projects:
     url: "https://github.com/metakirby5/whizkers"
     role: "Individual Project"
     content:
-      - "Created a pystache + YAML based cascading configuration file templater"
-      - "Implemented features such as file watching, shallow variable evaluation, and diff generation"
+      - "Created a pystache + YAML based cascading configuration file
+        templater"
+      - "Implemented features such as file watching, shallow variable
+        evaluation, and diff generation"
     date: "Jul. 2015 - Oct. 2015"
     image: "img/whizkers.gif"
     hiddenPrint: true
@@ -226,7 +253,8 @@ projects:
     content:
       - "Developed a calendar comparison service using Django and React"
       - "Managed a group of ten through an agile development process"
-      - "Utilized web scraping techniques to synchronize class schedules to our service as weekly recurring events"
+      - "Utilized web scraping techniques to synchronize class schedules to
+        our service as weekly recurring events"
     date: "May. - Jun. 2015"
     image: "img/hitmeup.png"
   -
@@ -234,8 +262,10 @@ projects:
     url: "https://github.com/metakirby5/resume"
     role: "Individual Project"
     content:
-      - "Created a YAML-based resume by leveraging AJAX techniques and a JS templating engine (you're looking at it!)"
-      - "Implemented responsive web design to ensure mobile and print compatibility (check this out on your phone!)"
+      - "Created a YAML-based resume by leveraging AJAX techniques and a JS
+        templating engine (you're looking at it!)"
+      - "Utilized responsive web design to ensure mobile and print
+        compatibility (check this out on your phone!)"
     date: "Aug. 2014"
     image: "img/resume.png"
     hiddenPrint: true
@@ -244,9 +274,12 @@ projects:
     url: "https://github.com/metakirby5/desu-sync"
     role: "Individual Project"
     content:
-      - "Created an Node.js/Angular.js webapp that updates Hummingbird.me anime lists via AJAX calls to the API"
-      - "Utilized the HTML5 File API to allow easy drag-and-drop updating of anime lists from local files"
-      - "Implemented redundancy checking and update queues to minimize the number of queries made"
+      - "Created an Node.js/Angular.js webapp that updates Hummingbird.me
+        anime lists via AJAX calls to the API"
+      - "Utilized the HTML5 File API to allow easy drag-and-drop updating of
+        anime lists from local files"
+      - "Implemented redundancy checking and update queues to minimize the
+        number of queries made"
     date: "Aug. 2014"
     image: "img/desusync.png"
     hiddenPrint: true
@@ -254,17 +287,22 @@ projects:
     name: "Programming Competitions"
     role: "Participant"
     content:
-      - "Placed 3rd/100+ in Winter 2014 Microsoft Coding Challenge (6 problems total, 1.5 hours)"
-      - "Placed 8th/74 in Fall 2013 Women in Computing Beginner’s Programming Competition (14 problems total, 2.5 hours)"
+      - "Placed 3rd/100+ in Winter 2014 Microsoft Coding Challenge (6 problems
+        total, 1.5 hours)"
+      - "Placed 8th/74 in Fall 2013 Women in Computing Beginner’s Programming
+        Competition (14 problems total, 2.5 hours)"
     image: "img/bpc.jpg"
   -
     name: "FIRST Robotics Team 1538"
     url: "http://team1538.com/"
     role: "Lead Engineering Student"
     content:
-      - "Led the prototyping, design, machining, and assembly of the team’s consistently top-seeded robot"
-      - "Coached team members in soft & technical skills via engineering projects and one-on-one training"
-      - "Networked with industry heads, organizations, and sponsors to expand and maintain team relationships"
+      - "Led the prototyping, design, machining, and assembly of the team’s
+        consistently top-seeded robot"
+      - "Coached team members in soft & technical skills via engineering
+        projects and one-on-one training"
+      - "Networked with industry heads, organizations, and sponsors to expand
+        and maintain team relationships"
     date: "Aug. 2009 - Aug. 2013"
     image: "img/frc.jpg"
 
