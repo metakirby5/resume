@@ -6,8 +6,8 @@ email: "chan.ethan.5@gmail.com"
 website: "metakirby5.github.io/resume"
 github: "github.com/metakirby5"
 linkedin: "www.linkedin.com/in/ethanjchan"
-tagline: "UCSD undergraduate. Interests: building big ideas with beautiful
-  code, brewing coffee, and watching anime."
+tagline: "UCSD undergraduate. Interests: building ideas with code, brewing
+  coffee, and watching anime."
 
 education:
   -
@@ -230,7 +230,7 @@ projects:
         languages as a Vim plugin"
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation"
-      - "Has achieved trending status on GitHub and received 250+ stars"
+      - "Has achieved trending status on GitHub and received 450+ stars"
     date: "Aug. 2016"
     image: "img/codi.gif"
     hiddenPrint: true
