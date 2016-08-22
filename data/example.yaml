@@ -28,15 +28,19 @@ experience:
     name: "Company 1"
     role: "Intern"
     content:
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!"
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dolore, reiciendis!"
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quam, nisi."
     date: "date"
   -
     name: "Company 2"
     role: "Coffee runner"
     content:
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, doloribus!"
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, praesentium."
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Sit, doloribus!"
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Rerum, praesentium."
     date: "date"
 
 projects:
@@ -44,15 +48,19 @@ projects:
     name: "Programming Competitions"
     role: "Participant"
     content:
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!"
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dolore, reiciendis!"
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quam, nisi."
     date: "date"
   -
     name: "Did some cool things"
     role: "Individual"
     content:
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reiciendis!"
-      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nisi."
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dolore, reiciendis!"
+      - "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quam, nisi."
     date: "date"
 
 skills:
