@@ -222,6 +222,17 @@ experience:
 
 projects:
   -
+    name: "zenbu"
+    url: "https://github.com/metakirby5/zenbu"
+    role: "Individual Project"
+    content:
+      - "Created a Jinja2 + YAML based cascading configuration file
+        templater"
+      - "Implemented features such as file watching, shallow variable
+        evaluation, and diff generation"
+    date: "Sep. 2016"
+    image: "img/zenbu.gif"
+  -
     name: "Codi.vim"
     url: "https://github.com/metakirby5/codi.vim"
     role: "Individual Project"
@@ -230,22 +241,9 @@ projects:
         languages as a Vim plugin"
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation"
-      - "Has achieved trending status on GitHub and received 450+ stars"
+      - "Has achieved trending status on GitHub and received 700+ stars"
     date: "Aug. 2016"
     image: "img/codi.gif"
-    hiddenPrint: true
-  -
-    name: "Whizkers"
-    url: "https://github.com/metakirby5/whizkers"
-    role: "Individual Project"
-    content:
-      - "Created a pystache + YAML based cascading configuration file
-        templater"
-      - "Implemented features such as file watching, shallow variable
-        evaluation, and diff generation"
-    date: "Jul. 2015 - Oct. 2015"
-    image: "img/whizkers.gif"
-    hiddenPrint: true
   -
     name: "HitMeUp"
     url: "http://sudowoodo-hitmeup.herokuapp.com/"
@@ -292,6 +290,7 @@ projects:
       - "Placed 8th/74 in Fall 2013 Women in Computing Beginner’s Programming
         Competition (14 problems total, 2.5 hours)"
     image: "img/bpc.jpg"
+    hiddenPrint: true
   -
     name: "FIRST Robotics Team 1538"
     url: "http://team1538.com/"
@@ -305,6 +304,7 @@ projects:
         and maintain team relationships"
     date: "Aug. 2009 - Aug. 2013"
     image: "img/frc.jpg"
+    hiddenPrint: true
 
 skills:
   -
