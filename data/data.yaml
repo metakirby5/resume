@@ -114,8 +114,9 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Rapidly developed project prototypes in Python"
-      - "Implemented database schema changes throughout the core software
-        stack"
+      - "Implemented database schema changes throughout kernel, CLI, and REST
+        codebases"
+      - "Orchestrated virtual machines using VMWare's vSphere Web Client API"
     date: "Jun. 2016 - Sep. 2016"
     image: "img/purestorage.png"
   -
