@@ -113,10 +113,10 @@ experience:
     url: "http://www.purestorage.com/"
     role: "Software Engineering Intern"
     content:
-      - "Rapidly developed project prototypes in Python"
-      - "Implemented database schema changes throughout kernel, CLI, and REST
-        codebases"
-      - "Orchestrated virtual machines using VMWare's vSphere Web Client API"
+      - "Verified project feasibility with multiple Python prototypes"
+      - "Upgraded core API throughout kernel, CLI, and REST codebases"
+      - "Automated orchestration of virtual machines in a customer-facing
+        product"
     date: "Jun. 2016 - Sep. 2016"
     image: "img/purestorage.png"
   -
