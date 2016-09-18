@@ -6,13 +6,13 @@ email: "chan.ethan.5@gmail.com"
 website: "metakirby5.github.io/resume"
 github: "github.com/metakirby5"
 linkedin: "www.linkedin.com/in/ethanjchan"
-tagline: "UCSD undergraduate. Interests: building ideas with code, brewing
-  coffee, and watching anime."
+tagline: "UCSD undergraduate.
+ I like tea, anime, desktop customization, and coding."
 
 education:
   -
     school: "UCSD (B.S. Computer Science)"
-    grades: "GPA: 3.99/4.0; Major GPA: 4.0/4.0"
+    grades: "GPA: 3.99/4.0"
     dates: "Sep. 2013 - Jun. 2017"
     classes:
       -
@@ -24,6 +24,7 @@ education:
         name: "CSE 190A"
         content: "Computational Techniques in Robotics (Python)"
         date: "Spring 2016"
+        hiddenPrint: true
       -
         name: "CSE 141"
         content: "Intro to Computer Architecture"
@@ -68,6 +69,7 @@ education:
         name: "CSE 100"
         content: "Advanced Data Structures (C++)"
         date: "Fall 2014"
+        hiddenPrint: true
       -
         name: "CSE 140/L"
         content: "Components and Design Techniques for Digital Systems
@@ -108,6 +110,14 @@ education:
         hiddenPrint: true
 
 experience:
+  -
+    name: "Google"
+    url: "http://www.google.com/"
+    role: "Software Engineering Intern"
+    content:
+      - "TBD :)"
+    date: "Sep. 2016 - Dec. 2016"
+    image: "img/google.png"
   -
     name: "Pure Storage"
     url: "http://www.purestorage.com/"

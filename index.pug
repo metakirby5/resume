@@ -34,11 +34,11 @@ html
         include inc/projects.pug
 
       .row
-        .col-xs-12.col-md-4.col-md-push-8.col-print-12(data-cmd="hide-if-not" data-values="skills")
-          include inc/skills.pug
-
-        .col-xs-12.col-md-8.col-md-pull-4.col-print-12(data-cmd="hide-if-not" data-values="education")
+        .col-xs-12.col-md-8.col-print-8(data-cmd="hide-if-not" data-values="education")
           include inc/education.pug
+
+        .col-xs-12.col-md-4.col-print-4(data-cmd="hide-if-not" data-values="skills")
+          include inc/skills.pug
 
       // Duplicate for alt layout
       .visible-print(data-cmd="hide-if-not" data-values="projects")
