@@ -1,11 +1,11 @@
 first: "Ethan"
 last: "Chan"
 location: "San Diego, CA"
-phone: "(hidden)"
+phone: ""
 email: "chan.ethan.5@gmail.com"
 website: "metakirby5.github.io/resume"
 github: "github.com/metakirby5"
-linkedin: "www.linkedin.com/in/ethanjchan"
+linkedin: "linkedin.com/in/ethanjchan"
 tagline: "UCSD undergraduate.
  I like tea, anime, desktop customization, and coding."
 
@@ -140,11 +140,10 @@ experience:
       - "Frequently met with customer to ensure requirements were satisfied"
     date: "Jan. 2016"
     image: "img/ita.png"
-    hiddenPrint: true
   -
     name: "Atilika"
     url: "http://atilika.com/en/"
-    role: "Intern Software Engineer"
+    role: "Software Engineering Intern"
     content:
       - "Helped to implement a Japanese text segmenter/annotator in Java using
         the Kuromoji library"
@@ -207,6 +206,7 @@ experience:
         lifecycle"
     date: "Jul. 2013 - Aug. 2013"
     image: "img/perspectium.png"
+    hiddenPrint: true
   -
     name: "BlueChip Machine and Fabrication"
     role: "Mechanical Engineering Intern"
@@ -341,10 +341,8 @@ skills:
     icon: "icon-javascript"
   -
     name: "C"
-    icon: "icon-c"
   -
     name: "C++"
-    icon: "icon-cplusplus"
   -
     name: "Java"
     icon: "icon-java-bold"

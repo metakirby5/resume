@@ -243,6 +243,9 @@ html {
   section {
     margin-bottom: 10px;
   }
+  .card {
+    margin-bottom: 5px;
+  }
   table td {
     padding: 1px !important;
   }
@@ -789,9 +792,6 @@ html {
   .card .meta {
     border-color: #e0e0e0 !important;
   }
-  .card .meta .name {
-    color: #03a9f4;
-  }
   .fa.stackee.inverse {
     color: #f5f5f5;
   }
@@ -1075,11 +1075,20 @@ a.card:hover {
   margin-top: 0;
   margin-bottom: 10px;
   margin-right: 10px;
-  line-height: 4.5rem;
   font-size: 4.5rem;
   font-weight: 100;
 }
-@media screen and (min-width: 992px), print {
+@media screen and (max-width: 768px), print {
+  #header .contact .main-title {
+    line-height: 4.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header .contact .main-title {
+    height: 4.5rem;
+  }
+}
+@media screen and (min-width: 768px), print {
   #header .contact .main-title {
     float: left;
   }
@@ -1114,13 +1123,13 @@ a.card:hover {
   display: block;
   width: initial;
 }
-#experience .card .card-content > .meta .name,
-#projects .card .card-content > .meta .name {
-  width: 40%;
+#experience .card .card-content > .meta .desc,
+#projects .card .card-content > .meta .desc {
+  width: 75%;
 }
-#experience .card .card-content > .meta .role,
-#projects .card .card-content > .meta .role {
-  width: 35%;
+#experience .card .card-content > .meta .desc .name:after,
+#projects .card .card-content > .meta .desc .name:after {
+  content: ' | ';
 }
 #experience .card .card-content > .meta .date,
 #projects .card .card-content > .meta .date {

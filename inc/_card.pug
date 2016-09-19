@@ -2,9 +2,10 @@
   a.card-img(data-bind="image")
   .card-content
     .meta
-      .name
-        a(data-bind="name")
-      .role(data-bind="role")
+      .desc
+        span.name
+          a(data-bind="name")
+        span.role(data-bind="role")
       .date(data-bind="date")
     ul.main(data-bind="content")
       li(data-bind="value")

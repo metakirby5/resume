@@ -183,7 +183,11 @@ li
     margin-bottom (sec-margin / 3)
 
     .main-title
-      @media screen and (min-width sm-break), print
+      @media screen and (max-width xs-break), print
+        line-height 4.5rem
+      @media screen and (min-width xs-break)
+        height 4.5rem
+      @media screen and (min-width xs-break), print
         float left
       @media screen and (min-width md-break), print
         margin-bottom 0
@@ -191,7 +195,6 @@ li
       margin-top 0
       margin-bottom (sec-margin / 2)
       margin-right (sec-margin / 2)
-      line-height 4.5rem
       font-size 4.5rem
       font-weight 100
 
@@ -217,10 +220,10 @@ li
   .card
     .card-content
       & > .meta
-        .name
-          width 40%
-        .role
-          width 35%
+        .desc
+          width 75%
+          .name:after
+            content ' | '
         .date
           width 25%
           text-align right
