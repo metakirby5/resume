@@ -8,9 +8,11 @@ vendorize(attr args)
 
 commaize()
   &:after
-   content ', '
+    margin-right 0.5em
+    content ','
   &:last-child:after
-   content ''
+    margin-right 0
+    content ''
 
 // Styles
 .dib
@@ -101,6 +103,13 @@ ul
         content '\f0c8'
       font-size 1.33em
       top -0.1em
+
+ul.commaize
+  list-style none
+  padding 0
+  li
+    display inline-block
+    commaize()
 
 li.commaize
   commaize()

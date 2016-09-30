@@ -2,23 +2,15 @@
 
 .contact-bullets
   ul.fa-ul.inline(data-cmd="hide-if-not" data-values="location phone email")
-    li(data-cmd="hide-if-not" data-values="location")
-      +li-i-stacked('fa-map-marker', 'fa-h-square')
-      a(data-bind="location")
-
-    li(data-cmd="hide-if-not" data-values="phone")
-      +li-i('fa-phone-square')
-      a(data-bind="phone")
-
     li(data-cmd="hide-if-not" data-values="email")
       +li-i('fa-envelope-square')
       a(data-bind="email")
 
-  ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
     li(data-cmd="hide-if-not" data-values="website")
       +li-i-stacked('fa-link', 'fa-external-link-square')
       a(data-bind="website" data-cmd="link")
 
+  ul.fa-ul.inline(data-cmd="hide-if-not" data-values="website github linkedin")
     li(data-cmd="hide-if-not" data-values="github")
       +li-i('fa-github-square')
       a(data-bind="github" data-cmd="link")

@@ -183,30 +183,31 @@ li
     margin-bottom (sec-margin / 3)
 
     .main-title
-      @media screen and (max-width xs-break), print
+      @media screen and (max-width md-break), print
         line-height 4.5rem
-      @media screen and (min-width xs-break)
+      @media screen and (min-width md-break)
         height 4.5rem
-      @media screen and (min-width xs-break), print
-        float left
       @media screen and (min-width md-break), print
-        margin-bottom 0
+        float left
       display block
       margin-top 0
-      margin-bottom (sec-margin / 2)
+      @media screen
+        margin-bottom (sec-margin / 2)
       margin-right (sec-margin / 2)
       font-size 4.5rem
       font-weight 100
 
     .contact-bullets
       white-space nowrap
+      @media screen and (min-width md-break), print
+        position absolute
+        bottom 0
+        right 1rem
       ul
         margin-right 10px
-        @media screen and (min-width xs-break), print
-          display inline-block
-        @media screen and (min-width md-break), print
-          margin-bottom 0
-        margin-bottom (sec-margin / 2)
+        display inline-block
+        float left
+        margin-bottom 0
 
 #about
   .card

@@ -132,10 +132,27 @@ ul.fa-ul {
 .fa.stackee.box:before {
   content: '\f0c8';
 }
+ul.commaize {
+  list-style: none;
+  padding: 0;
+}
+ul.commaize li {
+  display: inline-block;
+}
+ul.commaize li:after {
+  margin-right: 0.5em;
+  content: ',';
+}
+ul.commaize li:last-child:after {
+  margin-right: 0;
+  content: '';
+}
 li.commaize:after {
-  content: ', ';
+  margin-right: 0.5em;
+  content: ',';
 }
 li.commaize:last-child:after {
+  margin-right: 0;
   content: '';
 }
 @page {
@@ -1073,47 +1090,45 @@ a.card:hover {
 #header .contact .main-title {
   display: block;
   margin-top: 0;
-  margin-bottom: 10px;
   margin-right: 10px;
   font-size: 4.5rem;
   font-weight: 100;
 }
-@media screen and (max-width: 768px), print {
+@media screen and (max-width: 1200px), print {
   #header .contact .main-title {
     line-height: 4.5rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   #header .contact .main-title {
     height: 4.5rem;
   }
 }
-@media screen and (min-width: 768px), print {
+@media screen and (min-width: 1200px), print {
   #header .contact .main-title {
     float: left;
   }
 }
-@media screen and (min-width: 1200px), print {
+@media screen {
   #header .contact .main-title {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 #header .contact .contact-bullets {
   white-space: nowrap;
 }
+@media screen and (min-width: 1200px), print {
+  #header .contact .contact-bullets {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+  }
+}
 #header .contact .contact-bullets ul {
   margin-right: 10px;
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 768px), print {
-  #header .contact .contact-bullets ul {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 1200px), print {
-  #header .contact .contact-bullets ul {
-    margin-bottom: 0;
-  }
+  display: inline-block;
+  float: left;
+  margin-bottom: 0;
 }
 #about .card {
   display: block;

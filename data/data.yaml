@@ -1,7 +1,5 @@
 first: "Ethan"
 last: "Chan"
-location: "San Diego, CA"
-phone: ""
 email: "chan.ethan.5@gmail.com"
 website: "metakirby5.github.io/resume"
 github: "github.com/metakirby5"
@@ -320,62 +318,44 @@ projects:
 skills:
   -
     name: "Django"
-    icon: "icon-python"
   -
     name: "Node.js / Express"
-    icon: "icon-nodejs"
   -
     name: "Rails"
-    icon: "icon-ruby-on-rails"
   -
     name: "React.js"
-    icon: "icon-javascript"
   -
     name: "Angular.js"
-    icon: "icon-javascript"
   -
     name: "Python"
-    icon: "icon-python"
   -
     name: "Javascript"
-    icon: "icon-javascript"
   -
     name: "C"
   -
     name: "C++"
   -
     name: "Java"
-    icon: "icon-java-bold"
   -
     name: "OCaml"
-    icon: "icon-perl"
   -
     name: "Scala"
-    icon: "icon-scala"
   -
     name: "Ruby"
-    icon: "icon-ruby"
   -
     name: "HTML"
-    icon: "fa-html5"
   -
     name: "CSS (SASS, Stylus)"
-    icon: "fa-css3"
   -
     name: "SQL"
-    icon: "icon-mysql"
   -
     name: "BASH"
-    icon: "fa-terminal"
   -
     name: "Git"
-    icon: "fa-git"
   -
     name: "Heroku"
-    icon: "icon-heroku"
   -
     name: "Japanese"
-    icon: "fa-language"
 
 organizations:
   -
