@@ -113,7 +113,11 @@ experience:
     url: "http://www.google.com/"
     role: "Software Engineering Intern"
     content:
-      - "In progress."
+      - "Increased extensibility of survey content rendering codebase
+        with a modular refactor"
+      - "Helped to inroduce customer-facing surveys for Google Now and Google
+        Home, which which gather critical metrics"
+      - "Still in progress :)"
     date: "Sep. 2016 - Dec. 2016"
     image: "img/google.png"
   -
