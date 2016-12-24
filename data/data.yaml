@@ -115,9 +115,10 @@ experience:
     content:
       - "Increased extensibility of survey content rendering codebase
         with a modular refactor"
-      - "Helped to inroduce customer-facing surveys for Google Now and Google
+      - "Helped to introduce customer-facing surveys for Google Now and Google
         Home, which which gather critical metrics"
-      - "Still in progress :)"
+      - "Set up load testing tools for evaluating TensorFlow performance
+        tweaks"
     date: "Sep. 2016 - Dec. 2016"
     image: "img/google.png"
   -
