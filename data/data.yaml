@@ -326,8 +326,6 @@ skills:
   -
     name: "Node.js / Express"
   -
-    name: "Rails"
-  -
     name: "React.js"
   -
     name: "Angular.js"
@@ -336,9 +334,9 @@ skills:
   -
     name: "Javascript"
   -
-    name: "C"
-  -
     name: "C++"
+  -
+    name: "C"
   -
     name: "Java"
   -
@@ -350,11 +348,11 @@ skills:
   -
     name: "HTML"
   -
-    name: "CSS (SASS, Stylus)"
+    name: "CSS (Sass, Stylus)"
   -
     name: "SQL"
   -
-    name: "BASH"
+    name: "Bash"
   -
     name: "Git"
   -
