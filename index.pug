@@ -30,7 +30,7 @@ html
       div(data-cmd="hide-if-not" data-values="experience")
         include inc/experience.pug
 
-      .hidden-print(data-cmd="hide-if-not" data-values="projects")
+      div(data-cmd="hide-if-not" data-values="projects")
         include inc/projects.pug
 
       .row
@@ -39,10 +39,6 @@ html
 
         .col-xs-12.col-md-4.col-print-4(data-cmd="hide-if-not" data-values="skills")
           include inc/skills.pug
-
-      // Duplicate for alt layout
-      .visible-print(data-cmd="hide-if-not" data-values="projects")
-        include inc/projects.pug
 
       .hidden-print(data-cmd="hide-if-not" data-values="organizations")
         include inc/organizations.pug
