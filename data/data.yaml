@@ -49,6 +49,7 @@ education:
         name: "CSE 105"
         content: "Intro/Theory of Computation"
         date: "Spring 2015"
+        hiddenPrint: true
       -
         name: "MATH 183"
         content: "Statistical Methods"
@@ -355,10 +356,6 @@ skills:
     name: "Bash"
   -
     name: "Git"
-  -
-    name: "Heroku"
-  -
-    name: "Japanese"
 
 organizations:
   -
