@@ -114,10 +114,10 @@ experience:
     url: "http://www.google.com/"
     role: "Software Engineering Intern"
     content:
-      - "Increased extensibility of survey content rendering codebase
-        with a modular refactor"
-      - "Helped to introduce customer-facing surveys for Google Now and Google
-        Home, which which gather critical metrics"
+      - "Developed a customer-facing card UI rendering microservice for
+        Google Opinion Rewards"
+      - "Helped to introduce new surveys for Google Now and Google Home which
+        which gather critical metrics"
       - "Set up load testing tools for evaluating TensorFlow performance
         tweaks"
     date: "Sep. 2016 - Dec. 2016"
