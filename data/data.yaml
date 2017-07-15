@@ -114,6 +114,17 @@ experience:
     url: "http://www.google.com/"
     role: "Software Engineering Intern"
     content:
+      - "Developing a <a href='https://arxiv.org/abs/1705.03122'>
+        Convolutional Sequence to Sequence</a> model for translation"
+      - "Using a in-house framework based on TensorFlow"
+      - "In progress"
+    date: "Jun. 2017 - Sep. 2017"
+    image: "img/google.png"
+  -
+    name: "Google"
+    url: "http://www.google.com/"
+    role: "Software Engineering Intern"
+    content:
       - "Developed a customer-facing card UI rendering microservice for
         Google Opinion Rewards"
       - "Helped to introduce new surveys for Google Now and Google Home which
@@ -236,6 +247,17 @@ experience:
     hiddenPrint: true
 
 projects:
+  -
+    name: "Sandma"
+    url: "http://cse125.ucsd.edu/2017/cse125g1/"
+    role: "Architecture / UI Developer"
+    content:
+      - "Created event-driven single-threaded game loop supporting
+        asynchronous callbacks"
+      - "Developed fully animated UI components using an in-house framework
+        built on OpenGL"
+    date: "Apr. 2017 - Jun. 2017"
+    image: "img/sandma.png"
   -
     name: "zenbu"
     url: "https://github.com/metakirby5/zenbu"
