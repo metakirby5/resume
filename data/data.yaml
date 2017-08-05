@@ -155,6 +155,7 @@ experience:
       - "Frequently met with customer to ensure requirements were satisfied"
     date: "Jan. 2016"
     image: "img/ita.png"
+    hiddenPrint: true
   -
     name: "Atilika"
     url: "http://atilika.com/en/"
@@ -269,6 +270,7 @@ projects:
         evaluation, and diff generation"
     date: "Sep. 2016"
     image: "img/zenbu.gif"
+    hiddenPrint: true
   -
     name: "Codi.vim"
     url: "https://github.com/metakirby5/codi.vim"
@@ -351,7 +353,7 @@ skills:
   -
     name: "React.js"
   -
-    name: "Angular.js"
+    name: "TensorFlow"
   -
     name: "Python"
   -
