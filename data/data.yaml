@@ -110,7 +110,7 @@ education:
 experience:
   -
     name: "Google"
-    url: "http://www.google.com/"
+    url: "http://translate.google.com/"
     role: "Software Engineering Intern"
     content:
       - "Developed a <a href='https://arxiv.org/abs/1705.03122'>
