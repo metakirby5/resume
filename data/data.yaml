@@ -113,10 +113,12 @@ experience:
     url: "http://www.google.com/"
     role: "Software Engineering Intern"
     content:
-      - "Developing a <a href='https://arxiv.org/abs/1705.03122'>
-        Convolutional Sequence to Sequence</a> model for translation"
-      - "Using a in-house framework based on TensorFlow"
-      - "In progress"
+      - "Developed a <a href='https://arxiv.org/abs/1705.03122'>
+        Convolutional Sequence to Sequence</a> model for natural
+        language translation"
+      - "Implemented model variants for training and inference in an in-house
+        TensorFlow framework"
+      - "Implemented fast beam search decoding using the C++ TensorFlow API"
     date: "Jun. 2017 - Sep. 2017"
     image: "img/google_translate.png"
   -
