@@ -110,7 +110,7 @@ education:
 experience:
   -
     name: "Google"
-    url: "http://translate.google.com/"
+    url: "https://translate.google.com/"
     role: "Software Engineering Intern"
     content:
       - "Developed a <a href='https://arxiv.org/abs/1705.03122'>
@@ -123,7 +123,7 @@ experience:
     image: "img/google_translate.png"
   -
     name: "Google"
-    url: "http://www.google.com/"
+    url: "https://www.google.com/"
     role: "Software Engineering Intern"
     content:
       - "Developed a customer-facing card UI rendering microservice for
@@ -136,7 +136,7 @@ experience:
     image: "img/google.png"
   -
     name: "Pure Storage"
-    url: "http://www.purestorage.com/"
+    url: "https://www.purestorage.com/"
     role: "Software Engineering Intern"
     content:
       - "Verified project feasibility with multiple Python prototypes"
@@ -159,7 +159,7 @@ experience:
     hiddenPrint: true
   -
     name: "Atilika"
-    url: "http://atilika.com/en/"
+    url: "https://atilika.com/en/"
     role: "Software Engineering Intern"
     content:
       - "Helped to implement a Japanese text segmenter/annotator in Java using
@@ -172,7 +172,7 @@ experience:
     image: "img/atilika.png"
   -
     name: "ISA Global Leadership Program"
-    url: "http://www.isa.co.jp/english/"
+    url: "https://www.isa.co.jp/english/"
     role: "Discussion Leader Intern"
     content:
       - "Helped students at Izumigaoka High School develop international
@@ -185,7 +185,7 @@ experience:
     hiddenPrint: true
   -
     name: "UCSD CSE Department"
-    url: "http://www.cse.ucsd.edu/TutorsReaders"
+    url: "https://cse.ucsd.edu/undergraduate/student-opportunities/financial-opportunities/readers-and-tutors"
     role: "Tutor"
     content:
       - "Provided guidance to students in Computer Science labs 4 hours per
@@ -215,7 +215,7 @@ experience:
     image: "img/circleup.png"
   -
     name: "Perspectium"
-    url: "http://www.perspectium.com/"
+    url: "https://www.perspectium.com/"
     role: "Software Engineering Intern"
     content:
       - "Developed an endpoint-based MySQL table management API in Java"
@@ -286,7 +286,7 @@ projects:
     image: "img/codi.gif"
   -
     name: "HitMeUp"
-    url: "http://sudowoodo-hitmeup.herokuapp.com/"
+    url: "https://sudowoodo-hitmeup.herokuapp.com/"
     role: "Project Manager / Lead Developer"
     content:
       - "Developed a calendar comparison service using Django and React"
