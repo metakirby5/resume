@@ -253,6 +253,28 @@ $(function() {
           $(thiz).removeClass('prereveal');
         }, 100 * (idx + 1));
       });
+
+      // Expandable education classes
+      $('.showmore').click(function(e) {
+        e.preventDefault();
+
+        var $card = $(this).parent();
+        var $icon = $($(this).children()[0]);
+        var listFull = 'full',
+            iconCollapsed = 'fa-chevron-down',
+            iconFull = 'fa-chevron-up';
+
+        if ($card.hasClass(listFull)) {
+          $card.removeClass(listFull);
+          $icon.removeClass(iconFull);
+          $icon.addClass(iconCollapsed);
+        }
+        else {
+          $card.addClass(listFull);
+          $icon.removeClass(iconCollapsed);
+          $icon.addClass(iconFull);
+        }
+      });
     } else
       errRedirect(null, 'Not all ajax calls returned success', arguments);
   });
@@ -265,28 +287,6 @@ $(function() {
   // widths[MD] = pLog1('MD');
   // widths[LG] = pLog1('LG');
   // onWidths(widths);
-
-  // Expandable education classes
-  $('.showmore').click(function(e) {
-    e.preventDefault();
-
-    var $card = $(this).parent();
-    var $icon = $($(this).children()[0]);
-    var listFull = 'full',
-        iconCollapsed = 'fa-chevron-down',
-        iconFull = 'fa-chevron-up';
-
-    if ($card.hasClass(listFull)) {
-      $card.removeClass(listFull);
-      $icon.removeClass(iconFull);
-      $icon.addClass(iconCollapsed);
-    }
-    else {
-      $card.addClass(listFull);
-      $icon.removeClass(iconCollapsed);
-      $icon.addClass(iconFull);
-    }
-  });
 
   // Hide print button if can't print
   if (!window.print) {

@@ -8,9 +8,18 @@ tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 
 education:
   -
-    school: "UCSD (BS/MS Computer Science)"
+    school: "UCSD, MS Computer Science"
+    grades: "GPA: pending"
+    dates: "Sep 2017 - Jun 2018"
+    classes:
+      -
+        name: "CSE 258"
+        content: "Web Mining and Recommender Systems"
+        date: "Fall 2017"
+  -
+    school: "UCSD, BS Computer Science"
     grades: "GPA: 3.99/4.0"
-    dates: "Sep 2013 - Jun 2018"
+    dates: "Sep 2013 - Jun 2017"
     classes:
       -
         name: "CSE 123"
@@ -36,10 +45,12 @@ education:
         name: "CSE 130"
         content: "Programming Languages (OCaml/Python/Prolog)"
         date: "Winter 2016"
+        hiddenPrint: true
       -
         name: "CSE 120"
         content: "Principles of Computer Operating Systems (C)"
         date: "Winter 2016"
+        hiddenPrint: true
       -
         name: "CSE 110"
         content: "Software Engineering (Python/Django/React)"
@@ -114,11 +125,10 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Developed a <a href='https://arxiv.org/abs/1705.03122'>
-        Convolutional Sequence to Sequence</a> model for natural
+        Convolutional Sequence to Sequence</a> neural network model for natural
         language translation."
-      - "Implemented model variants for training and inference in an in-house
-        TensorFlow framework."
-      - "Implemented fast beam search decoding using the C++ TensorFlow API."
+      - "Implemented model variants for distributed training and inference
+        using an in-house machine learning framework."
     date: "Jun 2017 - Sep 2017"
     image: "img/google_translate.png"
   -
@@ -128,10 +138,9 @@ experience:
     content:
       - "Developed a customer-facing card UI rendering microservice for
         Google Opinion Rewards."
-      - "Helped to introduce new surveys for Google Now and Google Home which
-        which gather critical metrics."
-      - "Set up load testing tools for evaluating TensorFlow performance
-        tweaks."
+      - "Helped to introduce new surveys for Google Now and Google Home to
+        gather critical metrics."
+      - "Developed load testing tools for evaluating performance tweaks."
     date: "Sep 2016 - Dec 2016"
     image: "img/google.png"
   -
@@ -139,10 +148,9 @@ experience:
     url: "https://www.purestorage.com/"
     role: "Software Engineering Intern"
     content:
-      - "Verified project feasibility with multiple Python prototypes."
-      - "Upgraded core API throughout kernel, CLI, and REST codebases."
       - "Automated orchestration of virtual machines in a customer-facing
         product."
+      - "Upgraded core API throughout kernel, command line, and API codebases."
     date: "Jun 2016 - Sep 2016"
     image: "img/purestorage.png"
   -
@@ -151,23 +159,16 @@ experience:
     role: "App Developer"
     content:
       - "Created a mobile-friendly workshop schedule app used by 1000+
-        attendees."
-      - "Rapidly prototyped and developed the app in a single week."
-      - "Frequently met with customer to ensure requirements were satisfied."
+        attendees, prototyped and developed in a single week."
     date: "Jan 2016"
     image: "img/ita.png"
-    hiddenPrint: true
   -
     name: "Atilika"
     url: "https://atilika.com/en/"
     role: "Software Engineering Intern"
     content:
-      - "Helped to implement a Japanese text segmenter/annotator in Java using
-        the Kuromoji library."
-      - "Developed a single-page application with custom textarea markup and
-        search features in React.js."
-      - "Emulated a bootstrap-based visual style with more efficient CSS and
-        modern features like flexbox."
+      - "Developed a single-page web app with custom markup and search
+        features for segmented/annotated Japanese text."
     date: "Oct 2015 - Dec 2015"
     image: "img/atilika.png"
   -
@@ -175,10 +176,10 @@ experience:
     url: "https://www.isa.co.jp/english/"
     role: "Discussion Leader Intern"
     content:
-      - "Helped students at Izumigaoka High School develop international
+      - "Helped Japanese high school students develop international
         perspectives."
       - "Facilitated and led small group discussions and projects."
-      - "Supported Japanese students in actively using English to express
+      - "Supported students in actively using English to express
         thoughts and opinions."
     date: "Aug 2015"
     image: "img/isa.png"
@@ -199,14 +200,14 @@ experience:
         Advanced Data Structures (Spring 2015),
         Programming Languages (Spring 2016, Spring 2017)."
     image: "img/tutoring.png"
+    hiddenPrint: true
   -
     name: "CircleUp"
     url: "https://www.circleup.com/"
     role: "Software Engineering Intern"
     content:
-      - "Full-stack development using the Django framework and Angular.js."
-      - "Implemented a \"community\" newsfeed section interfacing with several
-        API's such as Prismic.io and Disqus."
+      - "Implemented a customer-facing community newsfeed interfacing with
+        several external API's."
       - "Introduced responsive web design to key flows, increasing mobile
         conversion rates."
       - "Strengthened site security via anti-XSS measures, cookie protection,
@@ -218,9 +219,8 @@ experience:
     url: "https://www.perspectium.com/"
     role: "Software Engineering Intern"
     content:
-      - "Developed an endpoint-based MySQL table management API in Java."
-      - "Co-managed a SCRUM board to promote agile software development
-        lifecycle."
+      - "Developed an internal product data management API."
+      - "Co-managed a SCRUM board to promote agile software development."
     date: "Jul 2013 - Aug 2013"
     image: "img/perspectium.png"
     hiddenPrint: true
@@ -229,7 +229,7 @@ experience:
     role: "Mechanical Engineering Intern"
     content:
       - "Collaborated with a partner to prototype and machine a custom
-        aluminum project."
+        project out of aluminum."
       - "Designed products in SolidWorks and Adobe Illustrator, machined on a
         CNC mill with MasterCam."
     date: "Jun 2013 - Jul 2013"
@@ -254,8 +254,8 @@ projects:
     url: "http://cse125.ucsd.edu/2017/cse125g1/"
     role: "Architecture / UI Developer"
     content:
-      - "Created event-driven single-threaded game loop supporting
-        asynchronous callbacks."
+      - "Created an event-driven single-threaded game loop supporting
+        networked multiplayer and asynchronous callbacks."
       - "Developed fully animated UI components using an in-house framework
         built on OpenGL."
     date: "Apr 2017 - Jun 2017"
@@ -281,7 +281,7 @@ projects:
         languages as a Vim plugin."
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation."
-      - "Has achieved trending status on GitHub and received 1000+ stars."
+      - "Achieved trending status on GitHub and received 1200+ stars."
     date: "Aug 2016"
     image: "img/codi.gif"
   -
@@ -289,10 +289,10 @@ projects:
     url: "https://sudowoodo-hitmeup.herokuapp.com/"
     role: "Project Manager / Lead Developer"
     content:
-      - "Developed a calendar comparison service using Django and React."
+      - "Developed a calendar comparison service as a web application."
       - "Managed a group of ten through an agile development process."
       - "Utilized web scraping techniques to synchronize class schedules to
-        our service as weekly recurring events."
+        the service as weekly recurring events."
     date: "May 2015 - Jun 2015"
     image: "img/hitmeup.png"
   -
@@ -300,10 +300,9 @@ projects:
     url: "https://github.com/metakirby5/resume"
     role: "Individual Project"
     content:
-      - "Created a YAML-based resume by leveraging AJAX techniques and a JS
-        templating engine (you're looking at it!)."
-      - "Utilized responsive web design to ensure mobile and print
-        compatibility (check this out on your phone!)."
+      - "Created a configuration-based resume by leveraging AJAX techniques
+        and a templating engine."
+      - "Ensured mobile and print compatibilty by utilizing responsive web design."
     date: "Aug 2014"
     image: "img/resume.png"
     hiddenPrint: true
@@ -312,10 +311,10 @@ projects:
     url: "https://github.com/metakirby5/desu-sync"
     role: "Individual Project"
     content:
-      - "Created an Node.js/Angular.js webapp that updates Hummingbird.me
+      - "Created a Node.js/Angular.js webapp that updates Hummingbird.me
         anime lists via AJAX calls to the API."
-      - "Utilized the HTML5 File API to allow easy drag-and-drop updating of
-        anime lists from local files."
+      - "Implemented drag-and-drop updating of anime lists by parsing
+        filenames from the HTML5 File API."
       - "Implemented redundancy checking and update queues to minimize the
         number of queries made."
     date: "Aug 2014"
@@ -325,10 +324,9 @@ projects:
     name: "Programming Competitions"
     role: "Participant"
     content:
-      - "Placed 3rd/100+ in Winter 2014 Microsoft Coding Challenge (6 problems
-        total, 1.5 hours)."
+      - "Placed 3rd/100+ in Winter 2014 Microsoft Coding Challenge."
       - "Placed 8th/74 in Fall 2013 Women in Computing Beginner’s Programming
-        Competition (14 problems total, 2.5 hours)."
+        Competition."
     image: "img/bpc.jpg"
     hiddenPrint: true
   -
@@ -337,8 +335,8 @@ projects:
     role: "Lead Engineering Student"
     content:
       - "Led the prototyping, design, machining, and assembly of the team’s
-        consistently top-seeded robot."
-      - "Coached team members in soft & technical skills via engineering
+        consistently top-ranking robot."
+      - "Coached team members in soft and technical skills via engineering
         projects and one-on-one training."
       - "Networked with industry heads, organizations, and sponsors to expand
         and maintain team relationships."
