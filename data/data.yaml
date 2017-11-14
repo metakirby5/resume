@@ -125,7 +125,7 @@ experience:
     role: "Software Engineering Intern"
     content:
       - "Developed a <a href='https://arxiv.org/abs/1705.03122'>
-        Convolutional Sequence to Sequence</a> neural network model for natural
+        state of the art</a> neural network model for natural
         language translation."
       - "Implemented model variants for distributed training and inference
         using an in-house machine learning framework."
