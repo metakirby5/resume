@@ -14,13 +14,31 @@ education:
     classes:
       -
         name: "CSE 258"
-        content: "Web Mining and Recommender Systems"
+        content: "Web Mining and Recommender Systems (Python)"
         date: "Fall 2017"
+        hiddenPrint: true
   -
     school: "UCSD, BS Computer Science"
     grades: "GPA: 3.99/4.0"
     dates: "Sep 2013 - Jun 2017"
     classes:
+      -
+        name: "CSE 125"
+        content: "Software System Design & Implementation (C++/OpenGL)"
+        date: "Spring 2017"
+      -
+        name: "COGS 181"
+        content: "Neural Networks/Deep Learning (Python)"
+        date: "Winter 2017"
+      -
+        name: "CSE 141L"
+        content: "Instruction Set Architecture Design and Implementation (Verilog)"
+        date: "Winter 2017"
+        hiddenPrint: true
+      -
+        name: "CSE 131"
+        content: "Compiler Construction (C++)"
+        date: "Winter 2017"
       -
         name: "CSE 123"
         content: "Computer Networks (C)"
@@ -69,6 +87,7 @@ education:
         name: "CSE 101"
         content: "Design and Analysis of Algorithms"
         date: "Winter 2015"
+        hiddenPrint: true
       -
         name: "LIGN 165"
         content: "Computational Linguistics (Python)"
