@@ -8,16 +8,6 @@ tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 
 education:
   -
-    school: "UCSD, MS Computer Science"
-    grades: "GPA: pending"
-    dates: "Sep 2017 - Jun 2018"
-    classes:
-      -
-        name: "CSE 258"
-        content: "Web Mining and Recommender Systems (Python)"
-        date: "Fall 2017"
-        hiddenPrint: true
-  -
     school: "UCSD, BS Computer Science"
     grades: "GPA: 3.99/4.0"
     dates: "Sep 2013 - Jun 2017"
@@ -39,11 +29,11 @@ education:
         name: "CSE 131"
         content: "Compiler Construction (C++)"
         date: "Winter 2017"
+        hiddenPrint: true
       -
         name: "CSE 123"
         content: "Computer Networks (C)"
         date: "Spring 2016"
-        hiddenPrint: true
       -
         name: "CSE 190A"
         content: "Computational Techniques in Robotics (Python)"
@@ -68,7 +58,6 @@ education:
         name: "CSE 120"
         content: "Principles of Computer Operating Systems (C)"
         date: "Winter 2016"
-        hiddenPrint: true
       -
         name: "CSE 110"
         content: "Software Engineering (Python/Django/React)"
