@@ -370,6 +370,8 @@ skills:
   -
     name: "C"
   -
+    name: "Kotlin"
+  -
     name: "Java"
   -
     name: "OCaml"
