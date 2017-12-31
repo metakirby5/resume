@@ -138,6 +138,7 @@ experience:
       - "Implemented model variants for distributed training and inference
         using an in-house machine learning framework."
     date: "Jun 2017 - Sep 2017"
+    fullDate: "Jun 21 2017 - Sep 27 2017"
     image: "img/google_translate.png"
   -
     name: "Google"
@@ -150,6 +151,7 @@ experience:
         gather critical metrics."
       - "Developed load testing tools for evaluating performance tweaks."
     date: "Sep 2016 - Dec 2016"
+    fullDate: "Sep 19 2016 - Dec 16 2016"
     image: "img/google.png"
   -
     name: "Pure Storage"
@@ -160,6 +162,7 @@ experience:
         product."
       - "Upgraded core API throughout kernel, command line, and API codebases."
     date: "Jun 2016 - Sep 2016"
+    fullDate: "Jun 13 2016 - Sep 5 2016"
     image: "img/purestorage.png"
   -
     name: "Information Theory and Applications Workshop 2016 App"
@@ -177,7 +180,8 @@ experience:
     content:
       - "Developed a single-page web app with custom markup and search
         features for segmented/annotated Japanese text."
-    date: "Oct 2015 - Dec 2015"
+    date: "Sep 2015 - Dec 2015"
+    fullDate: "Sep 8 2015 - Dec 25 2015"
     image: "img/atilika.png"
   -
     name: "ISA Global Leadership Program"
@@ -221,6 +225,7 @@ experience:
       - "Strengthened site security via anti-XSS measures, cookie protection,
         unit tests, and integration tests."
     date: "Jun 2014 - Sep 2014"
+    fullDate: "Jun 18 2014 - Sep 10 2014"
     image: "img/circleup.png"
   -
     name: "Perspectium"
