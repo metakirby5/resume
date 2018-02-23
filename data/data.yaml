@@ -34,6 +34,7 @@ education:
         name: "CSE 123"
         content: "Computer Networks (C)"
         date: "Spring 2016"
+        hiddenPrint: true
       -
         name: "CSE 190A"
         content: "Computational Techniques in Robotics (Python)"
@@ -127,6 +128,12 @@ education:
         hiddenPrint: true
 
 experience:
+  - name: "Niantic"
+    url: "https://www.nianticlabs.com/"
+    role: "Software Engineer"
+    date: "Mar 2018 - present"
+    fullDate: "Mar 6 2018 - present"
+    image: "img/niantic.png"
   -
     name: "Google"
     url: "https://translate.google.com/"
@@ -294,7 +301,7 @@ projects:
         languages as a Vim plugin."
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation."
-      - "Achieved trending status on GitHub and received 1200+ stars."
+      - "Achieved trending status on GitHub and received 1300+ stars."
     date: "Aug 2016"
     image: "img/codi.gif"
   -
