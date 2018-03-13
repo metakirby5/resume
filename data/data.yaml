@@ -271,7 +271,7 @@ experience:
 projects:
   -
     name: "Sandma"
-    url: "http://cse125.ucsd.edu/2017/cse125g1/"
+    url: "https://github.com/9hack/aldente"
     role: "Architecture / UI Developer"
     content:
       - "Created an event-driven single-threaded game loop supporting
