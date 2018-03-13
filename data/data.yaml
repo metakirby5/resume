@@ -131,6 +131,8 @@ experience:
   - name: "Niantic"
     url: "https://www.nianticlabs.com/"
     role: "Software Engineer"
+    content:
+      - "Working on Pokémon Go front-end Unity client."
     date: "Mar 2018 - present"
     fullDate: "Mar 6 2018 - present"
     image: "img/niantic.png"
