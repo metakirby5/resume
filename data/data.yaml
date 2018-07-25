@@ -59,6 +59,7 @@ education:
         name: "CSE 120"
         content: "Principles of Computer Operating Systems (C)"
         date: "Winter 2016"
+        hiddenPrint: true
       -
         name: "CSE 110"
         content: "Software Engineering (Python/Django/React)"
@@ -77,7 +78,6 @@ education:
         name: "CSE 101"
         content: "Design and Analysis of Algorithms"
         date: "Winter 2015"
-        hiddenPrint: true
       -
         name: "LIGN 165"
         content: "Computational Linguistics (Python)"
@@ -87,7 +87,6 @@ education:
         name: "CSE 100"
         content: "Advanced Data Structures (C++)"
         date: "Fall 2014"
-        hiddenPrint: true
       -
         name: "CSE 140/L"
         content: "Components and Design Techniques for Digital Systems
@@ -132,7 +131,10 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "Software Engineer"
     content:
-      - "Working on Pokémon Go front-end Unity client."
+      - "Working on features in Pokémon Go, consistently the #1 top grossing
+        Android app."
+      - "Client-side implementation of Friends and Trading, two of the most
+        highly anticipated features since launch."
     date: "Mar 2018 - present"
     fullDate: "Mar 6 2018 - present"
     image: "img/niantic.png"
@@ -182,6 +184,7 @@ experience:
         attendees, prototyped and developed in a single week."
     date: "Jan 2016"
     image: "img/ita.png"
+    hiddenPrint: true
   -
     name: "Atilika"
     url: "https://atilika.com/en/"
@@ -192,6 +195,7 @@ experience:
     date: "Sep 2015 - Dec 2015"
     fullDate: "Sep 8 2015 - Dec 25 2015"
     image: "img/atilika.png"
+    hiddenPrint: true
   -
     name: "ISA Global Leadership Program"
     url: "https://www.isa.co.jp/english/"
@@ -303,7 +307,7 @@ projects:
         languages as a Vim plugin."
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation."
-      - "Achieved trending status on GitHub and received 1300+ stars."
+      - "Achieved trending status on GitHub and received 1400+ stars."
     date: "Aug 2016"
     image: "img/codi.gif"
   -
@@ -368,6 +372,8 @@ projects:
 
 skills:
   -
+    name: "Unity"
+  -
     name: "Django"
   -
     name: "Node.js / Express"
@@ -381,6 +387,8 @@ skills:
     name: "JavaScript"
   -
     name: "Kotlin"
+  -
+    name: "C#"
   -
     name: "C++"
   -
