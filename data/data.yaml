@@ -371,43 +371,23 @@ projects:
     hiddenPrint: true
 
 skills:
-  -
-    name: "Unity"
-  -
-    name: "Django"
-  -
-    name: "Node.js / Express"
-  -
-    name: "React.js"
-  -
-    name: "TensorFlow"
-  -
-    name: "Python"
-  -
-    name: "JavaScript"
-  -
-    name: "Kotlin"
-  -
-    name: "C#"
-  -
-    name: "C++"
-  -
-    name: "C"
-  -
-    name: "Java"
-  -
-    name: "OCaml"
-  -
-    name: "Scala"
-  -
-    name: "Ruby"
-  -
-    name: "HTML"
-  -
-    name: "CSS (Sass, Stylus)"
-  -
-    name: "SQL"
-  -
-    name: "Bash"
-  -
-    name: "Git"
+  - name: "Unity"
+  - name: "Django"
+  - name: "Node.js / Express"
+  - name: "React.js"
+  - name: "TensorFlow"
+  - name: "Python"
+  - name: "JavaScript"
+  - name: "Kotlin"
+  - name: "C#"
+  - name: "C++"
+  - name: "C"
+  - name: "Java"
+  - name: "OCaml"
+  - name: "Scala"
+  - name: "Ruby"
+  - name: "HTML"
+  - name: "CSS (Sass, Stylus)"
+  - name: "SQL"
+  - name: "Bash"
+  - name: "Git"
