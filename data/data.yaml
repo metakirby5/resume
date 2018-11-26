@@ -310,7 +310,7 @@ projects:
         languages as a Vim plugin."
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation."
-      - "Achieved trending status on GitHub and received 1400+ stars."
+      - "Achieved trending status on GitHub and received 1500+ stars."
     date: "Aug 2016"
     image: "img/codi.gif"
   -
