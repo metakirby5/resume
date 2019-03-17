@@ -6,126 +6,6 @@ github: "github.com/metakirby5"
 linkedin: "linkedin.com/in/ethanjchan"
 tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 
-education:
-  -
-    school: "UCSD, BS Computer Science"
-    grades: "GPA: 3.99/4.0"
-    dates: "Sep 2013 - Jun 2017"
-    classes:
-      -
-        name: "CSE 125"
-        content: "Software System Design & Implementation (C++/OpenGL)"
-        date: "Spring 2017"
-      -
-        name: "COGS 181"
-        content: "Neural Networks/Deep Learning (Python)"
-        date: "Winter 2017"
-      -
-        name: "CSE 141L"
-        content: "Instruction Set Architecture Design and Implementation (Verilog)"
-        date: "Winter 2017"
-        hiddenPrint: true
-      -
-        name: "CSE 131"
-        content: "Compiler Construction (C++)"
-        date: "Winter 2017"
-        hiddenPrint: true
-      -
-        name: "CSE 123"
-        content: "Computer Networks (C)"
-        date: "Spring 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 190A"
-        content: "Computational Techniques in Robotics (Python)"
-        date: "Spring 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 141"
-        content: "Intro to Computer Architecture"
-        date: "Spring 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 132A"
-        content: "Database System Principles (SQL/JDBC)"
-        date: "Winter 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 130"
-        content: "Programming Languages (OCaml/Python/Prolog)"
-        date: "Winter 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 120"
-        content: "Principles of Computer Operating Systems (C)"
-        date: "Winter 2016"
-        hiddenPrint: true
-      -
-        name: "CSE 110"
-        content: "Software Engineering (Python/Django/React)"
-        date: "Spring 2015"
-      -
-        name: "CSE 105"
-        content: "Intro/Theory of Computation"
-        date: "Spring 2015"
-        hiddenPrint: true
-      -
-        name: "MATH 183"
-        content: "Statistical Methods"
-        date: "Spring 2015"
-        hiddenPrint: true
-      -
-        name: "CSE 101"
-        content: "Design and Analysis of Algorithms"
-        date: "Winter 2015"
-      -
-        name: "LIGN 165"
-        content: "Computational Linguistics (Python)"
-        date: "Winter 2015"
-        hiddenPrint: true
-      -
-        name: "CSE 100"
-        content: "Advanced Data Structures (C++)"
-        date: "Fall 2014"
-      -
-        name: "CSE 140/L"
-        content: "Components and Design Techniques for Digital Systems
-          (Verilog)"
-        date: "Fall 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 30"
-        content: "Computer Organization and Systems Programming
-          (C/SPARC Assembly)"
-        date: "Spring 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 21"
-        content: "Mathematics for Algorithms and Systems"
-        date: "Spring 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 12"
-        content: "Basic Data Structures and Object-Oriented Design (C/C++)"
-        date: "Winter 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 15L"
-        content: "Software Tools and Techniques Laboratory"
-        date: "Winter 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 20"
-        content: "Discrete Mathematics"
-        date: "Winter 2014"
-        hiddenPrint: true
-      -
-        name: "CSE 11"
-        content: "Intro to Computer Science and Object Oriented Programming
-          (Java)"
-        date: "Fall 2013"
-        hiddenPrint: true
-
 experience:
   - name: "Niantic"
     url: "https://www.nianticlabs.com/"
@@ -400,3 +280,123 @@ skills:
   - name: "SQL"
   - name: "Bash"
   - name: "Git"
+
+education:
+  -
+    school: "UCSD, BS Computer Science"
+    grades: "GPA: 3.99/4.0"
+    dates: "Sep 2013 - Jun 2017"
+    classes:
+      -
+        name: "CSE 125"
+        content: "Software System Design & Implementation (C++/OpenGL)"
+        date: "Spring 2017"
+      -
+        name: "COGS 181"
+        content: "Neural Networks/Deep Learning (Python)"
+        date: "Winter 2017"
+      -
+        name: "CSE 141L"
+        content: "Instruction Set Architecture Design and Implementation (Verilog)"
+        date: "Winter 2017"
+        hiddenPrint: true
+      -
+        name: "CSE 131"
+        content: "Compiler Construction (C++)"
+        date: "Winter 2017"
+        hiddenPrint: true
+      -
+        name: "CSE 123"
+        content: "Computer Networks (C)"
+        date: "Spring 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 190A"
+        content: "Computational Techniques in Robotics (Python)"
+        date: "Spring 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 141"
+        content: "Intro to Computer Architecture"
+        date: "Spring 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 132A"
+        content: "Database System Principles (SQL/JDBC)"
+        date: "Winter 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 130"
+        content: "Programming Languages (OCaml/Python/Prolog)"
+        date: "Winter 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 120"
+        content: "Principles of Computer Operating Systems (C)"
+        date: "Winter 2016"
+        hiddenPrint: true
+      -
+        name: "CSE 110"
+        content: "Software Engineering (Python/Django/React)"
+        date: "Spring 2015"
+      -
+        name: "CSE 105"
+        content: "Intro/Theory of Computation"
+        date: "Spring 2015"
+        hiddenPrint: true
+      -
+        name: "MATH 183"
+        content: "Statistical Methods"
+        date: "Spring 2015"
+        hiddenPrint: true
+      -
+        name: "CSE 101"
+        content: "Design and Analysis of Algorithms"
+        date: "Winter 2015"
+      -
+        name: "LIGN 165"
+        content: "Computational Linguistics (Python)"
+        date: "Winter 2015"
+        hiddenPrint: true
+      -
+        name: "CSE 100"
+        content: "Advanced Data Structures (C++)"
+        date: "Fall 2014"
+      -
+        name: "CSE 140/L"
+        content: "Components and Design Techniques for Digital Systems
+          (Verilog)"
+        date: "Fall 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 30"
+        content: "Computer Organization and Systems Programming
+          (C/SPARC Assembly)"
+        date: "Spring 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 21"
+        content: "Mathematics for Algorithms and Systems"
+        date: "Spring 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 12"
+        content: "Basic Data Structures and Object-Oriented Design (C/C++)"
+        date: "Winter 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 15L"
+        content: "Software Tools and Techniques Laboratory"
+        date: "Winter 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 20"
+        content: "Discrete Mathematics"
+        date: "Winter 2014"
+        hiddenPrint: true
+      -
+        name: "CSE 11"
+        content: "Intro to Computer Science and Object Oriented Programming
+          (Java)"
+        date: "Fall 2013"
+        hiddenPrint: true
