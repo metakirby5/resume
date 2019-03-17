@@ -757,6 +757,9 @@ html {
   body .card .meta {
     border-color: #e0e0e0 !important;
   }
+  body .card .meta .desc .name:after {
+    color: #e0e0e0 !important;
+  }
 }
 @media screen {
   ::selection {
@@ -808,6 +811,9 @@ html {
   }
   .card .meta {
     border-color: #e0e0e0 !important;
+  }
+  .card .meta .desc .name:after {
+    color: #e0e0e0 !important;
   }
   .fa.stackee.inverse {
     color: #f5f5f5;
@@ -1144,6 +1150,7 @@ a.card:hover {
 }
 #experience .card .card-content > .meta .desc .name:after,
 #projects .card .card-content > .meta .desc .name:after {
+  white-space: pre;
   content: ' | ';
 }
 #experience .card .card-content > .meta .date,
