@@ -11,18 +11,16 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "SWE II (T3) → SWE III (T4)"
     content:
-      - "Working on features in Pokémon Go, consistently the #1 top grossing
+      - "Working on features in Pokémon GO, consistently the #1 top grossing
         Android app."
       - "Client-side of
-        <a href='https://niantic.helpshift.com/a/pokemon-go/?p=web&l=en&s=friends-gifting-and-trading&f=friend-list-friendship-levels'>Friends</a>
-        and
-        <a href='https://niantic.helpshift.com/a/pokemon-go/?p=web&l=en&s=friends-gifting-and-trading&f=trading-pokemon'>Trading</a>,
+        <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>,
         two of the most highly anticipated features since launch."
       - "Native Android and Unity portion of
-        <a href='https://niantic.helpshift.com/a/pokemon-go/?p=web&l=en&s=trainer-progress&f=adventure-sync'>Adventure Sync</a>,
+        <a href='https://nianticlabs.com/blog/adventuresync/'>Adventure Sync</a>,
         increasing player adoption and retention through passive gameplay."
       - "Client-side of
-        <a href='https://niantic.helpshift.com/a/pokemon-go/?p=web&l=en&s=top-articles&f=taking-photos-with-go-snapshot'>Go Snapshot</a>,
+        <a href='https://twitter.com/search?q=%23GOsnapshot'>GO Snapshot</a>,
         allowing players to take photos of Pokémon in augmented reality."
     date: "Mar 2018 - present"
     fullDate: "Mar 6 2018 - present"
