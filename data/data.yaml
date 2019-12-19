@@ -13,6 +13,11 @@ experience:
     content:
       - "Working on features in Pokémon GO, consistently the #1 top grossing
         Android app."
+      - "Technical lead for
+        <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
+        novel Pokémon interaction in AR and cross-cutting full-game integration."
+      - "End-to-end development of an extensible asset serialization and
+        management system for 700+ Pokémon assets."
       - "Client-side of
         <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>,
         two of the most highly anticipated features since launch."
@@ -208,6 +213,7 @@ projects:
         the service as weekly recurring events."
     date: "May 2015 - Jun 2015"
     image: "img/hitmeup.png"
+    hiddenPrint: true
   -
     name: "HTML/JS Resume"
     url: "https://github.com/metakirby5/resume"
