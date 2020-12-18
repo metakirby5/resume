@@ -9,10 +9,9 @@ tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 experience:
   - name: "Niantic"
     url: "https://www.nianticlabs.com/"
-    role: "SWE II (T3) → SWE III (T4)"
+    role: "SWE II (T3) → Senior SWE (T5)"
     content:
-      - "Working on features in Pokémon GO, consistently the #1 top grossing
-        Android app."
+      - "Worked on Pokémon GO, consistently the #1 top grossing Android app."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
