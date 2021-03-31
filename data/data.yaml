@@ -11,7 +11,12 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "SWE II (T3) → Senior SWE (T5)"
     content:
-      - "Worked on Pokémon GO, consistently the #1 top grossing Android app."
+      - "Working on
+        <a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>
+        Pikmin App</a>."
+      - "Worked on
+        <a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a>,
+        consistently the #1 top grossing Android app."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
@@ -198,7 +203,7 @@ projects:
         languages as a Vim plugin."
       - "Leveraged Vim's asynchronous job architecture to provide non-blocking
         instant code evaluation."
-      - "Achieved trending status on GitHub and received 1500+ stars."
+      - "Achieved trending status on GitHub and received 2300+ stars."
     date: "Aug 2016"
     image: "img/codi.gif"
   -
