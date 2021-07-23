@@ -1168,10 +1168,11 @@ a.card:hover {
   width: 40%;
 }
 #education .card .card-content > .meta .grades {
-  width: 35%;
+  width: 20%;
+  text-align: center;
 }
 #education .card .card-content > .meta .dates {
-  width: 25%;
+  width: 40%;
   text-align: right;
 }
 #education .card .card-content > .meta.no-classes {

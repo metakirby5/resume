@@ -25,7 +25,7 @@ experience:
       - "Client-side of
         <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>,
         two of the most highly anticipated features since launch."
-      - "Native Android and Unity portion of
+      - "Native Android and Unity for
         <a href='https://nianticlabs.com/blog/adventuresync/'>Adventure Sync</a>,
         increasing player adoption and retention through passive gameplay."
       - "Client-side of
@@ -91,7 +91,6 @@ experience:
     date: "Sep 2015 - Dec 2015"
     fullDate: "Sep 8 2015 - Dec 25 2015"
     image: "img/atilika.png"
-    hiddenPrint: true
   -
     name: "ISA Global Leadership Program"
     url: "https://www.isa.co.jp/english/"
@@ -297,7 +296,7 @@ education:
     classes:
       -
         name: "CSE 125"
-        content: "Software System Design & Implementation (C++/OpenGL)"
+        content: "Software System Design & Implementation"
         date: "Spring 2017"
       -
         name: "COGS 181"
