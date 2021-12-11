@@ -11,32 +11,31 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "SWE II (T3) → Senior SWE (T5)"
     content:
-      - "Working on
-        <a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>Pikmin App</a>
-        in collaboration with
-        <a href='https://www.nintendo.com/about/'>Nintendo</a>.
-        Boosted productivity with UI framework components e.g. pagers, list views.
-        Drove long-term retention with
+      - "Worked on
+        <a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>Pikmin Bloom</a>
+        in collaboration with <a href='https://www.nintendo.com/about/'>Nintendo</a>,
+        and the top 10 grossing mobile game
+        <a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a>."
+      - "Boosted productivity by implementing reusable and composable UI framework components 
+        e.g. pagers, list views."
+      - "Drove long-term retention with
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=lifelog'>Lifelog</a>.
         Increased gameplay engagement with
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=expedition'>Expedition</a>
         and <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=challenge'>Challenge</a>."
-      - "Worked on
-        <a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a>,
-        a top 10 grossing cross-platform mobile game.
-        Technical lead for
+      - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
-        novel Pokémon interaction in AR and cross-cutting full-game integration.
-        Client-side of
+        novel Pokémon interaction in AR and cross-cutting full-game integration."
+      - "Client-side of
         <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>:
-        two of the most highly anticipated features since launch.
-        Native Android and Unity for
+        two of the most highly anticipated features since launch."
+      - "Native Android and Unity for
         <a href='https://nianticlabs.com/blog/adventuresync/'>Adventure Sync</a>:
-        increasing player adoption and retention through passive gameplay.
-        Client-side of
+        increasing player adoption and retention through passive gameplay."
+      - "Client-side of
         <a href='https://twitter.com/search?q=%23GOsnapshot'>GO Snapshot</a>:
-        allowing players to take photos of Pokémon in augmented reality.
-        End-to-end development of an extensible asset serialization and
+        allowing players to take photos of Pokémon in augmented reality."
+      - "End-to-end development of an extensible asset serialization and
         management system for 700+ Pokémon assets."
     date: "Mar 2018 - present"
     fullDate: "Mar 6 2018 - present"
@@ -275,23 +274,16 @@ projects:
 
 skills:
   - name: "Unity"
-  - name: "Django"
-  - name: "Node.js / Express"
   - name: "React.js"
-  - name: "TensorFlow"
   - name: "Python"
   - name: "JavaScript"
   - name: "Kotlin"
   - name: "C#"
   - name: "C++"
-  - name: "C"
   - name: "Java"
-  - name: "OCaml"
-  - name: "Scala"
   - name: "Ruby"
   - name: "HTML"
   - name: "CSS (Sass, Stylus)"
-  - name: "SQL"
   - name: "Bash"
   - name: "Git"
 
@@ -309,6 +301,7 @@ education:
         name: "COGS 181"
         content: "Neural Networks/Deep Learning (Python)"
         date: "Winter 2017"
+        hiddenPrint: true
       -
         name: "CSE 141L"
         content: "Instruction Set Architecture Design and Implementation (Verilog)"
@@ -376,6 +369,7 @@ education:
         name: "CSE 100"
         content: "Advanced Data Structures (C++)"
         date: "Fall 2014"
+        hiddenPrint: true
       -
         name: "CSE 140/L"
         content: "Components and Design Techniques for Digital Systems
