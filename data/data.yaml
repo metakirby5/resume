@@ -11,18 +11,25 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "SWE II (T3) → Senior SWE (T5)"
     content:
-      - "Worked on
-        <a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>Pikmin Bloom</a>
-        in collaboration with <a href='https://www.nintendo.com/about/'>Nintendo</a>,
-        and the top 10 grossing mobile game
-        <a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a>."
-      - "Boosted productivity by implementing reusable and composable UI framework components 
+      - "<a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>Pikmin Bloom</a>
+        core gameplay client engineering lead,
+        in collaboration with <a href='https://www.nintendo.com/about/'>Nintendo</a>."
+      - "Boosted productivity by implementing reusable and composable UI framework components
         e.g. pagers, list views."
-      - "Drove long-term retention with
-        <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=lifelog'>Lifelog</a>.
-        Increased gameplay engagement with
+      - "Doubled median social connections per player with
+        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3404-challenge-1650432414/?s=start-guide'>
+        Challenge</a>.
+        Drove long-term retention with
+        <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=lifelog'>Lifelog</a> journaling."
+      - "Implemented core gampeplay for
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=expedition'>Expedition</a>
-        and <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=challenge'>Challenge</a>."
+        and <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=mushroom'>Mushroom</a>.
+        End-to-end ownership of
+        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3277-privacy-zone/?s=start-guide'>
+        Privacy Zone</a> and
+        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3195-sharing-screen-information/?s=start-guide'>
+        Sharing Screen</a>."
+      - "<a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a> client engineer."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
@@ -97,6 +104,7 @@ experience:
     date: "Sep 2015 - Dec 2015"
     fullDate: "Sep 8 2015 - Dec 25 2015"
     image: "img/atilika.png"
+    hiddenPrint: true
   -
     name: "ISA Global Leadership Program"
     url: "https://www.isa.co.jp/english/"
