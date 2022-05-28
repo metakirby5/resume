@@ -11,8 +11,7 @@ experience:
     url: "https://www.nianticlabs.com/"
     role: "SWE II (T3) → Senior SWE (T5)"
     content:
-      - "<a href='https://www.nintendo.co.jp/corporate/release/en/2021/210323.html'>Pikmin Bloom</a>
-        core gameplay client engineering lead,
+      - "<a href='https://pikminbloom.com/'>Pikmin Bloom</a> core gameplay client engineering lead,
         in collaboration with <a href='https://www.nintendo.com/about/'>Nintendo</a>."
       - "Boosted productivity by implementing reusable and composable UI framework components
         e.g. pagers, list views."
@@ -29,16 +28,16 @@ experience:
         Privacy Zone</a> and
         <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3195-sharing-screen-information/?s=start-guide'>
         Sharing Screen</a>."
-      - "<a href='https://www.pokemongo.com/en-us/'>Pokémon GO</a> client engineer."
+      - "<a href='https://pokemongolive.com/'>Pokémon GO</a> client engineer."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
-      - "Client-side of
-        <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>:
-        two of the most highly anticipated features since launch."
       - "Native Android and Unity for
         <a href='https://nianticlabs.com/blog/adventuresync/'>Adventure Sync</a>:
         increasing player adoption and retention through passive gameplay."
+      - "Client-side of
+        <a href='https://pokemongolive.com/en/post/friendsandtrading/'>Friends and Trading</a>:
+        two of the most highly anticipated features since launch."
       - "Client-side of
         <a href='https://twitter.com/search?q=%23GOsnapshot'>GO Snapshot</a>:
         allowing players to take photos of Pokémon in augmented reality."
