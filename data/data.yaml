@@ -9,7 +9,7 @@ tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 experience:
   - name: "Niantic"
     url: "https://www.nianticlabs.com/"
-    role: "SWE II (T3) → Senior SWE (T5)"
+    role: "SWE II (T3) → Staff SWE (T6)"
     content:
       - "Current <a href='https://pikminbloom.com/'>Pikmin Bloom</a> client engineering lead,
         in collaboration with <a href='https://www.nintendo.com/about/'>Nintendo</a>.
@@ -20,18 +20,11 @@ experience:
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=mushroom'>Mushroom</a>."
       - "Doubled median social connections per player with
         <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3404-challenge-1650432414/?s=start-guide'>
-        Challenge</a>.
+        Weekly Challenge</a>.
         Drove long-term retention with
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=lifelog'>Lifelog</a> journaling."
-      - "Boosted productivity by implementing reusable and composable UI framework components
-        e.g. pagers, list views."
-      - "Implemented core gampeplay for
-        <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=expedition'>Expedition</a>.
-        End-to-end ownership of
-        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3277-privacy-zone/?s=start-guide'>
-        Privacy Zone</a> and
-        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3195-sharing-screen-information/?s=start-guide'>
-        Sharing Screen</a>."
+      - "Strengthened technical quality through static analysis CI pipelines,
+        e.g. nullability checks and resource leak prevention."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
