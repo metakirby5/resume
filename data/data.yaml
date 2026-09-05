@@ -7,8 +7,8 @@ linkedin: "linkedin.com/in/ethanjchan"
 tagline: "Latte art maker, Dance Dance Revolution player, software creator."
 
 experience:
-  - name: "Niantic"
-    url: "https://www.nianticlabs.com/"
+  - name: "Niantic / Scopely"
+    url: "https://explore.scopely.com/"
     role: "SWE II (L3) → Staff SWE (L6)"
     content:
       - "Current <a href='https://pikminbloom.com/'>Pikmin Bloom</a> client engineering lead,
