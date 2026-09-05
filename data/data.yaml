@@ -17,16 +17,16 @@ experience:
       - "Rebuilt team engineering workflows around LLM agents. Shipping MCP tooling, reusable skills,
         and progressive-disclosure repo docs that made generative AI dependable, production-grade leverage."
       - "Contributing over 50% to revenue targets with
-        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3968-event-challenges/'>Event Challenge</a>.
-        Generating 20% of in-app currency spend with
+        <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3968-event-challenges/'>Event Challenge</a>,
+        20% of in-app currency spend with
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=mushroom'>Mushroom</a>."
       - "Doubled median social connections per player with
         <a href='https://niantic.helpshift.com/hc/en/23-pikmin-bloom/faq/3404-challenge-1650432414/?s=start-guide'>
         Weekly Challenge</a>.
-        Drove long-term retention with
+        Strengthened retention with
         <a href='https://niantic.helpshift.com/a/pikmin-bloom/?s=start-guide&f=lifelog'>Lifelog</a> journaling."
-      - "Strengthened technical quality through static analysis CI pipelines,
-        e.g. nullability checks and resource leak prevention."
+      - "Hardened technical quality through static analysis CI pipelines,
+        e.g. nullability checks, resource leak prevention."
       - "Technical lead for
         <a href='https://pokemongolive.com/en/post/buddyadventurelaunch/'>Buddy Adventure</a>:
         novel Pokémon interaction in AR and cross-cutting full-game integration."
